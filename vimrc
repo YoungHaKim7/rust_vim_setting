@@ -60,7 +60,7 @@ let g:rustfmt_autosave = 1
 " RainBow
 let g:rainbow_active = 1 
 
-" ObviousResizei
+" ObviousResize
 
 noremap <silent> <C-Up> :<C-U>ObviousResizeUp<CR>
 noremap <silent> <C-Down> :<C-U>ObviousResizeDown<CR>
