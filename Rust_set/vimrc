@@ -151,7 +151,10 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " rust analyzer end~~~~~~
 
-
+" lines to save text folding
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+set foldmethod=manual
 
 
 syntax enable
