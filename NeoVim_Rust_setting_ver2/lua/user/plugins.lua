@@ -58,7 +58,10 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  use "p00f/nvim-ts-rainbow" -- rainbow parenthesis
     
+  use "liuchengxu/vista.vim" -- rust ctag~
+
   -- Colorschemes
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "lunarvim/darkplus.nvim"
@@ -89,6 +92,15 @@ return packer.startup(function(use)
   use "prabirshrestha/asyncomplete-lsp.vim"
   use "hrsh7th/nvim-compe" -- autocomple?
 
+ -- LanguageClien-neovim 
+  use {
+     "autozimu/LanguageClient-neovim", 
+     branch = "next",
+     run = "bash install.sh"
+ }
+
+  --  (Optional) Multi-entry selection UI.
+  use "junegunn/fzf"
     
   --  Use release branch (recommend)
   use {

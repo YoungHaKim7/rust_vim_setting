@@ -29,7 +29,7 @@ local options = {
   relativenumber = true,                  -- set relative numbered lines
   numberwidth = 4,                         -- set number column width to 2 {default 4}
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
-  wrap = false,                            -- display lines as one long line
+  wrap = true,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
@@ -49,3 +49,6 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 vim.cmd "set runtimepath+=~/.nvim/plugin/LanguageClient-neovim"
 vim.cmd "set formatexpr=LanguageClient#textDocument_rangeFormatting_sync()"
 vim.cmd "set completefunc=LanguageClient#complete"
+
+-- Language Set
+vim.cmd "let $LANG = 'en'"
