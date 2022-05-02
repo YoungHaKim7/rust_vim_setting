@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Visual Studio Dark - C++",
+  "workbench.colorTheme": "dimmed-monokai",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
@@ -18,7 +18,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "code-runner.runInTerminal": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.guides.bracketPairs": "active",
   "emmet.triggerExpansionOnTab": true,
   "editor.suggestSelection": "first",
