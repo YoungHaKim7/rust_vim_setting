@@ -1,0 +1,52 @@
+{
+  "workbench.colorTheme": "Visual Studio Dark - C++",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#000000", // squiggly line
+    "editorError.border": "#ffffff" // additional border under squiggly line
+    "editorInlayHint.background": "#e85a5a98",
+
+    // Overrides for specific kinds of inlay hints
+    "editorInlayHint.typeForeground": "#fdb6fdf0",
+    "editorInlayHint.parameterForeground": "#fdb6fdf0",
+  }
+  "security.workspace.trust.untrustedFiles": "open",
+  "fontFace": "MesloLGS NF",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "code-runner.runInTerminal": true,
+  "editor.fontSize": 14,
+  "editor.guides.bracketPairs": "active",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "terminal.integrated.inheritEnv": false,
+  "files.associations": {
+    "*.html": "html"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+  },
+  "gitlens.hovers.currentLine.over": "line",
+  "tabnine.experimentalAutoImports": true,
+  "rust-analyzer.inlayHints.enable": true,
+  "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+  "rust-analyzer.procMacro.enable": true,
+  "vim.leader":"\\",
+  "vim.useSystemClipboard": true,
+  "editor.lineNumbers": "relative",
+  "vim.easymotion": true,
+  "vim.surround": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j","k"],
+      "after":["<Esc>"]
+    }
+  ],
+}
