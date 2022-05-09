@@ -35,7 +35,6 @@
     "**/.settings": true,
     "**/.factorypath": true,
   },
-  "gitlens.hovers.currentLine.over": "line",
   "tabnine.experimentalAutoImports": true,
   // rust-analyzer setting~
   "rust-analyzer.inlayHints.enable": true,
