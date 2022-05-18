@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "dimmed-monokai",
+//  "workbench.colorTheme": "spacedark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
@@ -20,7 +20,18 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "code-runner.runInTerminal": true,
-  "editor.fontSize": 18
+  // Controls the font family.
+    //"editor.fontFamily": "Operator Mono",
+    // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
+    "editor.lineHeight": 24,
+    // Enables font ligatures
+    "editor.fontLigatures": true,
+    // Controls if file decorations should use badges.
+    "explorer.decorations.badges": false
+  "editor.fontSize": 16,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
   "editor.guides.bracketPairs": "active",
   "emmet.triggerExpansionOnTab": true,
   "editor.suggestSelection": "first",
