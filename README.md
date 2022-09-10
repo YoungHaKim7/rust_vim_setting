@@ -20,3 +20,11 @@
 
 Emacs Cheat Sheet❤️(Vim과 비교 젤 보기 좋다)👍
 https://economiceco.tistory.com/14813
+
+<hr>
+
+<br>
+
+# Emacs Setting
+
+-[Lisp language*Emac_DoomEmacs_tutorial_LSP_Install*설치및자동완성활용법\_기초한글강의 #lisplang #emacs #doomemacs #lsp](https://youtu.be/xngl_-994Yg)
