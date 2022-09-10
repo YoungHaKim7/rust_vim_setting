@@ -6,6 +6,22 @@
 
 
 ;;
+;;; doom-first-*-hook
+
+(defvar doom-first-input-hook nil
+  "Transient hooks run before the first user input.")
+(put 'doom-first-input-hook 'permanent-local t)
+
+(defvar doom-first-file-hook nil
+  "Transient hooks run before the first interactively opened file.")
+(put 'doom-first-file-hook 'permanent-local t)
+
+(defvar doom-first-buffer-hook nil
+  "Transient hooks run before the first interactively opened buffer.")
+(put 'doom-first-buffer-hook 'permanent-local t)
+
+
+;;
 ;;; Reasonable defaults for interactive sessions
 
 ;; GUIs are inconsistent across systems, will rarely match our active Emacs
@@ -68,7 +84,7 @@ If you want to disable incremental loading altogether, either remove
 `doom-incremental-first-idle-timer' to nil. Incremental loading does not occur
 in daemon sessions (they are loaded immediately at startup).")
 
-(defvar doom-incremental-first-idle-timer 2.0
+(defvar doom-incremental-first-idle-timer (if (featurep 'native-compile) 3.0 2.0)
   "How long (in idle seconds) until incremental loading starts.
 
 Set this to nil to disable incremental loading.")
@@ -86,31 +102,35 @@ If NOW is non-nil, load PACKAGES incrementally, in `doom-incremental-idle-timer'
 intervals."
   (if (not now)
       (appendq! doom-incremental-packages packages)
-    (while packages
-      (let* ((gc-cons-threshold most-positive-fixnum)
-             (req (pop packages)))
-        (unless (featurep req)
-          (doom-log "Incrementally loading %s" req)
-          (condition-case-unless-debug e
-              (or (while-no-input
-                    ;; If `default-directory' is a directory that doesn't exist
-                    ;; or is unreadable, Emacs throws up file-missing errors, so
-                    ;; we set it to a directory we know exists and is readable.
-                    (let ((default-directory doom-emacs-dir)
-                          (inhibit-message t)
-                          file-name-handler-alist)
-                      (require req nil t))
-                    t)
-                  (push req packages))
-            (error
-             (message "Failed to load %S package incrementally, because: %s"
-                      req e)))
-          (if (not packages)
-              (doom-log "Finished incremental loading")
-            (run-with-idle-timer doom-incremental-idle-timer
-                                 nil #'doom-load-packages-incrementally
-                                 packages t)
-            (setq packages nil)))))))
+    (if (and packages (bound-and-true-p comp-files-queue))
+        (run-with-idle-timer doom-incremental-idle-timer
+                             nil #'doom-load-packages-incrementally
+                             packages t)
+      (while packages
+        (let* ((gc-cons-threshold most-positive-fixnum)
+               (req (pop packages)))
+          (unless (featurep req)
+            (doom-log "Incrementally loading %s" req)
+            (condition-case-unless-debug e
+                (or (while-no-input
+                      ;; If `default-directory' is a directory that doesn't exist
+                      ;; or is unreadable, Emacs throws up file-missing errors, so
+                      ;; we set it to a directory we know exists and is readable.
+                      (let ((default-directory doom-emacs-dir)
+                            (inhibit-message t)
+                            file-name-handler-alist)
+                        (require req nil t))
+                      t)
+                    (push req packages))
+              (error
+               (message "Failed to load %S package incrementally, because: %s"
+                        req e)))
+            (if (not packages)
+                (doom-log "Finished incremental loading")
+              (run-with-idle-timer doom-incremental-idle-timer
+                                   nil #'doom-load-packages-incrementally
+                                   packages t)
+              (setq packages nil))))))))
 
 (defun doom-load-packages-incrementally-h ()
   "Begin incrementally loading packages in `doom-incremental-packages'.
@@ -143,7 +163,7 @@ If RETURN-P, return the message as a string instead of displaying it."
                      (float-time (time-subtract (current-time) before-init-time))))))
 
 ;; Add support for additional file extensions.
-(dolist (entry '(("/\\.doomrc\\'" . emacs-lisp-mode)
+(dolist (entry '(("/\\.doom\\(?:rc\\|project\\|module\\|profile\\)\\'" . emacs-lisp-mode)
                  ("/LICENSE\\'" . text-mode)
                  ("\\.log\\'" . text-mode)
                  ("rc\\'" . conf-mode)
@@ -186,6 +206,14 @@ If RETURN-P, return the message as a string instead of displaying it."
 (doom-run-hook-on 'doom-first-file-hook   '(find-file-hook dired-initial-position-hook))
 (doom-run-hook-on 'doom-first-input-hook  '(pre-command-hook))
 
+;; The GC introduces annoying pauses and stuttering into our Emacs experience,
+;; so we use `gcmh' to stave off the GC while we're using Emacs, and provoke it
+;; when it's idle. However, if the idle delay is too long, we run the risk of
+;; runaway memory usage in busy sessions. If it's too low, then we may as well
+;; not be using gcmh at all.
+(setq gcmh-idle-delay 'auto  ; default is 15s
+      gcmh-auto-idle-delay-factor 10
+      gcmh-high-cons-threshold (* 16 1024 1024))  ; 16mb
 (add-hook 'doom-first-buffer-hook #'gcmh-mode)
 
 ;; There's a chance the user will later use package.el or straight in this

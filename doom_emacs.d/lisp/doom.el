@@ -50,8 +50,37 @@
 ;;; Code:
 
 (when (< emacs-major-version 27)
-  (error "Detected Emacs %s. Minimum supported version is 27.1."
-         emacs-version))
+  (user-error
+   (concat
+    "Detected Emacs " emacs-version ", but Doom requires 27.1 or newer.\n\n"
+    "The version of Emacs in use is located at:\n\n  " (car command-line-args) "\n\n"
+    "A guide for installing a newer version of Emacs can be found at:\n\n  "
+    (format "https://docs.doomemacs.org/-/install/%s"
+            (cond ((eq system-type 'darwin) "on-macos")
+                  ((memq system-type '(cygwin windows-nt ms-dos)) "on-windows")
+                  ("on-linux")))
+    "\n\n"
+    (if (not noninteractive)
+        (concat "If you believe this error is a mistake, run 'doom doctor' on the command line\n"
+                "to diagnose common issues with your config and system.")
+      (concat "Alternatively, either update your $PATH environment variable to include the\n"
+              "path of the desired Emacs executable OR alter the $EMACS environment variable\n"
+              "to specify the exact path or command needed to invoke Emacs. For example:\n\n"
+              (let ((command (ignore-errors (file-name-nondirectory (cadr (member "--load" command-line-args))))))
+                (concat "  $ EMACS=/path/to/valid/emacs " command " ...\n"
+                        "  $ EMACS=\"/Applications/Emacs.app/Contents/MacOS/Emacs\" " command " ...\n"
+                        "  $ EMACS=\"snap run emacs\" " command " ...\n"))
+              "\nAborting...")))))
+
+;; Doom needs to be synced/rebuilt if either Doom or Emacs has been
+;; up/downgraded. This is because byte-code isn't backwards compatible, and many
+;; packages (including Doom), make in absolute paths into their caches that need
+;; to be refreshed.
+(let ((old-version (eval-when-compile emacs-version)))
+  (unless (equal emacs-version old-version)
+    (user-error (concat "Doom was compiled with Emacs %s, but was loaded with %s. Run 'doom sync' to"
+                        "recompile it.")
+                emacs-version old-version)))
 
 ;; Remember these variables' initial values, so we can safely reset them at a
 ;; later time, or consult them without fear of contamination.
@@ -59,19 +88,29 @@
   (unless (get var 'initial-value)
     (put var 'initial-value (default-value var))))
 
-;; Prevent unwanted runtime compilation for gccemacs (native-comp) users;
-;; packages are compiled ahead-of-time when they are installed and site files
-;; are compiled when gccemacs is installed.
-(setq native-comp-deferred-compilation nil)
+;; Ensure Doom's core libraries are visible for loading
+(add-to-list 'load-path (file-name-directory load-file-name))
 
 ;; Since Emacs 27, package initialization occurs before `user-init-file' is
 ;; loaded, but after `early-init-file'. Doom handles package initialization, so
 ;; we must prevent Emacs from doing it again.
 (setq package-enable-at-startup nil)
 
-;; Just the... bear necessities~
+;; Custom error types
+(define-error 'doom-error "An unexpected Doom error")
+(define-error 'doom-core-error "Unexpected error in Doom's core" 'doom-error)
+(define-error 'doom-hook-error "Error in a Doom startup hook" 'doom-error)
+(define-error 'doom-autoload-error "Error in Doom's autoloads file" 'doom-error)
+(define-error 'doom-user-error "Error caused by user's config or system" 'doom-error)
+(define-error 'doom-module-error "Error in a Doom module" 'doom-error)
+(define-error 'doom-package-error "Error with packages" 'doom-error)
+(define-error 'doom-profile-error "Error while processing profiles" 'doom-error)
+
+;; Load just the... bear necessities~
 (require 'cl-lib)
 (require 'subr-x)
+;; ...then load *the* one
+(require 'doom-lib)
 
 
 ;;
@@ -128,7 +167,7 @@
 (defconst doom-version "3.0.0-dev"
   "Current version of Doom Emacs core.")
 
-(defconst doom-modules-version "22.08.0-dev"
+(defconst doom-modules-version "22.09.0-dev"
   "Current version of Doom Emacs.")
 
 
@@ -280,42 +319,21 @@ users).")
 
 
 ;;
-;;; Custom error types
-
-(define-error 'doom-error "Error in Doom Emacs core")
-(define-error 'doom-hook-error "Error in a Doom startup hook" 'doom-error)
-(define-error 'doom-autoload-error "Error in Doom's autoloads file" 'doom-error)
-(define-error 'doom-module-error "Error in a Doom module" 'doom-error)
-(define-error 'doom-user-error "Error in user's config" 'doom-error)
-(define-error 'doom-package-error "Error with packages" 'doom-error)
-
-
-;;
-;;; Custom hooks
-
-(defvar doom-first-input-hook nil
-  "Transient hooks run before the first user input.")
-(put 'doom-first-input-hook 'permanent-local t)
-
-(defvar doom-first-file-hook nil
-  "Transient hooks run before the first interactively opened file.")
-(put 'doom-first-file-hook 'permanent-local t)
-
-(defvar doom-first-buffer-hook nil
-  "Transient hooks run before the first interactively opened buffer.")
-(put 'doom-first-buffer-hook 'permanent-local t)
-
-(defvar doom-after-reload-hook nil
-  "A list of hooks to run after `doom/reload' has reloaded Doom.")
-
-(defvar doom-before-reload-hook nil
-  "A list of hooks to run before `doom/reload' has reloaded Doom.")
-
-
-;;
 ;;; Native Compilation support (http://akrl.sdf.org/gccemacs.html)
 
 (when (featurep 'native-compile)
+  ;; Enable deferred compilation and disable ahead-of-time compilation, so we
+  ;; don't bog down the install process with an excruciatingly long compile
+  ;; times. It will mean more CPU time at runtime, but given its asynchronosity,
+  ;; this is acceptable.
+  (setq native-comp-deferred-compilation t
+        straight-disable-native-compile t)
+
+  ;; Suppress compiler warnings, to avoid inundating users will popups. They
+  ;; don't cause breakage, so it's not worth dedicating screen estate to them.
+  (setq native-comp-async-report-warnings-errors init-file-debug
+        native-comp-warning-on-missing-source init-file-debug)
+
   ;; Don't store eln files in ~/.emacs.d/eln-cache (where they can easily be
   ;; deleted by 'doom upgrade').
   ;; REVIEW Use `startup-redirect-eln-cache' when 28 support is dropped
@@ -363,19 +381,6 @@ Otherwise, `en/disable-command' (in novice.el.gz) is hardcoded to write them to
 
 
 ;;
-;;; Bootstrap
-
-;; Ensure Doom's core libraries are visible for loading
-(add-to-list 'load-path doom-core-dir)
-
-;; ...then load *the* one
-(require 'doom-lib)
-;; ...and in batch session, load our CLI framework
-(when noninteractive
-  (require 'doom-cli-lib))
-
-
-;;
 ;;; Runtime/startup optimizations
 
 ;; A second, case-insensitive pass over `auto-mode-alist' is time wasted and
@@ -410,15 +415,6 @@ Otherwise, `en/disable-command' (in novice.el.gz) is hardcoded to write them to
 ;; font. By inhibiting this, we halve startup times, particularly when we use
 ;; fonts that are larger than the system default (which would resize the frame).
 (setq frame-inhibit-implied-resize t)
-
-;; The GC introduces annoying pauses and stuttering into our Emacs experience,
-;; so we use `gcmh' to stave off the GC while we're using Emacs, and provoke it
-;; when it's idle. However, if the idle delay is too long, we run the risk of
-;; runaway memory usage in busy sessions. If it's too low, then we may as well
-;; not be using gcmh at all.
-(setq gcmh-idle-delay 'auto  ; default is 15s
-      gcmh-auto-idle-delay-factor 10
-      gcmh-high-cons-threshold (* 16 1024 1024))  ; 16mb
 
 ;; Emacs "updates" its ui more often than it needs to, so slow it down slightly
 (setq idle-update-delay 1.0)  ; default is 0.5

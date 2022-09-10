@@ -5,18 +5,23 @@
 
 ;;;###autoload
 (defvar doom-debug-variables
-  '(async-debug
+  '(;; Doom variables
+    (doom-print-level . debug)
+
+    ;; Emacs variables
+    async-debug
     debug-on-error
     (debugger . doom-debugger)
-    (doom-print-level . debug)
     garbage-collection-messages
     gcmh-verbose
     init-file-debug
     jka-compr-verbose
     (message-log-max . 16384)
-    (warning-suppress-types . nil)
+    (native-comp-async-report-warnings-errors . silent)
+    (native-comp-warning-on-missing-source . t)
     url-debug
-    use-package-verbose)
+    use-package-verbose
+    (warning-suppress-types . nil))
   "A list of variable to toggle on `doom-debug-mode'.
 
 Each entry can be a variable symbol or a cons cell whose CAR is the variable
@@ -137,10 +142,12 @@ always access it."
     ;; debugger, which would run this handler again on subsequent calls. Taken
     ;; from `ert--run-test-debugger'.
     (cl-incf num-nonmacro-input-events)
-    ;; TODO Write backtraces to file
-    ;; TODO Write backtrace to a buffer in case recursive error interupts the
-    ;;   debugger (happens more often than it should).
-    (apply #'debug args)))
+    (if (and noninteractive (fboundp 'doom-cli-debugger))
+        (apply #'doom-cli-debugger args)
+      ;; TODO Write backtraces to file
+      ;; TODO Write backtrace to a buffer in case recursive error interupts the
+      ;;   debugger (happens more often than it should).
+      (apply #'debug args))))
 
 
 ;;
@@ -363,7 +370,7 @@ FILL-COLUMN determines the column at which lines will be broken."
                   "Doom core"
                   doom-version
                   (or (cdr (doom-call-process
-                            "git" "-C" doom-emacs-dir
+                            "git" "-C" (expand-file-name doom-emacs-dir)
                             "log" "-1" "--format=%D %h %ci"))
                       "n/a"))
           ;; NOTE This is a placeholder. Our modules will be moved to its own
@@ -373,7 +380,7 @@ FILL-COLUMN determines the column at which lines will be broken."
                   "Doom modules"
                   doom-modules-version
                   (or (cdr (doom-call-process
-                            "git" "-C" doom-modules-dir
+                            "git" "-C" (expand-file-name doom-modules-dir)
                             "log" "-1" "--format=%D %h %ci"))
                       "n/a"))))
 

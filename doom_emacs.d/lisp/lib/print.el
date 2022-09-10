@@ -115,13 +115,13 @@ Any of these classes can be called like functions from within `format!' and
 
 Accepts `ansi' and `text-properties'. `nil' means don't render styles at all.")
 
-(defvar doom-print-level (if init-file-debug 'debug 'info)
+(defvar doom-print-level 'info
   "The default level of messages to print.")
 
 (defvar doom-print-logging-level 'debug
   "The default logging level used by `doom-log'/`doom-print'.")
 
-(defvar doom-print-message-level (if noninteractive 'debug 'info)
+(defvar doom-print-message-level 'info
   "The default logging level used by `message'.")
 
 (defvar doom-print--levels
@@ -166,38 +166,6 @@ Returns OUTPUT."
       (princ output stream)
       (if newline (terpri stream))
       output)))
-
-;;;###autoload
-(progn
-  ;; Autoload whole definition, so its buried uses don't pull in this whole file
-  ;; with them at expansion time.
-  (defmacro doom-log (output &rest args)
-    "Log a message in *Messages*.
-
-Does not emit the message in the echo area. This is a macro instead of a
-function to prevent the potentially expensive execution of its arguments when
-debug mode is off."
-    `(when (or init-file-debug noninteractive)
-       (let ((inhibit-message t))
-         (message
-          "%s" (propertize
-                (doom-print--format
-                 (format
-                  "* [%s] %s"
-                  ,(let ((time `(format "%.06f" (float-time (time-subtract (current-time) before-init-time)))))
-                     (cond (noninteractive time)
-                           ((bound-and-true-p doom--current-module)
-                            (format "[:%s %s] "
-                                    (doom-keyword-name (car doom--current-module))
-                                    (cdr doom--current-module)))
-                           ((when-let (file (ignore-errors (file!)))
-                              (format "[%s] "
-                                      (file-relative-name
-                                       file (expand-file-name "../" (file-name-directory file))))))
-                           (time)))
-                  ,output)
-                 ,@args)
-                'face 'font-lock-doc-face))))))
 
 ;;;###autoload
 (defmacro format! (message &rest args)

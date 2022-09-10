@@ -1,6 +1,22 @@
-;;; doom-lib.el -*- lexical-binding: t; -*-
+;;; doom-lib.el --- Doom's core standard library -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; Code:
 
-(require 'cl-lib)
+(defmacro doom-log (output &rest args)
+  "Log a message in *Messages*.
+
+Does not emit the message in the echo area. This is a macro instead of a
+function to prevent the potentially expensive execution of its arguments when
+debug mode is off."
+  (declare (debug t))
+  `(when (or init-file-debug noninteractive)
+     (let ((inhibit-message (not init-file-debug)))
+       (message
+        "%s" (propertize
+              (format (concat "* [%.06f] " ,output)
+                      (float-time (time-subtract (current-time) before-init-time))
+                      ,@args)
+              'face 'font-lock-doc-face)))))
 
 
 ;;
@@ -198,13 +214,8 @@ TRIGGER-HOOK is a list of quoted hooks and/or sharp-quoted functions."
         (buffer-file-name)
         ((error "Cannot get this file-path"))))
 
-(defmacro letenv! (envvars &rest body)
-  "Lexically bind ENVVARS in BODY, like `let' but for `process-environment'."
-  (declare (indent 1))
-  `(let ((process-environment (copy-sequence process-environment)))
-     ,@(cl-loop for (var val) in envvars
-                collect `(setenv ,var ,val))
-     ,@body))
+;; REVIEW Should I deprecate this? The macro's name is so long...
+(defalias 'letenv! 'with-environment-variables)
 
 (defmacro letf! (bindings &rest body)
   "Temporarily rebind function, macros, and advice in BODY.
@@ -291,6 +302,14 @@ See `eval-if!' for details on this macro's purpose."
   (when (eval cond)
     (macroexp-progn body)))
 
+(defmacro eval-when-compile! (&rest body)
+  "Evaluate BODY *only* during byte-compilation.
+
+Unlike `eval-when-compile', which is equivalent to `progn' in interpreted code,
+this macro's BODY will only be evaluated during byte-compilation."
+  (declare (indent 0))
+  (when (bound-and-true-p byte-compile-current-file)
+    (ignore (eval (macroexp-progn body) t))))
 
 ;;; Closure factories
 (defmacro lambda! (arglist &rest body)
@@ -322,15 +341,15 @@ ARGLIST."
          (allow-other-keys arglist))
       ,@body)))
 
-(put 'fn! 'lookup-table
-     '((%2 . 2) (%3 . 3) (%4 . 4) (%5 . 5)
-       (%6 . 6) (%7 . 7) (%8 . 8) (%9 . 9)))
+(let ((i 1))
+  (dolist (sym '(%2 %3 %4 %5 %6 %7 %8 %9))
+    (put 'fn! sym (cl-incf i))))
 (defun doom--fn-crawl (data args)
   (cond ((symbolp data)
          (when-let
              (pos (cond ((eq data '%*) 0)
                         ((memq data '(% %1)) 1)
-                        ((cdr (assq data (get 'fn! 'lookup-table))))))
+                        ((get 'fn! data))))
            (when (and (= pos 1)
                       (aref args 1)
                       (not (eq data (aref args 1))))
@@ -782,50 +801,83 @@ testing advice (when combined with `rotate-text').
        (dolist (target (cdr targets))
          (advice-remove target #',symbol)))))
 
+(defmacro defbackport! (type symbol &rest body)
+  "Backport a function/macro/alias from later versions of Emacs."
+  (declare (indent defun) (doc-string 4))
+  (unless (fboundp (doom-unquote symbol))
+    `(,type ,symbol ,@body)))
+
 
 ;;
 ;;; Backports
 
 ;; `format-spec' wasn't autoloaded until 28.1
-(unless (fboundp 'format-spec)
-  (autoload #'format-spec "format-spec"))
+(defbackport! autoload 'format-spec "format-spec")
 
 ;; Introduced in Emacs 28.1
-(unless (fboundp 'ensure-list)
-  (defun ensure-list (object)
-    "Return OBJECT as a list.
+(defbackport! defun ensure-list (object)
+  "Return OBJECT as a list.
 If OBJECT is already a list, return OBJECT itself.  If it's
 not a list, return a one-element list containing OBJECT."
-    (declare (pure t) (side-effect-free t))
-    (if (listp object)
-        object
-      (list object))))
+  (declare (pure t) (side-effect-free t))
+  (if (listp object) object (list object)))
 
 ;; Introduced in Emacs 28.1
-(unless (fboundp 'always)
-  (defun always (&rest _arguments)
-    "Do nothing and return t.
+(defbackport! defun always (&rest _args)
+  "Do nothing and return t.
 This function accepts any number of ARGUMENTS, but ignores them.
 Also see `ignore'."
-    t))
+  t)
 
-;; Introduced in 28.1
-(unless (fboundp 'file-name-concat)
-  (defun file-name-concat (directory &rest components)
-    "Append COMPONENTS to DIRECTORY and return the resulting string.
+;; Introduced in Emacs 28.1
+(defbackport! defun file-name-concat (directory &rest components)
+  "Append COMPONENTS to DIRECTORY and return the resulting string.
 
 Elements in COMPONENTS must be a string or nil.
 DIRECTORY or the non-final elements in COMPONENTS may or may not end
 with a slash -- if they don't end with a slash, a slash will be
 inserted before contatenating."
-    (mapconcat
-     #'identity
-     (save-match-data
-       (cl-loop for str in (cons directory components)
-                when (and str (/= 0 (length str))
-                          (string-match "\\(.+\\)/?" str))
-                collect (match-string 1 str)))
-     "/")))
+  (mapconcat
+   #'identity
+   (save-match-data
+     (cl-loop for str in (cons directory components)
+              when (and str (/= 0 (length str))
+                        (string-match "\\(.+\\)/?" str))
+              collect (match-string 1 str)))
+   "/"))
+
+;; Introduced in Emacs 28.1
+(defbackport! defmacro with-environment-variables (variables &rest body)
+  "Set VARIABLES in the environment and execute BODY.
+VARIABLES is a list of variable settings of the form (VAR VALUE),
+where VAR is the name of the variable (a string) and VALUE
+is its value (also a string).
+
+The previous values will be be restored upon exit."
+  (declare (indent 1) (debug (sexp body)))
+  (unless (consp variables)
+    (error "Invalid VARIABLES: %s" variables))
+  `(let ((process-environment (copy-sequence process-environment)))
+     ,@(cl-loop for var in variables
+                collect `(setenv ,(car var) ,(cadr var)))
+     ,@body))
+
+;; Introduced in Emacs 29+
+(defbackport! defmacro with-memoization (place &rest code)
+  "Return the value of CODE and stash it in PLACE.
+If PLACE's value is non-nil, then don't bother evaluating CODE
+and return the value found in PLACE instead."
+  (declare (indent 1) (debug (gv-place body)))
+  (gv-letplace (getter setter) place
+    `(or ,getter
+         ,(macroexp-let2 nil val (macroexp-progn code)
+            `(progn
+               ,(funcall setter val)
+               ,val)))))
+
+;; Introduced in Emacs 29+ (emacs-mirror/emacs@f117b5df4dc6)
+(defbackport! defalias 'bol #'line-beginning-position)
+(defbackport! defalias 'eol #'line-end-position)
 
 (provide 'doom-lib)
 ;;; doom-lib.el ends here

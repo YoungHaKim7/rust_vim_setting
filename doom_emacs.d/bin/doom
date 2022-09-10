@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 :; # -*- mode: emacs-lisp; lexical-binding: t -*-
 :; case "$EMACS" in *term*) EMACS=emacs ;; *) EMACS="${EMACS:-emacs}" ;; esac
-:; emacs="$EMACS -q --no-site-file --no-x-resources --no-splash --batch"
+:; emacs="$EMACS -q --no-site-file --batch"
 :; tmpdir=`$emacs --eval '(princ (temporary-file-directory))' 2>/dev/null`
 :; [ -z "$tmpdir" ] && { >&2 echo "Error: failed to run Emacs with command '$EMACS'"; >&2 echo; >&2 echo "Are you sure Emacs is installed and in your \$PATH?"; exit 1; }
 :; export __DOOMPID="${__DOOMPID:-$$}"
@@ -74,44 +74,33 @@
 ;; - The user may have a noexec flag set on /tmp, so pass the exit script to
 ;;   /bin/sh rather than executing them directly.
 
-;; Ensure Doom runs out of this file's parent directory (or $EMACSDIR), where
-;; Doom is presumably installed.
-(setq user-emacs-directory
-      (if (getenv-internal "EMACSDIR")
-          (file-name-as-directory
-           (file-truename (getenv-internal "EMACSDIR")))
-        (expand-file-name
-         "../" (file-name-directory (file-truename load-file-name)))))
+;; Doom's core sets up everything we need; including `doom-*-dir' variables,
+;; universal defaults, and autoloads for doom-*-initialize functions.
+(condition-case e
+    (let ((load-prefer-newer t))
+      (load (expand-file-name
+             "../early-init" (file-name-directory (file-truename load-file-name)))
+            nil 'nomessage))
+  ;; Prevent ugly backtraces for trivial errors
+  (user-error (message "Error: %s" (cadr e))
+              (kill-emacs 2)))
 
-
-;;
-;;; Sanity checks
-
-(when (equal (user-real-uid) 0)
-  ;; If ~/.emacs.d is owned by root, assume the user genuinely wants root to be
-  ;; their primary user, otherwise complain.
-  (unless (= 0 (file-attribute-user-id (file-attributes user-emacs-directory)))
+;; UX: Abort if the user is using 'doom' as root, unless ~/.emacs.d is owned by
+;;   root, in which case we assume the user genuinely wants root to be their
+;;   primary user account for Emacs.
+(when (equal 0 (user-real-uid))
+  (unless (equal 0 (file-attribute-user-id (file-attributes doom-emacs-dir)))
     (message
      (concat
-      "Error: this script is being run as root, which is likely not what you want.\n"
+      "Error: this script was executed as root, which is likely not what you want.\n"
       "It will cause file permissions errors later, when you run Doom as another\n"
       "user.\n\n"
       "If this really *is* what you want, then change the owner of your Emacs\n"
       "config to root:\n\n"
       ;; TODO Add cmd.exe/powershell commands
-      "  chown root:root -R " (abbreviate-file-name user-emacs-directory) "\n\n"
+      "  chown root:root -R " (abbreviate-file-name doom-emacs-dir) "\n\n"
       "Aborting..."))
     (kill-emacs 2)))
-
-
-;;
-;;; Load Doom's CLI framework
-
-(require 'doom-cli (expand-file-name "lisp/doom-cli" user-emacs-directory))
-
-;; Load $DOOMDIR/init.el, to read the user's `doom!' block, and so users can
-;; customize things early, if they like.
-(load! doom-module-init-file doom-user-dir t)
 
 
 ;;
@@ -181,6 +170,7 @@ SEE ALSO:
      (emacsdir ("--emacsdir" dir) "Use Doom install living in `DIR' (e.g. ~/.emacs.d)")
      (pager    ("--pager" cmd)    "Pager command to use for large output")
      (profile  ("--profile" name) "Use profile named NAME")
+     (bench?   ("--benchmark")    "Always display the benchmark")
      &flags
      (color?   ("--color") "Whether or not to show ANSI color codes")
      &multiple
@@ -200,6 +190,8 @@ SEE ALSO:
     Warning: files loaded this way load too late to define new commands. To
     define commands, do so from `$DOOMDIR'/cli.el, `$DOOMDIR'/init.el, or a
     .doomrc file in the current project tree."
+  (when bench?
+    (setq doom-cli-benchmark-threshold 'always))
   (when color?
     (setq doom-print-backend (if (eq color? :yes) 'ansi)))
   (when pager
@@ -237,14 +229,16 @@ SEE ALSO:
 
 
 ;;
-;;; Commands
+;;; Load user config + commands
 
+;; Load $DOOMDIR/init.el, to read the user's `doom!' block and give users an
+;; opportunity to customize the CLI environment, if they like. Otherwise, they
+;; can do so in .doomrc or .doomproject.
+(load! doom-module-init-file doom-user-dir t)
+
+;; There are a lot of CLIs, and some have expensive initialization, so best we
+;; load them lazily.
 (let ((dir (doom-path doom-core-dir "cli")))
-  ;; It'd be simple to just load these files directly, but because there could
-  ;; be a lot of them (and some of them have expensive dependencies), I use
-  ;; `defautoload!' to load them lazily.
-  (add-to-list 'doom-cli-load-path dir)
-
   ;; Library for generating autoloads files for Doom modules & packages.
   (load! "autoloads" dir)
 
@@ -257,7 +251,7 @@ SEE ALSO:
 
     (defgroup! "Config Management"
       :docs "Commands for maintaining your Doom Emacs configuration."
-      (defautoload! ((sync s refresh re)))
+      (defautoload! ((sync s)))
       (defautoload! ((upgrade up)))
       (defautoload! (env))
       (defautoload! ((build b purge p rollback)) "packages")

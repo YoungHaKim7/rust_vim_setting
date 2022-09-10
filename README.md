@@ -7,3 +7,16 @@
 <hr>
 >> Github
 [Github_LunarVim](https://github.com/LunarVim/Neovim-from-scratch)
+
+<br>
+
+# 내가 나름 정리한 Vim tutorials
+
+- https://economiceco.tistory.com/12352
+
+- ❤️ Hyperpolyglot
+  Text Mode Editors: Vim, Emacs, Nano
+  https://docs.huihoo.com/programming-l...
+
+Emacs Cheat Sheet❤️(Vim과 비교 젤 보기 좋다)👍
+https://economiceco.tistory.com/14813

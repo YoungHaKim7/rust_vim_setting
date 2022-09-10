@@ -97,6 +97,16 @@ uses a straight or package.el command directly).")
       straight-vc-git-default-clone-depth '(1 single-branch))
 
 (with-eval-after-load 'straight
+  ;; HACK Doom relies on deferred compilation, which spares the user 20-50min of
+  ;;   compilation at install time, but subjects them to ~50% CPU activity when
+  ;;   starting Emacs for the first time. To complete this, straight.el needs to
+  ;;   be told not to do native-compilation, but it won't obey
+  ;;   `straight-disable-native-compile'.
+  ;;
+  ;;   It *will* obey `straight--native-comp-available', though. Trouble is:
+  ;;   it's a constant; it resets itself when straight is loaded, so it must be
+  ;;   changed afterwards.
+  (setq straight--native-comp-available nil)
   ;; `let-alist' is built into Emacs 26 and onwards
   (add-to-list 'straight-built-in-pseudo-packages 'let-alist))
 
@@ -192,6 +202,10 @@ uses a straight or package.el command directly).")
             '((org-elpa :local-repo nil)
               (melpa              :type git :host github
                                   :repo "melpa/melpa"
+                                  :build nil)
+              (nongnu-elpa        :type git
+                                  :repo "https://git.savannah.gnu.org/git/emacs/nongnu.git"
+                                  :local-repo "nongnu-elpa"
                                   :build nil)
               (gnu-elpa-mirror    :type git :host github
                                   :repo "emacs-straight/gnu-elpa-mirror"
