@@ -14,13 +14,12 @@
 
 - https://economiceco.tistory.com/12352
 
-- ❤️ Hyperpolyglot
-  Text Mode Editors: Vim, Emacs, Nano
-  https://docs.huihoo.com/programming-l...
-
 Emacs Cheat Sheet❤️(Vim과 비교 젤 보기 좋다)👍
 https://economiceco.tistory.com/14813
 
+- ❤️ Hyperpolyglot
+Text Mode Editors: Vim, Emacs, Nano
+https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors.html
 <hr>
 
 <br>
