@@ -1,0 +1,23 @@
+theme = "onedark"
+
+[editor]
+line-number = "relative"
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+# At most one section each of 'keys.normal', 'keys.insert' and 'keys.select'
+[keys.normal]
+a = "move_char_right" # Maps the 'a' key to the move_char_left command
+w = "move_line_up" # Maps the 'w' key move_line_up
+"C-S-esc" = "extend_line" # Maps Control-Shift-Escape to extend_line
+g = { a = "code_action" } # Maps `ga` to show possible code actions
+
+[keys.insert]
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
