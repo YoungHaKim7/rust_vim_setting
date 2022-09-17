@@ -1,67 +1,75 @@
 {
-//  "workbench.colorTheme": "spacedark",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.colorCustomizations": {
-    "editorError.foreground": "#000000", // squiggly line
-    "editorError.border": "#ffffff" // additional border under squiggly line
-    "editorInlayHint.background": "#e85a5a98",
-
-    // Overrides for specific kinds of inlay hints
-    "editorInlayHint.typeForeground": "#fdb6fdf0",
-    "editorInlayHint.parameterForeground": "#fdb6fdf0",
-  }
+    //  "workbench.colorTheme": "spacedark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.colorCustomizations": {
+        "editorError.foreground": "#000000", // squiggly line
+        "editorError.border": "#ffffff" // additional border under squiggly line
+        "editorInlayHint.background": "#e85a5a98",
+        // Overrides for specific kinds of inlay hints
+        "editorInlayHint.typeForeground": "#fdb6fdf0",
+        "editorInlayHint.parameterForeground": "#fdb6fdf0",
+    }
   "security.workspace.trust.untrustedFiles": "open",
-  "fontFace": "MesloLGS NF",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  
-  // auto fmt & format
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "code-runner.runInTerminal": true,
-  // Controls the font family.
+    "fontFace": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.external.osxExec": "Warp.app"
+    // auto fmt & format
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "code-runner.runInTerminal": true,
+    // Controls the font family.
     //"editor.fontFamily": "Operator Mono",
     // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-    "editor.lineHeight": 24,
+    // "editor.lineHeight": 0,
     // Enables font ligatures
     "editor.fontLigatures": true,
     // Controls if file decorations should use badges.
     "explorer.decorations.badges": false
-  "editor.fontSize": 16,
-  "editor.tabSize": 4,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": true,
-  "editor.guides.bracketPairs": "active",
-  "emmet.triggerExpansionOnTab": true,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "terminal.integrated.inheritEnv": false,
-  "files.associations": {
-    "*.html": "html"
-  },
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true,
-  },
-  "tabnine.experimentalAutoImports": true,
-  // rust-analyzer setting~
-  "rust-analyzer.inlayHints.enable": true,
-  "rust-analyzer.cargo.loadOutDirsFromCheck": true,
-  "rust-analyzer.procMacro.enable": true,
-
-  // vim setting ~~~~
-  "vim.leader":"\\",
-  "vim.useSystemClipboard": true,
-  "editor.lineNumbers": "relative",
-  "vim.easymotion": true,
-  "vim.surround": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j","k"],
-      "after":["<Esc>"]
-    }
-  ],
+  "editor.fontSize": 17,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active""editor.detectIndentation": true,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.inheritEnv": false,
+    "files.associations": {
+        "*.html": "html"
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+    },
+    "tabnine.experimentalAutoImports": true,
+    // rust-analyzer setting~
+    "rust-analyzer.inlayHints.enable": true,
+    "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+    "rust-analyzer.procMacro.enable": true,
+    // zig languages setting~
+    "zls.warn_style": true,
+    "zls.enable_semantic_tokens": false,
+    "zls.operator_completions": true,
+    "zls.include_at_in_builtins": false,
+    // vim setting ~~~~
+    "vim.leader": "\\",
+    "vim.useSystemClipboard": true,
+    "editor.lineNumbers": "relative",
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
 }
