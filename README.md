@@ -54,6 +54,15 @@ macos
 Command + Shift + C
 ```
 
+setting.JSON
+
+```
+{
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.external.osxExec": "Warp.app"
+}
+```
+
 <br>
 
 # Lapce Editor
