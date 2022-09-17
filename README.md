@@ -53,3 +53,11 @@ macos
 
 Command + Shift + C
 ```
+
+<br>
+
+# Lapce Editor
+
+- 한글러스트Rust강의*038_lapce*⭐️Rust_traits기초 #rustlang
+
+https://youtu.be/Gpe-zGS5W0I
