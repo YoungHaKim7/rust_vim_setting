@@ -32,7 +32,8 @@ G = "goto_file_end"
 V = ["select_mode", "extend_to_line_bounds"]
 C = ["collapse_selection", "extend_to_line_end", "change_selection"] # Requires https://github.com/helix-editor/helix/issues/2051#issuecomment-1140358950
 D = ["extend_to_line_end", "delete_selection"]
-S = "surround_add" # Would be nice to be able to do something after this but it isn't chainable
+S = ["goto_first_nonwhitespace", "collapse_selection", "extend_to_line_end", "change_selection"] # Would be nice to be able to do something after this but it isn't chainable
+s = ["delete_selection", "insert_mode"]
 
 # Extend and select commands that expect a manual input can't be chained
 # I've kept d[X] commands here because it's better to at least have the stuff you want to delete
@@ -72,7 +73,7 @@ S = "surround_add" # Basically 99% of what I use vim-surround for
 # Visual-mode specific muscle memory
 i = "select_textobject_inner"
 a = "select_textobject_around"
-x = "delete_selection"
+# x = "delete_selection"
 
 # Some extra binds to allow us to insert/append in select mode because it's nice with multiple cursors
 tab = ["insert_mode", "collapse_selection"] # tab is read by most terminal editors as "C-i"
