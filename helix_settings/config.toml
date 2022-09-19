@@ -43,7 +43,7 @@ s = ["delete_selection", "insert_mode"]
 d = { d = ["extend_to_line_bounds", "delete_selection"], t = ["extend_till_char"], s = ["surround_delete"], i = ["select_textobject_inner"], a = ["select_textobject_around"] }
 
 # Clipboards over registers ye ye
-x = "delete_selection"
+x = ["yank_main_selection_to_clipboard", "normal_mode", "flip_selections", "collapse_selection", "delete_selection"]
 p = "paste_clipboard_after"
 P = "paste_clipboard_before"
 # Would be nice to add ya and yi, but the surround commands can't be chained
