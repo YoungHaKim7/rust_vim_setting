@@ -28,6 +28,32 @@ https://helix-editor.com/news/release-22-08-highlights/
 ```
 :set cursorline true   " 한줄 내가 코드 쓰는거 줄 강조 됨
 :set color-modes true      "insert, normal, sellect mode  색깔로 이쁘게
+
+
+
 :config-open  " 설정파일 열기
 :config-reload " 설정파일 reload 바로 적용하기
+
+:o     " 파일 열기  강제로 열어서 파일 만들기 가능
+:w!     " 강제 저장
+:sh    " cargo run 같은거 가능
+:sh cargo run   " shell 에서 명령어 실행
+:vs   " 창 좌우로 나누기
+:hs   " 창 상하로 나누기
+:wq   " 저장하고 나가기
+:change-current-directory   " 내가 작업하는 코드 디렉토리 바꿈
+
+
+// Normal mode 에서 주로 쓰는거
+miw : 커서위 단어 선택하기
+* / 하면 내가 선택한 단어 검색 가능
+n  다음     N  뒤로 가기
+
+f 누르면 오른쪽으로 검색
+t 누르면  단어 바로 앞에서 멈춤
+
+x 커서 위 하나 삭제
+s 커서 위 하나 삭제하면서 insert mode 진입
+S 노멀모드에서 하면 내가 위치한 줄 전체 지우고 맨 처음으로 이동
+
 ```
