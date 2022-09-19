@@ -20,6 +20,8 @@ a = ["append_mode", "collapse_selection"]
 # w = "move_line_up" # Maps the 'w' key move_line_up
 "C-S-esc" = "extend_line" # Maps Control-Shift-Escape to extend_line
 g = { a = "code_action" } # Maps `ga` to show possible code actions
+C-a = "increment"
+C-x = "decrement"
 
 # Muscle memory
 "{" = ["goto_prev_paragraph", "collapse_selection"]
@@ -77,7 +79,7 @@ a = "select_textobject_around"
 
 # Some extra binds to allow us to insert/append in select mode because it's nice with multiple cursors
 tab = ["insert_mode", "collapse_selection"] # tab is read by most terminal editors as "C-i"
-C-a = ["append_mode", "collapse_selection"]
+# C-a = ["append_mode", "collapse_selection"]
 
 # Make selecting lines in visual mode behave sensibly
 k = ["extend_line_up", "extend_to_line_bounds"]
