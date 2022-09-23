@@ -1,4 +1,4 @@
-theme = "ayu_mirage"
+theme = "solarized_dark"
 
 [editor]
 line-number = "relative"
