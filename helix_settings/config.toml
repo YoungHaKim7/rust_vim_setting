@@ -25,7 +25,6 @@ hidden = false
 [keys.normal]
 a = ["append_mode", "collapse_selection"]
 # w = "move_line_up" # Maps the 'w' key move_line_up
-"C-S-esc" = "extend_line" # Maps Control-Shift-Escape to extend_line
 g = { a = "code_action" } # Maps `ga` to show possible code actions
 C-a = "increment"
 C-x = "decrement"
@@ -65,7 +64,7 @@ b = ["move_prev_word_start", "collapse_selection"]
 
 
 [keys.insert]
-j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+j = { k = "normal_mode", e = "extend_line" } # Maps `jk` to exit insert mode
 
 [keys.select]
 # Muscle memory
