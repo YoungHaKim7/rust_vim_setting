@@ -23,6 +23,26 @@ https://helix-editor.com/news/release-22-08-highlights/
 
 <hr>
 
+<br>
+
+# Helix Q&A
+
+https://github.com/helix-editor/helix/wiki/FAQ
+
+<br>
+
+# Helix LSP Debug
+
+https://github.com/llvm/llvm-project/tree/main/lldb/tools/lldb-vscode#Installation-Visual-Studio-Code
+
+<br>
+
+# Helix Binary for debug adapter(Rust)
+
+/Users/users/.cargo/bin/rust-lldb
+
+<br>
+
 # Helix 주로 쓰는 command
 
 ```
