@@ -6,6 +6,13 @@ mouse = false
 color-modes = true
 cursorline = true
 
+[editor.indent-guides]
+render = true
+character = "՞"
+
+[editor.lsp]
+display-messages = true
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
