@@ -64,7 +64,7 @@ b = ["move_prev_word_start", "collapse_selection"]
 
 
 [keys.insert]
-j = { k = "normal_mode", e = "extend_line" } # Maps `jk` to exit insert mode
+j = { k = "normal_mode", space = "extend_line" } # Maps `jk` to exit insert mode
 
 [keys.select]
 # Muscle memory
