@@ -28,7 +28,7 @@ a = ["append_mode", "collapse_selection"]
 g = { a = "code_action" } # Maps `ga` to show possible code actions
 C-a = "increment"
 C-x = "decrement"
-"backspace" = { c = ":sh cargo run", t =":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open"}  
+"backspace" = { c = ":sh cargo run", t =":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -Wall -Wextra -ggdb -o main main.c -lm", d =":sh rm -rf main main.dSYM"}  
 
 # Muscle memory
 "{" = ["goto_prev_paragraph", "collapse_selection"]
