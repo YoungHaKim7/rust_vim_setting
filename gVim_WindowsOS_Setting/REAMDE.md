@@ -10,6 +10,14 @@ https://github.com/junegunn/vim-plug
 choco install universal-ctags
 ```
 
+- Chocolatey 설치 방법
+
+https://community.chocolatey.org/packages?q=universal-ctags
+
+- Universal Ctags
+
+https://ctags.io/
+
 <br>
 
 # 🌵 Viewer & Finder for LSP symbols and tags
