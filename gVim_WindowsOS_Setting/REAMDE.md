@@ -34,6 +34,9 @@ https://github.com/neoclide/coc.nvim
 <br>
 
 
+<hr>
+
+# Haskell
 
 # chocolatey
 If you are using chocolatey to manage your installations in windows, you can install haskell-language-server with
@@ -41,3 +44,9 @@ If you are using chocolatey to manage your installations in windows, you can ins
 ```
 $ choco install haskell-language-server
 ```
+
+# haskell-language-server
+
+https://haskell-language-server.readthedocs.io/en/latest/installation.html
+
+<br>
