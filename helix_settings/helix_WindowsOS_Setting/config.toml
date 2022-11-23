@@ -28,7 +28,7 @@ a = ["append_mode", "collapse_selection"]
 g = { a = "code_action" }                                                                                                                                                                                                                                                                                                                                                                                # Maps `ga` to show possible code actions
 C-a = "increment"
 C-x = "decrement"
-"backspace" = { c = ":sh cargo run", t = ":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -Wall -Wextra -ggdb -o main main.c -lm", d = ":sh rm -rf main main.dSYM", n = ":sh echo $null >> .gitignore", k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main", a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c", x = ":sh chmod +x build.sh" }
+"backspace" = { c = ":sh cargo run", t = ":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -Wall -Wextra -ggdb -o main main.c -lm", d = ":sh rm -rf main main.dSYM", n = ":sh echo $null >>.gitignore", k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main", a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c", x = ":sh chmod +x build.sh" }
 
 # Muscle memory
 "{" = ["goto_prev_paragraph", "collapse_selection"]
