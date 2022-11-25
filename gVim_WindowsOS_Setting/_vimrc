@@ -124,6 +124,19 @@ let g:vista#renderer#icons = {
 \  }
 " Vista setting end~
 
+" ada_language_server
+if executable('ada_language_server')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'ada_language_server',
+        \ 'cmd': ['ada_language_server'],
+        \ 'allowlist': ['ada'],
+        \ 'workspace_config': {'ada': {
+        \     'projectFile': "project.gpr",
+        \     'scenarioVariables': {"ARCH": "x86_64-pc-linux-gnu"}}},
+        \ })
+endif
+" end ~~~~
+
 " esc setting
 inoremap jk <Esc>
 
