@@ -25,7 +25,7 @@ hidden = false
 [keys.normal]
 a = ["append_mode", "collapse_selection"]
 # w = "move_line_up" # Maps the 'w' key move_line_up
-g = { a = "code_action" }                                                                                                                                                                                                                                                                                                                                                                                # Maps `ga` to show possible code actions
+g = { a = "code_action" }                                                                                                                                                                                                                                                                                                                                                                                       # Maps `ga` to show possible code actions
 C-a = "increment"
 C-x = "decrement"
 "backspace" = { c = ":sh cargo run", t = ":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -Wall -Wextra -ggdb -o main main.c -lm", d = ":sh rm -rf main main.dSYM", n = ":sh echo $null >>.gitignore", k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main", a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c", x = ":sh chmod +x build.sh" }
@@ -153,4 +153,4 @@ p = "replace_selections_with_clipboard" # No life without this
 P = "paste_clipboard_before"
 
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
-e
+esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
