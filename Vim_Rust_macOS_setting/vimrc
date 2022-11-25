@@ -45,11 +45,10 @@ Plugin 'autozimu/LanguageClient-neovim', {
 call vundle#end()
 
 " rust InlayHint color setting
-hi CocInlayHint guibg=Red guifg=Blue ctermbg=Red ctermfg=Blue
-" Others hint
-hi default CocRustChainingHint guibg=Red guifg=Blue ctermbg=0 ctermfg=18
+hi CocInlayHint ctermbg=125
 
 
+" basic settings~
 set t_Co=256
 
 " for jellybeans
