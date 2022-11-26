@@ -53,6 +53,23 @@ https://ctags.io/
 
 <br>
 
+# Coc-Config JSON 세팅하는 법 
+
+https://github.com/neoclide/coc-json
+
+```
+// VScode 의 Setting.JSON 와 비슷하다.
+:CocConfig
+
+
+// 내 프로젝트 폴더에만 적용되는 세팅
+:CocLocalConfig
+
+```
+
+
+<br>
+
 # 🌵 Viewer & Finder for LSP symbols and tags
 
 https://github.com/liuchengxu/vista.vim
