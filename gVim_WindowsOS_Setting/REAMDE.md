@@ -10,7 +10,34 @@ https://github.com/junegunn/vim-plug
 
 <br>
 
+# YouCompleteMe 먼저 설치 필요 & Visual Studio 설치해야 RustAnalyzer 돌아감
+
+1. YouCompleteMe
+
+https://github.com/ycm-core/YouCompleteMe
+
+<br>
+
+2. Cmake 설치해줘야 함. 그냥 Visual Studio설치하면됨.
+
+<br>
+
+<hr>
+
+
+
+
 # Vista 하기 위해 먼저 설치 해 주기(Windows OS기준)
+
+<br>
+
+```
+choco install rust-analyzer --pre 
+```
+
+https://community.chocolatey.org/packages/rust-analyzer
+
+<br>
 
 ```
 choco install universal-ctags
