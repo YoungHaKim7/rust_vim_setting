@@ -8,7 +8,7 @@ cursorline = true
 
 [editor.indent-guides]
 render = true
-character = "ء"
+character = "¦"
 
 [editor.lsp]
 display-messages = true
