@@ -7,6 +7,17 @@ a global executable or a path to
 an executable
 ]]
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
+-- Setting
+local init_custom_options = function ()
+  local custom_options = {
+    relativenumber = true, -- Set relative numberd lines
+  }
+
+  for k, v in pairs(custom_options) do
+    vim.opt[k] = v
+  end
+end
+init_custom_options()
 
 -- general
 lvim.log.level = "warn"
@@ -179,6 +190,13 @@ lvim.plugins = {
      },
 }
 
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "zsh",
+--   callback = function()
+--     -- let treesitter use bash highlight for zsh files as well
+--     require("nvim-treesitter.highlight").attach(0, "bash")
+--   end,
+-- })
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.json", "*.jsonc" },
@@ -192,3 +210,4 @@ lvim.plugins = {
 --     require("nvim-treesitter.highlight").attach(0, "bash")
 --   end,
 -- })
+--
