@@ -55,7 +55,6 @@ Plug 'blueyed/vim-diminactive' "to dim inactive windows
 Plug 'talek/obvious-resize' "Obvious Resize_Windows
  
 Plug 'junegunn/vim-easy-align' "Vim alignment plugin.
-Plug 'Yggdroot/indentLine' "visually displaying indent levels in Vim
 Plug 'townk/vim-autoclose'  " automatic closing of parentheses
 Plug 'luochen1990/rainbow' "colorful brackets.
  
