@@ -1,3 +1,12 @@
+# How I Setup Neovim On My Mac To Make It Amazing - Complete Guide
+
+https://youtu.be/vdn_pKJUda8
+
+
+<br>
+
+<hr>
+
 # Neovim - Rust IDE | LSP, Formatting, Debugging, Clippy, Auto-completion etc.. | chris@machine
 
 https://youtu.be/gfQ6Ae4lvL0
