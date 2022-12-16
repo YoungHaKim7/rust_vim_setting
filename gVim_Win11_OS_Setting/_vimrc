@@ -42,26 +42,31 @@ endfunction
 " set the runtime path to include PlugIn and initialize
 set rtp+=~/vimfiles/autoload/plug.vim
 
-call plug#begin()
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+if has('python3')
+endif
 
+call plug#begin('~/vimfiles/plugged')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nanotech/jellybeans.vim' " vim thema skin
- 
+
+Plug 'ryanoasis/vim-devicons' "Pretty Icons
 Plug 'scrooloose/nerdtree' "file system explorer
-Plug 'ryanoasis/vim-devicons' "Font
+
 Plug 'vim-airline/vim-airline' " vim status bar
 Plug 'vim-airline/vim-airline-themes' " airline_themes
 Plug 'blueyed/vim-diminactive' "to dim inactive windows
 Plug 'talek/obvious-resize' "Obvious Resize_Windows
- 
+
 Plug 'junegunn/vim-easy-align' "Vim alignment plugin.
+Plug 'nathanaelkane/vim-indent-guides' "visually displaying indent levels in Vim
+Plug 'Yggdroot/indentLine' " Visually displaying indent
 Plug 'townk/vim-autoclose'  " automatic closing of parentheses
 Plug 'luochen1990/rainbow' "colorful brackets.
- 
- " Plug 'matchparenpp'         " check parentheses.
-Plug 'Shougo/vimproc.vim', { 'do': 'make' } "
- 
- 
+
+" Plug 'matchparenpp'         " check parentheses.
+Plug 'ycm-core/YouCompleteMe' "automatic_completion
+
 Plug 'rust-lang/rust.vim' "rust
 Plug 'fannheyward/coc-rust-analyzer' "rust_analyzer
 Plug 'mattn/vim-lsp-settings' "rust_analyzer__lsp
@@ -70,10 +75,12 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
-Plug 'Yggdroot/indentLine' "display the indention
- 
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'Shougo/vimproc.vim', {'do' : 'make'} "debug
+Plug 'idanarye/vim-vebugger' "debug_
 
+" C# Setting~
+Plug 'OmniSharp/omnisharp-vim' "C#
+Plug 'dense-analysis/ale' "C#
 
 call plug#end()
 
@@ -91,13 +98,12 @@ call plug#end()
 let g:ycm_key_list_select_completion = ['<C-n>']
 let g:ycm_key_list_previous_completion=['<C-p>']
 
-let g:ycm_server_python_interpreter = 'C:\Users\user\AppData\Local\Microsoft\WindowsApps\python3.exe'
+let g:ycm_server_python_interpreter = '/usr/bin/python3'
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_complete_in_strings = 1
 let g:ycm_complete_in_comments = 1
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_filetype_blacklist = {}
-
 
 " Vista Setting~~
 " How each level is indented and what to prepend.
@@ -140,38 +146,39 @@ let g:vista#renderer#icons = {
 \  }
 " Vista setting end~
 
-" ada_language_server
-if executable('ada_language_server')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'ada_language_server',
-        \ 'cmd': ['ada_language_server'],
-        \ 'allowlist': ['ada'],
-        \ 'workspace_config': {'ada': {
-        \     'projectFile': "project.gpr",
-        \     'scenarioVariables': {"ARCH": "x86_64-pc-linux-gnu"}}},
-        \ })
-endif
-" end ~~~~
+""  Rust analyzer inlayhint 
+"let g:lsp_inlay_hints_enabled = 1
+"let g:lsp_inlay_hints_mode = {
+"\  'normal': ['always'],
+"\}
 "
-"
+"autocmd User lsp_setup call lsp#register_server({
+"\   'name': 'gopls',
+"\   'cmd': ['gopls'],
+"\   'allowlist': ['go'],
+"\   'initialization_options': {
+"\     'ui.inlayhint.hints': {
+"\         'assignVariableTypes': v:false,
+"\         'compositeLiteralFields': v:false,
+"\         'compositeLiteralTypes': v:false,
+"\         'constantValues': v:false,
+"\         'functionTypeParameters': v:true,
+"\         'parameterNames': v:true,
+"\         'rangeVariableTypes': v:false,
+"\     },
+"\   }
+"\ })
+"" ~ End ~
 
-" for indent guide
-let g:indentguides_spacechar = '┆'
-let g:indentguides_tabchar = '|'
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level= 2
-let g:indent_guides_guide_size= 1
+" Vista <F8>
+nmap <F8> :Vista<CR>
 
-" for vim-airline
-let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
-let g:airline_theme='hybrid'
-set laststatus=2 " turn on bottom bar
-let mapleader = ","
-nnoremap <leader>q :bp<CR>
-nnoremap <leader>w :bn<CR>
-
-" for blueyed/vim-diminactive
-let g:diminactive_enable_focus = 1
+"" for indent guide
+"let g:indentguides_spacechar = '┆'
+"let g:indentguides_tabchar = '|'
+"let g:indent_guides_enable_on_vim_startup = 1
+"let g:indent_guides_start_level= 2
+"let g:indent_guides_guide_size= 1
 
 " RainBow
 let g:rainbow_active = 1 
@@ -233,52 +240,85 @@ augroup lsp_install
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
+" end~~~
 
-"vim-lsp_Debugging
-let g:lsp_log_verbose = 1
-let g:lsp_log_file = expand('~/vim-lsp.log')
+" Ada_languge_sever(LSP)
+if executable('ada_language_server')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'ada_language_server',
+        \ 'cmd': ['ada_language_server'],
+        \ 'allowlist': ['ada'],
+        \ 'workspace_config': {'ada': {
+        \     'projectFile': "project.gpr",
+        \     'scenarioVariables': {"ARCH": "x86_64-pc-linux-gnu"}}},
+        \ })
+endif
 
-" for asyncomplete.vim log
-let g:asyncomplete_log_file = expand('~/asyncomplete.log')
+" C# Setting __ Omnisharp_commands Start~~
+" Don't autoselect first omnicomplete option, show options even if there is only
+" one (so the preview documentation is accessible). Remove 'preview', 'popup'
+" and 'popuphidden' if you don't want to see any documentation whatsoever.
+" Note that neovim does not support `popuphidden` or `popup` yet:
+" https://github.com/neovim/neovim/issues/10996
+if has('patch-8.1.1880')
+  set completeopt=longest,menuone,popuphidden
+  " Highlight the completion documentation popup background/foreground the same as
+  " the completion menu itself, for better readability with highlighted
+  " documentation.
+  set completepopup=highlight:Pmenu,border:off
+else
+  set completeopt=longest,menuone,preview
+  " Set desired preview window height for viewing documentation.
+  set previewheight=5
+endif
 
-"asyncomplete.vim
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+" Tell ALE to use OmniSharp for linting C# files, and no other linters.
+let g:ale_linters = { 'cs': ['OmniSharp'] }
 
-inoremap <expr> <cr> pumvisible() ? asyncomplete#close_popup() . "\<cr>" : "\<cr>"
+augroup omnisharp_commands
+  autocmd!
 
-imap <c-space> <Plug>(asyncomplete_force_refresh)
-" For Vim 8 (<c-@> corresponds to <c-space>):
-" imap <c-@> <Plug>(asyncomplete_force_refresh)
+  " Show type information automatically when the cursor stops moving.
+  " Note that the type is echoed to the Vim command line, and will overwrite
+  " any other messages in this space including e.g. ALE linting messages.
+  autocmd CursorHold *.cs OmniSharpTypeLookup
 
-let g:asyncomplete_auto_popup = 0
+  " The following commands are contextual, based on the cursor position.
+  autocmd FileType cs nmap <silent> <buffer> gd <Plug>(omnisharp_go_to_definition)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osfu <Plug>(omnisharp_find_usages)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osfi <Plug>(omnisharp_find_implementations)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>ospd <Plug>(omnisharp_preview_definition)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>ospi <Plug>(omnisharp_preview_implementations)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>ost <Plug>(omnisharp_type_lookup)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osd <Plug>(omnisharp_documentation)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osfs <Plug>(omnisharp_find_symbol)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osfx <Plug>(omnisharp_fix_usings)
+  autocmd FileType cs nmap <silent> <buffer> <C-\> <Plug>(omnisharp_signature_help)
+  autocmd FileType cs imap <silent> <buffer> <C-\> <Plug>(omnisharp_signature_help)
 
+  " Navigate up and down by method/property/field
+  autocmd FileType cs nmap <silent> <buffer> [[ <Plug>(omnisharp_navigate_up)
+  autocmd FileType cs nmap <silent> <buffer> ]] <Plug>(omnisharp_navigate_down)
+  " Find all code errors/warnings for the current solution and populate the quickfix window
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osgcc <Plug>(omnisharp_global_code_check)
+  " Contextual code actions (uses fzf, vim-clap, CtrlP or unite.vim selector when available)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osca <Plug>(omnisharp_code_actions)
+  autocmd FileType cs xmap <silent> <buffer> <Leader>osca <Plug>(omnisharp_code_actions)
+  " Repeat the last code action performed (does not use a selector)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>os. <Plug>(omnisharp_code_action_repeat)
+  autocmd FileType cs xmap <silent> <buffer> <Leader>os. <Plug>(omnisharp_code_action_repeat)
 
+  autocmd FileType cs nmap <silent> <buffer> <Leader>os= <Plug>(omnisharp_code_format)
 
-" allow modifying the completeopt variable, or it will
-" be overridden all the time
-let g:asyncomplete_auto_completeopt = 0
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osnm <Plug>(omnisharp_rename)
 
-autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-
-" rust analyzer end~~~~~~
-
-" lines to save text folding
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
-set foldmethod=manual
-
-" clojure
-nmap cqp :call VSCodeNotify('calva.jackIn')<CR>
-nmap cqq :call VSCodeNotify('calva.disconnect')<CR>
-nmap cpr :call VSCodeNotify('calva.loadFile')<CR>
-nmap cpR :call VSCodeNotify('calva.loadNamespace')<CR>
-nmap cpp :call VSCodeNotify('calva.evaluateSelection')<CR>
-nmap cqc :call VSCodeNotify('calva.evalCurrentFormInREPLWindow')<CR>
-
-
-let g:airline_powerline_fonts = 1
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osre <Plug>(omnisharp_restart_server)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>osst <Plug>(omnisharp_start_server)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>ossp <Plug>(omnisharp_stop_server)
+augroup END
+" Enable snippet completion, using the ultisnips plugin
+" let g:OmniSharp_want_snippet=1
+"   End ~~~~~~ OmniSharp
 
 " esc setting
 inoremap jk <Esc>
@@ -295,7 +335,7 @@ set softtabstop=4
 set expandtab
 
 " font&size setting
-set guifont=MesloLGS_NF:h14
+set guifont=MesloLGS_NF:h16
 
 set encoding=utf-8
 
@@ -303,6 +343,6 @@ set encoding=utf-8
 let $LANG = 'en'
 
 " backup folder setting
-set undodir=~/.vimdata/undo//
-set backupdir=~/.vimdata/backup//
-set directory=~/.vimdata/swap//
+set undodir=~/vimdata/undo//
+set backupdir=~/vimdata/backup//
+set directory=~/vimdata/swap//
