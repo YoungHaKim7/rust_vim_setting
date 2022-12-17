@@ -78,6 +78,13 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} "debug
 Plug 'idanarye/vim-vebugger' "debug_
 
+Plug 'kamykn/spelunker.vim' "smarter way to correct spelling mistakes
+
+Plug 'tpope/vim-surround'
+
+" C
+Plug 'justmao945/vim-clang'
+
 " C# Setting~
 Plug 'OmniSharp/omnisharp-vim' "C#
 Plug 'dense-analysis/ale' "C#
