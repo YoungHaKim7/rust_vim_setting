@@ -5,3 +5,20 @@ AstroNvim is an aesthetic and feature-rich neovim config that is extensible and 
 https://github.com/AstroNvim/AstroNvim
 
 https://astronvim.github.io/
+
+
+<br>
+
+<hr>
+
+# benawad/init.vim
+
+https://gist.github.com/benawad/b768f5a5bbd92c8baabd363b7e79786f
+
+<br>
+
+<hr>
+
+# How to Configure Vim like VSCode
+
+https://youtu.be/gnupOrSEikQ
