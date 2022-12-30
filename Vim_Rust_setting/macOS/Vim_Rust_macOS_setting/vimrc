@@ -309,10 +309,10 @@ highlight Function         ctermfg=1    ctermbg=none    cterm=none
 " highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
 
 " Make adjusing split sizes a bit more friendly
-noremap <silent> <C-H> :vertical resize +3<CR>
-noremap <silent> <C-L> :vertical resize -3<CR>
-noremap <silent> <C-K> :resize +3<CR>
-noremap <silent> <C-J> :resize -3<CR>
+noremap <silent> <C-L> :vertical resize +3<CR>
+noremap <silent> <C-H> :vertical resize -3<CR>
+noremap <silent> <C-J> :resize +3<CR>
+noremap <silent> <C-K> :resize -3<CR>
 
 
 "esc setting
