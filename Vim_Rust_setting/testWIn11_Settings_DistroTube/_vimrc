@@ -72,6 +72,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'suan/vim-instant-markdown', {'rtp': 'after'} " Markdown Preview
     Plug 'frazrepo/vim-rainbow'
+
+" {{ thema }}
+    Plug 'nanotech/jellybeans.vim' " vim thema skin
+
 "{{ File management }}
     Plug 'vifm/vifm.vim'                               " Vifm
     Plug 'scrooloose/nerdtree'                         " Nerdtree
@@ -132,6 +136,11 @@ set t_Co=256                    " Set if term supports 256 colors.
 set number relativenumber       " Display line numbers
 syntax enable
 let g:rehash256 = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => colorthema
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme jellybeans
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Remap Keys
