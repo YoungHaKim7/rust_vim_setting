@@ -223,6 +223,10 @@ local config = {
 
             -- You can also add new plugins here as well:
             -- Add plugins, the packer syntax without the "use"
+            {
+            "folke/trouble.nvim",
+            cmd = "TroubleToggle",
+            },
             {"neovim/nvim-lspconfig"},
             {"simrat39/rust-tools.nvim"},
 
