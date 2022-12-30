@@ -1,3 +1,7 @@
+# Rust-tools.nvim
+
+https://github.com/simrat39/rust-tools.nvim
+
 #  Install Neovim Nightly On A Mac
 
 https://www.alanwsmith.com/posts/install-neovim-nightly-on-a-mac--20eo3oms2yav
