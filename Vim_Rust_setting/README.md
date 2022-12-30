@@ -47,6 +47,37 @@
 
 # :CocCommand
 
+
+
+# CocCommand 다음 FUZZY> rust-analyer.viewHir View Hir 입력
+
+- Rust code
+
+```rust
+pub static FOO: () = unsafe {
+    let illegal_ptr2int: usize = std::mem::transmute(&());
+    let _copy = illegal_ptr2int;
+};
+fn main() {
+    println!("Hello, world!");
+    println!();
+}
+
 ```
 
+<br>
+
+<hr>
+
+- Hir 보기
+
+
+```
+
+static FOO = unsafe {
+    let illegal_ptr2int: usize = std::mem::transmute(
+        &(),
+    );
+    let _copy = illegal_ptr2int;
+};
 ```
