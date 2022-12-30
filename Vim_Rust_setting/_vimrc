@@ -378,6 +378,12 @@ highlight Function         ctermfg=1    ctermbg=none    cterm=none
 " highlight htmlEndTag       ctermfg=114     ctermbg=none    cterm=none
 " highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
 
+" Make adjusing split sizes a bit more friendly
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
+noremap <silent> <C-Up> :resize +3<CR>
+noremap <silent> <C-Down> :resize -3<CR>
+
 " esc setting
 inoremap jk <Esc>
 
