@@ -1,6 +1,8 @@
 
 call plug#begin('~/.vim/plugged') " 플러그인 시작
 
+call plug#begin('~/.vim/plugged') " 플러그인 시작
+
 " Conquer Of Completion 자동완성 플러그인
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -10,6 +12,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " NERDTree 코드 뷰어 창
 Plug 'preservim/nerdtree'
+
+" Icon 이쁘게 
+Plug 'ryanoasis/vim-devicons' "Pretty Icons
 
 " 컬러스킴(색상표) jellybeans, gruvbox
 Plug 'nanotech/jellybeans.vim'
