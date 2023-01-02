@@ -111,7 +111,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /home/young/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/young/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/young/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Rust PATH
 PATH=$PATH:/home/young/.cargo/bin

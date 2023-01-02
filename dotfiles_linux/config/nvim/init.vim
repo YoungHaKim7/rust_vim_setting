@@ -71,18 +71,59 @@ Plug 'justmao945/vim-clang'
 
 call plug#end()
 
+"  ~~~~~~~~~~~~~~~~~~~~~~
 "  YouCompleteMe Setting
-let g:ycm_key_list_select_completion = ['<C-n>']
-let g:ycm_key_list_previous_completion=['<C-p>']
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" let g:ycm_key_list_select_completion = ['<C-n>']
+" let g:ycm_key_list_previous_completion=['<C-p>']
 
 let g:ycm_server_python_interpreter = '/usr/bin/python3'
-let g:ycm_collect_identifiers_from_comments_and_strings = 1
-let g:ycm_complete_in_strings = 1
-let g:ycm_complete_in_comments = 1
-let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_filetype_blacklist = {}
+" let g:ycm_collect_identifiers_from_comments_and_strings = 1
+" let g:ycm_complete_in_strings = 1
+" let g:ycm_complete_in_comments = 1
+" let g:ycm_min_num_of_chars_for_completion = 1
+" let g:ycm_filetype_blacklist = {}
+set signcolumn=yes
 
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" asyncomplete.vim
+"  ~~~~~~~~~~~~~~~~~~~~~~
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+inoremap <expr> <cr> pumvisible() ? asyncomplete#close_popup() . "\<cr>" : "\<cr>"
+
+let g:asyncomplete_auto_popup = 0
+
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ asyncomplete#force_refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<cr>"
+" Or use `complete_info` if your vim support it, like:
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" asyncomplete.vim end~~~
+"  ~~~~~~~~~~~~~~~~~~~~~~
+
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
 " Vista Setting~~
+"  ~~~~~~~~~~~~~~~~~~~~~~
 " How each level is indented and what to prepend.
 " This could make the display more compact or more spacious.
 " e.g., more compact: ["▸ ", ""]
@@ -145,7 +186,9 @@ let g:vista#renderer#icons = {
 "\     },
 "\   }
 "\ })
+"  ~~~~~~~~~~~~~~~~~~~~~~
 "" ~ End ~
+"  ~~~~~~~~~~~~~~~~~~~~~~
 
 " Vista <F8>
 nmap <F8> :Vista<CR>
@@ -159,7 +202,9 @@ let g:rainbow_active = 1
 let g:rustfmt_autosave = 1
 
 
+"  ~~~~~~~~~~~~~~~~~~~~~~
 " rust analyzer start~~~~~~:w
+"  ~~~~~~~~~~~~~~~~~~~~~~
 let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
 \ }
@@ -201,35 +246,9 @@ augroup lsp_install
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+"  ~~~~~~~~~~~~~~~~~~~~~~
+"  ~~~~~~~~~~~~~~~~~~~~~~
 
-
-" asyncomplete.vim
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
-
-
-function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-inoremap <silent><expr> <TAB>
-  \ pumvisible() ? "\<C-n>" :
-  \ <SID>check_back_space() ? "\<TAB>" :
-  \ asyncomplete#force_refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-
-autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
-" Coc only does snippet and additional edit on confirm.
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-" Or use `complete_info` if your vim support it, like:
-" inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-"
-" end~~~
 
 
 """"""""""""""""""""
@@ -366,7 +385,9 @@ noremap <silent> <C-Up> :resize -3<CR>
 
 " """""""""""""""""""
 
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " Leader Key Setting & coc-actions
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 let mapleader = "," 
 " Remap for do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
@@ -379,7 +400,7 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
-Applying codeAction to the selected region.
+" Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
@@ -390,8 +411,7 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
 
 " Map function and class text objects
-" NOTE: Requires 'textDocument.documentSymbol' support from the language
-server.
+" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
 xmap if <Plug>(coc-funcobj-i)
 omap if <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)
@@ -420,10 +440,12 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-nmap <silent> gs :sp<CR><Plug>(coc-definition)
-nmap <silent> gS :vsp<CR><Plug>(coc-definition)
-nmap <silent> <Leader>b :Buffers<CR>
+" nmap <silent> gs :sp<CR><Plug>(coc-definition)
+" nmap <silent> gS :vsp<CR><Plug>(coc-definition)
+" nmap <silent> <Leader>b :Buffers<CR>
 "~~~~~~~~~
+" Set End
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 " esc setting
@@ -454,4 +476,4 @@ set backupdir=~/.vimdata/backup//
 set directory=~/.vimdata/swap//
 
 
-" start
+
