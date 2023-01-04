@@ -8,7 +8,7 @@ cursorline = true
 
 [editor.indent-guides]
 render = true
-character = "ء"
+character = "┊"
 
 [editor.lsp]
 display-messages = true
@@ -25,10 +25,10 @@ hidden = false
 [keys.normal]
 a = ["append_mode", "collapse_selection"]
 # w = "move_line_up" # Maps the 'w' key move_line_up
-g = { a = "code_action" }                                                                                                                                                                                                                                                                                                                                                                                       # Maps `ga` to show possible code actions
+g = { a = "code_action" }                                                                                                                                                                                                                                                                                                                                                                                # Maps `ga` to show possible code actions
 C-a = "increment"
 C-x = "decrement"
-"backspace" = { c = ":sh cargo run", t = ":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -Wall -Wextra -ggdb -o main main.c -lm", d = ":sh rm -rf main main.dSYM", n = ":sh echo $null >>.gitignore", k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main", a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c", x = ":sh chmod +x build.sh" }
+"backspace" = { c = ":sh cargo run" , t = ":sh cargo nextest run" , r = ":reload" , f = ":format" , s = ":w" , l = ":log-open" , g = ":sh gcc -Wall -Wextra -ggdb -o main main.c -lm" , d = ":sh rm -rf main main.dSYM" , n = ":sh echo $null >>.gitignore" , k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main" , a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c" , x = ":sh chmod +x build.sh" }
 
 # Muscle memory
 "{" = ["goto_prev_paragraph", "collapse_selection"]
@@ -65,6 +65,8 @@ d = { x = [
     "extend_till_char",
 ], s = [
     "surround_delete",
+], S = [ 
+    "surround_add"                                                   # Basically 99% of what I use vim-surround for
 ], i = [
     "select_textobject_inner",
 ], a = [
@@ -115,7 +117,7 @@ G = "goto_file_end"
 D = ["extend_to_line_bounds", "delete_selection", "normal_mode"]
 C = ["goto_line_start", "extend_to_line_bounds", "change_selection"]
 "%" = "match_brackets"
-S = "surround_add"                                                   # Basically 99% of what I use vim-surround for
+# S = "surround_add"                                                   # Basically 99% of what I use vim-surround for
 
 # Visual-mode specific muscle memory
 i = "select_textobject_inner"
