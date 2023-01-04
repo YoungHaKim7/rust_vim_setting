@@ -65,6 +65,8 @@ d = { x = [
     "extend_till_char",
 ], s = [
     "surround_delete",
+], S = [
+    "surround_add",
 ], i = [
     "select_textobject_inner",
 ], a = [
@@ -115,7 +117,7 @@ G = "goto_file_end"
 D = ["extend_to_line_bounds", "delete_selection", "normal_mode"]
 C = ["goto_line_start", "extend_to_line_bounds", "change_selection"]
 "%" = "match_brackets"
-S = "surround_add"                                                   # Basically 99% of what I use vim-surround for
+# S = "surround_add"                                                   # Basically 99% of what I use vim-surround for
 
 # Visual-mode specific muscle memory
 i = "select_textobject_inner"
