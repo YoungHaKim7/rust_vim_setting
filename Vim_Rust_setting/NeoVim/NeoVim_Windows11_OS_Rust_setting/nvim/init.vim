@@ -1,73 +1,3 @@
-if has('python3')
-endif
-
-call plug#begin('~/vim/plugged') " 플러그인 시작
-
-" Conquer Of Completion 자동완성 플러그인
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" nvim-treesitter 구문 파싱 하이라이팅
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-" Plug 'majutsushi/tagbar'
-" Plug 'preservim/tagbar'
-
-" NERDTree 코드 뷰어 창
-Plug 'preservim/nerdtree'
-
-" 컬러스킴(색상표) jellybeans, gruvbox
-Plug 'nanotech/jellybeans.vim'
-" Plug 'morhetz/gruvbox'
-
-" 하단에 다양한 상태(몇 번째 줄, 인코딩, etc.)를 
-" 표시하는 상태바 추가
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" CScope 플러그인
-Plug 'ronakg/quickr-cscope.vim'
-
-" CtrlP 파일 탐색 플러그인
-Plug 'ctrlpvim/ctrlp.vim'
-
-" 비활성 윈도우 강조
-" Plug 'blueyed/vim-diminactive'
-
-" vim cutlass 잘라내기 명령어가 yank 에 영향을 주지 않음
-" Plug 'svermeulen/vim-cutlass'
-
-" VIM GAS(GNU ASsembler) Highlighting
-Plug 'Shirk/vim-gas'
-
-Plug 'Yggdroot/indentLine' " Visually displaying indent
-Plug 'townk/vim-autoclose'  " automatic closing of parentheses
-Plug 'luochen1990/rainbow' "colorful brackets.
-
-Plug 'ycm-core/YouCompleteMe' "automatic_completion
-
-Plug 'rust-lang/rust.vim' "rust
-Plug 'fannheyward/coc-rust-analyzer' "rust_analyzer
-Plug 'mattn/vim-lsp-settings' "rust_analyzer__lsp
-Plug 'liuchengxu/vista.vim' " rust vista
-Plug 'prabirshrestha/vim-lsp' 
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-
-Plug 'Shougo/vimproc.vim', {'do' : 'make'} "debug
-Plug 'idanarye/vim-vebugger' "debug_
-
-Plug 'kamykn/spelunker.vim' "smarter way to correct spelling mistakes
-
-Plug 'tpope/vim-surround'
-
-" C
-Plug 'justmao945/vim-clang'
-
-
-
-
-
-call plug#end()
 " =========================================================================
 " =  플러그인 설정                                                        =
 " =========================================================================
@@ -147,7 +77,7 @@ call plug#end()
 " let g:ycm_key_list_select_completion = ['<C-n>']
 " let g:ycm_key_list_previous_completion=['<C-p>']
 
-let g:ycm_server_python_interpreter = '/usr/bin/python3'
+let g:ycm_server_python_interpreter = '~/AppData/Local/Microsoft/WindowsApps/python3.exe'
 " let g:ycm_collect_identifiers_from_comments_and_strings = 1
 " let g:ycm_complete_in_strings = 1
 " let g:ycm_complete_in_comments = 1
@@ -170,14 +100,14 @@ let g:asyncomplete_auto_popup = 0
 "     let col = col('.') - 1
 "     return !col || getline('.')[col - 1]  =~ '\s'
 " endfunction
-" 
+ 
 " inoremap <silent><expr> <TAB>
 "   \ pumvisible() ? "\<C-n>" :
-"   \ <SID>check_back_space() ? "\<TAB>" :
+  " \ <SID>check_back_space() ? "\<TAB>" :
 "   \ asyncomplete#force_refresh()
 " inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
-" autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
