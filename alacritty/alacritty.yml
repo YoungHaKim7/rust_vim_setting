@@ -1,0 +1,34 @@
+env:
+  TERM: alacritty
+
+colors:
+  primary:
+    background: "#1e2127"
+    foreground: "#D8DEE9"
+
+window:
+   opacity: 0.95
+
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: MesloLGS NF
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: MesloLGS NF
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: MesloLGS NF
+    style: Bold Italic
+
+  # Point size
+  size: 16.0
+
