@@ -77,7 +77,35 @@ call plug#end()
 " let g:ycm_key_list_select_completion = ['<C-n>']
 " let g:ycm_key_list_previous_completion=['<C-p>']
 
-let g:ycm_server_python_interpreter = '~/AppData/Local/Microsoft/WindowsApps/python3.exe'
+let g:ycm_server_python_interpreter = ''
+let g:ycm_python_sys_path = []
+let g:ycm_extra_conf_vim_data = [
+  \  'g:ycm_python_interpreter_path',
+  \  'g:ycm_python_sys_path'
+  \]
+let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
+
+let g:ycm_language_server = 
+  \ [ 
+  \   {
+  \     'name': 'yaml',
+  \     'cmdline': [ '/path/to/yaml/server/yaml-language-server', '--stdio' ],
+  \     'filetypes': [ 'yaml' ]
+  \   },
+  \   {
+  \     'name': 'rust',
+  \     'cmdline': [ 'ra_lsp_server' ],
+  \     'filetypes': [ 'rust' ],
+  \     'project_root_files': [ 'Cargo.toml' ]
+  \   },
+  \   {
+  \     'name': 'godot',
+  \     'filetypes': [ 'gdscript' ],
+  \     'port': 6008,
+  \     'project_root_files': [ 'project.godot' ]
+  \    }
+  \ ]
+
 " let g:ycm_collect_identifiers_from_comments_and_strings = 1
 " let g:ycm_complete_in_strings = 1
 " let g:ycm_complete_in_comments = 1
