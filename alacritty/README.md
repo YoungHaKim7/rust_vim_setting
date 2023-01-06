@@ -12,7 +12,7 @@ https://youtu.be/h-Vm-17qJ88
 
 <hr>
 
-# 내가 쓰고 싶은 Warp 지금은 (macOS만 가능ㅠㅠ) macOS_러스트로 만들어진 차세대 터미널warp데모영상
+# 내가 쓰고 싶은 Warp 지금은 (macOS만 가능ㅠㅠ230106기준) macOS_러스트로 만들어진 차세대 터미널warp데모영상
 
 https://youtu.be/3MmhhixaqqA
 
