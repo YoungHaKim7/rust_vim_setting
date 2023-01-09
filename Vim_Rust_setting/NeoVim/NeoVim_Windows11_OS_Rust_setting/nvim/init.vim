@@ -447,6 +447,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 ""~~~~ Buffer   :bn next :bp previous
 nmap <silent> <Leader>b :buffers<CR>
+nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
 nnoremap <silent><nowait> <space>n  :<C-u>bn<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>bn<CR>
 nnoremap <silent><nowait> <space>h  :<C-u>hi CocInlayHint ctermbg=53<CR>
