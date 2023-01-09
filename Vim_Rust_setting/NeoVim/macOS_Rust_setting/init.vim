@@ -102,10 +102,10 @@ let g:asyncomplete_auto_popup = 0
 "     let col = col('.') - 1
 "     return !col || getline('.')[col - 1]  =~ '\s'
 " endfunction
- 
+" 
 " inoremap <silent><expr> <TAB>
 "   \ pumvisible() ? "\<C-n>" :
-  " \ <SID>check_back_space() ? "\<TAB>" :
+" " \ <SID>check_back_space() ? "\<TAB>" :
 "   \ asyncomplete#force_refresh()
 " inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
@@ -380,10 +380,10 @@ highlight Function         ctermfg=1    ctermbg=none    cterm=none
 " highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
 
 " Make adjusing split sizes a bit more friendly
-noremap <silent> <C-Right> :vertical resize +3<CR>
-noremap <silent> <C-Left> :vertical resize -3<CR>
-noremap <silent> <C-Down> :resize +3<CR>
-noremap <silent> <C-Up> :resize -3<CR>
+noremap <silent> <C-L> :vertical resize +3<CR>
+noremap <silent> <C-H> :vertical resize -3<CR>
+noremap <silent> <C-J> :resize +3<CR>
+noremap <silent> <C-K> :resize -3<CR>
 
 " """""""""""""""""""
 
@@ -445,8 +445,11 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " nmap <silent> gs :sp<CR><Plug>(coc-definition)
 " nmap <silent> gS :vsp<CR><Plug>(coc-definition)
 
-" ~~~~buffers  :bn : bp 
+" ~~~~buffers  :bn next : bp  previous
 nmap <silent> <Leader>b :buffers<CR>
+nmap <silent> <Leader>l <C-w>gt<CR>
+nmap <silent> <Leader>h <C-w>gT<CR>
+nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
 nnoremap <silent><nowait> <space>b  :<C-u>:bn<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>:bp<CR>
 "~~~~~~~~~
