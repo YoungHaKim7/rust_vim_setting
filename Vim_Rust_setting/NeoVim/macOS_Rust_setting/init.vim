@@ -450,7 +450,7 @@ nmap <silent> <Leader>b :buffers<CR>
 nmap <silent> <Leader>l <C-w>gt<CR>
 nmap <silent> <Leader>h <C-w>gT<CR>
 nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
-nnoremap <silent><nowait> <space>b  :<C-u>:bn<CR>
+nnoremap <silent><nowait> <space>n  :<C-u>:bn<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>:bp<CR>
 "~~~~~~~~~
 " ~~~highlight Rust-analyzer
