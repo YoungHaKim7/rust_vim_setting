@@ -444,7 +444,13 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " nmap <silent> gs :sp<CR><Plug>(coc-definition)
 " nmap <silent> gS :vsp<CR><Plug>(coc-definition)
-" nmap <silent> <Leader>b :Buffers<CR>
+
+""~~~~ Buffer   :bn next :bp previous
+nmap <silent> <Leader>b :buffers<CR>
+nnoremap <silent><nowait> <space>n  :<C-u>bn<CR>
+nnoremap <silent><nowait> <space>p  :<C-u>bn<CR>
+nnoremap <silent><nowait> <space>h  :<C-u>hi CocInlayHint ctermbg=53<CR>
+
 "~~~~~~~~~
 " Set End
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
