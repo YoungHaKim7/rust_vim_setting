@@ -447,6 +447,8 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 nmap <silent> <Leader>b :buffers<CR>
 nmap <silent> <Leader>l <C-w>gt<CR>
 nmap <silent> <Leader>h <C-w>gT<CR>
+nmap <silent> <Leader>j :tabfirst<CR>
+nmap <silent> <Leader>k :tablast<CR>
 nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
 nnoremap <silent><nowait> <space>n  :<C-u>bn<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>bp<CR>
