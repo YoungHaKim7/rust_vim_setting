@@ -15,6 +15,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Plug 'majutsushi/tagbar'
 " Plug 'preservim/tagbar'
+" Plug 'sitiom/nvim-numbertoggle' "NeoVim numbertoggle
 
 " NERDTree 코드 뷰어 창
 Plug 'preservim/nerdtree'
@@ -79,7 +80,7 @@ call plug#end()
 " let g:ycm_key_list_select_completion = ['<C-n>']
 " let g:ycm_key_list_previous_completion=['<C-p>']
 
-let g:ycm_server_python_interpreter = '~/AppData/Local/Microsoft/WindowsApps/python3.exe'
+let g:ycm_server_python_interpreter = '/usr/bin/ptyhon3'
 " let g:ycm_collect_identifiers_from_comments_and_strings = 1
 " let g:ycm_complete_in_strings = 1
 " let g:ycm_complete_in_comments = 1
@@ -102,10 +103,10 @@ let g:asyncomplete_auto_popup = 0
 "     let col = col('.') - 1
 "     return !col || getline('.')[col - 1]  =~ '\s'
 " endfunction
- 
+" 
 " inoremap <silent><expr> <TAB>
 "   \ pumvisible() ? "\<C-n>" :
-  " \ <SID>check_back_space() ? "\<TAB>" :
+" " \ <SID>check_back_space() ? "\<TAB>" :
 "   \ asyncomplete#force_refresh()
 " inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
@@ -380,10 +381,10 @@ highlight Function         ctermfg=1    ctermbg=none    cterm=none
 " highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
 
 " Make adjusing split sizes a bit more friendly
-noremap <silent> <C-Right> :vertical resize +3<CR>
-noremap <silent> <C-Left> :vertical resize -3<CR>
-noremap <silent> <C-Down> :resize +3<CR>
-noremap <silent> <C-Up> :resize -3<CR>
+noremap <silent> <C-L> :vertical resize +3<CR>
+noremap <silent> <C-H> :vertical resize -3<CR>
+noremap <silent> <C-J> :resize +3<CR>
+noremap <silent> <C-K> :resize -3<CR>
 
 " """""""""""""""""""
 
@@ -444,8 +445,18 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " nmap <silent> gs :sp<CR><Plug>(coc-definition)
 " nmap <silent> gS :vsp<CR><Plug>(coc-definition)
-" nmap <silent> <Leader>b :Buffers<CR>
+
+" ~~~~buffers  :bn next : bp  previous
+nmap <silent> <Leader>b :buffers<CR>
+nmap <silent> <Leader>l <C-w>gt<CR>
+nmap <silent> <Leader>h <C-w>gT<CR>
+nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
+nnoremap <silent><nowait> <space>n  :<C-u>:bn<CR>
+nnoremap <silent><nowait> <space>p  :<C-u>:bp<CR>
 "~~~~~~~~~
+" ~~~highlight Rust-analyzer
+nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=5 <CR>
+
 " Set End
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -456,8 +467,8 @@ inoremap jk <Esc>
 " color setting
 colorscheme jellybeans
 
-" relative number line
-set rnu
+" hybrid relative number line
+set number relativenumber
 
 set tabstop=4
 set shiftwidth=4
@@ -473,6 +484,6 @@ set encoding=utf-8
 let $LANG = 'en'
 
 " backup folder setting
-set undodir=~/vimdata/undo//
-set backupdir=~/vimdata/backup//
-set directory=~/vimdata/swap//
+set undodir=~/.vimdata/undo//
+set backupdir=~/.vimdata/backup//
+set directory=~/.vimdata/swap//

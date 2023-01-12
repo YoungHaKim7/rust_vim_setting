@@ -15,6 +15,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Plug 'majutsushi/tagbar'
 " Plug 'preservim/tagbar'
+" Plug 'sitiom/nvim-numbertoggle' "NeoVim numbertoggle
 
 " NERDTree 코드 뷰어 창
 Plug 'preservim/nerdtree'
@@ -466,8 +467,8 @@ inoremap jk <Esc>
 " color setting
 colorscheme jellybeans
 
-" relative number line
-set rnu
+" hybrid relative number line
+set number relativenumber
 
 set tabstop=4
 set shiftwidth=4
