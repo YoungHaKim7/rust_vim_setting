@@ -403,8 +403,8 @@ inoremap jk <Esc>
 " color setting
 colorscheme jellybeans
 
-" relative number line
-set rnu
+" turn hybred line number on
+set number rnu
 
 set tabstop=4
 set shiftwidth=4

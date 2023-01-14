@@ -467,8 +467,8 @@ inoremap jk <Esc>
 " color setting
 colorscheme jellybeans
 
-" relative number line
-set rnu
+" turn hybrid line number on 
+set number rnu
 
 set tabstop=4
 set shiftwidth=4
