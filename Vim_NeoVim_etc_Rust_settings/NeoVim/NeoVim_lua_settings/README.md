@@ -1,3 +1,11 @@
+# Original source
+
+https://github.com/maxtnuk/nvim_for_rust
+
+<br>
+
+<hr>
+
 # nvim configs for rust development
 
 recently, i develop serveral projects in Rust by `Vscode` but i can't delvelop smoothly with
