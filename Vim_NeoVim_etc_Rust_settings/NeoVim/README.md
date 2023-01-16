@@ -1,8 +1,16 @@
+# Good Neovim Settings
+
+https://github.com/alpha2phi/neovim-for-beginner
+
+<br>
+
+<hr>
+
 # Rust-tools.nvim
 
 https://github.com/simrat39/rust-tools.nvim
 
-#  Install Neovim Nightly On A Mac
+# Install Neovim Nightly On A Mac
 
 https://www.alanwsmith.com/posts/install-neovim-nightly-on-a-mac--20eo3oms2yav
 
@@ -15,7 +23,6 @@ AstroNvim is an aesthetic and feature-rich neovim config that is extensible and 
 https://github.com/AstroNvim/AstroNvim
 
 https://astronvim.github.io/
-
 
 <br>
 
