@@ -10,6 +10,24 @@ Companion code for the [Medium Neovim for Beginners series.](https://alpha2phi.m
 
 <br>
 
+# LunarVim InLayHint **\_**Comment Color
+
+```
+// 어두운 빨간색
+: hi Comment guifg=#cfe2f3 guibg=#c90076
+
+
+// 밝은 분홍색 느낌
+: hi Comment guifg=#cfe2f3 guibg=#ff439f
+
+```
+
+- color-hex
+
+https://www.color-hex.com/color/ff439f
+
+<br>
+
 <hr>
 
 # rust_neoVim_Setting
@@ -18,8 +36,8 @@ Companion code for the [Medium Neovim for Beginners series.](https://alpha2phi.m
 
 <hr>
 
->> Github
-[Github_LunarVim](https://github.com/LunarVim/Neovim-from-scratch)
+> > Github
+> > [Github_LunarVim](https://github.com/LunarVim/Neovim-from-scratch)
 
 <br>
 
