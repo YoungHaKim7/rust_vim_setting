@@ -11,6 +11,11 @@ local silent, noremap = keymap.silent, keymap.noremap
 local opts = keymap.new_opts
 local cmd = keymap.cmd
 
+-- jk Esc
+-- imap({ 'jk', '<esc>', opts(noremap, silent)})
+-- xmap({'jk', '<Esc>', silent})
+-- vim.imap.set({"i", "jk", "<Esc>", opts(noremap)})
+
 -- Use space as leader key
 vim.g.mapleader = ','
 
@@ -32,7 +37,7 @@ nmap({
   -- yank
   { 'Y', 'y$', opts(noremap) },
   -- toggle tree
-  { '<F1>', cmd('NvimTreeToggle'), opts(noremap) },
+  { '<F1>', cmd('NvimTreeOpen'), opts(noremap) },
   -- find files
   { '<Leader>ff', cmd('Telescope find_files'), opts(noremap) },
   -- spectre
@@ -100,3 +105,4 @@ nmap({
 
 -- commandline remap
 cmap({ '<C-b>', '<Left>', opts(noremap) })
+

@@ -63,7 +63,7 @@ plugin({
     })
   end,
   requires = {
-    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+     -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
     'MunifTanjim/nui.nvim',
     -- OPTIONAL:
     --   `nvim-notify` is only needed, if you want to use the notification view.
@@ -72,11 +72,13 @@ plugin({
   },
 })
 
-plugin({
-  'karb94/neoscroll.nvim',
-  config = function()
-    require('neoscroll').setup()
-  end,
-})
+-- plugin({
+--   'karb94/neoscroll.nvim',
+--   config = function()
+--     require('neoscroll').setup()
+--   end,
+-- })
 
 plugin({ 'akinsho/nvim-bufferline.lua', config = conf.nvim_bufferline, requires = 'kyazdani42/nvim-web-devicons' })
+
+plugin ({'liuchengxu/vista.vim'})
