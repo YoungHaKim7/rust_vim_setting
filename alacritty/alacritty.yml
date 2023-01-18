@@ -4,7 +4,17 @@ env:
 
 
 window:
-   opacity: 0.95
+
+  opacity: 0.95
+
+  dimensions:
+    columns: 150
+    lines: 34
+
+  position:
+    x: 100
+    y: 45
+
 
 font:
   normal:
@@ -29,7 +39,17 @@ font:
   # Point size
   size: 16.0
 
-    
+key_bindings:   
+  # (Windows, Linux, and BSD only)
+  - { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
+  - { key: C,              mods: Control|Shift,                   action: Copy             }
+      # Vi Mode
+  - { key: Space,  mods: Shift|Control, mode: ~Search,    action: ToggleViMode             }
+#key_bindings:   
+   
+ ## Vi Mode
+ #- { key: N,              mods: Shift|Control,                    action: CreateNewWindow   }
+
 # https://raw.githubusercontent.com/alacritty/alacritty/master/alacritty.yml
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
