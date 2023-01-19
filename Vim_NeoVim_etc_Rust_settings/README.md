@@ -1,3 +1,15 @@
+# NeoVim docs
+
+https://neovim.io/doc/user/map.html
+
+<br>
+
+https://neovim.io/doc/user/index.html
+
+<br>
+
+<hr>
+
 # Dotfiles
 
 https://gitlab.com/dwt1/dotfiles
