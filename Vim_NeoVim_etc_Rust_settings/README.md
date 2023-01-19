@@ -339,6 +339,71 @@ https://economiceco.tistory.com/12352
 <hr>
 
 <br>
+# Vim buffer & tabnew
+
+- buffer 관련
+```
+파일 여러개 열었을때 버퍼보기
+:buffers
+3
+5
+
+:b3
+3버퍼로 이동
+
+:b5 
+5버퍼로 이동
+```
+
+- tabnew 관련
+```
+tabe 하고 그냥 파일 열면 파일 열림
+
+:[count]tabe[dit]
+ 
+
+ 
+
+tab간 이동 tabn1     :tabn2 이렇게 쓰면 된다.
+
+:tabn[ext] {count
+ 
+
+tab 닫기
+
+:tabc
+
+
+// 새탭 열기
+:tabnew
+
+
+// 첫번째 탭으로 이동
+:tabfirst
+
+
+// 마지막 탭으로 이동
+:tablast
+
+
+// 3번째 탭으로 이동  tabn 이런 패턴
+:tabn3
+
+
+// 탭 오른쪽 이동
+<C-w>gt
+
+
+// 탭 왼쪽 이동
+<C-w>gT
+
+
+
+```
+
+<br>
+
+<hr>
 
 # Vim command & key
 
