@@ -12,6 +12,17 @@ https://economiceco.tistory.com/3638
 
 Companion code for the [Medium Neovim for Beginners series.](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#545a)
 
+
+## my neovim set_lua setting(full 세팅)
+
+```
+:colorscheme tokyonight-night
+
+
+// 어두운 빨간색2(inlay hint)
+: hi Comment guifg=#cfe2f3 guibg=##92342d
+```
+
 <br>
 
 # LunarVim InLayHint **\_**Comment Color
