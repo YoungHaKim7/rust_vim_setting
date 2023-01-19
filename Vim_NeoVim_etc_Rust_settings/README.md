@@ -638,6 +638,18 @@ https://github.com/kylechui/nvim-surround
 
 <hr>
 
+# Vim 자주누르는거 등록해서 쓰자 Abbreviations 약어 ㅎㅎ 역시 Vim은 내가 생각하는건 다 있다. ㅎㅎ역시 1970년대부터 쓰는 이유가 있다.
+
+
+https://vimhelp.org/map.txt.html#abbreviations
+
+<br>
+
+<br>
+
+<hr>
+
+
 # 그외에 설명서 링크 모음
 
 ## 💕Vim Full Course tutorial- FreeCodeCamp
