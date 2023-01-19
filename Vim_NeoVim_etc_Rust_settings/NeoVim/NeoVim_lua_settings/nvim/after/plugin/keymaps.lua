@@ -49,10 +49,10 @@ keymap("x", "K", ":move '<-2<CR>gv=gv", default_opts)
 keymap("x", "J", ":move '>+1<CR>gv=gv", default_opts)
 
 -- Resizing panes
-keymap("n", "<Left>", ":vertical resize +1<CR>", default_opts)
-keymap("n", "<Right>", ":vertical resize -1<CR>", default_opts)
-keymap("n", "<Up>", ":resize -1<CR>", default_opts)
-keymap("n", "<Down>", ":resize +1<CR>", default_opts)
+keymap("n", "<C-L>", ":vertical resize +1<CR>", default_opts)
+keymap("n", "<C-H>", ":vertical resize -1<CR>", default_opts)
+keymap("n", "<C-K>", ":resize -1<CR>", default_opts)
+keymap("n", "<C-J>", ":resize +1<CR>", default_opts)
 
 -- Insert blank line
 keymap("n", "]<Space>", "o<Esc>", default_opts)
@@ -66,4 +66,4 @@ keymap("x", "gx", "<Plug>(openbrowser-smart-search)", default_opts)
 -- keymap("n", "<C-w>z", "<Cmd>WindowsMaximize<CR>", default_opts)
 
 -- focus.nvim
-keymap("n", "<C-w>z", "<Cmd>FocusMaxOrEqual<CR>", default_opts)
+-- keymap("n", "<C-w>z", "<Cmd>FocusMaxOrEqual<CR>", default_opts)

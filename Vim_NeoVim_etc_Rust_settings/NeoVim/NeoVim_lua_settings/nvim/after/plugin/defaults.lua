@@ -2,6 +2,7 @@
 local g = vim.g
 local opt = vim.opt
 -- local cmd = vim.cmd
+-- vim.cmd "colorscheme tokyonight-night"
 
 -- Remap leader and local leader to <Space>
 -- api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true, silent = true })
