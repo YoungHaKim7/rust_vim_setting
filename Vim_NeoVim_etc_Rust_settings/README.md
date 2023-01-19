@@ -317,4 +317,280 @@ https://rust-analyzer.github.io/manual.html#vimneovim
 
 <br>
 
+# Vim 자료 모음
+
+https://economiceco.tistory.com/12352
+
+
 <br>
+
+<hr>
+
+<br>
+
+# Vim command & key
+
+```
+라인 넘버 나오게 하기
+:set number
+
+:set nu!
+동일함
+
+
+
+-- 내가 좋아하는 기능
+라인 넘버 상대번호로 만들기
+:set relativenumber
+:set rnu
+
+
+
+-- 최근 쓰고 있는 하이브리드
+:set number rnu
+
+
+:%X
+Where X is a command, for example:
+
+:%d -> delete every line
+:%y -> yank every line
+:%normal! >> -> indent every line
+You have also the global command :g which, with the search pattern ^, can do the same thing:
+
+:g/^/d -> delete every line
+:g/^/y -> yank every line
+:g/^/normal! >> -> indent every line
+If what you want is selecting the text, then ggVG is fine, but keep in mind these method, in the case you already know what is the next step. Note that it won't leave the cursor in visual mode.
+
+See: :h :% and :h :g for reference.
+
+
+내가 자주 쓰는 최고의 단축키 ㅎㅎㅎ 그냥 통으로 한줄 똑같은거 찾기 (Insert모드에서 쓰면 됨)
+Ctrl-x-l Complete line
+
+(Insert 모드에서)
+Ctrl-t Insert모드에서 탭 적용됨. 개꿀 👍
+
+gc는 y/n로 바꿀 꺼 물어봄.
+:%s/바꿀 단어(전)/바꿀 단어(후)/gc
+
+
+라인 이동
+15gg
+15G
+똑같음 (15줄로 이동)
+
+
+// 여러줄 이쁘게 알파벳으로 정렬됨 최고
+// 내가 원하는 줄 블럭 씌우고
+:누르면
+:'<,'> 이렇게 나오는데
+
+뒤에 그대로 sort
+:'<,'>sort
+
+
+// 여러줄 이쁘게 알파벳으로 정렬됨 최고
+
+
+
+```
+
+## Vim normal 활용법
+```
+Visual mode로 내가 원하는 라인 선택해주고
+
+// 내가 원하는 줄 블럭 씌우고
+:누르면
+:'<,'> 이렇게 나오는데
+
+뒤에 그대로 normal
+:'<,'>normal A;
+
+
+블럭 씌우 코드 줄 적용
+맨 뒤에 ; 추가됨
+
+
+```
+
+## // normal 활용법
+57초
+
+https://youtu.be/ZeMcpSR6fXI
+
+
+
+## Marks활용법
+
+```
+// 마크 mark 설정하는 방법 
+// 키보드 26가지를 다 저장할 수 있다. 레지스터 쓰는거라 비슷함
+
+// 현재 커서 위치를 마크 a 라고 저장함.
+ma    
+
+
+// a 로 저장한 마크로 이동하기
+'a
+
+
+
+
+:marks a
+
+// a 저장한 마크로 빠르게 이동한다.
+
+// 스타1 부대 지정 같이 많이 쓰는 장소를 마크로 저장해서 빠르게 이동하자
+
+
+
+
+:marks 
+
+// 하면 내가 저장한 마크를 다 볼 수 있다. Good
+
+m 으로 마크 등록
+' 불러오기
+```
+
+관련 링크
+
+https://youtu.be/o4x4jUcHJwk
+
+
+# Macro 활용법
+```
+내가 만든 매크로 @x 골맹이 x에 저장된 매크로 문서 전체에 실행하기
+:%norm @x
+Run macro @x on all lines
+```
+
+vim의 꽃은 역시 매크로macro❤️
+빔Vim Macro 매크로_활용법 I love❤️vim~~👍~반복 작업은 Bye Bye #vim #macro
+
+https://youtu.be/VRqpMXF32qk
+
+<br>
+
+
+## spell checker!!
+
+Example#
+To set the word list that vim will use for spell checking set the spelllang option. For example
+
+```
+:set spelllang=en        # set to English, usually this is the default
+:set spelllang=en_us     # set to U.S. English 
+:set spelllang=en_uk     # set to U.K. English spellings
+:set spelllang=es        # set to Spanish
+```
+
+If you want to set the spelllang and turn on spell checking in one command, you can do:
+
+```
+:setlocal spell spelllang=en
+```
+
+다른 :set 잘 정리됨 (linux스타일)
+
+http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html
+
+
+## Normal mode key
+
+```
+Normal
+
+ggVG
+selects all content.
+
+
+gg
+moves to first line.
+
+V
+starts visual mode.
+
+G
+jumps to last line thereby selecting from first to last line
+
+```
+
+# {} () 괄호 안에 것만 지우기
+
+
+## dit
+
+
+t 는 tag의 약자
+
+
+
+```
+dit
+태그 안에 글씨 다 지워짐 HTML 할 꿀팁
+
+
+<p>HTML test sentence </p>
+
+test만 지우고 싶으면
+
+비쥬얼 모드 유지
+di{
+
+insert모드 바로 들어가기
+ci{ 
+
+
+("{test}")
+
+```
+
+관련 영상
+
+https://youtu.be/cY0JxzENBJg
+
+
+
+# 그외에 설명서 링크 모음
+
+## 💕Vim Full Course tutorial- FreeCodeCamp
+
+https://youtu.be/RZ4p-saaQkc
+
+
+## 급하게 단축키 체크할 때 최고 다 있다. ㅋㅋㅋㅋ❤️👍
+
+https://paulgorman.org/technical/vim.html
+
+
+
+## 맥/Unix] 터미널 vi Editor 사용법- | Mac in June -
+
+https://economiceco.tistory.com/m/11680
+
+
+## Vim Training Class 1 - Basic motions and commands
+https://youtu.be/Nim4_f5QUxA
+
+
+## Vim: Tutorial on Editing, Navigation, and File Management (2018)
+
+https://youtu.be/E-ZbrtoSuzw
+
+
+## 다른 설명서
+
+https://riptutorial.com/vim
+
+
+
+
+# 다른 사람의 NeoVim Setting
+
+❤️Personal Neovim Cheatsheet Cheat Sheet
+by dcschmid
+
+https://cheatography.com/dcschmid/cheat-sheets/personal-neovim-cheatsheet/
