@@ -34,6 +34,14 @@ https://www.color-hex.com/color/ff439f
 
 <hr>
 
+# Hyperpolyglot(Text Mode Editors: Vim, Emacs, Nano)
+
+https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors.html
+
+<br>
+
+<hr>
+
 # rust_neoVim_Setting
 
 [neoVim_Setting Youtube](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
