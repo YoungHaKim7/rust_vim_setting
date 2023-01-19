@@ -339,9 +339,11 @@ https://economiceco.tistory.com/12352
 <hr>
 
 <br>
+
 # Vim buffer & tabnew
 
 - buffer 관련
+
 ```
 파일 여러개 열었을때 버퍼보기
 :buffers
@@ -353,9 +355,17 @@ https://economiceco.tistory.com/12352
 
 :b5 
 5버퍼로 이동
+
+:bn
+next 다음 버퍼로 이동
+
+:bp
+previous 전 버퍼로 이동
+
 ```
 
 - tabnew 관련
+
 ```
 tabe 하고 그냥 파일 열면 파일 열림
 
