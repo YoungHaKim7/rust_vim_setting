@@ -10,6 +10,7 @@
     // Overrides for specific kinds of inlay hints
     "editorInlayHint.typeForeground": "#fdb6fdf0",
     "editorInlayHint.parameterForeground": "#fdb6fdf0",
+    "editorInlayHint": true,
   }
   "security.workspace.trust.untrustedFiles": "open",
   "fontFace": "MesloLGS NF",
@@ -52,15 +53,18 @@
   "rust-analyzer.inlayHints.enable": true,
   "rust-analyzer.cargo.loadOutDirsFromCheck": true,
   "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.checkOnSave.command": "clippy",
 
   // zig languages setting~
   "zls.warn_style": true,
   "zls.enable_semantic_tokens": false,
   "zls.operator_completions": true,
   "zls.include_at_in_builtins": false,
+  "zls.enable_inlay_hints": true,
 
+  // https://github.com/VSCodeVim/Vim
   // vim setting ~~~~
-  "vim.leader":"\\",
+  "vim.leader":"<space>",
   "vim.useSystemClipboard": true,
   "editor.lineNumbers": "relative",
   "vim.easymotion": true,
@@ -71,6 +75,17 @@
       "after":["<Esc>"]
     }
   ],
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-k>": false,
+    "<C-c>": false,
+    "<C-u>": false,
+    "<C-v>": false,
+    "<C-x>": true,
+    "<C-a>": true,
+    "<C-f>": false,
+    "<C-h>": false
+  },
   "insert-unicode.favorites": {
         "directories": {},
         "items": [
