@@ -83,7 +83,7 @@
     "<C-v>": false,
     "<C-x>": true,
     "<C-a>": true,
-    "<C-f>": false,
+    "<C-f>": true,
     "<C-h>": false
   },
   "insert-unicode.favorites": {
