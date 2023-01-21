@@ -20,7 +20,7 @@ Companion code for the [Medium Neovim for Beginners series.](https://alpha2phi.m
 
 
 // 어두운 빨간색2(inlay hint)
-: hi Comment guifg=#cfe2f3 guibg=##92342d
+: hi Comment guifg=#cfe2f3 guibg=#92342d
 ```
 
 <br>
@@ -33,7 +33,7 @@ Companion code for the [Medium Neovim for Beginners series.](https://alpha2phi.m
 
 
 // 어두운 빨간색2
-: hi Comment guifg=#cfe2f3 guibg=##92342d
+: hi Comment guifg=#cfe2f3 guibg=#92342d
 
 
 // 밝은 분홍색 느낌
