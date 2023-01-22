@@ -1,3 +1,4 @@
+set ft=nasm  " assembly highlight syntax
 set hlsearch
 set autoindent
 set ttyfast
@@ -61,6 +62,13 @@ Plug 'justmao945/vim-clang'
 Plug 'OmniSharp/omnisharp-vim' "C#
 Plug 'dense-analysis/ale' "C#
 
+" :UnicodeTable    - Print Unicode Table in new window
+Plug 'chrisbra/unicode.vim'
+
+" .agc: Apollo Guidance Comput .s: Unix Assembly  .x68:Motorola 68K Assembly
+Plug 'wsdjeg/vim-assembly'
+
+
 call plug#end()
 
 "  Command	Description
@@ -74,15 +82,52 @@ call plug#end()
 
 
 "  YouCompleteMe Setting
-let g:ycm_key_list_select_completion = ['<C-n>']
-let g:ycm_key_list_previous_completion=['<C-p>']
+" let g:ycm_key_list_select_completion = ['<C-n>']
+" let g:ycm_key_list_previous_completion=['<C-p>']
 
 let g:ycm_server_python_interpreter = '/usr/bin/python3'
-let g:ycm_collect_identifiers_from_comments_and_strings = 1
-let g:ycm_complete_in_strings = 1
-let g:ycm_complete_in_comments = 1
-let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_filetype_blacklist = {}
+" let g:ycm_collect_identifiers_from_comments_and_strings = 1
+" let g:ycm_complete_in_strings = 1
+" let g:ycm_complete_in_comments = 1
+" let g:ycm_min_num_of_chars_for_completion = 1
+" let g:ycm_filetype_blacklist = {}
+
+set signcolumn=yes
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" asyncomplete.vim
+"  ~~~~~~~~~~~~~~~~~~~~~~
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+inoremap <expr> <cr> pumvisible() ? asyncomplete#close_popup() . "\<cr>" : "\<cr>"
+
+let g:asyncomplete_auto_popup = 0
+
+" function! s:check_back_space() abort
+"     let col = col('.') - 1
+"     return !col || getline('.')[col - 1]  =~ '\s'
+" endfunction
+" 
+" inoremap <silent><expr> <TAB>
+"   \ pumvisible() ? "\<C-n>" :
+" " \ <SID>check_back_space() ? "\<TAB>" :
+"   \ asyncomplete#force_refresh()
+" inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<cr>"
+" Or use `complete_info` if your vim support it, like:
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" asyncomplete.vim end~~~
+"  ~~~~~~~~~~~~~~~~~~~~~~
+
 
 " Vista Setting~~
 " How each level is indented and what to prepend.
@@ -163,13 +208,13 @@ nmap <F8> :Vista<CR>
 let g:rainbow_active = 1
 
 " ObviousResize
-noremap <silent> <C-Up> :<C-U>ObviousResizeUp<CR>
-noremap <silent> <C-Down> :<C-U>ObviousResizeDown<CR>
-noremap <silent> <C-Left> :<C-U>ObviousResizeLeft<CR>
-noremap <silent> <C-Right> :<C-U>ObviousResizeRight<CR>
-let g:obvious_resize_default = 2
-noremap <silent> <C-Up> :<C-U>ObviousResizeUp 5<CR>
-let g:obvious_resize_run_tmux = 1
+" noremap <silent> <C-Up> :<C-U>ObviousResizeUp<CR>
+" noremap <silent> <C-Down> :<C-U>ObviousResizeDown<CR>
+" noremap <silent> <C-Left> :<C-U>ObviousResizeLeft<CR>
+" noremap <silent> <C-Right> :<C-U>ObviousResizeRight<CR>
+" let g:obvious_resize_default = 2
+" noremap <silent> <C-Up> :<C-U>ObviousResizeUp 5<CR>
+" let g:obvious_resize_run_tmux = 1
 
 
 " rust
@@ -300,14 +345,142 @@ augroup END
 "   End ~~~~~~ OmniSharp
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Theming
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+highlight LineNr           ctermfg=8    ctermbg=none    cterm=none
+highlight CursorLineNr     ctermfg=7    ctermbg=8       cterm=none
+highlight VertSplit        ctermfg=0    ctermbg=8       cterm=none
+highlight Statement        ctermfg=2    ctermbg=none    cterm=none
+highlight Directory        ctermfg=4    ctermbg=none    cterm=none
+highlight StatusLine       ctermfg=7    ctermbg=8       cterm=none
+highlight StatusLineNC     ctermfg=7    ctermbg=8       cterm=none
+highlight NERDTreeClosable ctermfg=2
+highlight NERDTreeOpenable ctermfg=8
+highlight Comment          ctermfg=4    ctermbg=none    cterm=italic
+highlight Constant         ctermfg=12   ctermbg=none    cterm=none
+highlight Special          ctermfg=4    ctermbg=none    cterm=none
+highlight Identifier       ctermfg=6    ctermbg=none    cterm=none
+highlight PreProc          ctermfg=5    ctermbg=none    cterm=none
+highlight String           ctermfg=12   ctermbg=none    cterm=none
+highlight Number           ctermfg=1    ctermbg=none    cterm=none
+highlight Function         ctermfg=1    ctermbg=none    cterm=none
+" highlight WildMenu         ctermfg=0       ctermbg=80      cterm=none
+" highlight Folded           ctermfg=103     ctermbg=234     cterm=none
+" highlight FoldColumn       ctermfg=103     ctermbg=234     cterm=none
+" highlight DiffAdd          ctermfg=none    ctermbg=23      cterm=none
+" highlight DiffChange       ctermfg=none    ctermbg=56      cterm=none
+" highlight DiffDelete       ctermfg=168     ctermbg=96      cterm=none
+" highlight DiffText         ctermfg=0       ctermbg=80      cterm=none
+" highlight SignColumn       ctermfg=244     ctermbg=235     cterm=none
+" highlight Conceal          ctermfg=251     ctermbg=none    cterm=none
+" highlight SpellBad         ctermfg=168     ctermbg=none    cterm=underline
+" highlight SpellCap         ctermfg=80      ctermbg=none    cterm=underline
+" highlight SpellRare        ctermfg=121     ctermbg=none    cterm=underline
+" highlight SpellLocal       ctermfg=186     ctermbg=none    cterm=underline
+" highlight Pmenu            ctermfg=251     ctermbg=234     cterm=none
+" highlight PmenuSel         ctermfg=0       ctermbg=111     cterm=none
+" highlight PmenuSbar        ctermfg=206     ctermbg=235     cterm=none
+" highlight PmenuThumb       ctermfg=235     ctermbg=206     cterm=none
+" highlight TabLine          ctermfg=244     ctermbg=234     cterm=none
+" highlight TablineSel       ctermfg=0       ctermbg=247     cterm=none
+" highlight TablineFill      ctermfg=244     ctermbg=234     cterm=none
+" highlight CursorColumn     ctermfg=none    ctermbg=236     cterm=none
+" highlight CursorLine       ctermfg=none    ctermbg=236     cterm=none
+" highlight ColorColumn      ctermfg=none    ctermbg=236     cterm=none
+" highlight Cursor           ctermfg=0       ctermbg=5       cterm=none
+" highlight htmlEndTag       ctermfg=114     ctermbg=none    cterm=none
+" highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
+
+" Make adjusing split sizes a bit more friendly
+noremap <silent> <C-L> :vertical resize +3<CR>
+noremap <silent> <C-H> :vertical resize -3<CR>
+noremap <silent> <C-J> :resize +3<CR>
+noremap <silent> <C-K> :resize -3<CR>
+
+" """""""""""""""""""
+
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+" Leader Key Setting & coc-actions
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+let mapleader = ","
+" Remap for do codeAction of selected region
+function! s:cocActionsOpenFromSelected(type) abort
+  execute 'CocCommand actions.open ' . a:type
+endfunction
+xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+" Applying codeAction to the selected region.
+" Example: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Map function and class text objects
+" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
+xmap if <Plug>(coc-funcobj-i)
+omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~
+" """""""""""""""""""""""""
+
+" Mappings for CoCList
+" Show all diagnostics.
+nnoremap <silent><nowait> <space>a  :<C-u>CocDiagnostics<cr>
+" Manage extensions.
+nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+" Show commands.
+nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+" Find symbol of current document.
+nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+" Search workspace symbols.
+nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+" Do default action for next item.
+nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+" Do default action for previous item.
+nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+" Resume latest coc list.
+nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+" nmap <silent> gs :sp<CR><Plug>(coc-definition)
+" nmap <silent> gS :vsp<CR><Plug>(coc-definition)
+
+" ~~~~buffers  :bn next : bp  previous
+nmap <silent> <Leader>b :buffers<CR>
+nmap <silent> <Leader>l <C-w>gt<CR>
+nmap <silent> <Leader>h <C-w>gT<CR>
+nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
+nnoremap <silent><nowait> <space>n  :<C-u>:bn<CR>
+nnoremap <silent><nowait> <space>p  :<C-u>:bp<CR>
+"~~~~~~~~~
+" ~~~highlight Rust-analyzer
+nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=5 <CR>
+
+" Set End
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 " esc setting
 inoremap jk <Esc>
 
 " color setting
 colorscheme jellybeans
 
-" relative number line
-set rnu
+" hybrid relative number line
+set number rnu
 
 set tabstop=4
 set shiftwidth=4
