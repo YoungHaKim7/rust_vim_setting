@@ -60,7 +60,7 @@ Plugin 'junegunn/goyo.vim'                           " Distraction-free viewing
 Plugin 'junegunn/limelight.vim'                      " Hyperfocus on a range
 Plugin 'junegunn/vim-emoji'                          " Vim needs emojis!
 
-" Unicode Vim
+" Unicode Vim :UnicodeTable
 Plugin 'chrisbra/unicode.vim'
 
 call vundle#end()
@@ -86,9 +86,6 @@ nmap <F8> :Vista<CR>
 let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
 let g:airline_theme='hybrid'
 set laststatus=2 " turn on bottom bar
-let mapleader = ","
-nnoremap <leader>q :bp<CR>
-nnoremap <leader>w :bn<CR>
 
 " for blueyed/vim-diminactive
 let g:diminactive_enable_focus = 1
@@ -268,11 +265,6 @@ augroup END
 let g:OmniSharp_want_snippet=1
 " ~~~~ end c# _imnisharp
 
-"  " leader key _<Space>?_ setting
-" let maplocalleader = "\\"
-" tnoremap <Esc> C<LocalLeaer> <C-n>
-" let mapleader = ","
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Theming
@@ -330,6 +322,7 @@ noremap <silent> <C-L> :vertical resize +3<CR>
 noremap <silent> <C-H> :vertical resize -3<CR>
 noremap <silent> <C-J> :resize +3<CR>
 noremap <silent> <C-K> :resize -3<CR>
+
 
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " Leader Key Setting & coc-actions
@@ -412,7 +405,7 @@ nnoremap <silent><nowait> <space>J  :move '>+1<CR>gv=gv<CR>
 "  """"""""""""""""""""""
 
 " relativenumber No.
-set relativenumber
+set number relativenumber
 
 "esc setting
 inoremap jk <esc>
@@ -446,6 +439,5 @@ packadd! vimspector
 
 "Clear all registers!
 command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
-
 
 
