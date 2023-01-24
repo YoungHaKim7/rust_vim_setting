@@ -74,6 +74,9 @@ colorscheme jellybeans
 " for Vista-taglist
 nmap <F8> :Vista<CR>
 
+" 숨김 파일 표시 I - 숨긴 파일 보기 / R - Reflash / m - 파일 지울지 추가할지 메뉴 보기
+let NERDTreeShowHidden=1
+
 "  "  " for indent guide
 " let g:indentguides_spacechar = '|'
 " let g:indentguides_tabchar = '┆'
@@ -439,5 +442,6 @@ packadd! vimspector
 
 "Clear all registers!
 command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
+
 
 
