@@ -10,6 +10,9 @@ call plug#begin('~/.vim/plugged') " 플러그인 시작
 " Conquer Of Completion 자동완성 플러그인
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Manson Install Lsp 관리
+" Plug 'williamboman/mason.nvim'
+
 " nvim-treesitter 구문 파싱 하이라이팅
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
@@ -49,6 +52,7 @@ Plug 'luochen1990/rainbow' "colorful brackets.
 
 Plug 'ycm-core/YouCompleteMe' "automatic_completion
 
+""""" Rust
 Plug 'rust-lang/rust.vim' "rust
 Plug 'fannheyward/coc-rust-analyzer' "rust_analyzer
 Plug 'mattn/vim-lsp-settings' "rust_analyzer__lsp
@@ -59,6 +63,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} "debug
 Plug 'idanarye/vim-vebugger' "debug_
+"""""""""""""""""
 
 Plug 'kamykn/spelunker.vim' "smarter way to correct spelling mistakes
 
@@ -70,6 +75,10 @@ Plug 'justmao945/vim-clang'
 " :UnicodeTable    - Print Unicode Table in new window
 Plug 'chrisbra/unicode.vim'
 
+"""""""~~~~zig
+Plug 'ziglang/zig.vim'
+Plug 'UltiRequiem/coc-zig', {'do' : 'yarn install --frozen-lockfile && yarn build'}
+""""""~~~~~~
 
 call plug#end()
 
@@ -250,7 +259,6 @@ augroup lsp_install
 augroup END
 "  ~~~~~~~~~~~~~~~~~~~~~~
 "  ~~~~~~~~~~~~~~~~~~~~~~
-
 
 
 """"""""""""""""""""
@@ -455,6 +463,15 @@ nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
 nnoremap <silent><nowait> <space>n  :<C-u>bn<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>bp<CR>
 nnoremap <silent><nowait> <space>h  :<C-u>hi CocInlayHint ctermbg=53<CR>
+
+" ~~~highlight Rust-analyzer
+nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=5 <CR>
+
+" Move visually selected lines up or down in various modes.
+nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv==gv
+vnoremap J :m '>+1<CR>gv==gv
 
 "~~~~~~~~~
 " Set End
