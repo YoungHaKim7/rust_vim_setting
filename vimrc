@@ -398,9 +398,11 @@ nnoremap <silent><nowait> <space>p  :<C-u>:bp<CR>
 " ~~~highlight Rust-analyzer
 nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=5 <CR>
 
-"-- Move selected line / block of text in visual mode
-nnoremap <silent><nowait> <space>K  :move '<-2<CR>gv=gv<CR>
-nnoremap <silent><nowait> <space>J  :move '>+1<CR>gv=gv<CR>
+" Move visually selected lines up or down in various modes.
+nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv==gv
+vnoremap J :m '>+1<CR>gv==gv
 
 
 "  """""""""""""""""""""""
@@ -442,6 +444,5 @@ packadd! vimspector
 
 "Clear all registers!
 command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
-
 
 
