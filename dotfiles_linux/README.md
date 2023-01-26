@@ -6,6 +6,192 @@ https://gist.github.com/schulace/528eb7b91d9f1bc361922bfc86081a53
 
 ```
 
+"  NERDTree Setting " 숨김 파일 표시 I - 숨긴 파일 보기 / R - Reflash / m - 파일 지울지 추가할지 메뉴 보기
+let NERDTreeShowHidden=1
+"  ~~~~~~~~
+
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
+"  YouCompleteMe Setting
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" let g:ycm_key_list_select_completion = ['<C-n>']
+" let g:ycm_key_list_previous_completion=['<C-p>']
+
+let g:ycm_server_python_interpreter = '/usr/bin/python3'
+" let g:ycm_collect_identifiers_from_comments_and_strings = 1
+" let g:ycm_complete_in_strings = 1
+" let g:ycm_complete_in_comments = 1
+" let g:ycm_min_num_of_chars_for_completion = 1
+" let g:ycm_filetype_blacklist = {}
+set signcolumn=yes
+
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" asyncomplete.vim
+"  ~~~~~~~~~~~~~~~~~~~~~~
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+inoremap <expr> <cr> pumvisible() ? asyncomplete#close_popup() . "\<cr>" : "\<cr>"
+
+let g:asyncomplete_auto_popup = 0
+
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ asyncomplete#force_refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<cr>"
+" Or use `complete_info` if your vim support it, like:
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" asyncomplete.vim end~~~
+"  ~~~~~~~~~~~~~~~~~~~~~~
+
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" Vista Setting~~
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" How each level is indented and what to prepend.
+" This could make the display more compact or more spacious.
+" e.g., more compact: ["▸ ", ""]
+" Note: this option only works for the kind renderer, not the tree renderer.
+let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
+
+" Executive used when opening vista sidebar without specifying it.
+" See all the avaliable executives via `:echo g:vista#executives`.
+let g:vista_default_executive = 'ctags'
+
+" Set the executive for some filetypes explicitly. Use the explicit executive
+" instead of the default one for these filetypes when using `:Vista` without
+" specifying the executive.
+let g:vista_executive_for = {
+  \ 'cpp': 'vim_lsp',
+  \ 'php': 'vim_lsp',
+  \ }
+
+" Declare the command including the executable and options used to generate ctags output
+" for some certain filetypes.The file path will be appened to your custom command.
+" For example:
+let g:vista_ctags_cmd = {
+      \ 'haskell': 'hasktags -x -o - -c',
+      \ }
+
+" To enable fzf's preview window set g:vista_fzf_preview.
+" The elements of g:vista_fzf_preview will be passed as arguments to fzf#vim#with_preview()
+" For example:
+let g:vista_fzf_preview = ['right:50%']
+
+" Ensure you have installed some decent font to show these pretty symbols, then you can enable icon for the kind.
+let g:vista#renderer#enable_icon = 1
+
+" The default icons can't be suitable for all the filetypes, you can extend it as you wish.
+let g:vista#renderer#icons = {
+\   "function": "\uf794",
+\   "variable": "\uf71b",
+\  }
+" Vista setting end~
+
+""  Rust analyzer inlayhint 
+"let g:lsp_inlay_hints_enabled = 1
+"let g:lsp_inlay_hints_mode = {
+"\  'normal': ['always'],
+"\}
+"
+"autocmd User lsp_setup call lsp#register_server({
+"\   'name': 'gopls',
+"\   'cmd': ['gopls'],
+"\   'allowlist': ['go'],
+"\   'initialization_options': {
+"\     'ui.inlayhint.hints': {
+"\         'assignVariableTypes': v:false,
+"\         'compositeLiteralFields': v:false,
+"\         'compositeLiteralTypes': v:false,
+"\         'constantValues': v:false,
+"\         'functionTypeParameters': v:true,
+"\         'parameterNames': v:true,
+"\         'rangeVariableTypes': v:false,
+"\     },
+"\   }
+"\ })
+"  ~~~~~~~~~~~~~~~~~~~~~~
+"" ~ End ~
+"  ~~~~~~~~~~~~~~~~~~~~~~
+
+" Vista <F8>
+nmap <F8> :Vista<CR>
+
+
+" RainBow
+let g:rainbow_active = 1 
+
+
+" rust
+let g:rustfmt_autosave = 1
+
+
+"  ~~~~~~~~~~~~~~~~~~~~~~
+" rust analyzer start~~~~~~:w
+"  ~~~~~~~~~~~~~~~~~~~~~~
+let g:LanguageClient_serverCommands = {
+\ 'rust': ['rust-analyzer'],
+\ }
+let g:ale_linters = {'rust': ['analyzer']}
+
+"vim-lsp
+set foldmethod=expr
+  \ foldexpr=lsp#ui#vim#folding#foldexpr()
+  \ foldtext=lsp#ui#vim#folding#foldtext()
+let g:lsp_fold_enabled = 0
+let g:lsp_diagnostics_enabled = 0         " disable diagnostics support
+let g:lsp_document_highlight_enabled = 0
+
+function! s:on_lsp_buffer_enabled() abort
+    setlocal omnifunc=lsp#complete
+    setlocal signcolumn=yes
+    if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
+    nmap <buffer> gd <plug>(lsp-definition)
+    nmap <buffer> gs <plug>(lsp-document-symbol-search)
+    nmap <buffer> gS <plug>(lsp-workspace-symbol-search)
+    nmap <buffer> gr <plug>(lsp-references)
+    nmap <buffer> gi <plug>(lsp-implementation)
+    nmap <buffer> gt <plug>(lsp-type-definition)
+    nmap <buffer> <leader>rn <plug>(lsp-rename)
+    nmap <buffer> [g <plug>(lsp-previous-diagnostic)
+    nmap <buffer> ]g <plug>(lsp-next-diagnostic)
+    nmap <buffer> K <plug>(lsp-hover)
+    nnoremap <buffer> <expr><c-f> lsp#scroll(+4)
+    nnoremap <buffer> <expr><c-d> lsp#scroll(-4)
+
+    let g:lsp_format_sync_timeout = 1000
+    autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
+    
+    " refer to doc to add more commands
+endfunction
+
+augroup lsp_install
+    au!
+    " call s:on_lsp_buffer_enabled only for languages that has the server registered.
+    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
+"  ~~~~~~~~~~~~~~~~~~~~~~
+"  ~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
 
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " Leader Key Setting & coc-actions
