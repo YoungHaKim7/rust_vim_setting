@@ -1,3 +1,4 @@
+
 " =========================================================================
 " =  플러그인 설정                                                        =
 " =========================================================================
@@ -67,9 +68,19 @@ Plug 'tpope/vim-surround'
 " C
 Plug 'justmao945/vim-clang'
 
+" :UnicodeTable    - Print Unicode Table in new window
+Plug 'chrisbra/unicode.vim'
 
+"""""""~~~~zig
+Plug 'ziglang/zig.vim'
+Plug 'UltiRequiem/coc-zig', {'do' : 'yarn install --frozen-lockfile && yarn build'}
 
 call plug#end()
+
+"  NERDTree Setting " 숨김 파일 표시 I - 숨긴 파일 보기 / R - Reflash / m - 파일 지울지 추가할지 메뉴 보기
+let NERDTreeShowHidden=1
+"  ~~~~~~~~
+
 
 "  ~~~~~~~~~~~~~~~~~~~~~~
 "  YouCompleteMe Setting
@@ -452,7 +463,16 @@ nmap <silent> <Leader>k :tablast<CR>
 nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
 nnoremap <silent><nowait> <space>n  :<C-u>bn<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>bp<CR>
-nnoremap <silent><nowait> <space>h  :<C-u>hi CocInlayHint ctermbg=53<CR>
+
+" ~~~highlight Rust-analyzer
+nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=53 <CR>
+
+" Move visually selected lines up or down in various modes.
+nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv==gv
+vnoremap J :m '>+1<CR>gv==gv
+
 "~~~~~~~~~
 " Set End
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
