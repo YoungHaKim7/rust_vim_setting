@@ -64,5 +64,28 @@ function! s:cocActionsOpenFromSelected(type) abort
   " nmap <silent> gS :vsp<CR><Plug>(coc-definition)
 
 
+""~~~~ Buffer   :bn next :bp previous   :bd buffer delete(close)
+nmap <silent> <Leader>b :buffers<CR>
+nmap <silent> <Leader>l <C-w>gt<CR>
+nmap <silent> <Leader>h <C-w>gT<CR>
+nmap <silent> <Leader>j :tabfirst<CR>
+nmap <silent> <Leader>k :tablast<CR>
+nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
+nnoremap <silent><nowait> <space>n  :<C-u>bn<CR>
+nnoremap <silent><nowait> <space>p  :<C-u>bp<CR>
+
+" ~~~highlight Rust-analyzer
+nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=53 <CR>
+
+" Move visually selected lines up or down in various modes.
+nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv==gv
+vnoremap J :m '>+1<CR>gv==gv
+
+"~~~~~~~~~
+" Set End
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ```
