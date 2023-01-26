@@ -60,9 +60,9 @@ function! s:cocActionsOpenFromSelected(type) abort
   nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
   " Resume latest coc list.
   nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-  nmap <silent> gs :sp<CR><Plug>(coc-definition)
-  nmap <silent> gS :vsp<CR><Plug>(coc-definition)
-  nmap <silent> <Leader>b :Buffers<CR>"""""""""""""""""""
+  " nmap <silent> gs :sp<CR><Plug>(coc-definition)
+  " nmap <silent> gS :vsp<CR><Plug>(coc-definition)
+
 
 
 ```
