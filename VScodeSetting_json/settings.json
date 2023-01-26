@@ -1,39 +1,42 @@
 {
-//  "workbench.colorTheme": "spacedark",
+  // c/c++ languages setting~ clangd server Setting
+  "clangd.arguments": [
+    "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
+  ],
+  //  "workbench.colorTheme": "spacedark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
     "editorError.foreground": "#000000", // squiggly line
-    "editorError.border": "#ffffff" // additional border under squiggly line
+    "editorError.border": "#ffffff", // additional border under squiggly line
     "editorInlayHint.background": "#e85a5a98",
-
     // Overrides for specific kinds of inlay hints
     "editorInlayHint.typeForeground": "#fdb6fdf0",
     "editorInlayHint.parameterForeground": "#fdb6fdf0",
-    "editorInlayHint": true,
-  }
+    "editorInlayHint": true
+  },
   "security.workspace.trust.untrustedFiles": "open",
   "fontFace": "MesloLGS NF",
   "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.external.osxExec": "Warp.app"
+  "terminal.external.osxExec": "Terminal.app",
   // auto fmt & format
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "code-runner.runInTerminal": true,
   // Controls the font family.
-    //"editor.fontFamily": "Operator Mono",
-    // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-    // "editor.lineHeight": 0,
-    // Enables font ligatures
-    "editor.fontLigatures": true,
-    // Controls if file decorations should use badges.
-    "explorer.decorations.badges": false
+  //"editor.fontFamily": "Operator Mono",
+  // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
+  // "editor.lineHeight": 0,
+  // Enables font ligatures
+  "editor.fontLigatures": true,
+  // Controls if file decorations should use badges.
+  "explorer.decorations.badges": false,
   "editor.fontSize": 17,
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs":"active"
+  "editor.guides.bracketPairs": "active",
   "editor.detectIndentation": true,
   "emmet.triggerExpansionOnTab": true,
   "editor.suggestSelection": "first",
@@ -46,7 +49,7 @@
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
-    "**/.factorypath": true,
+    "**/.factorypath": true
   },
   "tabnine.experimentalAutoImports": true,
   // rust-analyzer setting~
@@ -54,25 +57,28 @@
   "rust-analyzer.cargo.loadOutDirsFromCheck": true,
   "rust-analyzer.procMacro.enable": true,
   "rust-analyzer.checkOnSave.command": "clippy",
-
   // zig languages setting~
   "zls.warn_style": true,
   "zls.enable_semantic_tokens": false,
   "zls.operator_completions": true,
   "zls.include_at_in_builtins": false,
   "zls.enable_inlay_hints": true,
-
   // https://github.com/VSCodeVim/Vim
   // vim setting ~~~~
-  "vim.leader":"<space>",
+  "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "editor.lineNumbers": "relative",
   "vim.easymotion": true,
   "vim.surround": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j","k"],
-      "after":["<Esc>"]
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.handleKeys": {
@@ -86,48 +92,49 @@
     "<C-f>": true,
     "<C-h>": false
   },
+  // UniCode Setting
   "insert-unicode.favorites": {
-        "directories": {},
-        "items": [
-            [
-                8594
-            ],
-            [
-                8469
-            ],
-            [
-                8477
-            ],
-            [
-                928
-            ],
-            [
-                120121
-            ],
-            [
-                8901
-            ],
-            [
-                920
-            ],
-            [
-                936
-            ],
-            [
-                923
-            ],
-            [
-                172
-            ],
-            [
-                215
-            ],
-            [
-                177
-            ],
-            [
-                120793
-            ]
-        ]
-    }
+    "directories": {},
+    "items": [
+      [
+        8594
+      ],
+      [
+        8469
+      ],
+      [
+        8477
+      ],
+      [
+        928
+      ],
+      [
+        120121
+      ],
+      [
+        8901
+      ],
+      [
+        920
+      ],
+      [
+        936
+      ],
+      [
+        923
+      ],
+      [
+        172
+      ],
+      [
+        215
+      ],
+      [
+        177
+      ],
+      [
+        120793
+      ]
+    ]
+  }
 }
