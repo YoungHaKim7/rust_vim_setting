@@ -81,6 +81,26 @@
       ]
     }
   ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "bookmarks.list"
+      ]
+    }
+  ],
   "vim.handleKeys": {
     "<C-d>": true,
     "<C-k>": false,
@@ -136,5 +156,6 @@
         120793
       ]
     ]
-  }
+  },
+  "clangd.path": "/home/globalyoung/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd"
 }
