@@ -1,9 +1,14 @@
 {
+  // Server Setting~~~~~~~~~~~
   // c/c++ languages setting~ clangd server Setting
   "clangd.arguments": [
     "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
   ],
   "clangd.path": "c:\\Users\\user\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\15.0.6\\clangd_15.0.6\\bin\\clangd.exe",
+  // zig server Setting
+  "zls.path": "c:\\Users\\user\\AppData\\Roaming\\Code\\User\\globalStorage\\augusterame.zls-vscode\\zls_install\\zls.exe",
+  // ~~~~~~end 
+  //
   //  "workbench.colorTheme": "spacedark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.untitled.hint": "hidden",
@@ -19,7 +24,8 @@
   "security.workspace.trust.untrustedFiles": "open",
   "fontFace": "MesloLGS NF",
   "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.external.osxExec": "Terminal.app",
+  //"terminal.external.osxExec": "Terminal.app",
+  "terminal.external.windowsExec": "C:\\Program Files\\Alacritty\\alacritty.exe",
   // auto fmt & format
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
@@ -157,5 +163,6 @@
         120793
       ]
     ]
-  }
+  },
+  "terminal.external.windowsExec": "C:\\Program Files\\Alacritty\\alacritty.exe"
 }
