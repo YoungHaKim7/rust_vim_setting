@@ -463,10 +463,11 @@ nmap <silent> <Leader>k :tablast<CR>
 nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
 nnoremap <silent><nowait> <space>n  :<C-u>bn<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>bp<CR>
-nnoremap <silent><nowait> <space>h  :<C-u>hi CocInlayHint ctermbg=53<CR>
+
 
 " ~~~highlight Rust-analyzer
-nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=5 <CR>
+nnoremap <silent><nowait> <space>h  :<C-u>hi CocInlayHint ctermbg=53<CR>
+" nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=5 <CR>
 
 " Move visually selected lines up or down in various modes.
 " nnoremap K :m .-2<CR>==
