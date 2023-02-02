@@ -82,13 +82,14 @@ Plug 'UltiRequiem/coc-zig', {'do' : 'yarn install --frozen-lockfile && yarn buil
 
 call plug#end()
 
+let g:loaded_python3_provider = 0
 "  ~~~~~~~~~~~~~~~~~~~~~~
 "  YouCompleteMe Setting
 "  ~~~~~~~~~~~~~~~~~~~~~~
 " let g:ycm_key_list_select_completion = ['<C-n>']
 " let g:ycm_key_list_previous_completion=['<C-p>']
 
-let g:ycm_server_python_interpreter = '~/AppData/Local/Microsoft/WindowsApps/python3.exe'
+let g:ycm_server_python_interpreter = 'C:\ProgramData\chocolatey\bin\python.exe'
 " let g:ycm_collect_identifiers_from_comments_and_strings = 1
 " let g:ycm_complete_in_strings = 1
 " let g:ycm_complete_in_comments = 1
