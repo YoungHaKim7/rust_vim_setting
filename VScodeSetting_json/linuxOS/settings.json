@@ -102,16 +102,18 @@
     }
   ],
   "vim.handleKeys": {
-    "<C-d>": true,
-    "<C-k>": false,
+    "<C-a>": true,
     "<C-c>": false,
+    "<C-d>": true,
+    "<C-f>": true,
+    "<C-h>": false,
+    "<C-k>": false,
+    "<C-r>": true,
     "<C-u>": false,
     "<C-v>": false,
-    "<C-x>": true,
-    "<C-a>": true,
-    "<C-f>": true,
-    "<C-h>": false
+    "<C-x>": true
   },
+
   // UniCode Setting
   "insert-unicode.favorites": {
     "directories": {},
