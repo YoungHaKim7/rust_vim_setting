@@ -109,7 +109,7 @@
     "<C-k>": false,
     "<C-r>": true,
     "<C-u>": false,
-    "<C-v>": false,
+    "<C-v>": true,
     "<C-x>": true
   },
 
