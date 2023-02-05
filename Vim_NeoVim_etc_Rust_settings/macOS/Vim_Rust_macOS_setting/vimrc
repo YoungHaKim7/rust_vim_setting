@@ -60,6 +60,8 @@ Plugin 'junegunn/goyo.vim'                           " Distraction-free viewing
 Plugin 'junegunn/limelight.vim'                      " Hyperfocus on a range
 Plugin 'junegunn/vim-emoji'                          " Vim needs emojis!
 
+" Unicode Vim :UnicodeTable
+Plugin 'chrisbra/unicode.vim'
 
 call vundle#end()
 
@@ -71,6 +73,9 @@ colorscheme jellybeans
 
 " for Vista-taglist
 nmap <F8> :Vista<CR>
+
+" 숨김 파일 표시 I - 숨긴 파일 보기 / R - Reflash / m - 파일 지울지 추가할지 메뉴 보기
+let NERDTreeShowHidden=1
 
 "  "  " for indent guide
 " let g:indentguides_spacechar = '|'
@@ -84,9 +89,6 @@ nmap <F8> :Vista<CR>
 let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
 let g:airline_theme='hybrid'
 set laststatus=2 " turn on bottom bar
-let mapleader = ","
-nnoremap <leader>q :bp<CR>
-nnoremap <leader>w :bn<CR>
 
 " for blueyed/vim-diminactive
 let g:diminactive_enable_focus = 1
@@ -179,6 +181,11 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " rust analyzer end~~~~~~
 
+" Use homebrew's clangd
+let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
+let g:ycm_clangd_uses_ycmd_caching=0
+" let g:ycm_clangd_binary_path='usr/bin/clangd'
+
 " lines to save text folding
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
@@ -261,14 +268,13 @@ augroup END
 let g:OmniSharp_want_snippet=1
 " ~~~~ end c# _imnisharp
 
-"  " leader key _<Space>?_ setting
-" let maplocalleader = "\\"
-" tnoremap <Esc> C<LocalLeaer> <C-n>
-" let mapleader = ","
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Theming
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" rust InlayHint color setting
+" highlight CocInlayHint     ctermbg=5
+" hi CocInlayHint ctermbg=125
 
 highlight LineNr           ctermfg=8    ctermbg=none    cterm=none
 highlight CursorLineNr     ctermfg=7    ctermbg=8       cterm=none
@@ -321,37 +327,120 @@ noremap <silent> <C-J> :resize +3<CR>
 noremap <silent> <C-K> :resize -3<CR>
 
 
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+" Leader Key Setting & coc-actions
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+let mapleader = "," 
+" Remap for do codeAction of selected region
+function! s:cocActionsOpenFromSelected(type) abort
+  execute 'CocCommand actions.open ' . a:type
+endfunction
+xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+" Applying codeAction to the selected region.
+" Example: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Map function and class text objects
+" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
+xmap if <Plug>(coc-funcobj-i)
+omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~
+" """""""""""""""""""""""""
+
+" Mappings for CoCList
+" Show all diagnostics.
+nnoremap <silent><nowait> <space>a  :<C-u>CocDiagnostics<cr>
+" Manage extensions.
+nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+" Show commands.
+nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+" Find symbol of current document.
+nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+" Search workspace symbols.
+nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+" Do default action for next item.
+nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+" Do default action for previous item.
+nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+" Resume latest coc list.
+nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+" nmap <silent> gs :sp<CR><Plug>(coc-definition)
+" nmap <silent> gS :vsp<CR><Plug>(coc-definition)
+
+" ~~~~buffers  :bn next : bp  previous
+nmap <silent> <Leader>b :buffers<CR>
+nmap <silent> <Leader>l <C-w>gt<CR>
+nmap <silent> <Leader>h <C-w>gT<CR>
+nmap <silent> <Leader>j :tabfirst<CR>
+nmap <silent> <Leader>k :tablast<CR>
+nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
+nnoremap <silent><nowait> <space>n  :<C-u>:bn<CR>
+nnoremap <silent><nowait> <space>p  :<C-u>:bp<CR>
+"~~~~~~~~~
+" ~~~highlight Rust-analyzer
+nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=5 <CR>
+
+" Move visually selected lines up or down in various modes.
+" nnoremap K :m .-2<CR>==
+" nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv==gv
+vnoremap J :m '>+1<CR>gv==gv
+
+
+"  """""""""""""""""""""""
+" Generic Setting
+"  """"""""""""""""""""""
+
+" relativenumber No.
+set number relativenumber
+
 "esc setting
 inoremap jk <esc>
 
 syntax enable
-filetype indent on
-highlight Comment term=bold cterm=bold ctermfg=4
-
-" rust InlayHint color setting
-" highlight CocInlayHint     ctermbg=5
-" hi CocInlayHint ctermbg=125
-
-
-
 
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 set scrolloff=5
+filetype plugin indent on
+filetype indent on
+set showmatch
+set autoindent
 
-set relativenumber
+" https://linuxhint.com/use-auto-indent-in-vim/
+" :set filetype
+" filetype=cpp
+" filetype setting
+
 
 set encoding=UTF-8
 let $LANG = 'en'
 
+" """""""""""""""""""""""""
+
+" Vimspector
 let g:vimspector_enable_mappings = 'HUMAN'
 packadd! vimspector
-
-
-
-
 
 "Clear all registers!
 command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor

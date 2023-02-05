@@ -399,8 +399,8 @@ nnoremap <silent><nowait> <space>p  :<C-u>:bp<CR>
 nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=5 <CR>
 
 " Move visually selected lines up or down in various modes.
-nnoremap K :m .-2<CR>==
-nnoremap J :m .+1<CR>==
+" nnoremap K :m .-2<CR>==
+" nnoremap J :m .+1<CR>==
 vnoremap K :m '<-2<CR>gv==gv
 vnoremap J :m '>+1<CR>gv==gv
 
