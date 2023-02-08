@@ -1,98 +1,93 @@
-set ft=nasm  " assembly highlight syntax
-set hlsearch
-set autoindent
-set ttyfast
-set cindent
-set smartindent
-set updatetime=300
-set ruler
-set title
-set wrap
-set cursorline
-set linebreak
-set showmatch
-set guicursor= "터미네이터 호환
-set mouse=r
-set laststatus=2
-if !has('gui_running')
-    set t_Co=256
+" =========================================================================
+" =  플러그인 설정                                                        =
+" =========================================================================
+
+if has('python3')
 endif
 
-call plug#begin('~/vimfiles/plugged')
+call plug#begin('~/.vim/plugged') " 플러그인 시작
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'nanotech/jellybeans.vim' " vim thema skin
+	" Conquer Of Completion 자동완성 플러그인
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'ryanoasis/vim-devicons' "Pretty Icons
-Plug 'scrooloose/nerdtree' "file system explorer
+	" nvim-treesitter 구문 파싱 하이라이팅
+	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-Plug 'vim-airline/vim-airline' " vim status bar
-Plug 'vim-airline/vim-airline-themes' " airline_themes
-Plug 'blueyed/vim-diminactive' "to dim inactive windows
-Plug 'talek/obvious-resize' "Obvious Resize_Windows
+	" Plug 'majutsushi/tagbar'
+	" Plug 'preservim/tagbar'
+	" Plug 'sitiom/nvim-numbertoggle' "NeoVim numbertoggle
 
-Plug 'junegunn/vim-easy-align' "Vim alignment plugin.
-Plug 'nathanaelkane/vim-indent-guides' "visually displaying indent levels in Vim
-Plug 'Yggdroot/indentLine' " Visually displaying indent
-Plug 'townk/vim-autoclose'  " automatic closing of parentheses
-Plug 'luochen1990/rainbow' "colorful brackets.
+	" NERDTree 코드 뷰어 창
+	Plug 'preservim/nerdtree'
 
-" Plug 'matchparenpp'         " check parentheses.
-Plug 'ycm-core/YouCompleteMe' "automatic_completion
+	" 컬러스킴(색상표) jellybeans, gruvbox
+	Plug 'nanotech/jellybeans.vim'
+	" Plug 'morhetz/gruvbox'
 
-Plug 'rust-lang/rust.vim' "rust
-Plug 'fannheyward/coc-rust-analyzer' "rust_analyzer
-Plug 'mattn/vim-lsp-settings' "rust_analyzer__lsp
-Plug 'liuchengxu/vista.vim' " rust vista
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
+	" 하단에 다양한 상태(몇 번째 줄, 인코딩, etc.)를 
+	" 표시하는 상태바 추가
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
 
-Plug 'Shougo/vimproc.vim', {'do' : 'make'} "debug
-Plug 'idanarye/vim-vebugger' "debug_
+	" CScope 플러그인
+	Plug 'ronakg/quickr-cscope.vim'
 
-Plug 'kamykn/spelunker.vim' "smarter way to correct spelling mistakes
+	" CtrlP 파일 탐색 플러그인
+	Plug 'ctrlpvim/ctrlp.vim'
 
-Plug 'tpope/vim-surround'
+	" 비활성 윈도우 강조
+	" Plug 'blueyed/vim-diminactive'
 
-" C
-Plug 'justmao945/vim-clang'
+	" vim cutlass 잘라내기 명령어가 yank 에 영향을 주지 않음
+	" Plug 'svermeulen/vim-cutlass'
 
-" C# Setting~
-Plug 'OmniSharp/omnisharp-vim' "C#
-Plug 'dense-analysis/ale' "C#
+	" VIM GAS(GNU ASsembler) Highlighting
+	Plug 'Shirk/vim-gas'
 
-" :UnicodeTable    - Print Unicode Table in new window
-Plug 'chrisbra/unicode.vim'
+	Plug 'Yggdroot/indentLine' " Visually displaying indent
+	Plug 'townk/vim-autoclose'  " automatic closing of parentheses
+	Plug 'luochen1990/rainbow' "colorful brackets.
 
-" .agc: Apollo Guidance Comput .s: Unix Assembly  .x68:Motorola 68K Assembly
-Plug 'wsdjeg/vim-assembly'
+	Plug 'ycm-core/YouCompleteMe' "automatic_completion
+
+	Plug 'rust-lang/rust.vim' "rust
+	Plug 'fannheyward/coc-rust-analyzer' "rust_analyzer
+	Plug 'mattn/vim-lsp-settings' "rust_analyzer__lsp
+	Plug 'liuchengxu/vista.vim' " rust vista
+	Plug 'prabirshrestha/vim-lsp' 
+	Plug 'prabirshrestha/asyncomplete.vim'
+	Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
+	Plug 'Shougo/vimproc.vim', {'do' : 'make'} "debug
+	Plug 'idanarye/vim-vebugger' "debug_
+
+	Plug 'kamykn/spelunker.vim' "smarter way to correct spelling mistakes
+
+	Plug 'tpope/vim-surround'
+
+	" C
+	Plug 'justmao945/vim-clang'
+
+	" :UnicodeTable    - Print Unicode Table in new window
+	Plug 'chrisbra/unicode.vim'
 
 
 call plug#end()
 
-"  Command	Description
-"  :PlugInstall [name ...] [#threads]	Install plugins
-"  :PlugUpdate [name ...] [#threads]	Install or update plugins
-"  :PlugClean[!]	Remove unlisted plugins (bang version will clean without prompt)
-"  :PlugUpgrade	Upgrade vim-plug itself
-"  :PlugStatus	Check the status of plugins
-"  :PlugDiff	Examine changes from the previous update and the pending changes
-"  :PlugSnapshot[!] [output path]	Generate script for restoring the current snapshot of the plugins
-
-
+"  ~~~~~~~~~~~~~~~~~~~~~~
 "  YouCompleteMe Setting
+"  ~~~~~~~~~~~~~~~~~~~~~~
 " let g:ycm_key_list_select_completion = ['<C-n>']
 " let g:ycm_key_list_previous_completion=['<C-p>']
 
-let g:ycm_server_python_interpreter = '/usr/bin/python3'
+let g:ycm_server_python_interpreter = '/usr/bin/ptyhon3'
 " let g:ycm_collect_identifiers_from_comments_and_strings = 1
 " let g:ycm_complete_in_strings = 1
 " let g:ycm_complete_in_comments = 1
 " let g:ycm_min_num_of_chars_for_completion = 1
 " let g:ycm_filetype_blacklist = {}
-
 set signcolumn=yes
+
 
 "  ~~~~~~~~~~~~~~~~~~~~~~
 " asyncomplete.vim
@@ -129,7 +124,9 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<cr>"
 "  ~~~~~~~~~~~~~~~~~~~~~~
 
 
+"  ~~~~~~~~~~~~~~~~~~~~~~
 " Vista Setting~~
+"  ~~~~~~~~~~~~~~~~~~~~~~
 " How each level is indented and what to prepend.
 " This could make the display more compact or more spacious.
 " e.g., more compact: ["▸ ", ""]
@@ -170,7 +167,7 @@ let g:vista#renderer#icons = {
 \  }
 " Vista setting end~
 
-""  Rust analyzer inlayhint
+""  Rust analyzer inlayhint 
 "let g:lsp_inlay_hints_enabled = 1
 "let g:lsp_inlay_hints_mode = {
 "\  'normal': ['always'],
@@ -192,36 +189,25 @@ let g:vista#renderer#icons = {
 "\     },
 "\   }
 "\ })
+"  ~~~~~~~~~~~~~~~~~~~~~~
 "" ~ End ~
+"  ~~~~~~~~~~~~~~~~~~~~~~
 
 " Vista <F8>
 nmap <F8> :Vista<CR>
 
-"" for indent guide
-"let g:indentguides_spacechar = '┆'
-"let g:indentguides_tabchar = '|'
-"let g:indent_guides_enable_on_vim_startup = 1
-"let g:indent_guides_start_level= 2
-"let g:indent_guides_guide_size= 1
 
 " RainBow
-let g:rainbow_active = 1
-
-" ObviousResize
-" noremap <silent> <C-Up> :<C-U>ObviousResizeUp<CR>
-" noremap <silent> <C-Down> :<C-U>ObviousResizeDown<CR>
-" noremap <silent> <C-Left> :<C-U>ObviousResizeLeft<CR>
-" noremap <silent> <C-Right> :<C-U>ObviousResizeRight<CR>
-" let g:obvious_resize_default = 2
-" noremap <silent> <C-Up> :<C-U>ObviousResizeUp 5<CR>
-" let g:obvious_resize_run_tmux = 1
+let g:rainbow_active = 1 
 
 
 " rust
 let g:rustfmt_autosave = 1
 
 
+"  ~~~~~~~~~~~~~~~~~~~~~~
 " rust analyzer start~~~~~~:w
+"  ~~~~~~~~~~~~~~~~~~~~~~
 let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
 \ }
@@ -254,7 +240,7 @@ function! s:on_lsp_buffer_enabled() abort
 
     let g:lsp_format_sync_timeout = 1000
     autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
-
+    
     " refer to doc to add more commands
 endfunction
 
@@ -263,9 +249,12 @@ augroup lsp_install
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+"  ~~~~~~~~~~~~~~~~~~~~~~
+"  ~~~~~~~~~~~~~~~~~~~~~~
 
-" end~~~
 
+
+""""""""""""""""""""
 " Ada_languge_sever(LSP)
 if executable('ada_language_server')
     au User lsp_setup call lsp#register_server({
@@ -344,7 +333,6 @@ augroup END
 " let g:OmniSharp_want_snippet=1
 "   End ~~~~~~ OmniSharp
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Theming
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -403,7 +391,7 @@ noremap <silent> <C-K> :resize -3<CR>
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " Leader Key Setting & coc-actions
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-let mapleader = ","
+let mapleader = "," 
 " Remap for do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
   execute 'CocCommand actions.open ' . a:type
@@ -462,8 +450,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 nmap <silent> <Leader>b :buffers<CR>
 nmap <silent> <Leader>l <C-w>gt<CR>
 nmap <silent> <Leader>h <C-w>gT<CR>
-nmap <silent> <Leader>j :tabfirst<CR>
-nmap <silent> <Leader>k :tablast<CR>
 nnoremap <silent><nowait> <space>t  :<C-u>tabnew<CR>
 nnoremap <silent><nowait> <space>n  :<C-u>:bn<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>:bp<CR>
@@ -482,7 +468,7 @@ inoremap jk <Esc>
 colorscheme jellybeans
 
 " hybrid relative number line
-set number rnu
+set number relativenumber
 
 set tabstop=4
 set shiftwidth=4
@@ -495,7 +481,7 @@ set guifont=MesloLGS_NF:h16
 set encoding=utf-8
 
 " Editor Language setting
-" let $LANG = 'en'
+let $LANG = 'en'
 
 " backup folder setting
 set undodir=~/.vimdata/undo//
