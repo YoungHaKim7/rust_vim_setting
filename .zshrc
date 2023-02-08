@@ -6,16 +6,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:$PATH:
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/globalyoung/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,11 +78,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-    # other plugins..
-    zsh-syntax-highlighting
-    zsh-autosuggestions
-    fzf
-    fasd
+	zsh-syntax-highlighting
+	z
+	zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,55 +110,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-     typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/globalyoung/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/globalyoung/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/Users/globalyoung/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/globalyoung/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# curl PATH
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
-
-# For compilers to find curl you may need to set:
-export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
-
-# For pkg-config to find curl you may need to set:
-export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"
-
-
-
-#This loads nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-#LLVM - Debug
-# echo 'export PATH="/opt/homebrew/opt/llvm/bin:$PATH"'
-
-#LLVM compilers to find llvm 
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-
-#LLVM  To use the bundled libc++
-LDFLAGS="-L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib"
-
-# LularVim PATH
-PATH=$PATH:~/.local/bin/
-
-
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
