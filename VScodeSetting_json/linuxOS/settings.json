@@ -3,6 +3,11 @@
   "clangd.arguments": [
     "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
   ],
+  "clangd.path": "/home/y/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
+  "zls.path": "/home/y/.config/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
+  "workbench.colorTheme": "Default Dark+",
+  "window.zoomLevel": 1,
+  "haskell.manageHLS": "GHCup",
   //  "workbench.colorTheme": "spacedark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.untitled.hint": "hidden",
@@ -18,7 +23,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "fontFace": "MesloLGS NF",
   "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.external.osxExec": "Terminal.app",
   // auto fmt & format
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
@@ -113,7 +117,6 @@
     "<C-v>": true,
     "<C-x>": true
   },
-
   // UniCode Setting
   "insert-unicode.favorites": {
     "directories": {},
@@ -158,6 +161,5 @@
         120793
       ]
     ]
-  },
-  "clangd.path": "/home/globalyoung/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd"
+  }
 }
