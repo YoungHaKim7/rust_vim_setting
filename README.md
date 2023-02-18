@@ -2,6 +2,10 @@
 
 https://economiceco.tistory.com/3638
 
+# VSCode Extensions 잘 정리됨
+
+https://viatsko.github.io/awesome-vscode/
+
 # rust_vim_setting
 
 <br>
