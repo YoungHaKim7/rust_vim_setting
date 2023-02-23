@@ -1,3 +1,7 @@
+# 🎓 All things Vim!
+
+  - https://github.com/mhinz/vim-galore
+
 # NeoVim docs
 
 https://neovim.io/doc/user/map.html
