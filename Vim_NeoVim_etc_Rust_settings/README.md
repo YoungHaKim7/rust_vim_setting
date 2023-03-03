@@ -2,6 +2,8 @@
 
   - https://github.com/mhinz/vim-galore
 
+[VimGraphical_Cheat_Sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
+
 # Vim Graphical Cheat Sheet Tutorial
 
   - http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
