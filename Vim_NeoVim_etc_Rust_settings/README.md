@@ -2,6 +2,10 @@
 
   - https://github.com/mhinz/vim-galore
 
+# Vim Graphical Cheat Sheet Tutorial
+
+  - http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+
 # NeoVim docs
 
 https://neovim.io/doc/user/map.html
