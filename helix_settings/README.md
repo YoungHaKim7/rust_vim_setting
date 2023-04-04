@@ -1,4 +1,4 @@
-# lsp.display-inlay-hints
+# lsp.display-inlay-hints(helix ver. 23.03)
 
 ```
 :set lsp.display-inlay-hints true
