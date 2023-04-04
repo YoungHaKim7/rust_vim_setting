@@ -4,6 +4,10 @@
 :set lsp.display-inlay-hints true
 ```
 
+# helix 23.03 ver.
+
+https://helix-editor.com/news/release-23-03-highlights/
+
 # Helix Editor Tutorial(220917)
 
 한글러스트Rust강의\_041⭐️Rust로 만든 에디터Helix기초\_helix tutorial #rustlang #helix
