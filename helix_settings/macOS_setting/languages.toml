@@ -27,6 +27,7 @@ inlayHints.discriminantHints.enable = "fieldless"
 inlayHints.lifetimeElisionHints.enable = "skip_trivial"
 inlayHints.typeHints.hideClosureInitialization = true
 
+
 # [language.debugger]
 # name = "lldb-vscode"
 # transport = "stdio"
