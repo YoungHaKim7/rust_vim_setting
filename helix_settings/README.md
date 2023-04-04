@@ -8,6 +8,14 @@
 :set lsp.display-inlay-hints false
 ```
 
+- config.toml(inlay-hint 자동으로 활성화 시키기)
+
+```
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+```
+
 # helix 23.03 ver.
 
 https://helix-editor.com/news/release-23-03-highlights/
