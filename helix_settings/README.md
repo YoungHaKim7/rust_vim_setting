@@ -2,6 +2,10 @@
 
 ```
 :set lsp.display-inlay-hints true
+
+
+//off
+:set lsp.display-inlay-hints false
 ```
 
 # helix 23.03 ver.
