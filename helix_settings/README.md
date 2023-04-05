@@ -39,6 +39,9 @@ https://github.com/helix-editor/helix/pull/6324/commits/b9a4d2e311b7e4ff26664e02
 display-messages = true
 display-inlay-hints = true
 ```
+# helix 문서 밑으로 내리는 방법
+
+- The popup of the documentation does not scroll correctly, it is not proportional when scrolling down and up, for example to scroll to the end ( Ctrl + d ) x 3, and to scroll back up ( Ctrl + u ) x 6.
 
 # helix 23.03 ver.
 
