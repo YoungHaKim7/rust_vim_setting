@@ -1,3 +1,27 @@
+# theme 파일 들어가서 손 봐줘야함
+
+- runtime/themes/fleet_dark.toml
+
+```
+# ui specific
+"ui.background" = { bg = "Gray 10" } # .separator
+"ui.statusline" = { fg = "Gray 120", bg = "Gray 10" } # .inactive / .normal / .insert / .select
+# "ui.statusline.normal" = { fg = "Gray 120", bg = "darker"}
+"ui.statusline.insert" = { fg = "Gray 20", bg = "Blue 90" }
+"ui.statusline.select" = { fg = "Gray 20", bg = "Yellow 60" }
+
+"ui.cursor" = { modifiers = ["reversed"] } # .insert / .select / .match / .primary
+"ui.cursor.match" = { bg = "Blue 30" } # .insert / .select / .match / .primary
+	@@ -92,7 +92,7 @@
+"ui.text.focus" = { fg = "White", bg = "Blue 40" }
+
+"ui.virtual" = "Gray 80" # .whitespace
+"ui.virtual.inlay-hint" = { fg = "Gray 70" }
+# "ui.virtual.ruler" = { bg = "darker"}
+```
+
+https://github.com/helix-editor/helix/pull/6324/commits/b9a4d2e311b7e4ff26664e02f8dcd3bca44dc222
+
 # lsp.display-inlay-hints(helix ver. 23.03)
 
 ```
