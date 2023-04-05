@@ -1,4 +1,4 @@
-theme = "solarized_dark"
+theme = "fleet_dark"
 
 [editor]
 line-number = "relative"
