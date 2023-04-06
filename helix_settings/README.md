@@ -72,9 +72,40 @@ blue = "#104158"
 display-messages = true
 display-inlay-hints = true
 ```
+
+<hr>
+
+# Hexli Macro 사용법
+
+```
+normal mode에서
+Q
+대문자 Q start
+
+종료 Q
+대문자 Q 한번 더 누른다.
+
+
+사용할때
+소문자 q
+
+q만 쓰는듯 하다. 
+일단 q만 쓰도록 하자
+
+vim @a
+저장된 레지지터 불러오는데 @ a 이런식
+
+Helix는 q(소문자 q) 가 불러오기
+
+저장하기는 대문자 Q(대문자 Q) 시작 Q 종료 Q
+```
+
 # helix 문서 밑으로 내리는 방법
 
 - The popup of the documentation does not scroll correctly, it is not proportional when scrolling down and up, for example to scroll to the end ( Ctrl + d ) x 3, and to scroll back up ( Ctrl + u ) x 6.
+
+
+<hr>
 
 # helix 23.03 ver.
 
