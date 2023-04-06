@@ -22,6 +22,31 @@
 
 https://github.com/helix-editor/helix/pull/6324/commits/b9a4d2e311b7e4ff26664e02f8dcd3bca44dc222
 
+
+- themes/darcula-solid.toml
+
+```
+# Original source and more info: https://github.com/jesusmgg/darcula-solid-helix
+
+inherits = "darcula"
+
+"ui.background.separator" = { bg = "grey01" }
+"ui.menu.scroll" = { fg = "grey02", bg = "grey00" }
+"ui.popup" = { fg = "grey03", bg = "grey02" }
+"ui.window" = { bg = "grey00" }
+"ui.selection" = { bg = "blue" }
+"ui.cursorline.secondary" = { bg = "grey03" }
+
+[palette]
+grey00 = "#101010"
+grey01 = "#1f1f1f"
+grey02 = "#323232"
+grey03 = "#555555"
+grey04 = "#a8a8a8"
+
+blue = "#104158"
+```
+
 # lsp.display-inlay-hints(helix ver. 23.03)
 
 ```
