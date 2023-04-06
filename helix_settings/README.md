@@ -2,11 +2,11 @@
 
 - runtime/themes/base16_transparent.toml
 
-- config.toml
+  - config.toml
 
-```
-theme = "base16_transparent"
-```
+  ```
+  theme = "base16_transparent"
+  ```
 
 - runtime/themes/fleet_dark.toml
 
