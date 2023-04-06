@@ -1,4 +1,4 @@
-# theme 파일 들어가서 손 봐줘야함(%HOME./config/helix/runtime/themes/ 
+# theme 파일 들어가서 손 봐줘야함(%HOME/.config/helix/runtime/themes/ 
 
   - ./config/helix/config.toml    (여기서 보통 수정많이 하는데 inlay hint는 테마 들어가서 수정)
 
