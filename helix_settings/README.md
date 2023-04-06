@@ -79,6 +79,10 @@ display-inlay-hints = true
 
 ```
 ~~~~~~~~~~~~Helix~~~~~~~~~~~~~
+~~~ Q 녹화시작
+~~~ Q 녹화 종료
+
+~~~ q 녹화한 매크로 사용하기
 normal mode에서
 Q
 대문자 Q start
