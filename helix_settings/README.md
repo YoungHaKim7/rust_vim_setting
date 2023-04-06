@@ -1,5 +1,7 @@
 # theme 파일 들어가서 손 봐줘야함
 
+- runtime/themes/base16_transparent.toml
+
 - runtime/themes/fleet_dark.toml
 
 ```
