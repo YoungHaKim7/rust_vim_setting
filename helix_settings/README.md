@@ -1,4 +1,4 @@
-# theme 파일 들어가서 손 봐줘야함
+# theme 파일 들어가서 손 봐줘야함(./config/helix/runtime/themes/ )
 
 - runtime/themes/base16_transparent.toml
 
