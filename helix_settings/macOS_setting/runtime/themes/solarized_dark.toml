@@ -41,7 +41,7 @@
 "ui.background" = { bg = "base03" }
 
 "ui.virtual.whitespace" = { fg = "base01" }
-"ui.virtual.inlay-hint" = { fg = "base01", bg = "red", modifiers = ["italic"] }
+"ui.virtual.inlay-hint" = { fg = "base01", bg = "#9e2d19", modifiers = ["italic"] }
 
 # 行号栏
 "ui.linenr" = { fg = "base0", bg = "base02" }
