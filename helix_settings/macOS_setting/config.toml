@@ -1,4 +1,5 @@
 theme = "fleet_dark"
+# theme = "solarized_dark"
 
 [editor]
 line-number = "relative"
@@ -12,6 +13,7 @@ character = "┊"
 
 [editor.lsp]
 display-messages = true
+# inlay hint #  :set lsp.display-inlay-hints false
 display-inlay-hints = true
 
 [editor.cursor-shape]
