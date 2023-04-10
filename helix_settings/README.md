@@ -20,6 +20,10 @@ https://github.com/helix-editor/helix/discussions/4048
 
   - https://stackoverflow.com/questions/75691155/how-to-install-codelldb-cli-on-apple-silicon
   
+  - 단서 4번째
+  
+  - https://www.reddit.com/r/neovim/comments/ryy7yx/nvim_dap_rust_debugger_lldbvscode_binary_missing/
+  
 ## macOS
 
 https://www.hiroakit.com/archives/1966
