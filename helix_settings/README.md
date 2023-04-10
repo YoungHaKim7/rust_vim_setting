@@ -1,3 +1,7 @@
+# How do I use the debugger with Rust? #4048(유일한 단서 아직 성공한 사람 없는듯)
+
+https://github.com/helix-editor/helix/discussions/4048
+
 # inlay hint 빨간색 (어두운 색)
 
 - solarized_dark.toml
