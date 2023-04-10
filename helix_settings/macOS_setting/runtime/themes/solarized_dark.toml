@@ -37,51 +37,51 @@
 "diff.delta" = { fg = "orange" }
 "diff.minus" = { fg = "red" }
 
-# 背景
+# background背景
 "ui.background" = { bg = "base03" }
 
 "ui.virtual.whitespace" = { fg = "base01" }
 "ui.virtual.inlay-hint" = { fg = "base01", bg = "#9e2d19", modifiers = ["italic"] }
 
-# 行号栏
+# line number column行号栏
 "ui.linenr" = { fg = "base0", bg = "base02" }
-# 当前行号栏
+# current line number column当前行号栏
 "ui.linenr.selected" = { fg = "blue", modifiers = ["bold"] }
 #cursorline
 "ui.cursorline" = { bg = "base03" }
 
-# 状态栏
+# status bar状态栏
 "ui.statusline" = { fg = "base03", bg = "base0" }
 "ui.statusline.normal" = { bg = "blue" }
 "ui.statusline.insert" = { bg = "green" }
 "ui.statusline.select" = { bg = "yellow" }
 
-# 非活动状态栏
+# inactive status bar非活动状态栏
 "ui.statusline.inactive" = { fg = "base1", bg = "base01" }
 
-# 补全窗口, preview窗口
+# completion window(preview)补全窗口, preview窗口
 "ui.popup" = { bg = "base02" }
-# 影响 补全选中 cmd弹出信息选中
+# affect by-election cmd pop-up information selection影响 补全选中 cmd弹出信息选中
 "ui.menu.selected" = { fg = "base02", bg = "base2"}
 "ui.menu" = { fg = "base0", bg = "base02" }
 # ??
 "ui.window" = { fg = "base3" }
-# 命令行 补全的帮助信息
+# command-line completion help information命令行 补全的帮助信息
 "ui.help" = { modifiers = ["reversed"] }
 
-# 快捷键窗口 
+# shortcut window快捷键窗口 
 "ui.popup.info" = {fg = "base02", bg = "base1", modifiers = ["bold"]}
-# 快捷键字体
+# keyboard shortcut font快捷键字体
 "ui.text.info" = {fg = "base02", modifiers = ["bold"]}
 
-# 普通ui的字体样式
+# common UI font style普通ui的字体样式
 "ui.text" = { fg = "base1" }
-# 影响 picker列表选中, 快捷键帮助窗口文本
+# affect picker list selection, shortcut help window text影响 picker列表选中, 快捷键帮助窗口文本
 "ui.text.focus" = { fg = "blue", modifiers = ["bold"]}
-# file picker中， 预览的当前选中项
+# In the file picker, the current selection for the previewfile picker中， 预览的当前选中项
 "ui.highlight" = { fg = "red", modifiers = ["bold", "italic", "underlined"] }
 
-# 主光标/selectio
+# primary cursor主光标/selectio
 "ui.cursor.primary" = { fg = "base03", bg = "base1" }
 "ui.cursor.select" = { fg = "base02", bg = "cyan" }
 "ui.cursorline.primary" = { bg = "base02" }
@@ -93,10 +93,10 @@
 "ui.virtual.indent-guide" = { fg = "base02" }
 "ui.virtual.ruler" = { fg = "red" }
 
-# normal模式的光标
+# cursor in normal mode(normal模式的光标)
 "ui.cursor" = {fg = "base02", bg = "cyan"}
 "ui.cursor.insert" = {fg = "base03", bg = "base3"}
-# 当前光标匹配的标点符号
+# Punctuation of current cursor match当前光标匹配的标点符号현재 커서가 일치하는 문장 부호
 "ui.cursor.match" = { fg = "base03", bg = "base00" }
 
 "warning" =  { fg = "orange", modifiers= ["bold", "underlined"] }
@@ -110,7 +110,7 @@
 "diagnostic.hint" = { underline = { style = "curl", color = "base01" } }
 
 [palette]
-# 深色 越来越深
+# It's getting darker.짙은 색이 점점 짙어지다深色 越来越深
 base03   = "#002b36"
 base025  = "#03303b"
 base02   = "#073642"
@@ -123,7 +123,7 @@ base1    = "#93a1a1"
 base2    = "#eee8d5"
 base3    = "#fdf6e3"
 
-# 浅色 越來越浅
+# It's getting lighter.浅色 越來越浅
 yellow  = "#b58900"
 orange  = "#cb4b16"
 red     = "#dc322f"
