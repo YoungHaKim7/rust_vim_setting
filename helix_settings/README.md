@@ -1,8 +1,12 @@
 # How do I use the debugger with Rust? #4048(유일한 단서 아직 성공한 사람 없는듯)
 
+- 유력한 단서 1
+
+https://github.com/helix-editor/helix/wiki/Debugger-Configurations#addendum-for-users-who-cant-make-any-of-the-above-work
+
 https://github.com/helix-editor/helix/discussions/4048
 
-  - 단서 2번째
+  - 단서 3번째
   
   - https://www.reddit.com/r/HelixEditor/comments/101dnq5/binary_for_debug_adapter_lldbvscode_not_found_in/
 
