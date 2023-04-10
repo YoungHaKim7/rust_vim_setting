@@ -2,6 +2,10 @@
 
 https://github.com/helix-editor/helix/discussions/4048
 
+  - 단서 2번째
+  
+  - https://www.reddit.com/r/HelixEditor/comments/101dnq5/binary_for_debug_adapter_lldbvscode_not_found_in/
+
 # inlay hint 빨간색 (어두운 색)
 
 - solarized_dark.toml
