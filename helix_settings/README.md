@@ -20,6 +20,10 @@ https://github.com/helix-editor/helix/discussions/4048
 
   - https://stackoverflow.com/questions/75691155/how-to-install-codelldb-cli-on-apple-silicon
   
+## macOS
+
+https://www.hiroakit.com/archives/1966
+  
 # inlay hint 빨간색 (어두운 색)
 
 - solarized_dark.toml
