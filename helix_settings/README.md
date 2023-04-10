@@ -14,6 +14,12 @@ https://github.com/helix-editor/helix/discussions/4048
   
   - https://www.reddit.com/r/HelixEditor/comments/101dnq5/binary_for_debug_adapter_lldbvscode_not_found_in/
 
+  - 단서 4번째
+
+  - https://github.com/vadimcn/codelldb/blob/master/MANUAL.md
+
+  - https://stackoverflow.com/questions/75691155/how-to-install-codelldb-cli-on-apple-silicon
+  
 # inlay hint 빨간색 (어두운 색)
 
 - solarized_dark.toml
