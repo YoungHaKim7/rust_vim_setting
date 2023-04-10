@@ -337,6 +337,8 @@ https://helix-editor.com/news/release-23-03-highlights/
 
 - https://youtu.be/cZfF1XRoIC8
 
+https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung
+
 <br>
 
 # Helix Editor
