@@ -23,6 +23,8 @@ $ rustup component add rust-analyzer
 
 However, in contrast to component add clippy or component add rustfmt, this does not actually place a rust-analyzer binary in ~/.cargo/bin, see this issue. You can find the path to the binary using:
 
+- rust-analyzer.exe가 어디에 설치 되어있는지 알수 있다.!
+
 ```
 $ rustup which --toolchain stable rust-analyzer
 ```
