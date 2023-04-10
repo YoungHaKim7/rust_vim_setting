@@ -1,4 +1,6 @@
-# How do I use the debugger with Rust? #4048(유일한 단서 아직 성공한 사람 없는듯)
+# How do I use the debugger with Rust? #4048(유일한 단서 아직 성공한 사람 마지막에 중국사람이 성공함)
+
+- https://github.com/helix-editor/helix/discussions/4048
 
 - 유력한 단서 1
 
