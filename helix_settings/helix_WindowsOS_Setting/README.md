@@ -35,3 +35,5 @@ Alternatively you might be able to configure your editor to start rust-analyzer 
 ```
 $ rustup run stable rust-analyzer
 ```
+
+  -  rust-analyzer.exe 있는 폴더 찾아서 PATH 잡아주면 끝 👍💻
