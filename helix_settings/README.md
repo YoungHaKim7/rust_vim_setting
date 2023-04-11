@@ -462,9 +462,10 @@ ds
 
 # Helix text Editor❤️ Surround사용법(ms, mr, md) (기본 내장됨)
 
-<td><a href="https://docs.helix-editor.com/usage.html"><img align="left" alt="helix" width="512px" src="https://blog.kakaocdn.net/dn/bWzy7G/btrVqgTUGVu/fajOnSkVgcFSNreQhGkVl0/img.gif"></a>
+<p>
+  <a href="https://docs.helix-editor.com/usage.html"><img align="left" alt="helix" width="512px" src="https://blog.kakaocdn.net/dn/bWzy7G/btrVqgTUGVu/fajOnSkVgcFSNreQhGkVl0/img.gif"></a>
+</p>
 
-<br>
 
 ```
 // 추가
@@ -480,3 +481,7 @@ md - Delete surround characters
 ```
 
 https://docs.helix-editor.com/usage.html
+
+# helix 세팅할 때 주의 할점 Q&A
+
+https://github.com/helix-editor/helix/wiki/FAQ
