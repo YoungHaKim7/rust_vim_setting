@@ -17,6 +17,14 @@ Installation
 scoop install helix
 ```
 
+scoop 패키지 다운받는 법
+
+https://scoop.sh/
+
+<br>
+
+<hr>
+
 # Rust - analyzer
 
 
