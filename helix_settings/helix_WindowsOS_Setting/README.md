@@ -21,6 +21,8 @@ scoop 패키지 다운받는 법
 
 https://scoop.sh/
 
+https://github.com/ScoopInstaller/Install#readme
+
 <br>
 
 <hr>
