@@ -1,3 +1,22 @@
+# choco 로  Helix 23.03버젼 안 나와서 scoop패키지로 받기
+
+- helix (A post-modern modal text editor)
+
+🔗 https://helix-editor.com
+
+📜 App manifest
+
+Current version: 23.03
+
+Bucket: main
+
+License: MPL-2.0
+Installation
+
+```
+scoop install helix
+```
+
 # Rust - analyzer
 
 
