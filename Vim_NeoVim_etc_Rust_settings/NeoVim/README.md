@@ -2,6 +2,10 @@
 
 https://github.com/alpha2phi/neovim-for-beginner
 
+- 완성도 높은 NeoVim lua 세팅 영상 The perfect Neovim setup for Rust.
+
+  - https://youtu.be/mh_EJhH49Ms
+
 <br>
 
 <hr>
