@@ -9,6 +9,10 @@
 
   - http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 
+# VIM Tips & Tricks
+
+https://youtube.com/playlist?list=PLpqQbpeQxfW0eJK-LSEzuEeC1u5vsQOUO
+
 # NeoVim docs
 
 https://neovim.io/doc/user/map.html
