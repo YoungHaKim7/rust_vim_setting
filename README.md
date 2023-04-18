@@ -85,6 +85,17 @@ https://economiceco.tistory.com/14813
 - ❤️ Hyperpolyglot
 Text Mode Editors: Vim, Emacs, Nano
 https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors.html
+
+# 다른 사람의 정리된 Vim 정리 끝판왕(역시 이 세상에는 괴물들이 참 많다.ㅋ)
+
+http://m.egloos.zum.com/mataeoh/v/7036315
+
+https://profkuperman.com/help/vim/home.html
+
+- graphic으로 잘 정리됨. 한눈에 다 들어옴(Normal, Insert mode, 등등)
+
+  - http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+
 <hr>
 
 <br>
