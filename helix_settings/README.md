@@ -9,7 +9,7 @@
 
 - 빠르게 오류난 곳을 이동
 
-  - [[d   or ]]d
+  - [d   or ]d
 
 # Clangd 15 install(
 
