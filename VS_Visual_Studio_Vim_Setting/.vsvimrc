@@ -1,4 +1,3 @@
-
 " Set global shortcut in Visual Studio options:
 "     Window.ActivateDocumentWindow => Esc
 " External tool to open new Vim at current line:
@@ -29,11 +28,12 @@ inoremap z,p <c-r>"
 "horrible hack because VsVim refuses to fix this bug
 nnoremap g; u<c-r>
 
-nnoremap \ ,
+
+" nnoremap \ ,
 nnoremap gj i<cr><esc>k$
-nnoremap s /
-nnoremap S ?
-nnoremap zy  zt5<c-y>
+" nnoremap s /
+" nnoremap S ?
+" nnoremap zy  zt5<c-y>
 
 nnoremap gwo :vsc FullScreen<cr>
 nnoremap gws :vsc Window.Split<cr>
@@ -50,7 +50,7 @@ nnoremap gwk :vsc Window.PreviousSplitPane<cr>
 
 nnoremap <c-d> <PageDown>
 nnoremap <c-u> <PageUp>
-nnoremap z. :w<cr>
+" nnoremap z. :w<cr>
 
 nnoremap vd "_d
 xnoremap x  "_d
@@ -65,12 +65,12 @@ xnoremap - $
 nnoremap - $
 
 nnoremap <c-n> n.
-nnoremap Q @@
+" nnoremap Q @@
 
-nnoremap ]e :m+1<cr>
-nnoremap [e :m-2<cr>j
-xnoremap ]e :m'>+1<cr>gv
-xnoremap [e :m'<-2<cr>jgv
+" nnoremap ]e :m+1<cr>
+" nnoremap [e :m-2<cr>j
+xnoremap J :m'>+1<cr>gv
+xnoremap K :m'<-2<cr>jgv
 
 nnoremap Y y$
 
