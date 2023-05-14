@@ -21,6 +21,9 @@ set expandtab
 set ttimeout
 set ttimeoutlen=50
 set number rnu
+" esc setting
+inoremap jk <Esc>
+"""""""""""""""""""""""""
 
 inoremap z,  <c-o>
 inoremap z,p <c-r>"
