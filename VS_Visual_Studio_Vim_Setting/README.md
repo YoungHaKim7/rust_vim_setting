@@ -18,3 +18,9 @@ https://github.com/justinmk/config
 :set vimrcpaths?
 
 ```
+
+# 주로 쓰는 Visual Studio Keymap
+
+```
+F2 - rename (LSP 이거 많이 쓸듯)
+```
