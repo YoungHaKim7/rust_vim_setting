@@ -23,4 +23,5 @@ https://github.com/justinmk/config
 
 ```
 Ctrl+R - rename (LSP 이거 많이 쓸듯)
+Ctrl+e+e 에러 체크 하단에 빨리 표시해줌(TroubleToggle비슷)
 ```
