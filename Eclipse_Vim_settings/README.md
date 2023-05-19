@@ -1,6 +1,8 @@
 # Eclipse __Vim Plug in (vrapper) 
 
-https://vrapper.sourceforge.net/documentation/?topic=configuration#config
+https://vrapper.sourceforge.net/home/
+
+  - Documentation https://vrapper.sourceforge.net/documentation/?topic=configuration#config
 
 
 # Relative Line Number Ruler
