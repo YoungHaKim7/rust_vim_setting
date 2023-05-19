@@ -1,0 +1,5 @@
+imap jk <esc>
+set autoindent
+set ignorecase
+set smartcase
+set nonum
