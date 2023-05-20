@@ -25,7 +25,7 @@ https://github.com/justinmk/config
 Ctrl+R - rename (LSP 이거 많이 쓸듯)
 Ctrl+e+e 에러 체크 하단에 빨리 표시해줌(TroubleToggle비슷)
 
-gkf   자동 정렬로 세팅함 Auto Fmt
+gkd   자동 정렬로 세팅함 Auto Fmt
 
 
 gwo    Full -Screen
