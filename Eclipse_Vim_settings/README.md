@@ -42,3 +42,7 @@ set smartcase
   - macOS
   
     - https://formulae.brew.sh/cask/eclipse-ide
+  
+  - WindowsOS
+  
+    - choco https://community.chocolatey.org/packages/eclipse
