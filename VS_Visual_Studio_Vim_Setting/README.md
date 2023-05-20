@@ -4,6 +4,10 @@ Show the code structure of your current document
 
 https://marketplace.visualstudio.com/items?itemName=SamirBoulema.CodeNav2022
 
+# ReSharperC
+
+https://marketplace.visualstudio.com/items?itemName=JetBrains.ReSharperC
+
 # Source
 
 https://github.com/justinmk/config/blob/master/.vsvimrc
