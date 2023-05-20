@@ -25,6 +25,10 @@ set number rnu
 inoremap jk <Esc>
 """""""""""""""""""""""""
 
+"" Auto Fmt(FormatDocunment)
+nnoremap gkf :vsc Edit.FormatDocument<cr>
+
+
 inoremap z,  <c-o>
 inoremap z,p <c-r>"
 
