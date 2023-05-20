@@ -265,8 +265,9 @@ nnoremap <silent><nowait> <space>p  :<C-u>bp<CR>
 nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=53 <CR>
 
 " Move visually selected lines up or down in various modes.
-nnoremap K :m .-2<CR>==
-nnoremap J :m .+1<CR>==
+" nnoremap K :m .-2<CR>==    " "" Normal모드에서 되는거 싫어서 주석처리함  """
+" nnoremap J :m .+1<CR>==
+""""" Visual mode로 블럭 칠해 주고 칠해 준 부분만 움직이게 쎄팅.. 잘못 눌러서 움직임 방지 """"
 vnoremap K :m '<-2<CR>gv==gv
 vnoremap J :m '>+1<CR>gv==gv
 
