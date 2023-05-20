@@ -16,23 +16,29 @@ The options described above only change the behaviour of the editor in which the
 
 This is an example of the contents of a configuration file:
 
-    ```
-    noremap d h
-    noremap h j
-    noremap t k
-    noremap n l
-    noremap e d
-    noremap E D
-    noremap l n
-    noremap L N
-    noremap s :
-    noremap ` ^
-    noremap k e
-    noremap K E
-    imap jj <esc>
-    map L $
-    map H ^
-    set autoindent
-    set ignorecase
-    set smartcase
-    ```
+```
+noremap d h
+noremap h j
+noremap t k
+noremap n l
+noremap e d
+noremap E D
+noremap l n
+noremap L N
+noremap s :
+noremap ` ^
+noremap k e
+noremap K E
+imap jj <esc>
+map L $
+map H ^
+set autoindent
+set ignorecase
+set smartcase
+```
+
+  # Install
+  
+  - macOS
+  
+    - https://formulae.brew.sh/cask/eclipse-ide
