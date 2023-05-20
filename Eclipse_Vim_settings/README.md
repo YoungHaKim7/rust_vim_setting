@@ -39,6 +39,8 @@ set smartcase
 
   # Install
   
+  - https://www.eclipse.org/downloads/packages/installer
+  
   - macOS
   
     - https://formulae.brew.sh/cask/eclipse-ide
