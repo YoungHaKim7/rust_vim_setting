@@ -497,6 +497,13 @@ https://docs.helix-editor.com/usage.html
 
 https://github.com/helix-editor/helix/wiki/FAQ
 
+
+<br>
+
+<hr>
+
+<hr>
+
 # TypeScript 세팅
 
 https://ar.al/2022/11/14/installing-helix-editor-language-servers/#code
@@ -551,3 +558,27 @@ rm -rf "${temporaryDirectory}"
 
 echo "Done."
 ```
+
+
+
+# Java setting(jdtls)
+
+https://github.com/helix-editor/helix/issues/2510
+
+```
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+roots = ["pom.xml"]
++ language-server = { command = "jdtls" }
+indent = { tab-width = 4, unit = "    " }
+```
+
+## Eclipse JDT Language Server
+
+https://github.com/eclipse/eclipse.jdt.ls
+
+Installation instructions can be found on the [projects README](https://github.com/eclipse/eclipse.jdt.ls)
+On MacOS installation can also be done via `brew install jdtls`
