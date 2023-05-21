@@ -8,6 +8,8 @@ https://vrapper.sourceforge.net/home/
 
   - Documentation https://vrapper.sourceforge.net/documentation/?topic=configuration#config
 
+  - 키 설정 궁금한거 https://sourceforge.net/p/vrapper/discussion/901740/
+
 
 # Relative Line Number Ruler
 
