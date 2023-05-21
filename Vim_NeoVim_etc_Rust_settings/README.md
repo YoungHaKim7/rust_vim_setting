@@ -782,3 +782,14 @@ https://riptutorial.com/vim
 by dcschmid
 
 https://cheatography.com/dcschmid/cheat-sheets/personal-neovim-cheatsheet/
+
+
+# Java Setting
+
+https://github.com/neoclide/coc-java
+
+- Install this extension by run command:
+
+```
+:CocInstall coc-java
+```
