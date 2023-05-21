@@ -8,6 +8,9 @@ https://vrapper.sourceforge.net/home/
 
   - Documentation https://vrapper.sourceforge.net/documentation/?topic=configuration#config
 
+  - keymap https://vrapper.sourceforge.net/documentation/index.php?topic=commands
+
+  
   - 키 설정 궁금한거 https://sourceforge.net/p/vrapper/discussion/901740/
 
 
