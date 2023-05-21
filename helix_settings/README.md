@@ -582,3 +582,7 @@ https://github.com/eclipse/eclipse.jdt.ls
 
 Installation instructions can be found on the [projects README](https://github.com/eclipse/eclipse.jdt.ls)
 On MacOS installation can also be done via `brew install jdtls`
+
+## jdtls & etc
+
+https://github.com/eclipse/eclipse.jdt.ls
