@@ -20,6 +20,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   "fontFace": "MesloLGS NF",
   "terminal.integrated.fontFamily": "MesloLGS NF",
+  // command + shift + c  (⌘ + ⇧ + c)
   "terminal.external.osxExec": "Warp.app",
   // auto fmt & format
   "editor.formatOnSave": true,
