@@ -10,3 +10,7 @@ or
 Settings.JSON
 
 ```
+
+# ESLint
+
+https://eslint.org/docs/latest/use/getting-started
