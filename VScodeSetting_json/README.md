@@ -13,4 +13,6 @@ Settings.JSON
 
 # ESLint
 
-https://eslint.org/docs/latest/use/getting-started
+- Integrates ESLint JavaScript into VS Code.
+
+  https://eslint.org/docs/latest/use/getting-started
