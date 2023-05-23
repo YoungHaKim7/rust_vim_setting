@@ -1,8 +1,8 @@
 {
-  "clangd.arguments": [
-    "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
-  ],
-  "clangd.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin",
+  // "clangd.arguments": [
+    // "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
+  // ],
+  // "clangd.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin",
   "zig.zigPath": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install",
 //  "workbench.colorTheme": "spacedark",
   "workbench.iconTheme": "material-icon-theme",
@@ -25,6 +25,17 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnSaveMode": "file", // required to format on save
+  // ESlint
+  "eslint.format.enable": true,
+  "files.autoSave": "onFocusChange", // optional but recommended
+  "vs-code-prettier-eslint.prettierLast": true,
+  // Enable per-language(Prettier - Code formatter JS, TS)
+  "[javascript]": {
+      "editor.formatOnSave": true,
+  },
+// code runner
   "code-runner.runInTerminal": true,
   // Controls the font family.
   //"editor.fontFamily": "Operator Mono",
@@ -45,7 +56,8 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "terminal.integrated.inheritEnv": false,
   "files.associations": {
-    "*.html": "html"
+    "*.html": "html",
+    "*.rmd": "markdown"
   },
   "files.exclude": {
     "**/.classpath": true,
@@ -53,12 +65,25 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
+  // AI code Whisperer
   "tabnine.experimentalAutoImports": true,
+
+  // AWS AI code Whsperer
+  "aws.codeWhisperer.importRecommendation": true,
+  "aws.codeWhisperer.javaCompilationOutput": "",
+  "aws.codeWhisperer.shareCodeWhispererContentWithAWS": true,
+  "aws.telemetry": true,
+
   // rust-analyzer setting~
   "rust-analyzer.inlayHints.enable": true,
   "rust-analyzer.cargo.loadOutDirsFromCheck": true,
   "rust-analyzer.procMacro.enable": true,
   "rust-analyzer.checkOnSave.command": "clippy",
+
+  // rust-yew 
+  // "emmet.includeLanguages": {
+  //   "rust": "html",
+  // },
 
   // zig languages setting~
   "zls.warn_style": true,
@@ -102,6 +127,7 @@
   ],
   "vim.handleKeys": {
     "<C-a>": true,
+    "<C-b>": true,
     "<C-c>": false,
     "<C-d>": true,
     "<C-f>": true,
@@ -157,5 +183,13 @@
                 120793
             ]
         ]
+    },
+    "window.zoomLevel": 1,
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
+    "yaml.schemas": {
+      "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     }
 }
