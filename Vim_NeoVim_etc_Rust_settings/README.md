@@ -1,4 +1,4 @@
-# 자동 완성 소스로 주석과 문자열 추가 지정 & 한 글자만 입력해도 작동할 것 &  list completion 키를 &gt;C-n&amp;, &gt;C-p&amp;를 설정해 사용하고 있다
+# 자동 완성 소스로 주석과 문자열 추가 지정 & 한 글자만 입력해도 작동할 것 &  list completion 키를 C-n&gt;, C-p&gt;를 설정해 사용하고 있다
 
 https://johngrib.github.io/wiki/vim/auto-completion/#youcompleteme
 
