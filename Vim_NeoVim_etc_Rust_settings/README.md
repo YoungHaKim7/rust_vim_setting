@@ -2,6 +2,8 @@
 
 https://johngrib.github.io/wiki/vim/auto-completion/#youcompleteme
 
+<br>
+	
 # 🎓 All things Vim!
 
   - https://github.com/mhinz/vim-galore
