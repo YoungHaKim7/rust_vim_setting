@@ -10,3 +10,8 @@ https://github.com/JetBrains/ideavim
 # JetBrains/Ideavim
 
 https://github.com/JetBrains/ideavim#Files
+
+- IdeaVim
+  - Do you want to enable repeaing keys in macOS on press and hold?
+
+    - (You can do it manually by running 'defaults write -g ApplePressAndHoldEnabled 0' in the console).
