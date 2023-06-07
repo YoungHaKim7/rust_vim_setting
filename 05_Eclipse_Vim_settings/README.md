@@ -30,11 +30,14 @@ https://marketplace.eclipse.org/content/relative-line-number-ruler
 단축키 ( Ctrl + Shift + F )
 
 
-// macOS
+// macOS 코드 자동정렬
 ⌘ + ⇧ + F : 코드 자동 정렬을 사용합니다.
-Command
+Command + shift + f
 
+
+// macOS 자동완성
 ⌥ + spacebar : 코드 자동완성 기능을 사용합니다.(eclipse 단축키 매핑을 따로 수정해서 설정하였습니다)
+option(or alt) + space
 
 ```
 
