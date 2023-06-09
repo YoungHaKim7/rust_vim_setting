@@ -2,6 +2,10 @@
 
 https://github.com/maxtnuk/nvim_for_rust
 
+## 한국분 nvim setting
+
+https://alpha2phi.medium.com/neovim-pde-init-lua-a6c22bc63e80
+
 <br>
 
 <hr>
