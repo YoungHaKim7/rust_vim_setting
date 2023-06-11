@@ -20,21 +20,20 @@
   "security.workspace.trust.untrustedFiles": "open",
   "fontFace": "MesloLGS NF",
   "terminal.integrated.fontFamily": "MesloLGS NF",
-  // command + shift + c  (⌘ + ⇧ + c)
   "terminal.external.osxExec": "Warp.app",
   // auto fmt & format
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
-  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  // "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
   "editor.formatOnSaveMode": "file", // required to format on save
   // ESlint
-  "eslint.format.enable": true,
-  "files.autoSave": "onFocusChange", // optional but recommended
+  // "eslint.format.enable": true,
+  // "files.autoSave": "onFocusChange", // optional but recommended
   "vs-code-prettier-eslint.prettierLast": true,
   // Enable per-language(Prettier - Code formatter JS, TS)
   "[javascript]": {
-      "editor.formatOnSave": true,
+      "editor.formatOnSave": true
   },
 // code runner
   "code-runner.runInTerminal": true,
@@ -80,6 +79,7 @@
   "rust-analyzer.cargo.loadOutDirsFromCheck": true,
   "rust-analyzer.procMacro.enable": true,
   "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.procMacro.attributes.enable": true,
 
   // rust-yew 
   // "emmet.includeLanguages": {
@@ -190,7 +190,36 @@
       "editor.formatOnType": true
     },
     "zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
-    "yaml.schemas": {
-      "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    }
+    "yaml.customTags": [
+      "!And",
+      "!And sequence",
+      "!If",
+      "!If sequence",
+      "!Not",
+      "!Not sequence",
+      "!Equals",
+      "!Equals sequence",
+      "!Or",
+      "!Or sequence",
+      "!FindInMap",
+      "!FindInMap sequence",
+      "!Base64",
+      "!Join",
+      "!Join sequence",
+      "!Cidr",
+      "!Ref",
+      "!Sub",
+      "!Sub sequence",
+      "!GetAtt",
+      "!GetAZs",
+      "!ImportValue",
+      "!ImportValue sequence",
+      "!Select",
+      "!Select sequence",
+      "!Split",
+      "!Split sequence"
+    ],
+    // "yaml.schemas": {
+    //   "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    // }
 }
