@@ -1,3 +1,12 @@
+# 완성도 거의 완전체에 가까움
+
+https://alpha2phi.medium.com/neovim-pde-web-development-ba244382e0f7
+
+https://github.com/alpha2phi/modern-neovim
+
+
+<hr>
+
 # Good Neovim Settings
 
 https://github.com/alpha2phi/neovim-for-beginner
