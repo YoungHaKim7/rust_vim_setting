@@ -11,6 +11,18 @@ Settings.JSON
 
 ```
 
+# VScode ShorCut
+
+```
+// Quick Fix
+⌘ + .
+command + comma
+
+
+```
+
+https://stackoverflow.com/questions/47287367/what-is-the-keyboard-shortcut-in-visual-studio-code-to-pop-up-the-quick-fix-menu
+
 # ESLint
 
 - Integrates ESLint JavaScript into VS Code.
