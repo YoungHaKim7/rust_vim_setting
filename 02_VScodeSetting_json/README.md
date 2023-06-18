@@ -17,6 +17,8 @@ Settings.JSON
 // Quick Fix
 ⌘ + .
 command + comma
+// On the Mac, use the Command + . keys to pop up a menu of Quick Fix suggestions.
+// On Windows, use the Ctrl + . keys.
 
 
 ```
