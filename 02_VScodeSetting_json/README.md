@@ -11,7 +11,7 @@ Settings.JSON
 
 ```
 
-# VScode ShorCut
+# VScode ShortCut
 
 ```
 // Quick Fix
