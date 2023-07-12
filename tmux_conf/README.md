@@ -101,4 +101,36 @@ kill-session
 
 https://superuser.com/questions/777269/how-to-close-a-tmux-session
 
+# 많이 쓰는 단축키 정리
+
+```
+Ctrl + b 하고 뒤에 Command 하면 됨.
+
+# 새창 만들기
+(ctrl + b) c
+
+# 밑에 분할해서 새창
+(ctrl + b) -
+
+# 옆으로 분할해서 새창
+(ctrl + b)_
+
+# 분할한 창 이동
+(ctrl + b) 창이동은 j , k 이거 창 진입은 (i) Insert i
+
+# 크기 조절은 대문자
+(ctrl + b)  J, K
+
+# 창 죽이기
+(ctrl + b) x 
+
+# 버퍼에 입력된 창 이동
+(ctrl + b) 창이동은 버퍼 넘버 입력
+
+# 창 이름 변경하기
+(ctrl + b) $
+
+# 지금까지 열린 모든 session list 보기  tmux ls 도 동일함
+(ctrl + b) w
+```
 
