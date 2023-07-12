@@ -96,7 +96,7 @@ By pressing the default tmux Meta combination Ctrl+B and then w
 ```
 https://www.baeldung.com/linux/tmux-kill-respawn-pane
 
-# session 죽이기
+# vim처럼 : tmux에 명령어 넣는 방법 & session 죽이기
 
 ```
 (ctrl + b) :
