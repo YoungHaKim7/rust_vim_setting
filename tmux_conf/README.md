@@ -113,7 +113,7 @@ https://superuser.com/questions/777269/how-to-close-a-tmux-session
 # 많이 쓰는 단축키 정리
 
 ```
-Ctrl + b 하고 뒤에 Command 하면 됨.
+Ctrl + b 하고 뒤에 Command 하면 됨.
 
 # 새창 만들기
 (ctrl + b) c
