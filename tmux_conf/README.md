@@ -79,6 +79,15 @@ tmux kill-session -t session_number
 
 https://velog.io/@ur-luella/tmux-%EC%82%AC%EC%9A%A9%EB%B2%95
 
+
+<hr>
+
+<hr>
+
+<br>
+
+# 내가 setting tmux 일반적인 키와 다를 수 있음 ~~~~~~
+
 # session 열린거 list 보기
 
 ```
