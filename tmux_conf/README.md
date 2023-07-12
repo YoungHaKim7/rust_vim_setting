@@ -140,6 +140,6 @@ Ctrl + b 하고 뒤에 Command 하면 됨.
 (ctrl + b) $
 
 # 지금까지 열린 모든 session list 보기  tmux ls 도 동일함
-(ctrl + b) w
+(ctrl + b) w
 ```
 
