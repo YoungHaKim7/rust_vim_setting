@@ -80,12 +80,16 @@ tmux kill-session -t session_number
 https://velog.io/@ur-luella/tmux-%EC%82%AC%EC%9A%A9%EB%B2%95
 
 # session 열린거 list 보기
+
+```
 (ctrl + b) w
 By pressing the default tmux Meta combination Ctrl+B and then w
-
+```
 https://www.baeldung.com/linux/tmux-kill-respawn-pane
 
 # session 죽이기
+
+```
 (ctrl + b) :
 vim처럼 명령어 먹일 수 있음 그럼
 kill-session
@@ -93,6 +97,7 @@ kill-session
  (e.g. Ctrl+A or B, which is the default) and then : and type kill-session
 
 - 내 세팅은 (ctrl + b) w 세션 위에서 x 누르고 y 눌러서 창 죽이면 됨. 오래 살아있네 ㅋ
+```
 
 https://superuser.com/questions/777269/how-to-close-a-tmux-session
 
