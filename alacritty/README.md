@@ -25,6 +25,8 @@ PS D:\young_linux\rust_lang> Created log file at "C:\Users\user\AppData\Local\Te
 [0.878077300s] [INFO ] [alacritty] Width: 1800, Height: 884
 ```
 
+https://github.com/alacritty/alacritty/issues/6931
+
 # Alacritty - Terminal Emulator - Windows HowTo
 
 https://youtu.be/1aw8IDH826Y
