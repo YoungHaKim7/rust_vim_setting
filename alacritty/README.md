@@ -1,3 +1,30 @@
+# ```alacritty -vv``` alacritty log를 볼 수 있다. 좋네 ㅎ
+
+```bash
+ alacritty -vv
+PS D:\young_linux\rust_lang> Created log file at "C:\Users\user\AppData\Local\Temp\Alacritty-16376.log"
+[0.000006400s] [INFO ] [alacritty] Welcome to Alacritty
+[0.002761500s] [INFO ] [alacritty] Version 0.11.0 (d23330a)
+[0.020445200s] [INFO ] [alacritty] Configuration files loaded from:
+                                     "C:\\Users\\user\\AppData\\Roaming\\alacritty\\alacritty.yml"
+[0.029258500s] [DEBUG] [alacritty] Loading "MesloLGS NF" font
+[0.043650700s] [DEBUG] [alacritty] Estimated scaling factor: 1
+[0.044871400s] [DEBUG] [alacritty] Estimated window size: Some(PhysicalSize { width: 1800, height: 884 })
+[0.045444200s] [DEBUG] [alacritty] Estimated cell size: 12 x 26
+[0.278023500s] [INFO ] [alacritty] Running on Intel(R) HD Graphics 530
+[0.284605600s] [INFO ] [alacritty] Using OpenGL 3.3 renderer
+[0.353297500s] [INFO ] [alacritty] Display scale factor: 1
+[0.353932500s] [DEBUG] [alacritty] Filling glyph cache with common glyphs
+[0.523957600s] [INFO ] [alacritty] Cell size: 12 x 26
+[0.524623700s] [INFO ] [alacritty] Padding: 0 x 0
+[0.524937400s] [INFO ] [alacritty] Width: 1800, Height: 884
+[0.662310100s] [INFO ] [alacritty] PTY dimensions: 34 x 150
+[0.752687000s] [INFO ] [alacritty] Initialisation complete
+[0.790922900s] [DEBUG] [alacritty_terminal] Term::resize dimensions unchanged
+[0.838170200s] [INFO ] [alacritty] Padding: 0 x 0
+[0.878077300s] [INFO ] [alacritty] Width: 1800, Height: 884
+```
+
 # Alacritty - Terminal Emulator - Windows HowTo
 
 https://youtu.be/1aw8IDH826Y
