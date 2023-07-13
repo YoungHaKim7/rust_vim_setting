@@ -1,7 +1,12 @@
+# 내가 다시 세팅 미세 조정함
+
+https://github.com/YoungHaKim7/lvim-config_gyoung
+
 # 젤 좋다.
 
 https://github.com/adibhanna/lvim-config
 
+<hr>
 
 # LunarVim "jk" key setting
 
