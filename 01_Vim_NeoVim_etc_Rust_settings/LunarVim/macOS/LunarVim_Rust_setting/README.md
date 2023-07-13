@@ -1,3 +1,8 @@
+# 젤 좋다.
+
+https://github.com/adibhanna/lvim-config
+
+
 # LunarVim "jk" key setting
 
 https://github.com/LunarVim/LunarVim/issues/2731
