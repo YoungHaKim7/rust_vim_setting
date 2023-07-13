@@ -143,7 +143,7 @@ Ctrl + b 하고 뒤에 Command 하면 됨.
 (ctrl + b) w
 ```
 
-# vs 나눈창 sp 바꾸기
+# sp상하로 나눈창 vs 좌우로 바꾸기
 
 - 편하다
 
