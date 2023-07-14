@@ -13,7 +13,7 @@ https://github.com/adibhanna/lvim-config
 
 ```
 // 어두운 빨간색
-: hi Comment guifg=#674469 guibg=#751a14
+: hi Comment guifg=#a36ca6 guibg=#751a14
 
 
 : hi Comment guifg=#cfe2f3 guibg=#c90076
