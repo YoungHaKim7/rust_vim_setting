@@ -56,6 +56,11 @@ aa        창 뒤어 나간 string 자동 으로 셀 늘려줌
 
 =         =이거 누르고 @sum or @avg 누르고 엑셀이랑 똑같이 하면 됨 예시
 ex)  =@sum(a4:a10)
+
+
+~~~~~ graph
+Visual Mode 로 블록 칠하고 명령어 넣어주면 나온다. 신기하네 ㅋㅋ
+:plot bar
 ```
 
 # Configuration
