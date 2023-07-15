@@ -53,6 +53,9 @@ fh        창 줄이기 (좌우)
 fj        창 위,아래 늘리기??
 
 aa        창 뒤어 나간 string 자동 으로 셀 늘려줌
+
+=         =이거 누르고 @sum or @avg 누르고 엑셀이랑 똑같이 하면 됨 예시
+ex)  =@sum(a4:a10)
 ```
 
 # Configuration
