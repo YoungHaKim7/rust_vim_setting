@@ -4,7 +4,7 @@
 brew install sc-im
 ```
 
-# SC-IM: Vim-based Terminal Spreadsheet Editor!
+# SC-IM: Vim-based Terminal Spreadsheet Editor!(이게 젤 좋네 )
 
 https://youtu.be/K_8_gazN7h0
 
@@ -16,6 +16,8 @@ https://github.com/andmarti1424/sc-im
 
 https://github.com/jonnieey/Sc-im-Tutorial
 
+- Tutorial
+  - Quick tools #1 sc The spreadsheet calculator https://youtu.be/LFWD5slyVfc
 
 # Quick start
 
@@ -46,8 +48,9 @@ dr      	delete row
 dc      	delete column
 
 >         text 입력하기( 숫자 위에 그냥 입력하는 number가 string로 변환됨
-fl        창 옆으로 늘기기 좌우
-fk        창
+fl        창 옆으로 늘라기 좌우
+fh        창 줄이기 (좌우)
+fj        창 위,아래 늘리기??
 
 aa        창 뒤어 나간 string 자동 으로 셀 늘려줌
 ```
