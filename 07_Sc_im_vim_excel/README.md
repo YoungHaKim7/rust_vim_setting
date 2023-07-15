@@ -44,6 +44,12 @@ ir      	insert row
 ic      	insert column
 dr      	delete row
 dc      	delete column
+
+>         text 입력하기( 숫자 위에 그냥 입력하는 number가 string로 변환됨
+fl        창 옆으로 늘기기 좌우
+fk        창
+
+aa        창 뒤어 나간 string 자동 으로 셀 늘려줌
 ```
 
 # Configuration
