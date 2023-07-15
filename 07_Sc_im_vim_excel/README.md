@@ -1,3 +1,9 @@
+# Homebrew for OSX users
+
+```bash
+brew install sc-im
+```
+
 # SC-IM: Vim-based Terminal Spreadsheet Editor!
 
 https://youtu.be/K_8_gazN7h0
