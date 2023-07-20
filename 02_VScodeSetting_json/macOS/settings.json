@@ -47,10 +47,7 @@
   // "files.autoSave": "onFocusChange", // optional but recommended
   "vs-code-prettier-eslint.prettierLast": true,
   // Enable per-language(Prettier - Code formatter JS, TS)
-  "[javascript]": {
-      "editor.formatOnSave": true
-  },
-// code runner
+  // code runner
   "code-runner.runInTerminal": true,
   // Controls the font family.
   //"editor.fontFamily": "Operator Mono",
@@ -248,6 +245,9 @@
     // "[python]": {
     //   "editor.formatOnType": true
     // },
+    // "[javascript]": {
+    //   "editor.formatOnSave": true
+    // },
     "zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
     "yaml.customTags": [
       "!And",
@@ -280,7 +280,7 @@
     ],
     "window.zoomLevel": 1,
     "zig.zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
-    "vim.digraphs": {},
+    "vim.digraphs": {}
     // "yaml.schemas": {
     //   "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     // }
