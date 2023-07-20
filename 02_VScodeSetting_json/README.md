@@ -46,6 +46,16 @@ You can click on the summary or press ⇧⌘M
 
 - Go to Symbol https://code.visualstudio.com/docs/editor/editingevolved
 
+# Vim(VSCODE)
+
+```
+// 난 스페이스를 leader로 세팅해서 space 2x + e  하면 내가 원하는 문자 끝으로 한번에 ㅎ
+<leader><leader>e end of words
+```
+
+https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/cheatsheet/
+
+
 # ESLint
 
 - Integrates ESLint JavaScript into VS Code.
