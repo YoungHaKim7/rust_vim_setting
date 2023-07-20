@@ -123,6 +123,42 @@
   ],
   "vim.normalModeKeyBindings": [
     {
+        "before": [
+          "<leader>",
+          ":"
+        ],
+        "commands": [
+            "workbench.action.showCommands"
+        ]
+    },
+    {
+        "before": [
+          "]",
+          "d"
+        ],
+        "commands": [
+            "editor.action.marker.nextInFiles"
+        ]
+    },
+    {
+        "before": [
+          "[",
+          "d"
+        ],
+        "commands": [
+            "editor.action.marker.prevInFiles"
+        ]
+    },
+    {
+        "before": [
+          "g",
+          "a"
+        ],
+        "commands": [
+            "editor.action.quickFix"
+        ]
+    },
+    {
       "before": [
         "<leader>",
         "m"
@@ -200,7 +236,6 @@
             ]
         ]
     },
-    "window.zoomLevel": 1,
     "[python]": {
       "editor.formatOnType": true
     },
@@ -234,6 +269,9 @@
       "!Split",
       "!Split sequence"
     ],
+    "window.zoomLevel": 1,
+    "zig.zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    "vim.digraphs": {},
     // "yaml.schemas": {
     //   "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     // }
