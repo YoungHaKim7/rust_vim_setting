@@ -49,6 +49,9 @@ You can click on the summary or press ⇧⌘M
 # Vim(VSCODE)
 
 ```
+// gh 빔에서 K 눌러서 문서 보는거 됨. 굿
+gh Equivalent to hovering the mouse over a bit of text.
+
 // 난 스페이스를 leader로 세팅해서 space 2x + e  하면 내가 원하는 문자 끝으로 한번에 ㅎ
 <leader><leader>e end of words
 ```
