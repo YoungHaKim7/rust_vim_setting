@@ -21,10 +21,10 @@ command + comma
 // On Windows, use the Ctrl + . keys.
 
 
-// Go to next diagnostic (LSP) F8   다음
+// Go to Next Problem in Files(Error, Warning, Info) Go to next diagnostic (LSP) F8   다음
 Tip: To loop through errors or warnings in the current file, you can press F8
 
-// Go to previous diagnostic (LSP) ⇧F8 이전 단계
+// Go to Previous Problem in Files(Error, Warning, Info)Go to previous diagnostic (LSP) ⇧F8 이전 단계
 ⇧F8
 Tip: To loop through errors or warnings in the current file, you can press
 
