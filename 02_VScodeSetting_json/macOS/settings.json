@@ -3,7 +3,9 @@
     // "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
   // ],
   // "clangd.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin",
+  // "zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
   "zig.zigPath": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install",
+  "zig.zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
 //  "workbench.colorTheme": "spacedark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.untitled.hint": "hidden",
@@ -248,7 +250,6 @@
     // "[javascript]": {
     //   "editor.formatOnSave": true
     // },
-    "zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
     "yaml.customTags": [
       "!And",
       "!And sequence",
@@ -279,7 +280,6 @@
       "!Split sequence"
     ],
     "window.zoomLevel": 1,
-    "zig.zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
     "vim.digraphs": {}
     // "yaml.schemas": {
     //   "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
