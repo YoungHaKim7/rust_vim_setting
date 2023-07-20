@@ -28,7 +28,11 @@ You can navigate symbols inside a file with ⇧⌘O.
 
 // Rename symbol
 F2
-Some languages support rename symbol across files. Press F2 
+Some languages support rename symbol across files. Press F2
+
+// Trouble Toggle 창 처럼 요약된거 보기
+⇧⌘M 
+You can click on the summary or press ⇧⌘M 
 ```
 
 - Quick Fix https://stackoverflow.com/questions/47287367/what-is-the-keyboard-shortcut-in-visual-studio-code-to-pop-up-the-quick-fix-menu
