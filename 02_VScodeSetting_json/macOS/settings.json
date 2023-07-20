@@ -123,40 +123,49 @@
   ],
   "vim.normalModeKeyBindings": [
     {
-        "before": [
-          "<leader>",
-          ":"
-        ],
-        "commands": [
-            "workbench.action.showCommands"
-        ]
+      "before": [
+        "<leader>",
+        ":"
+      ],
+      "commands": [
+          "workbench.action.showCommands"
+      ]
     },
     {
-        "before": [
-          "]",
-          "d"
-        ],
-        "commands": [
-            "editor.action.marker.nextInFiles"
-        ]
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles"
+      ]
     },
     {
-        "before": [
-          "[",
-          "d"
-        ],
-        "commands": [
-            "editor.action.marker.prevInFiles"
-        ]
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prevInFiles"
+      ]
     },
     {
-        "before": [
-          "g",
-          "a"
-        ],
-        "commands": [
-            "editor.action.quickFix"
-        ]
+      "before": [
+        "g",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "v"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
     },
     {
       "before": [
