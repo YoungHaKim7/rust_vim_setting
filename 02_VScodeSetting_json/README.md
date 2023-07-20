@@ -23,7 +23,12 @@ command + comma
 
 // Go to Symbol
 ⇧⌘O
-You can navigate symbols inside a file with ⇧⌘O. 
+You can navigate symbols inside a file with ⇧⌘O.
+
+
+// Rename symbol
+F2
+Some languages support rename symbol across files. Press F2 
 ```
 
 - Quick Fix https://stackoverflow.com/questions/47287367/what-is-the-keyboard-shortcut-in-visual-studio-code-to-pop-up-the-quick-fix-menu
