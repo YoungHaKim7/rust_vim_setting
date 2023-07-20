@@ -236,9 +236,9 @@
             ]
         ]
     },
-    "[python]": {
-      "editor.formatOnType": true
-    },
+    // "[python]": {
+    //   "editor.formatOnType": true
+    // },
     "zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
     "yaml.customTags": [
       "!And",
