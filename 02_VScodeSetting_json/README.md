@@ -21,9 +21,14 @@ command + comma
 // On Windows, use the Ctrl + . keys.
 
 
+// Go to Symbol
+⇧⌘O
+You can navigate symbols inside a file with ⇧⌘O. 
 ```
 
-https://stackoverflow.com/questions/47287367/what-is-the-keyboard-shortcut-in-visual-studio-code-to-pop-up-the-quick-fix-menu
+- Quick Fix https://stackoverflow.com/questions/47287367/what-is-the-keyboard-shortcut-in-visual-studio-code-to-pop-up-the-quick-fix-menu
+
+- Go to Symbol https://code.visualstudio.com/docs/editor/editingevolved
 
 # ESLint
 
