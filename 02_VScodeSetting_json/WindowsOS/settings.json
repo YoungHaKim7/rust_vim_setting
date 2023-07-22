@@ -1,4 +1,5 @@
 {
+  "workbench.colorTheme": "Default Dark Modern",
   // Server Setting~~~~~~~~~~~
   // c/c++ languages setting~ clangd server Setting
   "clangd.arguments": [
@@ -7,24 +8,36 @@
   "clangd.path": "c:\\Users\\user\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\15.0.6\\clangd_15.0.6\\bin\\clangd.exe",
   // zig server Setting
   "zls.path": "c:\\Users\\user\\AppData\\Roaming\\Code\\User\\globalStorage\\augusterame.zls-vscode\\zls_install\\zls.exe",
-  // ~~~~~~end 
-  //
-  //  "workbench.colorTheme": "spacedark",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
-    "editorError.foreground": "#000000", // squiggly line
+    "editorError.foreground": "#3f1010", // squiggly line
     "editorError.border": "#ffffff", // additional border under squiggly line
     "editorInlayHint.background": "#e85a5a98",
+    "editorInlayHint.typeBackground": "#442b7a",
     // Overrides for specific kinds of inlay hints
     "editorInlayHint.typeForeground": "#fdb6fdf0",
     "editorInlayHint.parameterForeground": "#fdb6fdf0",
     "editorInlayHint": true
   },
+  // JavaScript & TypeScript Inlayhint
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true, // recently
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  //// font
   "security.workspace.trust.untrustedFiles": "open",
   "fontFace": "MesloLGS NF",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   //"terminal.external.osxExec": "Terminal.app",
+  // Ctrl + Shift + c
   "terminal.external.windowsExec": "C:\\Program Files\\Alacritty\\alacritty.exe",
   // auto fmt & format
   "editor.formatOnSave": true,
@@ -39,7 +52,7 @@
   "editor.fontLigatures": true,
   // Controls if file decorations should use badges.
   "explorer.decorations.badges": false,
-  "editor.fontSize": 17,
+  "editor.fontSize": 19,
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
   "editor.bracketPairColorization.enabled": true,
@@ -89,6 +102,51 @@
     }
   ],
   "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prevInFiles"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "v"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
     {
       "before": [
         "<leader>",
