@@ -168,6 +168,24 @@
     },
     {
       "before": [
+        "g",
+        "t"
+      ],
+      "commands": [
+        "workbench.actions.view.problems"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         "m"
       ],
