@@ -187,6 +187,15 @@
     {
       "before": [
         "<leader>",
+        "x"
+      ],
+      "commands": [
+        "workbench.action.closePanel"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "m"
       ],
       "commands": [
