@@ -13,6 +13,10 @@
 
 https://github.com/gpakosz/.tmux
 
+# tmux settings된 key정리
+
+https://github.com/YoungHaKim7/rust_vim_setting/blob/main/tmux_conf/macOS_setting/README.md
+
 # [Linux] tmux 사용법 
 
 - tmux 세팅
