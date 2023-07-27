@@ -9,6 +9,10 @@
 
 <hr>
 
+# tmux 세팅된거
+
+https://github.com/gpakosz/.tmux
+
 # [Linux] tmux 사용법 
 
 - tmux 세팅
