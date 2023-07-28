@@ -149,6 +149,33 @@
     },
     {
       "before": [
+        "g",
+        "t"
+      ],
+      "commands": [
+        "workbench.actions.view.problems"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x"
+      ],
+      "commands": [
+        "workbench.action.closePanel"
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         "m"
       ],
