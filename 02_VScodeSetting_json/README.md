@@ -132,7 +132,7 @@ https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/ch
     },
     {
       "before": [
-        "g",
+        "<leader>",
         "t"
       ],
       "commands": [
