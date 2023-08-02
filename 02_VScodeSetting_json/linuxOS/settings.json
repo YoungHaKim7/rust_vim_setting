@@ -89,6 +89,78 @@
     {
       "before": [
         "<leader>",
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prevInFiles"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "v"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.actions.view.problems"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x"
+      ],
+      "commands": [
+        "workbench.action.closePanel"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "m"
       ],
       "commands": [
@@ -107,6 +179,7 @@
   ],
   "vim.handleKeys": {
     "<C-a>": true,
+    "<C-b>": true,
     "<C-c>": false,
     "<C-d>": true,
     "<C-f>": true,
