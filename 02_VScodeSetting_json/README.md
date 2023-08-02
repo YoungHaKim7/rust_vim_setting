@@ -64,3 +64,130 @@ https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/ch
 - Integrates ESLint JavaScript into VS Code.
 
   https://eslint.org/docs/latest/use/getting-started
+
+<hr>
+
+# 내 vim setting(VScode)
+
+```json
+{
+  // https://github.com/VSCodeVim/Vim
+  // vim setting ~~~~
+  "vim.leader":"<space>",
+  "vim.useSystemClipboard": true,
+  "editor.lineNumbers": "relative",
+  "vim.easymotion": true,
+  "vim.surround": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j","k"],
+      "after":["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        ":"
+      ],
+      "commands": [
+          "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prevInFiles"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "v"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "t"
+      ],
+      "commands": [
+        "workbench.actions.view.problems"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x"
+      ],
+      "commands": [
+        "workbench.action.closePanel"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "bookmarks.list"
+      ]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": true,
+    "<C-b>": true,
+    "<C-c>": false,
+    "<C-d>": true,
+    "<C-f>": true,
+    "<C-h>": false,
+    "<C-k>": false,
+    "<C-r>": true,
+    "<C-u>": false,
+    "<C-v>": true,
+    "<C-x>": true
+  },
+}
+```
