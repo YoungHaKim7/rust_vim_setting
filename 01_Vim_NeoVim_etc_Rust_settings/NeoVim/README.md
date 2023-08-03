@@ -1,10 +1,14 @@
+# 우리 러스트 방 맴버의 nvim세팅 배울게 많다.
+
+https://github.com/SkuldNorniern/Skulds-Documentation
+
+<hr>
+
 # 완성도 거의 완전체에 가까움
 
 - https://github.com/alpha2phi/modern-neovim
 
   - https://alpha2phi.medium.com/neovim-pde-web-development-ba244382e0f7
-
-
 
 
 <hr>
