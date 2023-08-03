@@ -1,7 +1,8 @@
-# NeoVim 용 AI 세팅
+# Vim & NeoVim 용 AI 세팅
 - Free, ultrafast Copilot alternative for Vim and Neovim
   - www.codeium.com/ 
-    - https://github.com/Exafunction/codeium.vim
+    - Vim https://github.com/Exafunction/codeium.vim
+    - NeoVim https://github.com/jcdickinson/codeium.nvim
 
 <hr>
 
