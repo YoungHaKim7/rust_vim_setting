@@ -46,9 +46,13 @@ You can click on the summary or press ⇧⌘M
 
 - Go to Symbol https://code.visualstudio.com/docs/editor/editingevolved
 
-# Vim(VSCODE)
+# Vim(VSCODE) & 주로 쓰는 vim key를 VSCode에 적용시키기
 
 ```
+// 난 스페이스를 leader로 세팅해서 space 2x + e  하면 내가 원하는 문자 끝으로 한번에 ㅎ
+<leader><leader>e end of words
+
+
 // gh 빔에서 K 눌러서 문서 보는거 됨. 굿
 gh Equivalent to hovering the mouse over a bit of text.
 
@@ -64,11 +68,25 @@ gh Equivalent to hovering the mouse over a bit of text.
         "h"
       ]
     },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "g",
+        "T"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "t"
+      ]
+    },
 }
-
-
-// 난 스페이스를 leader로 세팅해서 space 2x + e  하면 내가 원하는 문자 끝으로 한번에 ㅎ
-<leader><leader>e end of words
 ```
 
 https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/cheatsheet/
