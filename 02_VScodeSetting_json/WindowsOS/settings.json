@@ -104,6 +104,33 @@
   "vim.normalModeKeyBindings": [
     {
       "before": [
+        "K"
+      ],
+      "after": [
+        "g",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "g",
+        "T"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "t"
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         ":"
       ],
@@ -149,7 +176,7 @@
     },
     {
       "before": [
-        "g",
+        "<leader>",
         "t"
       ],
       "commands": [
@@ -193,6 +220,19 @@
       ]
     }
   ],
+  "vim.handleKeys": {
+    "<C-a>": true,
+    "<C-b>": true,
+    "<C-c>": false,
+    "<C-d>": true,
+    "<C-f>": true,
+    "<C-h>": false,
+    "<C-k>": false,
+    "<C-r>": true,
+    "<C-u>": false,
+    "<C-v>": true,
+    "<C-x>": true
+  },
   "vim.handleKeys": {
     "<C-a>": true,
     "<C-c>": false,
@@ -249,5 +289,7 @@
         120793
       ]
     ]
-  }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "window.zoomLevel": 2
 }
