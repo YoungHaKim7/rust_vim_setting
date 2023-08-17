@@ -56,6 +56,10 @@ https://www.color-hex.com/color/ff439f
 
 <hr>
 
+# Vim정리 종결자
+
+https://github.com/mhinz/vim-galore
+
 # Hyperpolyglot(Text Mode Editors: Vim, Emacs, Nano)
 
 https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors.html
