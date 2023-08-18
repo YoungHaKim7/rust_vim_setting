@@ -41,6 +41,10 @@ nnoremap H gT
 nnoremap L gt 
 "" ~~~~~
 
+"" QuickFix   Ctrl + .
+"" nnoremap ]d <f8>
+" nnoremap [d :vsc Edit.GoToPrevLocation<cr>
+
 " nnoremap \ ,
 " nnoremap gj i<cr><esc>k$
 " nnoremap s /
@@ -150,13 +154,13 @@ xnoremap <enter>  :vsc EditorContextMenus.CodeWindow.ExecuteInInteractive<cr>
 nnoremap yxx      ggVG:vsc EditorContextMenus.CodeWindow.ExecuteInInteractive<cr>
 nnoremap <enter>  :vsc EditorContextMenus.CodeWindow.ExecuteLineInInteractive<cr>
 
-nnoremap ]q :vsc Edit.GoToNextLocation<cr>
-nnoremap [q :vsc Edit.GoToPrevLocation<cr>
+nnoremap ]d :vsc Edit.GoToNextLocation<cr>
+nnoremap [d :vsc Edit.GoToPrevLocation<cr>
 nnoremap ]l  :vsc Edit.NextHighlightedReference<cr>
 nnoremap [l  :vsc Edit.PreviousHighlightedReference<cr>
 
 " 'omnibox'
-nnoremap <space> :vsc Window.QuickLaunch<cr>
+" nnoremap <space> :vsc Window.QuickLaunch<cr>
 
 nnoremap <insert> :vsc Debug.ToggleBreakpoint<cr>
 nnoremap [o<insert> :vsc Debug.EnableAllBreakpoints<cr>
@@ -168,13 +172,13 @@ nnoremap @T :vsc TestExplorer.RepeatLastRun<cr>
 nnoremap q; :vsc View.C#Interactive<cr>
 nnoremap q: :vsc View.CommandWindow<cr>
 nnoremap q[ :vsc TestExplorer.ShowTestExplorer<cr>
-nnoremap q] :vsc View.ErrorList<cr>
+nnoremap <space>t :vsc View.ErrorList<cr>
 
 nnoremap gof :vsc File.OpenContainingFolder<cr>
 nnoremap got :vsc Tools.ExternalCommand2<cr>
 " toggle 'Track Active Item in Solution Explorer' option
 nnoremap cos :vsc View.TrackActivityinSolutionExplorer<cr>
 " highlight active file in Solution Explorer (VS 2012+)
-nnoremap ^ :vsc SolutionExplorer.SyncWithActiveDocument<cr>
+nnoremap g^ :vsc SolutionExplorer.SyncWithActiveDocument<cr>
 
 nnoremap cow :vsc Edit.ToggleWordWrap<cr>
