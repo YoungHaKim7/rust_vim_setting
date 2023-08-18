@@ -36,8 +36,13 @@ inoremap z,p <c-r>"
 nnoremap g; u<c-r>
 
 
+" :bn :bp "next tab  __previous tab
+nnoremap H gT 
+nnoremap L gt 
+"" ~~~~~
+
 " nnoremap \ ,
-nnoremap gj i<cr><esc>k$
+" nnoremap gj i<cr><esc>k$
 " nnoremap s /
 " nnoremap S ?
 " nnoremap zy  zt5<c-y>
