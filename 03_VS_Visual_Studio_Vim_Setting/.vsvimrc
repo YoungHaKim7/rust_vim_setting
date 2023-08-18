@@ -42,8 +42,12 @@ nnoremap L gt
 "" ~~~~~
 
 "" QuickFix   Ctrl + .
-"" nnoremap ]d <f8>
+nnoremap ga :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<cr>
+" [d ]d my setting 
+" nnoremap ]d :vsc Edit.GoToNextLocation<cr>
 " nnoremap [d :vsc Edit.GoToPrevLocation<cr>
+"""
+
 
 " nnoremap \ ,
 " nnoremap gj i<cr><esc>k$
