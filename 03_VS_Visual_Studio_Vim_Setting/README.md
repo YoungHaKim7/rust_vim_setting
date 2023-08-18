@@ -1,3 +1,11 @@
+# Visual Assist supports keyboard access to all of its features. (Visual Studio Plugin _ VAssistX | Help | Keyboard Shortcuts.)
+
+- VAssistX무조건 필요하다.(Visual Studio 필수Plugin)
+
+  - https://docs.wholetomato.com/default.asp?W375
+
+<hr>
+
 # CodeNav 2022(Vista같은거 좋다. Good무료
 
 Show the code structure of your current document
