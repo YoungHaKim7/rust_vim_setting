@@ -159,8 +159,8 @@ xnoremap <enter>  :vsc EditorContextMenus.CodeWindow.ExecuteInInteractive<cr>
 nnoremap yxx      ggVG:vsc EditorContextMenus.CodeWindow.ExecuteInInteractive<cr>
 nnoremap <enter>  :vsc EditorContextMenus.CodeWindow.ExecuteLineInInteractive<cr>
 
-nnoremap ]d :vsc Edit.GoToNextLocation<cr>
-nnoremap [d :vsc Edit.GoToPrevLocation<cr>
+nnoremap <space>lj :vsc Edit.GoToNextIssueinFile<cr>
+nnoremap <space>lk :vsc Edit.GoToPreviousIssueinFile<cr>
 nnoremap ]l  :vsc Edit.NextHighlightedReference<cr>
 nnoremap [l  :vsc Edit.PreviousHighlightedReference<cr>
 
@@ -179,7 +179,7 @@ nnoremap q: :vsc View.CommandWindow<cr>
 nnoremap q[ :vsc TestExplorer.ShowTestExplorer<cr>
 nnoremap <space>t :vsc View.ErrorList<cr>
 
-nnoremap gof :vsc File.OpenContainingFolder<cr>
+" nnoremap gof :vsc File.OpenContainingFolder<cr>
 nnoremap got :vsc Tools.ExternalCommand2<cr>
 " toggle 'Track Active Item in Solution Explorer' option
 nnoremap cos :vsc View.TrackActivityinSolutionExplorer<cr>
