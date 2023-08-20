@@ -96,7 +96,8 @@ nnoremap Y y$
 
 nnoremap <c-o> :vsc View.NavigateBackward<cr>
 nnoremap <c-i> :vsc View.NavigateForward<cr>
-xnoremap gc :vsc Edit.CommentSelection<cr>
+xnoremap <space>/ :vsc Edit.CommentSelection<cr>
+xnoremap <space>// :vsc Edit.ToggleLineComment<cr>
 nnoremap gcc V:vsc Edit.CommentSelection<cr>
 
 "version control
