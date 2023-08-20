@@ -43,9 +43,10 @@ nnoremap L gt
 
 "" QuickFix   Ctrl + .
 nnoremap ga :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<cr>
-" [d ]d my setting 
-" nnoremap ]d :vsc Edit.GoToNextLocation<cr>
-" nnoremap [d :vsc Edit.GoToPrevLocation<cr>
+" ""<space>lj  or lk "" my setting 
+nnoremap <space>lj :vsc Edit.GoToNextIssueinFile<cr>
+nnoremap <space>lk :vsc Edit.GoToPreviousIssueinFile<cr>
+
 """
 
 
