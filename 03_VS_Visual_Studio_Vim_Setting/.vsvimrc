@@ -47,7 +47,7 @@ nnoremap ga :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<cr>
 nnoremap <space>lj :vsc Edit.GoToNextIssueinFile<cr>
 nnoremap <space>lk :vsc Edit.GoToPreviousIssueinFile<cr>
 
-"""
+"""""""~~~~~~~~~~~~~~~"""""
 
 
 " nnoremap \ ,
@@ -160,8 +160,6 @@ xnoremap <enter>  :vsc EditorContextMenus.CodeWindow.ExecuteInInteractive<cr>
 nnoremap yxx      ggVG:vsc EditorContextMenus.CodeWindow.ExecuteInInteractive<cr>
 nnoremap <enter>  :vsc EditorContextMenus.CodeWindow.ExecuteLineInInteractive<cr>
 
-nnoremap <space>lj :vsc Edit.GoToNextIssueinFile<cr>
-nnoremap <space>lk :vsc Edit.GoToPreviousIssueinFile<cr>
 nnoremap ]l  :vsc Edit.NextHighlightedReference<cr>
 nnoremap [l  :vsc Edit.PreviousHighlightedReference<cr>
 
