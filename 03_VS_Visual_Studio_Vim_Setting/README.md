@@ -47,6 +47,11 @@ xnoremap <space>/ :vsc Edit.CommentSelection<cr>
 xnoremap <space>// :vsc Edit.ToggleLineComment<cr>
 
 
+// 빠르게 오류 찾고 수정하기
+nnoremap <space>lj :vsc Edit.GoToNextIssueinFile<cr>
+nnoremap <space>lk :vsc Edit.GoToPreviousIssueinFile<cr>
+
+
 ```
 
 
