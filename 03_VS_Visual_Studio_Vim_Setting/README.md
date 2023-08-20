@@ -42,6 +42,11 @@ gkd   자동 정렬로 세팅함 Auto Fmt
 
 gwo    Full -Screen
 
+// comment <space>/      &  Uncomment <space>//
+xnoremap <space>/ :vsc Edit.CommentSelection<cr>
+xnoremap <space>// :vsc Edit.ToggleLineComment<cr>
+
+
 ```
 
 
