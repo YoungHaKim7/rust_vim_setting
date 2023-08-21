@@ -47,6 +47,10 @@ nnoremap ga :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<cr>
 nnoremap <space>lj :vsc Edit.GoToNextIssueinFile<cr>
 nnoremap <space>lk :vsc Edit.GoToPreviousIssueinFile<cr>
 
+""~~VAssistX(Visual Assist Keyboard Shortcuts)
+nnoremap <space>a :vsc VAssistX.RefactorContextMenu<cr>
+
+
 """""""~~~~~~~~~~~~~~~"""""
 
 
