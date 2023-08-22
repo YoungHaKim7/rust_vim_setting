@@ -72,43 +72,42 @@ Format Document	                          Ctrl+K,D
 6. Mark 삭제
 
 ```
+// a에 현재 라인을 저장함
 ma
 
-a에 현재 라인을 저장함
 
+// 저장된 a로 이동하기
 'a
-저장된 a로 이동하기
+```
+
 
 
 6. Mark 삭제
+-사용자가 정의한 Mark를 삭제합니다.
 
-사용자가 정의한 Mark를 삭제합니다.
-
-
- :delmarks a
+```
+// Mark a 삭제
+:delmarks a
 	
 
- Mark a 삭제
+ 
+//  Mark a, b, c, d 삭제
+:delmarks a-d
 
- :delmarks a-d
+// Mark a, b, x, y 삭제
+:delmarks abxy
 	
 
- Mark a, b, c, d 삭제
+// Mark a, A 삭제 
+:delmarks aA
 
- :delmarks abxy
+
+
+// 소문자 Mark 모두 삭제
+:delmarks!
 	
 
- Mark a, b, x, y 삭제
 
- :delmarks aA
-	
-
- Mark a, A 삭제 
-
- :delmarks!
-	
-
- 소문자 Mark 모두 삭제
 ```
 
 출처 : https://blog.naver.com/chhh92/220569044272
