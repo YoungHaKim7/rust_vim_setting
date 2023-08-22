@@ -69,7 +69,7 @@ Format Document	                          Ctrl+K,D
 
 # vim의 mark 활용하기
 
-6. Mark 삭제
+1. Mark 저장하고 내가 저장한 mark로 이동하기
 
 ```
 // a에 현재 라인을 저장함
@@ -82,7 +82,7 @@ ma
 
 
 
-6. Mark 삭제
+2. Mark 삭제
 -사용자가 정의한 Mark를 삭제합니다.
 
 ```
