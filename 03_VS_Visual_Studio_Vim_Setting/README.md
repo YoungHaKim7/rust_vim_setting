@@ -65,3 +65,50 @@ Multi-caret add matching selection	      Shift+Alt+Ins
 Format Document	                          Ctrl+K,D  
 
 ```
+
+
+# vim의 mark 활용하기
+
+6. Mark 삭제
+
+```
+ma
+
+a에 현재 라인을 저장함
+
+'a
+저장된 a로 이동하기
+
+
+6. Mark 삭제
+
+사용자가 정의한 Mark를 삭제합니다.
+
+
+ :delmarks a
+	
+
+ Mark a 삭제
+
+ :delmarks a-d
+	
+
+ Mark a, b, c, d 삭제
+
+ :delmarks abxy
+	
+
+ Mark a, b, x, y 삭제
+
+ :delmarks aA
+	
+
+ Mark a, A 삭제 
+
+ :delmarks!
+	
+
+ 소문자 Mark 모두 삭제
+```
+
+출처 : https://blog.naver.com/chhh92/220569044272
