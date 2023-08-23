@@ -106,12 +106,14 @@ ma
 // 소문자 Mark 모두 삭제
 :delmarks!
 	
+```
+
+출처 : https://blog.naver.com/chhh92/220569044272
+
+
 
 # etc Visual Studio ShortcutSet
 
 - Visual Studio keyboard shortcut to display IntelliSense
   - https://stackoverflow.com/questions/3640544/visual-studio-keyboard-shortcut-to-display-intellisense
-
-```
-
-출처 : https://blog.naver.com/chhh92/220569044272
+  - https://blog.novacare.no/change-intellisense-shortcuts-in-visual-studio/
