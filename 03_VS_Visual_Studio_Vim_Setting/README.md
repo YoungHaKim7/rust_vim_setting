@@ -107,6 +107,10 @@ ma
 :delmarks!
 	
 
+# etc Visual Studio ShortcutSet
+
+- Visual Studio keyboard shortcut to display IntelliSense
+  - https://stackoverflow.com/questions/3640544/visual-studio-keyboard-shortcut-to-display-intellisense
 
 ```
 
