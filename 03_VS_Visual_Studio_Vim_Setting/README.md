@@ -36,7 +36,7 @@ https://github.com/justinmk/config
 ```
 Ctrl+R - rename (LSP 이거 많이 쓸듯)
 Ctrl+t+t 파이썬 처럼 한줄 넣어서 test??잘 모르겠음.
-Ctro+t+r Code
+Ctro+t+r CodeMetricsResults(뭔지 정확히 모름 ㅡㅡ)
 Space+t 에러 체크 하단에 빨리 표시해줌(TroubleToggle비슷)
 
 gkd   자동 정렬로 세팅함 Auto Fmt
