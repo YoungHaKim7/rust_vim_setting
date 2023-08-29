@@ -74,6 +74,9 @@ inoremap <c-y> :vsc Edit.CompleteWord
 "" 속성으로 빨리 한방에 !! 이동
 nnoremap g^ :vsc SolutionExplorer.SyncWithActiveDocument<cr>
 
+" 이름 바꾸기 space+r
+nnoremap <space>r  :vsc Refactor.Rename<cr>
+
 ```
 
 
