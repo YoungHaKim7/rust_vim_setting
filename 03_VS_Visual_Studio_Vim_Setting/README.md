@@ -35,6 +35,9 @@ https://github.com/justinmk/config
 
 ```
 Ctrl+R - rename (LSP 이거 많이 쓸듯)
+" 이름 바꾸기 space+r  이걸로 수정한 (개인적으로 세팅)
+nnoremap <space>r  :vsc Refactor.Rename<cr>
+
 Ctrl+t+t 파이썬 처럼 한줄 넣어서 test??잘 모르겠음.
 Ctro+t+r CodeMetricsResults(뭔지 정확히 모름 ㅡㅡ)
 
@@ -77,8 +80,7 @@ inoremap <c-y> :vsc Edit.CompleteWord
 "" 속성으로 빨리 한방에 !! 이동
 nnoremap g^ :vsc SolutionExplorer.SyncWithActiveDocument<cr>
 
-" 이름 바꾸기 space+r
-nnoremap <space>r  :vsc Refactor.Rename<cr>
+
 
 ```
 
