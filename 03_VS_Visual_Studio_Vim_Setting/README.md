@@ -71,7 +71,8 @@ nnoremap <c-t>r :vsc View.CodeMetricsResults<cr>
 "" Automatic completion input
 inoremap <c-y> :vsc Edit.CompleteWord
 
-
+"" 속성으로 빨리 한방에 !! 이동
+nnoremap g^ :vsc SolutionExplorer.SyncWithActiveDocument<cr>
 
 ```
 
