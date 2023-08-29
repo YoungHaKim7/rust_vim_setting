@@ -21,6 +21,7 @@ set expandtab
 set ttimeout
 set ttimeoutlen=50
 set number rnu
+set scrolloff=5
 " esc setting
 inoremap jk <Esc>
 """""""""""""""""""""""""
@@ -49,6 +50,14 @@ nnoremap <space>lk :vsc Edit.GoToPreviousIssueinFile<cr>
 
 ""~~VAssistX(Visual Assist Keyboard Shortcuts)
 nnoremap <space>a :vsc VAssistX.RefactorContextMenu<cr>
+
+nnoremap <c-t>t :vsc InteractiveConsole.ExecuteInInteractive<cr>
+nnoremap <c-t>r :vsc View.CodeMetricsResults<cr>
+
+
+
+"" Automatic completion input
+inoremap <c-y> :vsc Edit.CompleteWord
 
 
 """""""~~~~~~~~~~~~~~~"""""
