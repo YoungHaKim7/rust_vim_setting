@@ -31,11 +31,13 @@ https://github.com/justinmk/config
 
 ```
 
-# 주로 쓰는 Visual Studio Keymap
+# 주로 쓰는 Visual Studio Keymap(공식 키가 아니라 내가 맘대로 세팅 바꿈)
 
 ```
 Ctrl+R - rename (LSP 이거 많이 쓸듯)
-Ctrl+e+e 에러 체크 하단에 빨리 표시해줌(TroubleToggle비슷)
+Ctrl+t+t 파이썬 처럼 한줄 넣어서 test??잘 모르겠음.
+Ctro+t+r Code
+Space+t 에러 체크 하단에 빨리 표시해줌(TroubleToggle비슷)
 
 gkd   자동 정렬로 세팅함 Auto Fmt
 
@@ -47,12 +49,28 @@ xnoremap <space>/ :vsc Edit.CommentSelection<cr>
 xnoremap <space>// :vsc Edit.ToggleLineComment<cr>
 
 
-// 빠르게 오류 찾고 수정하기 (ga)
+// 빠르게 오류 찾고 수정하기 (ga) or space a 2개 로 만듬
 nnoremap <space>lj :vsc Edit.GoToNextIssueinFile<cr>
 nnoremap <space>lk :vsc Edit.GoToPreviousIssueinFile<cr>
 
+
 "" QuickFix   Ctrl + .
 nnoremap ga :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<cr>
+" ""<space>lj  or lk "" my setting 
+nnoremap <space>lj :vsc Edit.GoToNextIssueinFile<cr>
+nnoremap <space>lk :vsc Edit.GoToPreviousIssueinFile<cr>
+
+""~~VAssistX(Visual Assist Keyboard Shortcuts)
+nnoremap <space>a :vsc VAssistX.RefactorContextMenu<cr>
+
+nnoremap <c-t>t :vsc InteractiveConsole.ExecuteInInteractive<cr>
+nnoremap <c-t>r :vsc View.CodeMetricsResults<cr>
+
+
+
+"" Automatic completion input
+inoremap <c-y> :vsc Edit.CompleteWord
+
 
 
 ```
