@@ -1,3 +1,10 @@
+# LunarVim/Neovim - Debugging Demo | Java, Python, Rust, Go, Javascript | chris@machine
+
+
+https://youtu.be/5KQK2id3JtI?si=fvye14gmjpZR0Ehk
+
+<hr>
+
 # Vim & NeoVim 용 AI 세팅
 - Free, ultrafast Copilot alternative for Vim and Neovim
   - www.codeium.com/ 
