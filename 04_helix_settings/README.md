@@ -6,6 +6,15 @@ https://github.com/helix-editor/helix/wiki/Debugger-Configurations#configure-deb
 
 This page can provide additional debugger configurations beyond [the ones shipped by default in Helix](https://github.com/helix-editor/helix/blob/master/languages.toml).
 
+# lldb-vscode 설치 다른 방법 
+```
+sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)" # Instructions from https://apt.llvm.org/
+cd $(dirname $(which lldb-17))
+sudo ln -s lldb-vscode-17 lldb-vscode 
+```
+
+https://github.com/helix-editor/helix/discussions/5297
+
 # lldb-vscode
 
 ## Install
