@@ -83,6 +83,15 @@ tmux kill-session -t session_number
 
 # 단축키 목록
 (ctrl + b) ?
+
+
+# How to search backwards
+// How to search tmux history
+
+After pressing Ctrl + b then [.
+
+To search, press
+ Ctrl + s
 ```
 
 https://velog.io/@ur-luella/tmux-%EC%82%AC%EC%9A%A9%EB%B2%95
