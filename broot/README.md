@@ -29,7 +29,11 @@ cargo install --locked broot
 
 # ```broot``` 이렇게 누르면 실행된다.
 
+- 다 설치 후에 ```broot``` 실행  
+
 ```
+$ broot
+
 Broot should be launched using a shell function.
 This function most notably makes it possible to cd from inside broot
 (see https://dystroy.org/broot/install-br/ for explanations).
