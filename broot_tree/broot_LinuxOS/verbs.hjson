@@ -14,12 +14,12 @@ verbs: [
     # }
 
     # Example 2: creating a new file without leaving broot
-    # {
-    #     name: touch
-    #     invocation: touch {new_file}
-    #     execution: "touch {directory}/{new_file}"
-    #     leave_broot: false
-    # }
+    {
+         name: touch
+         invocation: touch {new_file}
+         execution: "touch {directory}/{new_file}"
+         leave_broot: false
+    }
 
     # A standard recommended command for editing files, that you
     # can customize.
@@ -38,6 +38,18 @@ verbs: [
         invocation: edit
         shortcut: e
         execution: "lvim +{line} {file}"
+        leave_broot: false
+    }
+    {
+        invocation: edit
+        shortcut: hx
+        execution: "hx {file}"
+        leave_broot: false
+    }
+    {
+        invocation: edit
+        shortcut: code
+        execution: "code {directory}/{file}"
         leave_broot: false
     }
 
@@ -61,13 +73,13 @@ verbs: [
     # as an example to demonstrate rare standard groups like {file-stem}
     # and {file-dot-extension} and the auto_exec verb property which
     # allows verbs not executed until you hit enter
-    {
-        invocation: "backup {version}"
-        key: ctrl-b
-        leave_broot: false
-        auto_exec: false
-        execution: "cp -r {file} {parent}/{file-stem}-{version}{file-dot-extension}"
-    }
+    #{
+    #    invocation: "backup {version}"
+    #    key: ctrl-b
+    #    leave_broot: false
+    #    auto_exec: false
+    #    execution: "cp -r {file} {parent}/{file-stem}-{version}{file-dot-extension}"
+    #}
 
     # This verb lets you launch a terminal on ctrl-T
     # (on exit you'll be back in broot)
@@ -87,23 +99,23 @@ verbs: [
     # }
 
     # A popular set of shortcuts for going up and down:
-    #
-    # {
-    #     key: ctrl-k
-    #     execution: ":line_up"
-    # }
-    # {
-    #     key: ctrl-j
-    #     execution: ":line_down"
-    # }
-    # {
-    #     key: ctrl-u
-    #     execution: ":page_up"
-    # }
-    # {
-    #     key: ctrl-d
-    #     execution: ":page_down"
-    # }
+    
+    {
+        key: ctrl-k
+        execution: ":line_up"
+    }
+    {
+        key: ctrl-j
+        execution: ":line_down"
+    }
+    {
+        key: ctrl-u
+        execution: ":page_up"
+    }
+    {
+        key: ctrl-d
+        execution: ":page_down"
+    }
 
     # If you develop using git, you might like to often switch
     # to the git status filter:
@@ -114,15 +126,15 @@ verbs: [
 
     # You can reproduce the bindings of Norton Commander
     # on copying or moving to the other panel:
-    # {
-    #     key: F5
-    #     external: "cp -r {file} {other-panel-directory}"
-    #     leave_broot: false
-    # }
-    # {
-    #     key: F6
-    #     external: "mv {file} {other-panel-directory}"
-    #     leave_broot: false
-    # }
+    {
+        key: F5
+        external: "cp -r {file} {other-panel-directory}"
+        leave_broot: false
+    }
+    {
+        key: F6
+        external: "mv {file} {other-panel-directory}"
+        leave_broot: false
+    }
 ]
 
