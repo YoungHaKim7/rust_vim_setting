@@ -35,7 +35,7 @@ verbs: [
     {
         invocation: edit
         shortcut: e
-        execution: "$EDITOR +{line} {file}"
+        execution: "hx {file}"
         leave_broot: false
     }
 
@@ -85,23 +85,23 @@ verbs: [
     # }
 
     # A popular set of shortcuts for going up and down:
-    #
-    # {
-    #     key: ctrl-k
-    #     execution: ":line_up"
-    # }
-    # {
-    #     key: ctrl-j
-    #     execution: ":line_down"
-    # }
-    # {
-    #     key: ctrl-u
-    #     execution: ":page_up"
-    # }
-    # {
-    #     key: ctrl-d
-    #     execution: ":page_down"
-    # }
+    
+    {
+        key: ctrl-k
+        execution: ":line_up"
+    }
+    {
+        key: ctrl-j
+        execution: ":line_down"
+    }
+    {
+        key: ctrl-u
+        execution: ":page_up"
+    }
+    {
+        key: ctrl-d
+        execution: ":page_down"
+    }
 
     # If you develop using git, you might like to often switch
     # to the git status filter:
@@ -112,15 +112,15 @@ verbs: [
 
     # You can reproduce the bindings of Norton Commander
     # on copying or moving to the other panel:
-    # {
-    #     key: F5
-    #     external: "cp -r {file} {other-panel-directory}"
-    #     leave_broot: false
-    # }
-    # {
-    #     key: F6
-    #     external: "mv {file} {other-panel-directory}"
-    #     leave_broot: false
-    # }
+    {
+        key: F5
+        external: "cp -r {file} {other-panel-directory}"
+        leave_broot: false
+    }
+    {
+        key: F6
+        external: "mv {file} {other-panel-directory}"
+        leave_broot: false
+    }
 ]
 
