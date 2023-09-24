@@ -15,6 +15,9 @@ https://github.com/Canop/broot
 https://github.com/Canop/broot/issues/433
 
 
+- vscode font
+  - https://dystroy.org/broot/icons/
+
 # Install
 
 
