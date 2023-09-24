@@ -123,11 +123,27 @@ verbs: [
         leave_broot: false
     }
     # My settings~~~
-    # {
-    #      invocation: open 
-    #      shortcut: o
-    #      execution: code +{line} {file}
-    #      leave_broot: false
-    #  }
+
+    {
+         invocation: open 
+         shortcut: code 
+         execution: code {directory}
+         leave_broot: false
+    }
+    {
+         invocation: open 
+         shortcut: hx
+         execution: hx {directory}
+         leave_broot: false
+    }
+    # macOS only
+    {
+        key: ctrl-L
+        execution: ":panel_right"
+    }
+    {
+        key: ctrl-H
+        execution: ":panel_left"
+    }
 ]
 

@@ -79,7 +79,7 @@ show_selection_mark: true
 # (see https://dystroy.org/broot/icons for installation and
 # troubleshooting)
 #
-# icon_theme: vscode
+icon_theme: vscode
 
 ###############################################################
 # Special paths
@@ -136,10 +136,10 @@ special_paths: {
 # uncomment and modify the next section if you want to color
 # file name depending on their extension
 #
-# ext_colors: {
-#     png: rgb(255, 128, 75)
-#     rs: yellow
-# }
+ext_colors: {
+    png: rgb(255, 128, 75)
+    rs: yellow
+}
 
 ###############################################################
 # Max file size for content search
@@ -179,9 +179,9 @@ imports: [
             unknown
         ]
         # (un)comment to choose your preferred skin
-        file: skins/dark-blue.hjson
+        //file: skins/dark-blue.hjson
         //file: skins/catppuccin-macchiato.hjson
-        //file: skins/catppuccin-mocha.hjson
+        file: skins/catppuccin-mocha.hjson
         //file: skins/dark-gruvbox.hjson
         //file: skins/dark-orange.hjson
         //file: skins/solarized-dark.hjson
