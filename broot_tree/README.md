@@ -52,3 +52,6 @@ The br function has been successfully installed.
 You may have to restart your shell or source your shell init files.
 Afterwards, you should start broot with br in order to use its full power.
 ```
+
+# macOS 약간 버그 있어서 키 세팅 약간 다르게 해줘야함.
+https://github.com/Canop/broot/issues/497
