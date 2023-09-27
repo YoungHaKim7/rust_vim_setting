@@ -1,3 +1,17 @@
+# emacs linux에 설치 안되면 추가로 설치 해야함 
+
+As stated in the error message, you actually need the development version of these libraries (tested with Emacs v. 27 on Ubuntu 19.10 (Eoan Ermine)):
+
+```
+sudo apt install libxpm-dev libjpeg-dev libgif-dev libtiff-dev libgnutls28-dev
+```
+
+
+
+https://stackoverflow.com/questions/55297581/build-emacs-on-ubuntu-libraries-not-found
+
+<hr>
+
 <div align="center">
 
 # Doom Emacs
