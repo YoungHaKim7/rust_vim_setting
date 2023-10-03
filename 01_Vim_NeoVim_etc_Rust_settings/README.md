@@ -711,7 +711,7 @@ jumps to last line thereby selecting from first to last line
 # {} () 괄호 안에 것만 지우기
 
 
-## dit
+## ```dit``` ```ci{``` ```cit``` ```ci(```
 
 
 t 는 tag의 약자
@@ -743,6 +743,8 @@ ci{
 https://youtu.be/cY0JxzENBJg
 
 # surround vim
+
+- 글자(단어)에 "" 씌우기 ```ysiw"```
 
 ```
 surround.vim
