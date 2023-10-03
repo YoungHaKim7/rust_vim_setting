@@ -622,11 +622,30 @@ https://youtu.be/o4x4jUcHJwk
 :%norm @x
 Run macro @x on all lines
 ```
-
 vim의 꽃은 역시 매크로macro❤️
 빔Vim Macro 매크로_활용법 I love❤️vim~~👍~반복 작업은 Bye Bye #vim #macro
 
 https://youtu.be/VRqpMXF32qk
+
+# for command Macro 활용법
+
+```
+:for i in range(1, 100) | put = ', '.i | endfor
+
+// Result(이렇게 출력됨)
+1
+,2
+,3
+.
+.
+.
+,98
+,99
+,100
+
+```
+
+https://youtu.be/MPpb8azhsiM?si=ql-yzFQi-b-2ejda
 
 <br>
 
