@@ -415,8 +415,8 @@ tab간 이동 tabn1     :tabn2 이렇게 쓰면 된다.
 :tabn[ext] {count
  
 
-tab 닫기
-
+tab 닫기(보통 bd를 많이 쓴따. 홈페이지에서 이걸 권장함:bd
+:bd 
 :tabc
 
 
@@ -536,13 +536,18 @@ Ctrl-t Insert모드에서 탭 적용됨. 개꿀 👍
 :t 15
 :t15
 
+// 지금 줄에서 2번째 줄을 43줄 밑으로 복사하기(여러줄을 move)
+:+1, +2 m 43
+
+// 지금 줄에서 2번째 줄을 43줄 밑으로 복사하기(여러줄을 copy)
+:+1, +2 t 43
+
+
+
 
 // 지금 라인을 밑으로 2줄 옮기기 move
 :+2m$
 
-
-// 지금 줄에서 2번째 줄을 43줄 밑으로 복사하기
-:+1, +2 t 43
 ```
 
 https://renenyffenegger.ch/notes/development/vim/commands/m
