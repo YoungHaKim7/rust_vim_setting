@@ -647,6 +647,21 @@ https://youtu.be/VRqpMXF32qk
 
 https://youtu.be/MPpb8azhsiM?si=ql-yzFQi-b-2ejda
 
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+//이렇게 출력하면
+:for i in range(1, 100) | put = ''.i | endfor
+```
+
 <br>
 
 
