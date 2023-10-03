@@ -505,8 +505,11 @@ gc는 y/n로 바꿀 꺼 물어봄.
 15gg
 15G
 똑같음 (15줄로 이동)
+```
 
+# sort 패턴
 
+```
 // 여러줄 이쁘게 알파벳으로 정렬됨 최고
 // 내가 원하는 줄 블럭 씌우고
 :누르면
@@ -518,9 +521,30 @@ gc는 y/n로 바꿀 꺼 물어봄.
 
 // 여러줄 이쁘게 알파벳으로 정렬됨 최고
 
-
-
 ```
+
+# Vim ex commands: m, t and co
+- ```:m``` is an abbreviation for ```:move```, ```:t``` and ```:co``` are abbreviations for ```:copy```. 
+```
+// m15 패턴 (지금 라인을 15로 이동)
+:m 15
+:m15
+
+// t 15 패턴 (지금 라인을 15로 카피 copy)
+:t 15
+:t15
+
+
+// 지금 라인을 밑으로 2줄 옮기기 move
+:+2m$
+
+
+// 지금 줄에서 2번째 줄을 43줄 밑으로 복사하기
+:+1, +2 t 43
+```
+
+https://renenyffenegger.ch/notes/development/vim/commands/m
+
 
 ## Vim normal 활용법
 ```
