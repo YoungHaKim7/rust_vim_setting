@@ -6,9 +6,11 @@
   // "zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
   "zig.zigPath": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install",
   "zig.zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  // mojo
+  "mojo.modularHomePath": "/Users/globalyoung/.modular",
+
 //  "workbench.colorTheme": "spacedark",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
     "editorError.foreground": "#3f1010", // squiggly line
     "editorError.border": "#ffffff", // additional border under squiggly line
@@ -237,6 +239,15 @@
       "commands": [
         "bookmarks.list"
       ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "calva.loadFile"
+      ]
     }
   ],
   "vim.handleKeys": {
@@ -334,7 +345,9 @@
       "!Split sequence"
     ],
     "window.zoomLevel": 1,
-    "vim.digraphs": {}
+    "vim.digraphs": {},
+    "haskell.manageHLS": "GHCup",
+    "workbench.editor.empty.hint": "hidden"
     // "yaml.schemas": {
     //   "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     // }
