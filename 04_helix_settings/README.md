@@ -1,5 +1,26 @@
 # Helix( A post-modern text editor.)<a href="https://helix-editor.com/"><img align="left" alt="helix" width="20px" src="https://user-images.githubusercontent.com/67513038/214281307-c7bd5adf-eba9-4f13-9247-7700fb1deff9.png" /></a><a href="https://www.rust-lang.org/"><img align="center" alt="rust1" width="26px" src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" /></a>
 
+<hr>
+
+# Helix 테마 세팅 
+
+- $HOME/.config/helix/폴더에 ln 링크 설정해 주고 
+```
+ln -Ts $PWD/runtime ~/.config/helix/runtime
+```
+
+- 내가 수정한 테마 파일을 2곳에 중복으로 복사해준다.
+
+```
+Runtime directories:
+/home/gy/.config/helix/runtime;     // ln을 실행해서 링크 파일을 만들고 밑에 var폴더와 usr폴더에 중복으로 내가 만든 테마 파일을 복사 해주기
+
+/var/lib/helix/runtime;
+/usr/lib/helix/runtime
+
+```
+
+<hr>
 
 # Helix( Java LSP Install ) jdtls설치하기 그냥 github 땡기고 install하면 설치 된다. 최고..
 
