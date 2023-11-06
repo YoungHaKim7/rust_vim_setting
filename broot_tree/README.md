@@ -55,3 +55,45 @@ Afterwards, you should start broot with br in order to use its full power.
 
 # macOS 약간 버그 있어서 키 세팅 약간 다르게 해줘야함.
 https://github.com/Canop/broot/issues/497
+
+# Keymap
+
+Notice the unlisted?
+
+That's what makes it usable where the old tree command would produce pages of output.
+
+.gitignore files are properly dealt with to put unwanted files out of your way.
+
+As you sometimes want to see gitignored files, or hidden ones, you'll soon get used to the alti and alth shortcuts to toggle those visibilities.
+```
+alt + i 숨긴 폴더 보기 hedden off/on (to toggle showing hidden files)
+```
+
+```alt+ h``` to toggle showing hidden files (the ones whose name starts with a dot)
+
+```
+//  시간 순 정렬 sort
+:sd
+이거 한 후에
+:sort_by_date
+
+첨에 br실행 할때
+br -w 하면 용량순으로 잘 나옴 .
+
+
+// 파일명으로 찾기
+e/
+
+ex) e/temple
+
+
+// 내가 원하는 문자열 찾기
+c/
+
+ex) c/main
+
+// , you can check the usage of all filesystems, so that you focus on cleaning the full ones.
+// 전체 용량 체크
+:fs
+
+```
