@@ -11,6 +11,12 @@ ls /usr/include/c++/
 - PATH 설정 해주기
 
 ```
+# C++ PATH
+export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11:/usr/lib/gcc/x86_64-linux-gnu/11:/usr/lib/gcc/x86_64-linux-gnu/12
+```
+
+
+```
 export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11
 ```
 
