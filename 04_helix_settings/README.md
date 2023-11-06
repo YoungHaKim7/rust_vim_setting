@@ -2,6 +2,20 @@
 
 <hr>
 
+# iostream c++에러 날때 해결 방법
+
+- c++ 위치 찾은 후에 
+```
+ls /usr/include/c++/
+```
+- PATH 설정 해주기
+
+```
+export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11
+```
+
+https://stackoverflow.com/questions/54521402/locating-iostream-in-clang-fatal-error-iostream-file-not-found
+
 # Helix 테마 세팅 
 
 - $HOME/.config/helix/폴더에 ln 링크 설정해 주고 
