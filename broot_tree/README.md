@@ -30,7 +30,7 @@ cargo install --locked broot
 ```
 
 
-# ```broot``` 이렇게 누르면 실행된다.
+# ```broot``` or ```br``` 이렇게 누르면 실행된다.
 
 - 다 설치 후에 ```broot``` 실행  
 
