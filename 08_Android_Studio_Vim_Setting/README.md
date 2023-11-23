@@ -1,7 +1,9 @@
 # Quick Fix 도저히 못찾음 
 
 ```
-Alt + Enter로 하자 
+Alt + Enter로 하자
+
+Alt + 6   -> Trouble Toggle 같은거 
 ```
 
 
