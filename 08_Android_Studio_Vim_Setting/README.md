@@ -1,3 +1,10 @@
+# Quick Fix 도저히 못찾음 
+
+```
+Alt + Enter로 하자 
+```
+
+
 # 이거 보고 세팅함 
 
 https://www.slideshare.net/imkimkevin/android-studio-vim-ideavim-94820340
