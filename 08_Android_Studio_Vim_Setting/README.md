@@ -1,3 +1,9 @@
+# 이거 보고 세팅함 
+
+https://www.slideshare.net/imkimkevin/android-studio-vim-ideavim-94820340
+
+<hr>
+
 # actionlist 보기 
 
 ```
