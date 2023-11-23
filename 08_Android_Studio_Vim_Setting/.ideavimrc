@@ -19,7 +19,7 @@ let mapleader=" "
 :map <leader>r <Action>(ReformatCode)
 
 " Map <leader>d to start debug
-:map <leader>d <Action>(Debug)
+" :map <leader>d <Action>(Debug)
 
 " Map \b to toggle the breakpoint on the current line
 :map <leader>b <Action>(ToggleLineBreakpoint)
@@ -42,3 +42,16 @@ nnoremap <leader>rf :action RenameFile<cr>
 nnoremap <leader>rv :action IntoroduceVariable<cr>
 nnoremap <leader>rs :action ExtractSuperclass<cr>
 nnoremap <leader>ri :action Inline<cr>
+
+
+nnoremap L :action NextTab<cr>
+nnoremap H :action PreviousTab<cr>
+
+nnoremap <leader>+ :action EditorIncreaseFontSize<cr>
+nnoremap <leader>- :action EditorDecreaseFontSize<cr>
+
+nnoremap ]d :action GotoNextError<cr>
+nnoremap [d :action GotoPreviousError<cr>
+
+xnoremap J :m'>+1<cr>gv
+xnoremap K :m'<-2<cr>jgv
