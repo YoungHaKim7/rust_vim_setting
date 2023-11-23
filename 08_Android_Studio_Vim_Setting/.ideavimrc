@@ -1,0 +1,44 @@
+""" Common settings -------------------------
+"esc setting
+inoremap jk <esc>
+
+set showmode
+set so=5
+set incsearch
+set nu rnu
+
+""""""""""""""
+
+""" Some popular actions
+
+
+""" Map leader to space ---------------------
+let mapleader=" "
+
+" Map \r to the Reformat Code action
+:map <leader>r <Action>(ReformatCode)
+
+" Map <leader>d to start debug
+:map <leader>d <Action>(Debug)
+
+" Map \b to toggle the breakpoint on the current line
+:map <leader>b <Action>(ToggleLineBreakpoint)
+
+nnoremap <leader>rr :action Run<cr>
+nnoremap <leader>dd :action Debug<cr>
+nnoremap <leader>cc :action CleanGradleProject<cr>
+nnoremap <leader>ss :action Android.SyncProject<cr>
+
+nnoremap <leader>fu :action FindUsages<cr>
+nnoremap <leader>su :action ShowUsages<cr>
+nnoremap <leader>ga :action GotoAction<cr>
+nnoremap <leader>lc :action ActivateLogcatToolWindow<cr>
+nnoremap <leader>sh :action ActivateTerminalToolWindow<cr>
+
+nnoremap <leader>R  :action Refactorings.QuickListPopupAction<cr>
+nnoremap <leader>rm :action ExtractMethod<cr>
+nnoremap <leader>rn :action RenameElement<cr>
+nnoremap <leader>rf :action RenameFile<cr>
+nnoremap <leader>rv :action IntoroduceVariable<cr>
+nnoremap <leader>rs :action ExtractSuperclass<cr>
+nnoremap <leader>ri :action Inline<cr>
