@@ -8,6 +8,9 @@ set incsearch
 set nu rnu
 
 """"""""""""""
+"" Plug in
+set surround
+set multiple-cursors 
 
 """ Some popular actions
 
@@ -54,6 +57,7 @@ nnoremap <leader>x :action CloseActiveTab<cr>
 
 nnoremap ]d :action GotoNextError<cr>
 nnoremap [d :action GotoPreviousError<cr>
+
 
 xnoremap J :m'>+1<cr>gv
 xnoremap K :m'<-2<cr>jgv
