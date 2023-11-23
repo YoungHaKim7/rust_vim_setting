@@ -34,7 +34,7 @@ nnoremap <leader>ss :action Android.SyncProject<cr>
 
 nnoremap <leader>fu :action FindUsages<cr>
 nnoremap <leader>su :action ShowUsages<cr>
-nnoremap <leader>ga :action GotoAction<cr>
+nnoremap <leader>: :action GotoAction<cr>
 nnoremap <leader>lc :action ActivateLogcatToolWindow<cr>
 nnoremap <leader>sh :action ActivateTerminalToolWindow<cr>
 
