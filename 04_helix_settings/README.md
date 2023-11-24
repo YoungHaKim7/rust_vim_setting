@@ -2,7 +2,8 @@
 
 # Link<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
-- <a href="https://github.com/YoungHaKim7/Kotlin_Lang#java--kotlin-echo-gitignore">Helix Macro사용법 </a>
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#hexli-macro-%EC%82%AC%EC%9A%A9%EB%B2%95">Helix Java LSP 설치 </a>
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#hexli-macro-%EC%82%AC%EC%9A%A9%EB%B2%95">Helix Macro사용법 </a>
 
 
 
