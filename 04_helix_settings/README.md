@@ -1,5 +1,9 @@
 # Helix( A post-modern text editor.)<a href="https://helix-editor.com/"><img align="left" alt="helix" width="20px" src="https://user-images.githubusercontent.com/67513038/214281307-c7bd5adf-eba9-4f13-9247-7700fb1deff9.png" /></a><a href="https://www.rust-lang.org/"><img align="center" alt="rust1" width="26px" src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" /></a>
 
+# Link
+
+
+
 <hr>
 
 # iostream c++에러 날때 해결 방법
@@ -593,6 +597,14 @@ q만 쓰는듯 하다.
 Helix는 q(소문자 q) 가 불러오기
 
 저장하기는 대문자 Q(대문자 Q) 시작 Q 종료 Q
+
+// e레지스터에 매크로 저장
+"e Q
+// 다시 Q누르면 매크로 종료
+
+// 사용할때  "e 불러오고 사용하기 소문자 q
+"eq
+
 ~~~~~~~~~~~~Helix~~~~~~~~~~~~~
 
 
