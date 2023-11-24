@@ -4,6 +4,7 @@
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-java-lsp-install--jdtls%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-%EA%B7%B8%EB%83%A5-github-%EB%95%A1%EA%B8%B0%EA%B3%A0-install%ED%95%98%EB%A9%B4-%EC%84%A4%EC%B9%98-%EB%90%9C%EB%8B%A4-%EC%B5%9C%EA%B3%A0">Helix Java LSP 설치 </a>
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-%ED%85%8C%EB%A7%88-%EC%84%B8%ED%8C%85">Helix 테마 내 맘대로 Customize </a>
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#lldb-vscode-%EC%84%A4%EC%B9%98-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95-">Helix Debugging Setting디버깅 세팅하기(Rust Debugging) </a>
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#hexli-macro-%EC%82%AC%EC%9A%A9%EB%B2%95">Helix Macro사용법 </a>
 
