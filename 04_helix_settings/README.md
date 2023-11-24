@@ -715,6 +715,7 @@ https://github.com/llvm/llvm-project/tree/main/lldb/tools/lldb-vscode#Installati
 :vs   " 창 좌우로 나누기
 :hs   " 창 상하로 나누기
 :wq   " 저장하고 나가기
+:wqa   " 열린 창 모두 저장하고 나가기
 :change-current-directory   " 내가 작업하는 코드 디렉토리 바꿈
 
 
