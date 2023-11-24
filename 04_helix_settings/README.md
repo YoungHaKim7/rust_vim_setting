@@ -3,13 +3,15 @@
 # Link<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-java-lsp-install--jdtls%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-%EA%B7%B8%EB%83%A5-github-%EB%95%A1%EA%B8%B0%EA%B3%A0-install%ED%95%98%EB%A9%B4-%EC%84%A4%EC%B9%98-%EB%90%9C%EB%8B%A4-%EC%B5%9C%EA%B3%A0">Helix Java LSP 설치 </a>
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-%ED%85%8C%EB%A7%88-%EC%84%B8%ED%8C%85">Helix 테마 내 맘대로 Customize </a>
+
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#hexli-macro-%EC%82%AC%EC%9A%A9%EB%B2%95">Helix Macro사용법 </a>
 
 
 
 <hr>
 
-# iostream c++에러 날때 해결 방법
+# iostream c++에러 날때 해결 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 - c++ 위치 찾은 후에 
 ```
@@ -29,7 +31,7 @@ export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/
 
 https://stackoverflow.com/questions/54521402/locating-iostream-in-clang-fatal-error-iostream-file-not-found
 
-# Helix 테마 세팅 
+# Helix 테마 세팅<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a> 
 
 - $HOME/.config/helix/폴더에 ln 링크 설정해 주고 
 ```
@@ -49,7 +51,7 @@ Runtime directories:
 
 <hr>
 
-# Helix( Java LSP Install ) jdtls설치하기 그냥 github 땡기고 install하면 설치 된다. 최고..
+# Helix( Java LSP Install ) jdtls설치하기 그냥 github 땡기고 install하면 설치 된다. 최고..<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 https://github.com/eruizc-dev/jdtls-launcher
 
@@ -88,13 +90,13 @@ INFO: Ensure /home/gy/.local/bin is in path
 ```
 
 
-# Helix Debugger-Configurations
+# Helix Debugger-Configurations<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 https://github.com/helix-editor/helix/wiki/Debugger-Configurations#configure-debuggers
 
 This page can provide additional debugger configurations beyond [the ones shipped by default in Helix](https://github.com/helix-editor/helix/blob/master/languages.toml).
 
-# lldb-vscode 설치 다른 방법 
+# lldb-vscode 설치 다른 방법 <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 ```
 sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)" # Instructions from https://apt.llvm.org/
 cd $(dirname $(which lldb-17))
@@ -296,7 +298,7 @@ Summary of steps needed to be done are one of:
 
 <hr>
 
-# Helix
+# Helix<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 - Multi 커서 만들기
 
@@ -341,7 +343,7 @@ https://github.com/helix-editor/helix/discussions/4048
 
 https://www.hiroakit.com/archives/1966
   
-# inlay hint 빨간색 (어두운 색)
+# inlay hint 빨간색 (어두운 색)<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 - solarized_dark.toml
 
