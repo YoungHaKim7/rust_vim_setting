@@ -2,7 +2,9 @@
 
 # Link
 
+- <a href="https://github.com/YoungHaKim7/Kotlin_Lang#java--kotlin-echo-gitignore">Helix Macro사용법 </a>
 
+<a href="https://github.com/YoungHaKim7/Kotlin_Lang#link">[🔝]</a>
 
 <hr>
 
