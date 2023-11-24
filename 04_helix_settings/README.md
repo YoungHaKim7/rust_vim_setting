@@ -6,6 +6,8 @@
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-%ED%85%8C%EB%A7%88-%EC%84%B8%ED%8C%85">Helix 테마 내 맘대로 Customize </a>
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#lldb-vscode-%EC%84%A4%EC%B9%98-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95-">Helix Debugging Setting디버깅 세팅하기(Rust Debugging) </a>
 
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-%EC%A3%BC%EB%A1%9C-%EC%93%B0%EB%8A%94-command">Helix 내가 주로 쓰는 단축키 정리(My keysetting) </a>
+
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#hexli-macro-%EC%82%AC%EC%9A%A9%EB%B2%95">Helix Macro사용법 </a>
 
 
@@ -636,11 +638,6 @@ theme = "fleet_dark"
 # theme = "solarized_dark"
 ```
 
-# helix 문서 밑으로 내리는 방법
-
-- The popup of the documentation does not scroll correctly, it is not proportional when scrolling down and up, for example to scroll to the end ( Ctrl + d ) x 3, and to scroll back up ( Ctrl + u ) x 6.
-
-
 <hr>
 
 # helix 23.03 ver.
@@ -730,7 +727,7 @@ https://github.com/llvm/llvm-project/tree/main/lldb/tools/lldb-vscode#Installati
 
 <br>
 
-# Helix 주로 쓰는 command
+# Helix 주로 쓰는 command <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 ```
 :set cursorline true   " 한줄 내가 코드 쓰는거 줄 강조 됨
@@ -780,7 +777,13 @@ ds
 편함 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
 ```
 
-# Helix text Editor❤️ Surround사용법(ms, mr, md) (기본 내장됨)
+
+# helix 문서 밑으로 내리는 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
+
+- The popup of the documentation does not scroll correctly, it is not proportional when scrolling down and up, for example to scroll to the end ( Ctrl + d ) x 3, and to scroll back up ( Ctrl + u ) x 6.
+
+
+# Helix text Editor❤️ Surround사용법(ms, mr, md) (기본 내장됨)<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 <p>
   <a href="https://docs.helix-editor.com/usage.html"><img align="left" alt="helix" width="512px" src="https://blog.kakaocdn.net/dn/bWzy7G/btrVqgTUGVu/fajOnSkVgcFSNreQhGkVl0/img.gif"></a>
