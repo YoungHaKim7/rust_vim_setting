@@ -57,45 +57,6 @@ Runtime directories:
 
 <hr>
 
-# Helix( Java LSP Install ) jdtls설치하기 그냥 github 땡기고 install하면 설치 된다. 최고..<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
-
-https://github.com/eruizc-dev/jdtls-launcher
-
-```
-git clone https://github.com/eruizc-dev/jdtls-launcher.git 
-Cloning into 'jdtls-launcher'...
-remote: Enumerating objects: 241, done.
-remote: Counting objects: 100% (85/85), done.
-remote: Compressing objects: 100% (52/52), done.
-remote: Total 241 (delta 43), reused 50 (delta 28), pack-reused 156
-Receiving objects: 100% (241/241), 48.74 KiB | 9.75 MiB/s, done.
-Resolving deltas: 100% (125/125), done.
-
-
-$ cd jdtls-launcher 
-
- 
-$ ls
-CONTRIBUTING.md  install.sh  jdtls-launcher.sh  LICENSE  README.md
-
-
-$ ./install.sh 
-INFO: Downloading JDTLS-LAUNCHER
--#O=#   #     #
-INFO: Extracting JDTLS-LAUNCHER
-INFO: Creating symlink at /home/gy/.local/bin/jdtls
-Installing jdtls...
-jdt-language-server-1.28.0-202309221544 is going to be installed
-########################################################################################################################### 100.0%########################################################################################################################### 100.0%
-Installing lombok...
-########################################################################################################################### 100.0%
-Lombok installation succesfull
-JDTLS installation succesfull
-INFO: Installation successful
-INFO: Ensure /home/gy/.local/bin is in path
-```
-
-
 # Helix Debugger-Configurations<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 https://github.com/helix-editor/helix/wiki/Debugger-Configurations#configure-debuggers
@@ -872,6 +833,45 @@ popd
 rm -rf "${temporaryDirectory}"
 
 echo "Done."
+```
+
+
+# Helix( Java LSP Install ) jdtls설치하기 그냥 github 땡기고 install하면 설치 된다. 최고..<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
+
+https://github.com/eruizc-dev/jdtls-launcher
+
+```
+git clone https://github.com/eruizc-dev/jdtls-launcher.git 
+Cloning into 'jdtls-launcher'...
+remote: Enumerating objects: 241, done.
+remote: Counting objects: 100% (85/85), done.
+remote: Compressing objects: 100% (52/52), done.
+remote: Total 241 (delta 43), reused 50 (delta 28), pack-reused 156
+Receiving objects: 100% (241/241), 48.74 KiB | 9.75 MiB/s, done.
+Resolving deltas: 100% (125/125), done.
+
+
+$ cd jdtls-launcher 
+
+ 
+$ ls
+CONTRIBUTING.md  install.sh  jdtls-launcher.sh  LICENSE  README.md
+
+
+$ ./install.sh 
+INFO: Downloading JDTLS-LAUNCHER
+-#O=#   #     #
+INFO: Extracting JDTLS-LAUNCHER
+INFO: Creating symlink at /home/gy/.local/bin/jdtls
+Installing jdtls...
+jdt-language-server-1.28.0-202309221544 is going to be installed
+########################################################################################################################### 100.0%########################################################################################################################### 100.0%
+Installing lombok...
+########################################################################################################################### 100.0%
+Lombok installation succesfull
+JDTLS installation succesfull
+INFO: Installation successful
+INFO: Ensure /home/gy/.local/bin is in path
 ```
 
 
