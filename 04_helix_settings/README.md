@@ -8,7 +8,7 @@
 - TypeScript
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#typescript-%EC%84%B8%ED%8C%85">Helix TypeScript 세팅 LSP 설치 </a>
 - Rust
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#lldb-vscode-%EC%84%A4%EC%B9%98-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95-">Helix Debugging Setting디버깅 세팅하기(Rust Debugging) </a>
+  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-debugger-configurations">Helix Debugging Setting디버깅 세팅하기(Rust Debugging) </a>
 - C/C++
   - 
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#iostream-c%EC%97%90%EB%9F%AC-%EB%82%A0%EB%95%8C-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95">Helix C++ iostream 불러오기 못해서 오류날때 해결하기 PATH잡아주면됨. </a>
