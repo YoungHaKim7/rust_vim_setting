@@ -1,5 +1,5 @@
 # Quick Fix 도저히 못찾음 
-
+- IntelliJ Quick fix https://www.jetbrains.com/help/idea/intention-actions.html#intention-settings
 ```
 // Quick Fix
 Alt + Enter
