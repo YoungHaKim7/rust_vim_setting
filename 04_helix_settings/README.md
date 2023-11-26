@@ -697,7 +697,7 @@ https://github.com/llvm/llvm-project/tree/main/lldb/tools/lldb-vscode#Installati
 
 <br>
 
-# Helix 주로 쓰는 command <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
+# Helix 주로 쓰는 command <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 
 ```
 :set cursorline true   " 한줄 내가 코드 쓰는거 줄 강조 됨
@@ -749,7 +749,7 @@ ds
 ```
 
 
-# helix 문서 밑으로 내리는 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
+# helix 문서 밑으로 내리는 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 
 - The popup of the documentation does not scroll correctly, it is not proportional when scrolling down and up, for example to scroll to the end ( Ctrl + d ) x 3, and to scroll back up ( Ctrl + u ) x 6.
 
