@@ -4,7 +4,11 @@
 // Quick Fix
 Alt + Enter
 
-Alt + 6   -> Trouble Toggle 같은거 
+Alt + 6   -> Trouble Toggle 같은거
+
+
+// 블럭 치하고 줄 라인 위로 옮기기 많이 쓰는 기능
+Alt + Shift + ↑
 ```
 
 
