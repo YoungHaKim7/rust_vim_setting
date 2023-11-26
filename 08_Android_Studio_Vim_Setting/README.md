@@ -1,5 +1,6 @@
 # Quick Fix 도저히 못찾음 
 - IntelliJ Quick fix https://www.jetbrains.com/help/idea/intention-actions.html#intention-settings
+- ```Ctrl+Y```  난 vim으로 ctrl+y 많이 쓰는데 android studio 단축키 와 중복되니 에러남 그래서 key map에서 단축키 삭제함 !!
 ```
 // Quick Fix
 Alt + Enter
