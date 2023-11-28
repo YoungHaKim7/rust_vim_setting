@@ -5,7 +5,10 @@
 :action GotoSymbol
 
 // File이동 
-:action GotoFile 
+:action GotoFile
+
+// Class이동 
+:action GoToClass
 ```
 
 # Quick Fix 도저히 못찾음 
