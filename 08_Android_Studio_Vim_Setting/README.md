@@ -41,6 +41,8 @@ set multiple-cursors
 
 # actionlist 보기 
 - https://gist.github.com/kimkevin/4ddd9caf5252a059e67764eec3be8fdf
+  - 이거 더 최신인듯
+    - https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
 
 ```
 :actionlist
