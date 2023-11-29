@@ -1,5 +1,9 @@
 # Shift Vim에 세팅하는 방법 S이게 쉬프트구나 ㅎ
 - It should be ```<S-F3>``` not ```<SHIFT-F3>```, see :help key-notation in Vim.
+- test예정
+```
+nnoremap ga <s><s>
+```
 
 https://superuser.com/questions/508655/map-shift-f3-in-vimrc
 
