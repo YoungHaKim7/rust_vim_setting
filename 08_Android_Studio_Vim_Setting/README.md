@@ -85,3 +85,6 @@ set multiple-cursors
 # Android Studio에 Vim Plugin 설치 
 
 https://lektion-von-erfolglosigkeit.tistory.com/m/177
+
+- autocomplte먹통일때
+  - https://copyprogramming.com/howto/why-the-intellij-code-autocomplete-doesn-t-work
