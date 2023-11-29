@@ -43,8 +43,10 @@ Alt + 6   -> Trouble Toggle 같은거
 
 // 블럭 치하고 줄 라인 위로 옮기기 많이 쓰는 기능
 Alt + Shift + ↑
-```
 
+```
+- 자동완성 굿 you have MenuInflater and type in MenuI, and then ```CTRL+SPACE```, which means you tell the IDE that you want to use the autocomplete dropdown, and then press space, it works as you wish.
+  - https://stackoverflow.com/questions/38029675/android-studio-autocomplete-on-special-character-space-period-etc-like-in-v
 
 # 이거 보고 세팅함 
 
