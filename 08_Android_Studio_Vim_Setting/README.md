@@ -12,6 +12,7 @@ set <S-F3>=^[O1;2R
 nnoremap <S-F3> :lprevious<CR>
 ```
 
+- https://github.com/hsanson/vim-android
 
 
 # action
