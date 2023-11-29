@@ -1,4 +1,4 @@
-# Shift Vim에 세팅하는 방법 <S>이게 쉬프트구나 ㅎ
+# Shift Vim에 세팅하는 방법 S이게 쉬프트구나 ㅎ
 - It should be ```<S-F3>``` not <SHIFT-F3>, see :help key-notation in Vim.
 
 https://superuser.com/questions/508655/map-shift-f3-in-vimrc
