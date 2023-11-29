@@ -6,6 +6,13 @@ nnoremap ga <s><s>
 ```
 
 https://superuser.com/questions/508655/map-shift-f3-in-vimrc
+- set키까지 대단하네
+```
+set <S-F3>=^[O1;2R
+nnoremap <S-F3> :lprevious<CR>
+```
+
+
 
 # action
 
