@@ -13,6 +13,12 @@ set nu rnu
 "" Plug in
 set surround
 set multiple-cursors  " <A + c> , <A + x>, <A + a>
+"
+" Map vim marks to IDEA global marks
+set ideamarks
+"
+""" IdeaVim development stuff
+set ideastrictmode
 
 """ Some popular actions
 
@@ -60,6 +66,23 @@ nnoremap <leader>x :action CloseActiveTab<cr>
 
 nnoremap ]d :action GotoNextError<cr>
 nnoremap [d :action GotoPreviousError<cr>
+
+nmap gb <Action>(Back)
+nmap gD <Action>(GotoTypeDeclaration)
+nmap gf <Action>(Forward)
+nmap gl <Action>(QuickJavaDoc)
+nmap gL <Action>(QuickImplementations)
+nmap gy <Action>(ShowErrorDescription)
+nmap <leader>c <Action>(CallHierarchy)
+" Highlight usages, use CMD+G/Shift+CMD+G to iterate
+nmap <leader>h <Action>(HighlightUsagesInFile)
+nmap <leader>n <Action>(ReSharperNavigateTo)
+nmap <leader>q <Action>(ToggleRenderedDocPresentation)
+nmap <leader>s <Action>(ShowUsages)
+nmap <leader>t <Action>(TypeHierarchy)
+nmap <leader>u <Action>(FindUsages)
+nmap <leader>v <Action>(Vcs.QuickListPopupAction)
+nmap <leader>x <Action>(HideAllWindows)
 
 
 xnoremap J :action MoveLineDown<cr>
