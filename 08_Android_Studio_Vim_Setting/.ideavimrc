@@ -5,13 +5,14 @@ inoremap <c-y> <cr>
 
 set showmode
 set so=5
+set ignorecase  " Make searches case-insensitive
 set incsearch
 set nu rnu
 
 """"""""""""""
 "" Plug in
 set surround
-set multiple-cursors 
+set multiple-cursors  " <A + c> , <A + x>, <A + a>
 
 """ Some popular actions
 
