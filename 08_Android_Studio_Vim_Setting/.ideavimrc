@@ -82,7 +82,7 @@ nmap <leader>s <Action>(ShowUsages)
 nmap <leader>t <Action>(TypeHierarchy)
 nmap <leader>u <Action>(FindUsages)
 nmap <leader>v <Action>(Vcs.QuickListPopupAction)
-nmap <leader>x <Action>(HideAllWindows)
+" nmap <leader>x <Action>(HideAllWindows)
 
 
 xnoremap J :action MoveLineDown<cr>
