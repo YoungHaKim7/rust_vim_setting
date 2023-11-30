@@ -1,4 +1,7 @@
 # Shift Vim에 세팅하는 방법 S이게 쉬프트구나 ㅎ
+
+- 외국 사람들이 만든 세팅 참고 할께 많다.
+  - https://github.com/JetBrains/ideavim/discussions/303
 - It should be ```<S-F3>``` not ```<SHIFT-F3>```, see :help key-notation in Vim.
 - test예정
 ```
