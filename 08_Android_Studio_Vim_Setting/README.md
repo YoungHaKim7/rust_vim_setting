@@ -14,6 +14,16 @@ nmap <C-h> :action StepOut<CR>
 nmap <C-l> :action ForceStepInto<CR>
 ```
 
+- 추가할만한 것 2 (NERDtree이건 못 참지)
+```
+" plugins
+set NERDTree
+
+// lunarvim키로 할 예정
+nnoremap <leader>e :NERDTree<CR>
+nnoremap <leader>ef :NERDTreeFind<CR>
+```
+https://github.com/cz2415/dotfiles/blob/master/.ideavimrc
 - 추가할 한것 3 (Shift + Space )를 이렇게 넣는다.https://gist.github.com/AlexPl292/50a3ff4cef1badcbb23436b22cbd3cf4
 ```
 map <S-Space> <Action>(GotoNextError)
