@@ -44,7 +44,7 @@ nnoremap <leader>ef :NERDTreeFind<CR>
 
 // i 파일 실행
 // m 메뉴 창 나옴
-//  md 파일 삭제
+//  md엔터 파일 삭제
 //  mR엔터엔터 파일 이름 바꾸기
 ```
 https://github.com/cz2415/dotfiles/blob/master/.ideavimrc
