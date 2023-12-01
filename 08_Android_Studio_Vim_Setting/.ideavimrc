@@ -3,40 +3,48 @@
 inoremap jk <esc>
 inoremap <c-y> <cr>
 
+" Relative Number Line
+set nu rnu
+
 set showmode
 set so=5
 set ignorecase  " Make searches case-insensitive
 set incsearch
-set nu rnu
 
-""""""""""""""
-"" Plug in
-set surround
-set multiple-cursors  " <A + c> , <A + x>, <A + a>
-"
+
 " Map vim marks to IDEA global marks
 set ideamarks
 "
 """ IdeaVim development stuff
 set ideastrictmode
+" ~~~~~~~~~~~~~~~~~~~~~~~
+
+""""""""""""""
+"" Plug in
+set surround
+set multiple-cursors  " <A + c> , <A + x>, <A + a>
+set NERDTree
+
+" ~~~~~~~~~
+
+
 
 """ Some popular actions
-
 
 """ Map leader to space ---------------------
 let mapleader=" "
 
-" Map \r to the Reformat Code action
-:map <leader>r <Action>(ReformatCode)
+"" Run
+nnoremap <leader>rr :action Run<cr>
 
-" Map <leader>d to start debug
-" :map <leader>d <Action>(Debug)
-
+"" Debug ~~~~
+nnoremap <leader>dd :action Debug<cr>
 " Map \b to toggle the breakpoint on the current line
 :map <leader>b <Action>(ToggleLineBreakpoint)
+" Map <leader>d to start debug
+" :map <leader>d <Action>(Debug)
+" ~~~~~~~~~~~~~~~
 
-nnoremap <leader>rr :action Run<cr>
-nnoremap <leader>dd :action Debug<cr>
 nnoremap <leader>cc :action CleanGradleProject<cr>
 nnoremap <leader>ss :action Android.SyncProject<cr>
 
@@ -47,6 +55,22 @@ nnoremap <leader>o :action GotoFile<cr>
 nnoremap <leader>lc :action ActivateLogcatToolWindow<cr>
 nnoremap <leader>sh :action ActivateTerminalToolWindow<cr>
 
+
+" Windows Tab
+nnoremap L :action NextTab<cr>
+nnoremap H :action PreviousTab<cr>
+
+nnoremap <leader>+ :action EditorIncreaseFontSize<cr>
+nnoremap <leader>- :action EditorDecreaseFontSize<cr>
+nnoremap <leader>x :action CloseActiveTab<cr>
+" ~~~~~~~~~
+
+"NERDTree
+" nnoremap <leader>e :NERDTree<CR>
+nnoremap <leader>e :NERDTreeFind<CR>
+""~~~~~~~~~
+
+" Refactorings~~~~~
 nnoremap <leader>R  :action Refactorings.QuickListPopupAction<cr>
 nnoremap <leader>rm :action ExtractMethod<cr>
 nnoremap <leader>rn :action RenameElement<cr>
@@ -54,16 +78,14 @@ nnoremap <leader>rf :action RenameFile<cr>
 nnoremap <leader>rv :action IntoroduceVariable<cr>
 nnoremap <leader>rs :action ExtractSuperclass<cr>
 nnoremap <leader>ri :action Inline<cr>
+" Map \r to the Reformat Code action
+:map <leader>r <Action>(ReformatCode)
+"" LineMove Up_Down~~~~~~
+xnoremap J :action MoveLineDown<cr>
+xnoremap K :action MoveLineUp<cr>
+" ~~~~~~~~~~~
 
-
-nnoremap L :action NextTab<cr>
-nnoremap H :action PreviousTab<cr>
-
-nnoremap <leader>+ :action EditorIncreaseFontSize<cr>
-nnoremap <leader>- :action EditorDecreaseFontSize<cr>
-nnoremap <leader>x :action CloseActiveTab<cr>
-
-
+"" QuickFix
 nnoremap ]d :action GotoNextError<cr>
 nnoremap [d :action GotoPreviousError<cr>
 
@@ -78,12 +100,11 @@ nmap <leader>c <Action>(CallHierarchy)
 nmap <leader>h <Action>(HighlightUsagesInFile)
 nmap <leader>n <Action>(ReSharperNavigateTo)
 nmap <leader>q <Action>(ToggleRenderedDocPresentation)
-nmap <leader>s <Action>(ShowUsages)
 nmap <leader>t <Action>(TypeHierarchy)
-nmap <leader>u <Action>(FindUsages)
 nmap <leader>v <Action>(Vcs.QuickListPopupAction)
+" nmap <leader>s <Action>(ShowUsages)
+" nmap <leader>u <Action>(FindUsages)
 " nmap <leader>x <Action>(HideAllWindows)
+" ~~~~~~~~~
+ 
 
-
-xnoremap J :action MoveLineDown<cr>
-xnoremap K :action MoveLineUp<cr>
