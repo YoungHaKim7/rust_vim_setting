@@ -12,6 +12,21 @@ nmap <C-j> :action StepOver<CR>
 nmap <C-k> :action Resume<CR>
 nmap <C-h> :action StepOut<CR>
 nmap <C-l> :action ForceStepInto<CR>
+""""""""""""""""""""""""""""""""""""""Debug""""""""""""""""""""""""""""""""""""""
+noremap <Space>bp :action ToggleLineBreakpoint<CR>
+noremap <Space>qe :action QuickEvaluateExpression <CR>
+noremap <Space>ee :action EvaluateExpression <CR>
+noremap <Space>fr :action Debugger.ForceEarlyReturn<CR>
+noremap <Space>daw :action Debugger.AddToWatch<CR>
+noremap <Space>fc :action ForceRunToCursor<CR>
+noremap <Space>hs :action Hotswap<CR>
+noremap <Space>DD :action JRebel Debug<CR>
+noremap <Space>rab :action Debugger.RemoveAllBreakpointsInFile<CR>
+noremap <Space>raB :action Debugger.RemoveAllBreakpoints<CR>
+noremap <Space>df :action Debugger.PopFrame<CR>
+noremap <Space>pp :action ShowExecutionPoint<CR>
+noremap <Space>ds :action StreamTracerAction<CR>
+noremap <Space>mb :action XDebugger.MuteBreakpoints<CR>
 ```
 
 - 추가할만한 것 2 (NERDtree이건 못 참지)
@@ -32,24 +47,10 @@ https://superuser.com/questions/508655/map-shift-f3-in-vimrc
 
 <hr>
 
-- Debug
+- test
 
 ```
-""""""""""""""""""""""""""""""""""""""Debug""""""""""""""""""""""""""""""""""""""
-noremap <Space>bp :action ToggleLineBreakpoint<CR>
-noremap <Space>qe :action QuickEvaluateExpression <CR>
-noremap <Space>ee :action EvaluateExpression <CR>
-noremap <Space>fr :action Debugger.ForceEarlyReturn<CR>
-noremap <Space>daw :action Debugger.AddToWatch<CR>
-noremap <Space>fc :action ForceRunToCursor<CR>
-noremap <Space>hs :action Hotswap<CR>
-noremap <Space>DD :action JRebel Debug<CR>
-noremap <Space>rab :action Debugger.RemoveAllBreakpointsInFile<CR>
-noremap <Space>raB :action Debugger.RemoveAllBreakpoints<CR>
-noremap <Space>df :action Debugger.PopFrame<CR>
-noremap <Space>pp :action ShowExecutionPoint<CR>
-noremap <Space>ds :action StreamTracerAction<CR>
-noremap <Space>mb :action XDebugger.MuteBreakpoints<CR>
+
 ```
 
 - set키까지 대단하네
