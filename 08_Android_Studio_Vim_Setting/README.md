@@ -85,7 +85,12 @@ Ctrl + Space 좋다.
 // Quick Fix
 Alt + Enter
 
+// Problem
 Alt + 6   -> Trouble Toggle 같은거
+
+
+// NERDTree 창 닫기
+Shift + Esc
 
 
 // 블럭 치하고 줄 라인 위로 옮기기 많이 쓰는 기능
