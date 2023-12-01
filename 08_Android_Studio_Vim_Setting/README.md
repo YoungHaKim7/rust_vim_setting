@@ -31,7 +31,9 @@ map <S-Space> <Action>(GotoNextError)
 https://superuser.com/questions/508655/map-shift-f3-in-vimrc
 
 <hr>
+
 - Debug
+
 ```
 """"""""""""""""""""""""""""""""""""""Debug""""""""""""""""""""""""""""""""""""""
 noremap <Space>bp :action ToggleLineBreakpoint<CR>
