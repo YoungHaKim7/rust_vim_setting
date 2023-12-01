@@ -2,7 +2,10 @@
 
 https://github.com/SkuldNorniern/Skulds-Documentation
 
-- 고수의 nvim 세팅 https://raw.githubusercontent.com/hrsh7th/nvim-cmp/main/doc/cmp.txt
+- 고수의 nvim 세팅
+  - 1. https://raw.githubusercontent.com/hrsh7th/nvim-cmp/main/doc/cmp.txt
+  - 2. https://linovox.com/install-and-use-nvim-cmp/
+
 <hr>
 
 # 완성도 거의 완전체에 가까움
