@@ -28,8 +28,28 @@ https://github.com/cz2415/dotfiles/blob/master/.ideavimrc
 ```
 map <S-Space> <Action>(GotoNextError)
 ```
-
 https://superuser.com/questions/508655/map-shift-f3-in-vimrc
+
+<hr>
+- Debug
+```
+""""""""""""""""""""""""""""""""""""""Debug""""""""""""""""""""""""""""""""""""""
+noremap <Space>bp :action ToggleLineBreakpoint<CR>
+noremap <Space>qe :action QuickEvaluateExpression <CR>
+noremap <Space>ee :action EvaluateExpression <CR>
+noremap <Space>fr :action Debugger.ForceEarlyReturn<CR>
+noremap <Space>daw :action Debugger.AddToWatch<CR>
+noremap <Space>fc :action ForceRunToCursor<CR>
+noremap <Space>hs :action Hotswap<CR>
+noremap <Space>DD :action JRebel Debug<CR>
+noremap <Space>rab :action Debugger.RemoveAllBreakpointsInFile<CR>
+noremap <Space>raB :action Debugger.RemoveAllBreakpoints<CR>
+noremap <Space>df :action Debugger.PopFrame<CR>
+noremap <Space>pp :action ShowExecutionPoint<CR>
+noremap <Space>ds :action StreamTracerAction<CR>
+noremap <Space>mb :action XDebugger.MuteBreakpoints<CR>
+```
+
 - set키까지 대단하네
 ```
 set <S-F3>=^[O1;2R
