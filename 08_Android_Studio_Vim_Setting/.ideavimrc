@@ -10,6 +10,9 @@ set showmode
 set so=5
 set ignorecase  " Make searches case-insensitive
 set incsearch
+set mousehide
+set ruler
+set history=100000
 
 
 " Map vim marks to IDEA global marks
