@@ -4,6 +4,7 @@
   - https://github.com/JetBrains/ideavim/discussions/303
   - 고수의 세팅 https://github.com/citizenmatt/dotfiles/blob/master/ideavimrc
   - NERDTree 추가 예정 굿 https://github.com/cz2415/dotfiles/blob/master/.ideavimrc
+  - set 명령어 정리 잘됨. https://blog.sinoroo.com/entry/VIM-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%B0%8F-%EC%84%A4%EC%A0%95
 - It should be ```<S-F3>``` not ```<SHIFT-F3>```, see :help key-notation in Vim.
 - 알트Alt키 세팅하는 방법
   - https://vimdoc.sourceforge.net/htmldoc/map.html#:map-alt-keys
