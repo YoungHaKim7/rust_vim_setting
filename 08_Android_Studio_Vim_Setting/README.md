@@ -3,6 +3,7 @@
 - 외국 사람들이 만든 세팅 참고 할께 많다.
   - https://github.com/JetBrains/ideavim/discussions/303
   - 고수의 세팅 https://github.com/citizenmatt/dotfiles/blob/master/ideavimrc
+  - NERDTree 추가 예정 굿 https://github.com/cz2415/dotfiles/blob/master/.ideavimrc
 - It should be ```<S-F3>``` not ```<SHIFT-F3>```, see :help key-notation in Vim.
 - test예정
 ```
