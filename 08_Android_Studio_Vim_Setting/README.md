@@ -5,9 +5,18 @@
   - 고수의 세팅 https://github.com/citizenmatt/dotfiles/blob/master/ideavimrc
   - NERDTree 추가 예정 굿 https://github.com/cz2415/dotfiles/blob/master/.ideavimrc
 - It should be ```<S-F3>``` not ```<SHIFT-F3>```, see :help key-notation in Vim.
-- test예정
+- 추가 할만것 https://github.com/q843705423/ideavimrc/blob/master/.ideavimrc
 ```
-nnoremap ga <s><s>
+"debug Artifact
+nmap <C-j> :action StepOver<CR>
+nmap <C-k> :action Resume<CR>
+nmap <C-h> :action StepOut<CR>
+nmap <C-l> :action ForceStepInto<CR>
+```
+
+- 추가할 한것 3 (Shift + Space )를 이렇게 넣는다.https://gist.github.com/AlexPl292/50a3ff4cef1badcbb23436b22cbd3cf4
+```
+map <S-Space> <Action>(GotoNextError)
 ```
 
 https://superuser.com/questions/508655/map-shift-f3-in-vimrc
