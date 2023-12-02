@@ -46,6 +46,9 @@ nnoremap <leader>ef :NERDTreeFind<CR>
 // m 메뉴 창 나옴
 //  md엔터 파일 삭제
 //  mR엔터엔터 파일 이름 바꾸기
+
+// NERDTree 창 닫기
+Shift + Esc
 ```
 https://github.com/cz2415/dotfiles/blob/master/.ideavimrc
 - 추가할 한것 3 (Shift + Space )를 이렇게 넣는다.https://gist.github.com/AlexPl292/50a3ff4cef1badcbb23436b22cbd3cf4
