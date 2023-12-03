@@ -23,6 +23,11 @@
 
 <hr>
 
+# 다른 외국 개발자의 Helix세팅 
+
+https://github.com/phaazon/config/blob/master/helix/config.toml
+
+
 # iostream c++에러 날때 해결 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
 - c++ 위치 찾은 후에 
