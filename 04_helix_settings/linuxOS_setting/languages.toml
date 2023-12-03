@@ -137,6 +137,7 @@ inlayHints.discriminantHints.enable = "fieldless"
 inlayHints.lifetimeElisionHints.enable = "skip_trivial"
 inlayHints.typeHints.hideClosureInitialization = false
 cargo.features= "all"
+rust-analyzer.check.command = "clippy"
 
 
 [language-server.typescript-language-server]
