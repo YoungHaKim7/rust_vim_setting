@@ -1038,6 +1038,12 @@ INFO: Ensure /home/gy/.local/bin is in path
 
 https://github.com/helix-editor/helix/issues/2510
 
+<hr>
+
+# python setting
+
+https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#python---pyright--ruff--black
+
 ```
 [[language]]
 name = "java"
