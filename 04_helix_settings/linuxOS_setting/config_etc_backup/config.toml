@@ -1,18 +1,12 @@
 # theme = "fleet_dark"
 theme = "fleet_dark_y"
-# theme = "solarized_dark"
-# theme = "nightfox"
+# theme = "solarized_dark_y"
 
 [editor]
 line-number = "relative"
 mouse = false
 color-modes = true
 cursorline = true
-auto-pairs = true
-true-color = true
-scroll-lines = 5
-idle-timeout = 50
-completion-trigger-len = 1
 
 [editor.indent-guides]
 render = true
@@ -20,7 +14,6 @@ character = "┊"
 
 [editor.lsp]
 display-messages = true
-# inlay hint #  :set lsp.display-inlay-hints false
 display-inlay-hints = true
 
 [editor.cursor-shape]
@@ -28,16 +21,8 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
-[editor.statusline]
-left = ["mode", "spinner", "file-name", "file-type", "total-line-numbers", "file-encoding"]
-center = []
-right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
-
-
 [editor.file-picker]
 hidden = false
-
-# Key Setting
 
 # At most one section each of 'keys.normal', 'keys.insert' and 'keys.select'
 [keys.normal]
@@ -47,15 +32,6 @@ g = { a = "code_action" } # Maps `ga` to show possible code actions
 C-a = "increment"
 C-x = "decrement"
 "backspace" = { c = ":sh cargo run", t =":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -pthread -lm -Wall -Wextra -ggdb -o main main.c", d =":sh rm -rf main main.dSYM", n = ":sh touch .gitignore", k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main", a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c", x = ":sh chmod +x build.sh"}  
-
-space.c = "toggle_comments"
-space.w.h = "jump_view_left"
-space.w.l = "jump_view_right"
-space.w.j = "jump_view_down"
-space.w.k = "jump_view_up"
-space.w.o = "hsplit"
-space.w.v = "vsplit"
-
 
 # Muscle memory
 "{" = ["goto_prev_paragraph", "collapse_selection"]
@@ -129,4 +105,3 @@ P = "paste_clipboard_before"
 
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
-
