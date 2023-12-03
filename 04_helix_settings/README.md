@@ -27,6 +27,139 @@
 
 https://github.com/phaazon/config/blob/master/helix/config.toml
 
+- languages.toml
+
+```toml
+[[language]]
+name = "rust"
+indent = { tab-width = 2, unit = "  "}
+
+[language-server.rust-analyzer.config]
+cargo.features = "all"
+rust-analyzer.check.command = "clippy"
+```
+
+- config.toml
+
+```toml
+theme = "catppuccin_macchiato"
+
+[editor]
+scroll-lines = 1
+cursorline = true
+auto-save = false
+completion-trigger-len = 1
+true-color = true
+color-modes = true
+auto-pairs = true
+rulers = [120]
+idle-timeout = 50
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "▏"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-type", "total-line-numbers", "file-encoding"]
+center = []
+right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
+
+[keys.normal]
+c = "move_char_left"
+C = "extend_char_left"
+r = "move_char_right"
+R = "extend_char_right"
+t = "move_line_down"
+T = "extend_line_down"
+s = "move_line_up"
+S = "extend_line_up"
+
+h = "find_till_char"
+H = "extend_till_char"
+j = "replace"
+J = "replace_with_yanked"
+k = "select_regex"
+K = "split_selection"
+l = "change_selection"
+L = "copy_selection_on_next_line"
+
+F = "extend_prev_char"
+X = "extend_line_above"
+B = "extend_prev_word_start"
+W = "extend_next_word_start"
+
+# F/H are now extend versions of f/t; so remap them to alt
+A-f = "find_prev_char"
+A-h = "till_prev_char"
+A-F = "extend_prev_char"
+A-H = "extend_till_prev_char"
+space.g.f = "find_prev_char"
+space.g.h = "till_prev_char"
+space.g.F = "extend_prev_char"
+space.g.H = "extend_till_prev_char"
+
+g.c = "goto_line_start"
+g.s = "goto_file_start"
+g.t = "goto_file_end"
+g.r = "goto_line_end"
+g.i = "goto_first_nonwhitespace"
+g.h = "no_op"
+g.l = "no_op"
+g.D = "goto_reference"
+G.c = "extend_to_line_start"
+G.i = "extend_to_first_nonwhitespace"
+G.r = "extend_to_line_end"
+
+C-k = "split_selection_on_newline"
+
+# flip anchor and cursor
+space.space = "flip_selections"
+
+z.t = "scroll_down"
+z.s = "scroll_up"
+Z.t = "scroll_down"
+Z.s = "scroll_up"
+
+space.c = "toggle_comments"
+space.w.c = "jump_view_left"
+space.w.r = "jump_view_right"
+space.w.t = "jump_view_down"
+space.w.s = "jump_view_up"
+space.w.o = "hsplit"
+
+[keys.select]
+c = "extend_char_left"
+r = "extend_char_right"
+t = "extend_line_down"
+s = "extend_line_up"
+g.c = "goto_line_start"
+g.r = "goto_line_end"
+g.h = "no_op"
+g.l = "no_op"
+"é" = "move_next_word_start"
+"É" = "move_next_long_word_start"
+h = "replace"
+H = "replace_with_yanked"
+l = "change_selection"
+"è" = "split_selection"
+"à" = "find_till_char"
+S = "select_regex"
+z = "split_selection"
+X = "extend_line_above"
+
+[keys.insert]
+" " = ["collapse_selection", ":insert-output printf ' '", "move_char_right"]
+```
+
 
 # iostream c++에러 날때 해결 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 
