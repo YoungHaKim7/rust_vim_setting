@@ -181,6 +181,14 @@ export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/
 
 https://stackoverflow.com/questions/54521402/locating-iostream-in-clang-fatal-error-iostream-file-not-found
 
+- Issue with language settings #7101
+
+https://pastebin.com/bx592Ugk
+
+<br>
+
+<hr>
+
 # Helix 테마 세팅<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a> 
 
 - $HOME/.config/helix/폴더에 ln 링크 설정해 주고 
