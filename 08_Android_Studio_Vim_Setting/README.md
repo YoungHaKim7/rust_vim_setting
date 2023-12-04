@@ -47,7 +47,7 @@ nnoremap <leader>ef :NERDTreeFind<CR>
 //  md엔터 파일 삭제
 //  mR엔터엔터 파일 이름 바꾸기
 
-// NERDTree 창 닫기
+// NERDTree 창 닫기  // 난 <leader>x 로 닫는거 세팅함. 개편함 
 Shift + Esc
 ```
 https://github.com/cz2415/dotfiles/blob/master/.ideavimrc
