@@ -4,14 +4,27 @@
         "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
     ],
     "clangd.path": "/home/gy/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
+    // Zig Lang
     "zls.path": "/home/y/.config/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
-    "workbench.colorTheme": "Default Dark+",
-    "window.zoomLevel": 1,
+    "zig.zigPath": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+    "zig.zigVersion": "0.11.0",
+    "zig.zls.enabled": true,
+    "zig.zls.path": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    // gradle(Java & Kotlin)
+    "redhat.telemetry.enabled": true,
+    // "java.configuration.runtimes": [
+    //     {}
+    // ],
+    "workbench.editor.empty.hint": "hidden",
+    // haskell
     "haskell.manageHLS": "GHCup",
     // mojo
     // "mojo.modularHomePath": "/home/y/.modular",
     //  "workbench.colorTheme": "spacedark",
+    "workbench.colorTheme": "Default Dark+",
+    "window.zoomLevel": 1,
     "workbench.iconTheme": "material-icon-theme",
+    // Inlay Settings
     "workbench.colorCustomizations": {
         "editorError.foreground": "#000000", // squiggly line
         "editorError.border": "#ffffff", // additional border under squiggly line
@@ -87,6 +100,35 @@
     "nasm.checkOnType": true,
     "nasm.nasmPath": "/usr/bin/nasm",
     // Cobol
+    // COBOL zowe
+    "zowe.ds.history": {
+        "persistence": true,
+        "favorites": [],
+        "history": [],
+        "sessions": [],
+        "templates": [],
+        "fileHistory": [],
+        "searchHistory": []
+    },
+    "zowe.uss.history": {
+        "persistence": true,
+        "favorites": [],
+        "history": [],
+        "sessions": [],
+        "templates": [],
+        "fileHistory": [],
+        "searchHistory": []
+    },
+    "zowe.jobs.history": {
+        "persistence": true,
+        "favorites": [],
+        "history": [],
+        "sessions": [],
+        "templates": [],
+        "fileHistory": [],
+        "searchHistory": []
+    },
+    "zowe.settings.version": 2,
     // "microFocusCOBOL.dialect": "Enterprise COBOL for z/OS",
     // "microFocusCOBOL.sourceFormat": "fixed",
     // "microFocusCOBOL.editor.customTabStops": [
@@ -113,7 +155,7 @@
             "after": [
                 "<esc>"
             ]
-        },
+        }
         // "when": "vim.mode == 'Normal' || vim.mode == 'Visual'",
         // "before": [
         //     "<C-y>",
@@ -200,7 +242,7 @@
                 "R"
             ],
             "commands": [
-                "editor.action.refactor",
+                "editor.action.refactor"
             ]
         },
         {
@@ -280,7 +322,7 @@
                 "K"
             ],
             "commands": [
-                "editor.action.moveLinesUpAction",
+                "editor.action.moveLinesUpAction"
             ]
         },
         {
@@ -290,7 +332,7 @@
             "commands": [
                 "editor.action.moveLinesDownAction"
             ]
-        },
+        }
     ],
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
@@ -353,47 +395,5 @@
                 120793
             ]
         ]
-    },
-    "zig.zigPath": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
-    "zig.zigVersion": "0.11.0",
-    "zig.zls.enabled": true,
-    "zig.zls.path": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
-    // NASM
-    "nasm.checkOnType": true,
-    "nasm.nasmPath": "/usr/bin/nasm",
-    // gradle
-    "redhat.telemetry.enabled": true,
-    "java.configuration.runtimes": [
-        {}
-    ],
-    "workbench.editor.empty.hint": "hidden",
-    // COBOL zowe
-    "zowe.ds.history": {
-        "persistence": true,
-        "favorites": [],
-        "history": [],
-        "sessions": [],
-        "templates": [],
-        "fileHistory": [],
-        "searchHistory": []
-    },
-    "zowe.uss.history": {
-        "persistence": true,
-        "favorites": [],
-        "history": [],
-        "sessions": [],
-        "templates": [],
-        "fileHistory": [],
-        "searchHistory": []
-    },
-    "zowe.jobs.history": {
-        "persistence": true,
-        "favorites": [],
-        "history": [],
-        "sessions": [],
-        "templates": [],
-        "fileHistory": [],
-        "searchHistory": []
-    },
-    "zowe.settings.version": 2
+    }
 }
