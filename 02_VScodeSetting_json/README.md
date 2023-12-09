@@ -1,3 +1,8 @@
+# Vim (VSCode) 세팅 가이드 
+https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+
+<hr>
+
 # VSCode
 
 - Ctrl + Shift + P(Command Palette)
