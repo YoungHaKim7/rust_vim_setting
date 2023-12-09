@@ -1,6 +1,29 @@
 # Vim (VSCode) 세팅 가이드 
 https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 
+
+- ```settings.json```  Visual모드에서도 탭 할때 Visual모드가 풀리는데 그거 막아준다. 굿
+```json
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+```
+
 <hr>
 
 # VSCode
