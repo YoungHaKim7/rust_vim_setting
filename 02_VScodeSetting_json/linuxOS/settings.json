@@ -1,238 +1,399 @@
 {
-  // c/c++ languages setting~ clangd server Setting
-  "clangd.arguments": [
-    "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
-  ],
-  "clangd.path": "/home/y/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
-  "zls.path": "/home/y/.config/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
-  "workbench.colorTheme": "Default Dark+",
-  "window.zoomLevel": 1,
-  "haskell.manageHLS": "GHCup",
-  //  "workbench.colorTheme": "spacedark",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.colorCustomizations": {
-    "editorError.foreground": "#000000", // squiggly line
-    "editorError.border": "#ffffff", // additional border under squiggly line
-    "editorInlayHint.background": "#e85a5a98",
-    // Overrides for specific kinds of inlay hints
-    "editorInlayHint.typeForeground": "#fdb6fdf0",
-    "editorInlayHint.parameterForeground": "#fdb6fdf0",
-    "editorInlayHint": true
-  },
-  "security.workspace.trust.untrustedFiles": "open",
-  "fontFace": "MesloLGS NF",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  // auto fmt & format
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "code-runner.runInTerminal": true,
-  // Controls the font family.
-  //"editor.fontFamily": "Operator Mono",
-  // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-  // "editor.lineHeight": 0,
-  // Enables font ligatures
-  "editor.fontLigatures": true,
-  // Controls if file decorations should use badges.
-  "explorer.decorations.badges": false,
-  "editor.fontSize": 17,
-  "editor.tabSize": 4,
-  "editor.insertSpaces": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "editor.detectIndentation": true,
-  "emmet.triggerExpansionOnTab": true,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "terminal.integrated.inheritEnv": false,
-  "files.associations": {
-    "*.html": "html"
-  },
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "tabnine.experimentalAutoImports": true,
-  // rust-analyzer setting~
-  "rust-analyzer.inlayHints.enable": true,
-  "rust-analyzer.cargo.loadOutDirsFromCheck": true,
-  "rust-analyzer.procMacro.enable": true,
-  "rust-analyzer.checkOnSave.command": "clippy",
-  // zig languages setting~
-  "zls.warn_style": true,
-  "zls.enable_semantic_tokens": false,
-  "zls.operator_completions": true,
-  "zls.include_at_in_builtins": false,
-  "zls.enable_inlay_hints": true,
-  // https://github.com/VSCodeVim/Vim
-  // vim setting ~~~~
-  "vim.leader": "<space>",
-  "vim.useSystemClipboard": true,
-  "editor.lineNumbers": "relative",
-  "vim.easymotion": true,
-  "vim.surround": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": [
-        "<leader>",
-        ":"
-      ],
-      "commands": [
-        "workbench.action.showCommands"
-      ]
+    // c/c++ languages setting~ clangd server Setting
+    "clangd.arguments": [
+        "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
+    ],
+    "clangd.path": "/home/gy/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
+    "zls.path": "/home/y/.config/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
+    "workbench.colorTheme": "Default Dark+",
+    "window.zoomLevel": 1,
+    "haskell.manageHLS": "GHCup",
+    // mojo
+    // "mojo.modularHomePath": "/home/y/.modular",
+    //  "workbench.colorTheme": "spacedark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+        "editorError.foreground": "#000000", // squiggly line
+        "editorError.border": "#ffffff", // additional border under squiggly line
+        "editorInlayHint.background": "#e85a5a98",
+        // Overrides for specific kinds of inlay hints
+        "editorInlayHint.typeForeground": "#fdb6fdf0",
+        "editorInlayHint.parameterForeground": "#fdb6fdf0",
+        "editorInlayHint": true
     },
-    {
-      "before": [
-        "]",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.nextInFiles"
-      ]
+    // JavaScript & TypeScript Inlayhint
+    "javascript.inlayHints.enumMemberValues.enabled": true,
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true, // recently
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "fontFace": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    // auto fmt & format
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "code-runner.runInTerminal": true,
+    // Controls the font family.
+    //"editor.fontFamily": "Operator Mono",
+    // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
+    // "editor.lineHeight": 0,
+    // Enables font ligatures
+    "editor.fontLigatures": true,
+    // Controls if file decorations should use badges.
+    "explorer.decorations.badges": false,
+    "editor.fontSize": 17,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.detectIndentation": true,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.inheritEnv": false,
+    "files.associations": {
+        "*.html": "html"
     },
-    {
-      "before": [
-        "[",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.prevInFiles"
-      ]
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
-    {
-      "before": [
-        "g",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+    "tabnine.experimentalAutoImports": true,
+    // rust-analyzer setting~
+    "rust-analyzer.inlayHints.enable": true,
+    "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+    "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
+    "rust-analyzer.inlayHints.typeHints.hideNamedConstructor": true,
+    // zig languages setting~
+    "zls.warn_style": true,
+    "zls.enable_semantic_tokens": false,
+    "zls.operator_completions": true,
+    "zls.include_at_in_builtins": false,
+    "zls.enable_inlay_hints": true,
+    // Assembly (Nasm)
+    "nasm.checkOnType": true,
+    "nasm.nasmPath": "/usr/bin/nasm",
+    // Cobol
+    // "microFocusCOBOL.dialect": "Enterprise COBOL for z/OS",
+    // "microFocusCOBOL.sourceFormat": "fixed",
+    // "microFocusCOBOL.editor.customTabStops": [
+    //     6,
+    //     7,
+    //     19
+    // ],
+    // "microFocusCOBOL.editor.improvedTabStops": true,
+    // "microFocusCOBOL.editor.smartEdit": true,
+    // https://github.com/VSCodeVim/Vim
+    // vim setting ~~~~
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "editor.lineNumbers": "relative",
+    // "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.useCtrlKeys": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<esc>"
+            ]
+        },
+        // "when": "vim.mode == 'Normal' || vim.mode == 'Visual'",
+        // "before": [
+        //     "<C-y>",
+        // ],
+        // "after": [
+        //     {
+        //         "key": "enter",
+        //         "command": [
+        //             "editor.action.acceptInput",
+        //         ],
+        //         "when": [
+        //             "editorFocus && findInputFocussed"
+        //         ]
+        //     }
+        // ]
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "g",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "g",
+                "T"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "g",
+                "t"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                ":"
+            ],
+            "commands": [
+                "workbench.action.showCommands"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.nextInFiles"
+            ]
+        },
+        {
+            "before": [
+                "[",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.prevInFiles"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "R"
+            ],
+            "commands": [
+                "editor.action.refactor",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "v"
+            ],
+            "commands": [
+                "workbench.action.gotoSymbol"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.actions.view.problems"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "commands": [
+                "workbench.action.closePanel"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "m"
+            ],
+            "commands": [
+                "bookmarks.toggle"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "commands": [
+                "bookmarks.list"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction",
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
+    ],
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
     },
-    {
-      "before": [
-        "<leader>",
-        "v"
-      ],
-      "commands": [
-        "workbench.action.gotoSymbol"
-      ]
+    "vim.handleKeys": {
+        "<C-a>": true,
+        "<C-b>": true,
+        "<C-c>": false,
+        "<C-d>": true,
+        "<C-f>": true,
+        "<C-h>": false,
+        "<C-k>": false,
+        "<C-r>": true,
+        "<C-u>": false,
+        "<C-v>": true,
+        "<C-x>": true,
+        "<C-y>": true
     },
-    {
-      "before": [
-        "<leader>",
-        "t"
-      ],
-      "commands": [
-        "workbench.actions.view.problems"
-      ]
+    // UniCode Setting
+    "insert-unicode.favorites": {
+        "directories": {},
+        "items": [
+            [
+                8594
+            ],
+            [
+                8469
+            ],
+            [
+                8477
+            ],
+            [
+                928
+            ],
+            [
+                120121
+            ],
+            [
+                8901
+            ],
+            [
+                920
+            ],
+            [
+                936
+            ],
+            [
+                923
+            ],
+            [
+                172
+            ],
+            [
+                215
+            ],
+            [
+                177
+            ],
+            [
+                120793
+            ]
+        ]
     },
-    {
-      "before": [
-        "<leader>",
-        "r"
-      ],
-      "commands": [
-        "editor.action.rename"
-      ]
+    "zig.zigPath": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+    "zig.zigVersion": "0.11.0",
+    "zig.zls.enabled": true,
+    "zig.zls.path": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    // NASM
+    "nasm.checkOnType": true,
+    "nasm.nasmPath": "/usr/bin/nasm",
+    // gradle
+    "redhat.telemetry.enabled": true,
+    "java.configuration.runtimes": [
+        {}
+    ],
+    "workbench.editor.empty.hint": "hidden",
+    // COBOL zowe
+    "zowe.ds.history": {
+        "persistence": true,
+        "favorites": [],
+        "history": [],
+        "sessions": [],
+        "templates": [],
+        "fileHistory": [],
+        "searchHistory": []
     },
-    {
-      "before": [
-        "<leader>",
-        "x"
-      ],
-      "commands": [
-        "workbench.action.closePanel"
-      ]
+    "zowe.uss.history": {
+        "persistence": true,
+        "favorites": [],
+        "history": [],
+        "sessions": [],
+        "templates": [],
+        "fileHistory": [],
+        "searchHistory": []
     },
-    {
-      "before": [
-        "<leader>",
-        "m"
-      ],
-      "commands": [
-        "bookmarks.toggle"
-      ]
+    "zowe.jobs.history": {
+        "persistence": true,
+        "favorites": [],
+        "history": [],
+        "sessions": [],
+        "templates": [],
+        "fileHistory": [],
+        "searchHistory": []
     },
-    {
-      "before": [
-        "<leader>",
-        "b"
-      ],
-      "commands": [
-        "bookmarks.list"
-      ]
-    }
-  ],
-  "vim.handleKeys": {
-    "<C-a>": true,
-    "<C-b>": true,
-    "<C-c>": false,
-    "<C-d>": true,
-    "<C-f>": true,
-    "<C-h>": false,
-    "<C-k>": false,
-    "<C-r>": true,
-    "<C-u>": false,
-    "<C-v>": true,
-    "<C-x>": true
-  },
-  // UniCode Setting
-  "insert-unicode.favorites": {
-    "directories": {},
-    "items": [
-      [
-        8594
-      ],
-      [
-        8469
-      ],
-      [
-        8477
-      ],
-      [
-        928
-      ],
-      [
-        120121
-      ],
-      [
-        8901
-      ],
-      [
-        920
-      ],
-      [
-        936
-      ],
-      [
-        923
-      ],
-      [
-        172
-      ],
-      [
-        215
-      ],
-      [
-        177
-      ],
-      [
-        120793
-      ]
-    ]
-  }
+    "zowe.settings.version": 2
 }
