@@ -514,5 +514,9 @@ key = "NumpadEnter"
 opacity = 0.95
 
 [window.dimensions]
-columns = 130
-lines = 30
+columns = 138
+lines = 33
+
+[window.position]
+x = 100
+y = 45
