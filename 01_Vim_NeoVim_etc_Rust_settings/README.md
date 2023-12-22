@@ -1,3 +1,92 @@
+# 주로 쓰는 PlugIn
+```
+" =========================================================================
+" =  플러그인 설정                                                        =
+" =========================================================================
+
+if has('python3')
+endif
+
+call plug#begin('~/.vim/plugged') " 플러그인 시작
+
+" Conquer Of Completion 자동완성 플러그인
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Manson Install Lsp 관리
+" Plug 'williamboman/mason.nvim'
+
+" nvim-treesitter 구문 파싱 하이라이팅
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" Plug 'majutsushi/tagbar'
+" Plug 'preservim/tagbar'
+
+" NERDTree 코드 뷰어 창
+Plug 'preservim/nerdtree'
+
+" 컬러스킴(색상표) jellybeans, gruvbox
+Plug 'nanotech/jellybeans.vim'
+" Plug 'morhetz/gruvbox'
+
+" 하단에 다양한 상태(몇 번째 줄, 인코딩, etc.)를 
+" 표시하는 상태바 추가
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" CScope 플러그인
+Plug 'ronakg/quickr-cscope.vim'
+
+" CtrlP 파일 탐색 플러그인
+Plug 'ctrlpvim/ctrlp.vim'
+
+" 비활성 윈도우 강조
+" Plug 'blueyed/vim-diminactive'
+
+" vim cutlass 잘라내기 명령어가 yank 에 영향을 주지 않음
+" Plug 'svermeulen/vim-cutlass'
+
+" VIM GAS(GNU ASsembler) Highlighting
+Plug 'Shirk/vim-gas'
+
+Plug 'Yggdroot/indentLine' " Visually displaying indent
+Plug 'townk/vim-autoclose'  " automatic closing of parentheses
+Plug 'luochen1990/rainbow' "colorful brackets.
+
+Plug 'ycm-core/YouCompleteMe' "automatic_completion
+
+""""" Rust
+Plug 'rust-lang/rust.vim' "rust
+Plug 'fannheyward/coc-rust-analyzer' "rust_analyzer
+Plug 'mattn/vim-lsp-settings' "rust_analyzer__lsp
+Plug 'liuchengxu/vista.vim' " rust vista
+Plug 'prabirshrestha/vim-lsp' 
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
+Plug 'Shougo/vimproc.vim', {'do' : 'make'} "debug
+Plug 'idanarye/vim-vebugger' "debug_
+"""""""""""""""""
+
+Plug 'kamykn/spelunker.vim' "smarter way to correct spelling mistakes
+
+Plug 'tpope/vim-surround'
+
+" C
+Plug 'justmao945/vim-clang'
+
+" :UnicodeTable    - Print Unicode Table in new window
+Plug 'chrisbra/unicode.vim'
+
+"""""""~~~~zig
+Plug 'ziglang/zig.vim'
+Plug 'UltiRequiem/coc-zig', {'do' : 'yarn install --frozen-lockfile && yarn build'}
+""""""~~~~~~
+
+call plug#end()
+```
+
+<hr>
+
 # LunarVim/Neovim - Debugging Demo | Java, Python, Rust, Go, Javascript | chris@machine
 
 
