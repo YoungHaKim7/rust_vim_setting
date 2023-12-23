@@ -1,8 +1,6 @@
 
 call plug#begin('~/.vim/plugged') " 플러그인 시작
 
-call plug#begin('~/.vim/plugged') " 플러그인 시작
-
 " Conquer Of Completion 자동완성 플러그인
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
