@@ -1,3 +1,11 @@
+# yml toml migrate
+
+```
+alacritty migrate
+```
+
+<hr>
+
 # ```alacritty -vv``` alacritty log를 볼 수 있다. 좋네 ㅎ
 
 ```bash
