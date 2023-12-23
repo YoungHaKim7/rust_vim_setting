@@ -26,7 +26,7 @@
 
 <hr>
 
-# my 세팅
+# my inlay color세팅
 
 ```
 "ui.virtual" = "Gray 90" # .whitespace
