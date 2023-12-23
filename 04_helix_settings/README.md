@@ -26,6 +26,15 @@
 
 <hr>
 
+# my 세팅
+
+```
+"ui.virtual" = "Gray 90" # .whitespace
+"ui.virtual.inlay-hint" = { fg = "#35638f", bg="#420517" }
+"ui.virtual.ruler" = { bg = "Gray 20" }
+
+```
+
 # 다른 외국 개발자의 Helix세팅 
 
 https://github.com/phaazon/config/blob/master/helix/config.toml
