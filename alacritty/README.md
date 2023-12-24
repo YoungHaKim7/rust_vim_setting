@@ -4,6 +4,12 @@
 alacritty migrate
 ```
 
+- LinuxOS (setting folder)
+
+```
+cd /etc/xdg/alacritty
+```
+
 <hr>
 
 # ```alacritty -vv``` alacritty log를 볼 수 있다. 좋네 ㅎ
