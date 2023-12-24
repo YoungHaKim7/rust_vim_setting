@@ -10,6 +10,9 @@ alacritty migrate
 cd /etc/xdg/alacritty
 ```
 
+# alacritty theme
+- https://github.com/alacritty/alacritty-theme
+
 <hr>
 
 # ```alacritty -vv``` alacritty log를 볼 수 있다. 좋네 ㅎ
