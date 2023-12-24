@@ -1,3 +1,7 @@
+import = [
+    "~/.config/alacritty/themes/themes/tokyo-night.toml"
+]
+
 [font]
 size = 16.0
 
@@ -511,12 +515,13 @@ chars = """
 key = "NumpadEnter"
 
 [window]
-opacity = 0.95
+opacity = 0.93
 
 [window.dimensions]
-columns = 138
-lines = 33
+columns = 132
+lines = 30
 
 [window.position]
-x = 100
-y = 45
+x = 80
+y = 60
+
