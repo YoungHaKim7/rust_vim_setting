@@ -13,6 +13,40 @@ cd /etc/xdg/alacritty
 # alacritty theme
 - https://github.com/alacritty/alacritty-theme
 
+```
+─(gyoung㉿kali-gy)-[~/.config/alacritty/themes/themes]
+$ ls
+
+Cobalt2.toml               dracula.toml                        inferno.toml              papertheme.toml
+Mariana.toml               everforest_dark.toml                iris.toml                 pencil_dark.toml
+afterglow.toml             everforest_light.toml               iterm.toml                pencil_light.toml
+alabaster.toml             falcon.toml                         kanagawa_dragon.toml      rainbow.toml
+alabaster_dark.toml        flat_remix.toml                     kanagawa_wave.toml        remedy_dark.toml
+argonaut.toml              flexoki.toml                        konsole_linux.toml        rose-pine-dawn.toml
+atom_one_light.toml        github_dark.toml                    low_contrast.toml         rose-pine-moon.toml
+ayu_dark.toml              github_dark_colorblind.toml         marine_dark.toml          rose-pine.toml
+ayu_light.toml             github_dark_default.toml            material_theme.toml       seashells.toml
+baitong.toml               github_dark_dimmed.toml             material_theme_mod.toml   smoooooth.toml
+base16_default_dark.toml   github_dark_high_contrast.toml      meliora.toml              snazzy.toml
+blood_moon.toml            github_dark_tritanopia.toml         midnight-haze.toml        solarized_dark.toml
+bluish.toml                github_light.toml                   monokai_charcoal.toml     solarized_light.toml
+breeze.toml                github_light_colorblind.toml        monokai_pro.toml          taerminal.toml
+campbell.toml              github_light_default.toml           moonlight_ii_vscode.toml  tango_dark.toml
+carbonfox.toml             github_light_high_contrast.toml     msx.toml                  tender.toml
+catppuccin.toml            github_light_tritanopia.toml        night_owlish_light.toml   terminal_app.toml
+catppuccin_frappe.toml     gnome_terminal.toml                 nightfox.toml             thelovelace.toml
+catppuccin_latte.toml      gotham.toml                         noctis-lux.toml           tokyo-night-storm.toml
+catppuccin_macchiato.toml  gruvbox_dark.toml                   nord.toml                 tokyo-night.toml
+catppuccin_mocha.toml      gruvbox_light.toml                  nord_light.toml           tomorrow_night.toml
+challenger_deep.toml       gruvbox_material.toml               nordic.toml               tomorrow_night_bright.toml
+citylights.toml            gruvbox_material_medium_dark.toml   oceanic_next.toml         ubuntu.toml
+cyber_punk_neon.toml       gruvbox_material_medium_light.toml  omni.toml                 wombat.toml
+darcula.toml               hardhacker.toml                     one_dark.toml             xterm.toml
+dark_pastels.toml          high_contrast.toml                  palenight.toml            zenburn.toml
+deep_space.toml            horizon-dark.toml                   papercolor_dark.toml
+doom_one.toml              hyper.toml                          papercolor_light.toml
+```
+
 <hr>
 
 # ```alacritty -vv``` alacritty log를 볼 수 있다. 좋네 ㅎ
