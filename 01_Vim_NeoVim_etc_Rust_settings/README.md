@@ -123,6 +123,11 @@ https://johngrib.github.io/wiki/vim/auto-completion/#youcompleteme
 
   - http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 
+# 초보자를 위한 Vim설명서(Vim CheatSheet)
+
+- https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/cheatsheet/
+
+
 # VIM Tips & Tricks
 
 https://youtube.com/playlist?list=PLpqQbpeQxfW0eJK-LSEzuEeC1u5vsQOUO
