@@ -1,7 +1,44 @@
+# macOS 주로 쓰는 단축키(alacritty)
+
+```bash
+# 새 창 열기 (탭으로 열림)
+⌘ + t
+command + T
+
+# 창 1번 2번 이동
+⌘ + 1 or 2
+command + 1 or 2
+
+
+# 1단어씩 지우기
+⌥ + ⌫
+option + backspace 
+
+
+
+#  첫줄로 이동
+^  + a
+control + a
+
+
+# 마지막 줄로 이동
+^  + e
+control + e 
+
+
+# terminal 에서는 한 단어씩 이동 되는데 alacritty에서는 안된다. ㅠㅠ 
+⌥ +  ← or →
+option + arrow Right Left 
+
+```
+
+<hr>
+
 #  Ctrl+{arrow key} does not jump word #1408 
 
 - https://github.com/alacritty/alacritty/issues/1408
 
+- https://stackoverflow.com/questions/5029118/bash-ctrl-to-move-cursor-between-words-strings
 
 
 # yml toml migrate
