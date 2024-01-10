@@ -1,3 +1,9 @@
+#  Ctrl+{arrow key} does not jump word #1408 
+
+- https://github.com/alacritty/alacritty/issues/1408
+
+
+
 # yml toml migrate
 
 ```
