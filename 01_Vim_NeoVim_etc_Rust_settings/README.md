@@ -4,7 +4,7 @@
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-%EC%B0%BD-%EB%82%98%EB%88%84%EA%B8%B0">Vim 창 나누기</a>
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-%EC%9B%80%EC%A7%81%EC%9E%84-%EA%B4%80%EB%A0%A8hjkl">Vim 움직임 관련(hjkl)</a>
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-buffer--tabnew">vim buffer 활용법tabe많이 씀</a>
-- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-command--key">Vim : Command 글씨 바꾸기 같은거</a>
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-command--key">Vim : Command 글씨 바꾸기 같은거:set number rnu하이브리드 모드 젤 좋다. ㅋ</a>
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#sort-%ED%8C%A8%ED%84%B4">Sort 패턴</a>
 
