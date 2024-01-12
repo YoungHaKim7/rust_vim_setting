@@ -9,6 +9,10 @@
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-ex-commands-m-t-and-co">move copy command :</a>
 
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-normal-%ED%99%9C%EC%9A%A9%EB%B2%95">normal활용법</a>
+
+- mark활용법
+
 <hr>
 
 # 주로 쓰는 PlugIn
