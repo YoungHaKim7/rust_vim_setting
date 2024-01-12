@@ -1,3 +1,9 @@
+# Link
+
+- https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-%EC%B0%BD-%EB%82%98%EB%88%84%EA%B8%B0
+
+<hr>
+
 # 주로 쓰는 PlugIn
 
 - ```:PlugInstall```
