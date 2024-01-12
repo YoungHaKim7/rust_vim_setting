@@ -1,6 +1,7 @@
 # Link
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-%EC%B0%BD-%EB%82%98%EB%88%84%EA%B8%B0">Vim 창 나누기</a>
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-%EC%9B%80%EC%A7%81%EC%9E%84-%EA%B4%80%EB%A0%A8hjkl"></a>
 
 <hr>
 
