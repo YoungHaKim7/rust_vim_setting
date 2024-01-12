@@ -5,6 +5,8 @@
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-buffer--tabnew">vim buffer 활용법tabe많이 씀</a>
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-command--key">Vim : Command 글씨 바꾸기 같은거</a>
 
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#sort-%ED%8C%A8%ED%84%B4">Sort 패턴</a>
+
 <hr>
 
 # 주로 쓰는 PlugIn
