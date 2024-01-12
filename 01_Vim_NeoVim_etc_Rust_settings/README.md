@@ -474,6 +474,28 @@ https://economiceco.tistory.com/12352
 
 <br>
 
+<hr>
+
+# Vim 움직임 관련(hjkl)
+
+```
+ k
+hjl
+
+s 커서 자리에서 삭제하면서 insert 모드 많이 쓴다.
+
+S 한줄 다 지우면서 insert 모드
+
+
+x Visual Mode 로 커서 자리만 지우기
+
+X Visual Mode로 백스페이스랑 동일 (Visual mode 유지)
+
+
+```
+
+<br>
+
 # Vim buffer & tabnew
 
 - buffer 관련
