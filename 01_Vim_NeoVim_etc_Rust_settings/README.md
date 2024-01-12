@@ -107,6 +107,9 @@ Plug 'ziglang/zig.vim'
 Plug 'UltiRequiem/coc-zig', {'do' : 'yarn install --frozen-lockfile && yarn build'}
 """"""~~~~~~
 
+" Add Tabby plugin__Self-hosted AI coding assistant 
+Plug 'TabbyML/vim-tabby'
+
 call plug#end()
 ```
 
