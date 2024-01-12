@@ -7,6 +7,8 @@
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#sort-%ED%8C%A8%ED%84%B4">Sort 패턴</a>
 
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-ex-commands-m-t-and-co">move copy command :</a>
+
 <hr>
 
 # 주로 쓰는 PlugIn
