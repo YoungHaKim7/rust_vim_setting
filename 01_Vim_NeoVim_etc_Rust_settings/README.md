@@ -21,6 +21,8 @@
 
 # 주로 쓰는 PlugIn
 
+- 요즘 많이 쓰는 LunarVim Setting https://github.com/YoungHaKim7/lvim-config_gyoung_tabby_AI_Setting
+
 - ```:PlugInstall```
 - ```:PlugClean```
 
