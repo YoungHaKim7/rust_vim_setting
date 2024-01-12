@@ -12,7 +12,7 @@
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-normal-%ED%99%9C%EC%9A%A9%EB%B2%95">normal활용법</a>
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#marks%ED%99%9C%EC%9A%A9%EB%B2%95">mark활용법</a>
-- 매크로 활용법Macro Vim 꽃 매크로
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#macro-%ED%99%9C%EC%9A%A9%EB%B2%95">매크로 활용법Macro Vim 꽃 매크로</a>
 
 <hr>
 
