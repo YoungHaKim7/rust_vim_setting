@@ -13,6 +13,7 @@
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#marks%ED%99%9C%EC%9A%A9%EB%B2%95">mark활용법</a>
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#macro-%ED%99%9C%EC%9A%A9%EB%B2%95">매크로 활용법Macro Vim 꽃 매크로</a>
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#--%EA%B4%84%ED%98%B8-%EC%95%88%EC%97%90-%EA%B2%83%EB%A7%8C-%EC%A7%80%EC%9A%B0%EA%B8%B0">c활용법 괄호 안에 글씨만 지우기 테그 안에 지우기 등등 cit ci( ci{</a>
 
 <hr>
 
