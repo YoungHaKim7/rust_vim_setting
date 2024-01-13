@@ -34,5 +34,12 @@ fisher install patrickf3139/colored-man-pages
 fisher install axkirillov/tokyonight-fish
 ```
 
+# oh-my-fish (쉘 꾸미기)
+- https://github.com/oh-my-fish/oh-my-fish
 - ohmyfish
   - https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
+
+```bash
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install
+fish install --path=~/.local/share/omf --config=~/.config/omf
+```
