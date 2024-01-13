@@ -22,3 +22,7 @@
 
 - https://github.com/jethrokuan/z
 
+
+# Plugin
+
+- https://www.reddit.com/r/fishshell/comments/t9yinj/what_are_your_favorite_fish_plugins/
