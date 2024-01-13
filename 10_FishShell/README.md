@@ -26,3 +26,9 @@
 # Plugin
 
 - https://www.reddit.com/r/fishshell/comments/t9yinj/what_are_your_favorite_fish_plugins/
+
+```
+fisher install jethrokuan/z
+fisher install patrickf3139/colored-man-pages
+fisher install axkirillov/tokyonight-fish
+```
