@@ -29,6 +29,7 @@
 
 ```
 fisher install jethrokuan/z
+fisher install oh-my-fish/plugin-ssh
 fisher install patrickf3139/colored-man-pages
 fisher install axkirillov/tokyonight-fish
 ```
