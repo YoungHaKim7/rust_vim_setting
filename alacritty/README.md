@@ -59,7 +59,7 @@ cd /etc/xdg/alacritty
 - macOS 에서는 carbonfox 이 테마 쓰는중 ㅋ
 
 ```
-─(gyoung㉿kali-gy)-[~/.config/alacritty/themes/themes]
+─(gy)-[~/.config/alacritty/themes/themes]
 $ ls
 
 Cobalt2.toml               dracula.toml                        inferno.toml              papertheme.toml
