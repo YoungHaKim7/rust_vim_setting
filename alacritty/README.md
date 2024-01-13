@@ -56,6 +56,8 @@ cd /etc/xdg/alacritty
 # alacritty theme
 - https://github.com/alacritty/alacritty-theme
 
+- macOS 에서는 carbonfox 이 테마 쓰는중 ㅋ
+
 ```
 ─(gyoung㉿kali-gy)-[~/.config/alacritty/themes/themes]
 $ ls
