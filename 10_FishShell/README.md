@@ -33,3 +33,6 @@ fisher install oh-my-fish/plugin-ssh
 fisher install patrickf3139/colored-man-pages
 fisher install axkirillov/tokyonight-fish
 ```
+
+- ohmyfish
+  - https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
