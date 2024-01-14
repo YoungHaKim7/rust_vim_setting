@@ -8,6 +8,7 @@
 
 - https://docs.zed.dev/general/vim
 
-# Zed
+# Zed(install) __ Brew Install
 
 - https://docs.zed.dev/general/readme
+- https://formulae.brew.sh/cask/zed
