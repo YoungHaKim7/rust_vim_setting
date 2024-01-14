@@ -11,8 +11,3 @@
 # Zed
 
 - https://docs.zed.dev/general/readme
-# Result
-
-```
-
-```
