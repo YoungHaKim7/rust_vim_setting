@@ -1,0 +1,63 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Summercamp",
+  "vim_mode": true,
+  "ui_font_size": 20,
+  "buffer_font_size": 20,
+  "relative_line_numbers": true,
+  // disable cursor blink
+  "cursor_blink": false,
+  "inlay_hints": {
+    // Global switch to toggle hints on and off, switched off by default.
+    "enabled": true,
+    // Toggle certain types of hints on and off, all switched on by default.
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    // Corresponds to null/None LSP hint type value.
+    "show_other_hints": true
+  },
+  "project_panel": {
+    // Default width of the project panel.
+    "default_width": 240,
+    // Where to dock project panel. Can be 'left' or 'right'.
+    "dock": "right",
+    // Whether to show file icons in the project panel.
+    "file_icons": true,
+    // Whether to show folder icons or chevrons for directories in the project panel.
+    "folder_icons": true,
+    // Whether to show the git status in the project panel.
+    "git_status": true,
+    // Amount of indentation for nested items.
+    "indent_size": 20,
+    // Whether to reveal it in the project panel automatically,
+    // when a corresponding project entry becomes active.
+    // Gitignored entries are never auto revealed.
+    "auto_reveal_entries": true
+  },
+  "prettier": {
+    // Use regular Prettier json configuration:
+    // "trailingComma": "es5",
+    // "tabWidth": 4,
+    // "semi": false,
+    // "singleQuote": true
+  },
+  // LSP Specific settings.
+  "lsp": {
+    // Specify the LSP name as a key here.
+    "rust-analyzer": {
+      //     //These initialization options are merged into Zed's defaults
+      "initialization_options": {
+        "checkOnSave": {
+          "command": "clippy"
+        }
+      }
+      // }
+    }
+  }
