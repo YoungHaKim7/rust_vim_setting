@@ -10,5 +10,6 @@
 
 # Zed(install) __ Brew Install
 
-- https://docs.zed.dev/general/readme
+- https://zed.dev/
 - https://formulae.brew.sh/cask/zed
+- https://docs.zed.dev/general/readme
