@@ -11,7 +11,9 @@
       // put key-bindings here if you want them to work only in normal mode
       // "K": "editor::Hover"
       // "L": "pane::ActivateNextItem"
-      "g a": "editor::ToggleCodeActions"
+      "g a": "editor::ToggleCodeActions",
+      "] d": "editor::GoToDiagnostic",
+      "[ d": "editor::GoToPrevDiagnostic"
     }
   },
   {
