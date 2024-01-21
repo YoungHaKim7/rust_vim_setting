@@ -9,3 +9,16 @@ $HOME/Library/Application Support/Code/User/snippets
 ```bash
 $HOME/.config/Code/User/snippets
 ```
+
+- tree
+```bash
+.
+├── History
+├── globalStorage
+├── keybindings.json
+├── settings.json
+├── snippets
+|      └── rust.json
+└── workspaceStorage
+
+```
