@@ -1,0 +1,686 @@
+{
+	// Place your snippets for rust here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	// -- Cargo Toml Full Template start
+	"10x-cargo-toml-default": {
+		"prefix": "10x-cargo-toml-default",
+		"body": [
+			"[package]",
+			"name = \"${1:package_name}\"",
+			"version = \"0.1.0\"",
+			"edition = \"2021\"",
+			"rust-version = \"1.75\"",
+			"",
+			"[lints.rust]",
+			"unsafe_code = \"forbid\"",
+			"# unused = \"allow\" # For exploratory dev.$2",
+			"",
+			"[dependencies]",
+			"$3"
+		],
+	},
+
+  // -- Cargo Toml Snippets
+
+	"10x-latest-rust-version": {
+		"prefix": "10x-latest-rust-version",
+		"body": [
+			"rust-version = \"1.75\""
+		],
+	},
+
+	"10x-cargo-lints": {
+		"prefix": "10x-cargo-lints",
+		"body": [
+			"[lints.rust]",
+			"unsafe_code = \"forbid\"",
+			"# unused = \"allow\" # For exploratory dev."
+		],
+	},
+
+	"10x-cargo-workspace-lints": {
+		"prefix": "10x-cargo-workspace-lints",
+		"body": [
+			"[workspace.lints.rust]",
+			"unsafe_code = \"forbid\"",
+			"# unused = \"allow\" # For exploratory dev."
+		],
+	},
+
+  // -- Dependency Groups
+
+  "10x-dep-group-async": {
+		"prefix": "10x-dep-group-async",
+		"body": [
+			"# -- Async",
+			"tokio = { version = \"1\", features = [\"full\"] }"
+		],
+	},
+
+  "10x-dep-group-serde-json": {
+		"prefix": "10x-dep-group-serde-json",
+		"body": [
+			"# -- Json",
+			"serde = { version = \"1\", features = [\"derive\"] }",
+			"serde_json = \"1\"",
+			"serde_with = \"3\""
+		],
+	},
+
+	"10x-dep-group-others": {
+		"prefix": "10x-dep-group-others",
+		"body": [
+			"# -- Others",
+			"derive_more = {version = \"1.0.0-beta\", features = [\"from\"] }"
+		],
+	},
+
+  // Note: This is for "simpler" CLI. Another group will be added for ratatui.
+	"10x-dep-group-cli": {
+		"prefix": "10x-dep-group-cli",
+		"body": [
+			"# -- Cli",
+      "clap = {version = \"4\", features = [\"cargo\"]}",
+			"dialoguer = \"0.11\"",
+			"console = \"0.15\"",
+			"textwrap = \"0.16\""
+		],
+	},  
+
+	"10x-dep-group-files": {
+		"prefix": "10x-dep-group-files-01",
+		"body": [
+			"# -- Files",
+			"walkdir = \"2\"",
+			"globset = \"0.4\""
+		],
+	},
+
+	"10x-dep-group-files-simple-fs": {
+		"prefix": "10x-dep-group-files-02-simple-fs",
+		"body": [
+			"# -- Files",
+			"simple-fs = { version = \"0.1\", features = [\"full\"] }"
+		],
+	},	
+
+  // -- Dependency Individuals
+
+	"10x-dep-uuid": {
+		"prefix": "10x-dep-uuid",
+		"body": [
+			"uuid = {version = \"1\", features = [\"v4\",\"fast-rng\",]}"
+		],
+	},   
+
+	"10x-dep-futures-async": {
+		"prefix": "10x-dep-futures-async",
+		"body": [
+			"futures = \"0.3\""
+		],
+	},  	
+
+  // ~~~~~~~~end -- Cargo Toml Full Template -- end
+
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // -- Comment Snippets ~~ start
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	"10x-comment-section": {
+		"prefix": "10x-comment-section",
+		"body": [
+			"// region:    --- ${1:Section}",
+			"${2}$TM_SELECTED_TEXT",
+			"// endregion: --- ${1:Section}"
+		],
+		"description": "Comment Section"
+	},
+
+	"10x-comment-delimiter": {
+		"prefix": "10x-comment-delimiter",
+		"body": [
+			"// -- ${1}",
+		],
+		"description": "Comment Delimiter"
+	},	
+
+  // -- Modules Snippets
+
+	"10x-modules-section": {
+		"prefix": "10x-modules-section-01",
+		"body": [
+			"// region:    --- Modules",
+			"${1}",
+			"use ${2:crate}::{${3}Result};",
+			"${4}",
+			"// endregion: --- Modules"
+		],
+		"description": "Simple modules section (default `use crate::Error`)"
+	},
+
+	"10x-modules-with-error-section": {
+		"prefix": "10x-modules-section-02-with-error",
+		"body": [
+			"// region:    --- Modules",
+			"",
+			"mod error;",
+			"${1}",
+			"pub use error::{Error, Result};",
+			"",
+			"// endregion: --- Modules"
+		],
+		"description": "Modules sections with module error"
+	},		
+
+	// -- Impl Snippets
+
+	"10x-impl-from": {
+		"prefix": "10x-impl-from",
+		"body": [
+			"impl From<${1:from_type}> for ${2:to_type} {",
+			"\tfn from(val: ${1}) -> Self {",
+			"\t\t$3",
+			"\t}",
+			"}"
+		],
+		"description": "impl From implementation"
+	},	
+
+	"10x-impl-try-from": {
+		"prefix": "10x-impl-try-from",
+		"body": [
+			"impl TryFrom<${1:FromType}> for ${2:ToType} {",
+			"\ttype Error = ${3:Error};",
+			"\tfn try_from(val: ${1}) -> Result<${2}> {",
+			"\t\t$4",
+			"\t}",
+			"}\n"
+		],
+		"description": "impl TryFrom implementation (assume Result<T> in scope)"
+	},
+	
+	// -- Wrapper Snippets
+
+	"10x-wrap-option": {
+		"prefix": "10x-wrap-option",
+		"body": [
+			"Option<${1:$TM_SELECTED_TEXT}>"
+		],
+		"description": "Wrap Selection as Option<Selection>"
+	},
+
+	"10x-wrap-result": {
+		"prefix": "10x-wrap-result",
+		"body": [
+			"Result<${1:$TM_SELECTED_TEXT}>"
+		],
+		"description": "Wrap Selection as Result<Selection>"
+	},
+
+	"10x-wrap-vec": {
+		"prefix": "10x-wrap-vec",
+		"body": [
+			"Vec<${1:$TM_SELECTED_TEXT}>"
+		],
+		"description": "Wrap Selection as Vec<Selection>"
+	},
+
+	"10x-wrap-arc": {
+		"prefix": "10x-wrap-arc",
+		"body": [
+			"Arc<${1:$TM_SELECTED_TEXT}>"
+		],
+		"description": "Wrap Selection as Arc<Selection>"
+	},	
+  
+	// -- Functions
+
+	"10x-fn": {
+		"prefix": "10x-fn-01",
+		"body": [
+			"fn ${1:fn_name}(${2}) -> Result<${3:()}> {",
+			"\t${4}",
+			"\t${5:todo!()}",
+			"}"
+		],
+	},	
+
+	"10x-pub-fn": {
+		"prefix": "10x-fn-02-pub-fn",
+		"body": [
+			"pub fn ${1:fn_name}(${2}) -> Result<${3:()}> {",
+			"\t${4}",
+			"\t${5:todo!()}",
+			"}"
+		],
+	},		
+
+	"10x-async-fn": {
+		"prefix": "10x-fn-03-async-fn",
+		"body": [
+			"async fn ${1:fn_name}(${2}) -> Result<${3:()}> {",
+			"\t${4}",
+			"\t${5:todo!()}",
+			"}"
+		],
+	},
+
+	"10x-pub-async-fn":{
+		"prefix": "10x-fn-04-pub-async-fn",
+		"body": [
+			"pub async fn ${1:fn_name}(${2}) -> Result<${3:()}> {",
+			"\t${4}",
+			"\t${5:todo!()}",
+			"}"
+		],
+	},
+
+	// -- Error
+
+	"10x-error-early-dev-box-dyn": {
+		"prefix": "10x-error-early-dev-box-dyn", 
+		"body": [
+			"pub type Result<T> = core::result::Result<T, Error>;",
+			"",
+			"pub type Error = Box<dyn std::error::Error>; // For early dev.",
+		],
+		"description": "Early dev error.rs (Box<dyn ...Error> pattern)"
+	},
+	
+	"10x-error-re-export-self-error-result": {
+		"prefix": "10x-error-re-export-self-error-result", 
+		"body": [
+			"pub use self::error::{Error, Result};",
+		],
+		"description": "pub use of self Error/Result"
+	},
+
+	"10x-error-use-result-error": {
+		"prefix": "10x-error-use-result-error",
+		"body": [
+			"use ${1:crate}::{${2}Result};"
+		],
+		"description": "use crate::{..,Result};"
+	},	
+
+	"10x-error-variant-with-from": {
+		"prefix": "10x-error-variant-with-from",
+		"body": [
+			"#[from]",
+			"${1:VariantName}(${2}${3:Error}),"
+		],
+		"description": "jc-error-variant"
+	},
+
+	// -- Debug
+
+	"10x-debug-println": {
+		"prefix": "10x-debug-println",
+		"body": [ "println!(\"->> $1{$2}$3\"$4);"],
+		"description": "println"
+	},	
+
+  // -- Test Snippets
+
+	"10x-test-module": {
+		"prefix": "10x-test-module-01",
+		"body": [
+			"// region:    --- Tests",
+			"",
+			"#[cfg(test)]",
+			"mod tests {",
+			"\ttype Error = Box<dyn std::error::Error>;",
+			"\ttype Result<T> = core::result::Result<T, Error>; // For tests.",
+			"",
+			"\tuse super::*;",
+			"",
+			"\t$1",
+			"}",
+			"",
+			"// endregion: --- Tests"
+		],
+		"description": "Unit test sub module boilerplate"
+	},
+
+	"10x-test-module-with-anyhow": {
+		"prefix": "10x-test-module-02-with-anyhow",
+		"body": [
+			"// region:    --- Tests",
+			"",
+			"#[cfg(test)]",
+			"mod tests {",
+			"\tuse super::*;",
+			"\tuse anyhow::Result;",
+			"",
+			"\t$1",
+			"}",
+			"",
+			"// endregion: --- Tests"
+		],
+		"description": "Unit test sub module boilerplate"
+	},	
+
+	"10x-test-fn-with-comment-scaffolding": {
+		"prefix": "10x-test-fn-01-with-comment-scaffolding",
+		"body": [
+			"#[test]",
+			"fn test_${1:name}() -> Result<()> {",
+			"\t// -- Setup & Fixtures",
+			"\t${2}",
+			"\t// -- Exec",
+			"\t",
+			"\t// -- Check",
+			"\t",
+			"\t// -- Clean",
+			"\t",			
+			"\tOk(())",
+			"}"
+		],
+		"description": "Unit test function with comment scaffolding"
+	},	
+
+	"10x-test-fn-simple": {
+		"prefix": "10x-test-fn-02-simple",
+		"body": [
+			"#[test]",
+			"fn test_${1:name}() -> Result<()> {",
+			"\t${2}",
+			"",
+			"\tOk(())",
+			"}"
+		],
+		"description": "Unit test function with comment scaffolding"
+	},		
+
+	"10x-test-async-fn-with-comment-scaffolding": {
+		"prefix": "10x-test-async-fn-01-with-comment-scaffolding",
+		"body": [
+			"#[tokio::test]",
+			"async fn test_${1:name}() -> Result<()> {",
+			"\t// -- Setup & Fixtures",
+			"\t${2}",
+			"\t// -- Exec",
+			"\t",
+			"\t// -- Check",
+			"\t",
+			"\t// -- Clean",
+			"\t",			
+			"\tOk(())",
+			"}"
+		],
+		"description": "Unit test function with comment scaffolding"
+	},	
+
+	"10x-test-async-fn-simple": {
+		"prefix": "10x-test-async-fn-02-simple",
+		"body": [
+			"#[tokio::test]",
+			"async fn test_${1:name}() -> Result<()> {",
+			"\t${2}",
+			"\t",
+			"\tOk(())",
+			"}"
+		],
+		"description": "Unit test function with comment scaffolding"
+	},		
+
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // -- Comment Snippets ~~ End
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // -- Error ~~ Start 
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	"10x-error-rs": {
+		"prefix": "10x-error-rs-01",
+		"body": [
+			"pub type Result<T> = core::result::Result<T, Error>;",
+			"",
+			"#[derive(Debug)]",
+			"pub enum Error {",
+			"\t${1:// TBC}",
+			"}",
+			"",
+			"// region:    --- Error Boilerplate",
+			"",
+			"impl core::fmt::Display for Error {",
+			"\tfn fmt(&self, fmt: &mut core::fmt::Formatter) -> core::result::Result<(), core::fmt::Error> {",
+			"\t\twrite!(fmt, \"{self:?}\")",
+			"\t}",
+			"}",
+			"",
+			"impl std::error::Error for Error {}",
+			"",
+			"// endregion: --- Error Boilerplate"
+		],
+		"description": "Error boilerplate"
+	},
+
+	"10x-error-rs-with-from": {
+		"prefix": "10x-error-rs-02-with-from",
+		"body": [
+			"use derive_more::From;",
+			"",
+			"pub type Result<T> = core::result::Result<T, Error>;",
+			"",
+			"#[derive(Debug, From)]",
+			"pub enum Error {",
+			"\t${1:// TBC}",
+			"}",
+			"",
+			"// region:    --- Error Boilerplate",
+			"",
+			"impl core::fmt::Display for Error {",
+			"\tfn fmt(&self, fmt: &mut core::fmt::Formatter) -> core::result::Result<(), core::fmt::Error> {",
+			"\t\twrite!(fmt, \"{self:?}\")",
+			"\t}",
+			"}",
+			"",
+			"impl std::error::Error for Error {}",
+			"",
+			"// endregion: --- Error Boilerplate"
+		],
+		"description": "error.rs boostrap code with derive_more::From"
+	},
+
+	"10x-error-rs-with-custom": {
+		"prefix": "10x-error-rs-03-with-custom",
+		"body": [
+			"use derive_more::From;",
+			"",
+			"pub type Result<T> = core::result::Result<T, Error>;",
+			"",
+			"#[derive(Debug, From)]",
+			"pub enum Error {",
+			"\t#[from]",
+			"\tCustom(String),",
+			"",
+			"\t${1:// TBC}",
+			"}",
+			"",
+			"// region:    --- Froms",
+			"",
+			"impl From<&str> for Error {",
+			"\tfn from(val: &str) -> Self {",
+			"\t\tSelf::Custom(val.to_string())",
+			"\t}",
+			"}",
+			"",
+			"// endregion: --- Froms",
+			"",
+			"// region:    --- Error Boilerplate",
+			"",
+			"impl core::fmt::Display for Error {",
+			"\tfn fmt(&self, fmt: &mut core::fmt::Formatter) -> core::result::Result<(), core::fmt::Error> {",
+			"\t\twrite!(fmt, \"{self:?}\")",
+			"\t}",
+			"}",
+			"",
+			"impl std::error::Error for Error {}",
+			"",
+			"// endregion: --- Error Boilerplate"
+		],
+		"description": "error.rs boostrap code with derive_more::From"
+	},
+
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // -- Error ~~ End
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // -- gitignore ~~ Start
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  "10x-gitignore-min": {
+		"prefix": "10x-gitignore-01-min",
+		"body": [
+			"# -- Base",
+			".*",
+			"!.gitignore",
+			"",
+			"*.lock",
+			"*.log",
+			"",
+			"# -- Rust",
+			"target/",
+			"# !Cargo.lock # Commented by default",
+			"!.cargo/",
+			"",
+		],
+		"description": "10x-gitignore-01-min"
+	},
+
+	"10x-gitignore-more": {
+		"prefix": "10x-gitignore-02-more",
+		"body": [
+			"# -- Base",
+			".*",
+			"!.gitignore",
+			"",
+			"*.lock",
+			"*.log",
+			"",
+			"# -- Rust",
+			"target/",
+			"# !Cargo.lock # commented by default",
+			"!.cargo/",
+			"",
+			"# -- Safety net",
+			"dist/",
+			"out/",
+			"",
+			"# Data Files",
+			"*.parquet",
+			"*.map",
+			"*.zip",
+			"*.gz",
+			"*.tar",
+			"*.tgz",
+			"*.vsix",
+			"",
+			"# Videos",
+			"*.mov",
+			"*.mp4",
+			"*.avi",
+			"",
+			"# Images",
+			"*.icns",
+			"*.ico",
+			"*.jpeg",
+			"*.jpg",
+			"*.png",
+			"*.bmp",
+			"",
+			"# -- Nodejs",
+			"node_modules/",
+			"!.mocharc.yaml",
+			"report.*.json",
+			"bun.lockb",
+			"",
+			"# -- Python",
+			"__pycache__/",
+			"",
+			"",
+			"# -- others",
+			"_*",
+			"# '_' in src dir, ok.",
+			"!src/**/_*",
+			"",
+			"# Allows .env (make sure only dev info) ",
+			"# !.env # Commented by default",
+			"",
+			"# Allow vscode",
+			"# !.vscode # Commented by default",
+			""
+		],
+		"description": "new_snippet"
+	},  
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // -- gitignore ~~ End
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // -- main ~~ Start
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	"10x-main-rs": {
+		"prefix": "10x-main-rs-01",
+		"body": [
+			"// region:    --- Modules",
+			"",
+			"mod error;",
+			"",
+			"pub use error::{Error, Result};",
+			"",
+			"// endregion: --- Modules",
+			"",
+			"fn main() -> Result<()> {",
+			"\tprintln!(\"Hello, world!\");",
+			"",
+			"\tOk(())",
+			"}",
+			""
+		],
+	},
+
+	"10x-main-rs-async": {
+		"prefix": "10x-main-rs-02-async",
+		"body": [
+			"// region:    --- Modules",
+			"",
+			"mod error;",
+			"",
+			"pub use error::{Error, Result};",
+			"",
+			"// endregion: --- Modules",
+			"",
+			"#[tokio::main]",
+			"async fn main() -> Result<()> {",
+			"\tprintln!(\"Hello, world!\");",
+			"",
+			"\tOk(())",
+			"}",
+			""
+		]
+	}	
+
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // -- main ~~ End
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+}
