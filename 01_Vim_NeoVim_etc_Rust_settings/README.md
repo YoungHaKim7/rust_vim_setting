@@ -19,6 +19,14 @@
 
 <hr>
 
+# friendly-snippets rust.json경로
+
+```bash
+local/share/lunarvim/site/pack/lazy/opt/friendly-snippets/snippets/rust/rust.json
+```
+
+<hr>
+
 # 주로 쓰는 PlugIn
 
 - 요즘 많이 쓰는 LunarVim Setting https://github.com/YoungHaKim7/lvim-config_gyoung_tabby_AI_Setting
