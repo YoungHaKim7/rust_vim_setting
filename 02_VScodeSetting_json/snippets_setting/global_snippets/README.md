@@ -18,7 +18,7 @@ $HOME/.config/Code/User/snippets
 ├── keybindings.json
 ├── settings.json
 ├── snippets
-|      └── rust.json
+│     └── rust.json
 └── workspaceStorage
 
 ```
