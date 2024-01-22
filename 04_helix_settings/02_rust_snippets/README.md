@@ -1,5 +1,7 @@
 # helix - LSP (Rust로 만든거)
 
+- https://github.com/estin/simple-completion-language-server
+
 https://github.com/Stanislav-Lapata/snippets-ls
 
 
