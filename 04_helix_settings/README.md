@@ -26,6 +26,9 @@
 ">Helix Surround사용법 </a>
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#hexli-macro-%EC%82%AC%EC%9A%A9%EB%B2%95">Helix Macro사용법 </a>
 
+- snippets 설정(반복적인 코드 자동으로 나오게 개꿀)
+  - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/snippets_Lunar_NeoVim
+
 - Python
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#how-to-install-the-default-language-servers">Helix LSP 다른 언어들mojo같은거 세팅 잡는 법 </a>
