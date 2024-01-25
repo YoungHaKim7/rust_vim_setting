@@ -1085,5 +1085,5 @@ https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-s
 
 <hr>
 
-# How to install the default language servers
+# How to install the default language servers<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
 - https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
