@@ -501,6 +501,8 @@ https://www.hiroakit.com/archives/1966
   
 # inlay hint 빨간색 (어두운 색)<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 
+- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#lvim-%EC%93%B8-%EB%95%8C-cargo-fmt--cargo-check-%ED%99%9C%EC%9A%A9%ED%95%98%EC%9E%90">240125기준/ Color색깔 세팅 내가 주로 쓰는 색깔 Helix  inlay hint 세팅하기(Rust Inlay Hint Color Setting) </a>
+
 - solarized_dark.toml
 
 ```
