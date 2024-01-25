@@ -12,6 +12,9 @@
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#typescript-%EC%84%B8%ED%8C%85">Helix TypeScript 세팅 LSP 설치 </a>
 - Rust
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-debugger-configurations">Helix Debugging Setting디버깅 세팅하기(Rust Debugging) </a>
+  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#inlay-hint-%EB%B9%A8%EA%B0%84%EC%83%89-%EC%96%B4%EB%91%90%EC%9A%B4-%EC%83%89">Helix  inlay hint 세팅하기(Rust Debugging) </a>
+  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#inlay-hint-%EB%B9%A8%EA%B0%84%EC%83%89-%EC%96%B4%EB%91%90%EC%9A%B4-%EC%83%89"> Color색깔 세팅 내가 주로 쓰는 색깔 Helix  inlay hint 세팅하기(Rust Inlay Hint Color Setting) </a>
+  
 - C/C++
   - 
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#iostream-c%EC%97%90%EB%9F%AC-%EB%82%A0%EB%95%8C-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95">Helix C++ iostream 불러오기 못해서 오류날때 해결하기 PATH잡아주면됨. </a>
