@@ -39,7 +39,7 @@
 
 ```
 
-# 다른 외국 개발자의 Helix세팅 
+# 다른 외국 개발자의 Helix세팅 <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 
 https://github.com/phaazon/config/blob/master/helix/config.toml
 
@@ -177,7 +177,7 @@ X = "extend_line_above"
 ```
 
 
-# iostream c++에러 날때 해결 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
+# iostream c++에러 날때 해결 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 
 - c++ 위치 찾은 후에 
 ```
@@ -205,7 +205,7 @@ https://pastebin.com/bx592Ugk
 
 <hr>
 
-# Helix 테마 세팅<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a> 
+# Helix 테마 세팅<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 
 - $HOME/.config/helix/폴더에 ln 링크 설정해 주고 
 ```
@@ -225,13 +225,13 @@ Runtime directories:
 
 <hr>
 
-# Helix Debugger-Configurations<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
+# Helix Debugger-Configurations<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 
 https://github.com/helix-editor/helix/wiki/Debugger-Configurations#configure-debuggers
 
 This page can provide additional debugger configurations beyond [the ones shipped by default in Helix](https://github.com/helix-editor/helix/blob/master/languages.toml).
 
-# lldb-vscode 설치 다른 방법 <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
+# lldb-vscode 설치 다른 방법 <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 ```
 sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)" # Instructions from https://apt.llvm.org/
 cd $(dirname $(which lldb-17))
@@ -433,7 +433,7 @@ Summary of steps needed to be done are one of:
 
 <hr>
 
-# Helix<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
+# Helix<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 
 - Multi 커서 만들기
 
@@ -478,7 +478,7 @@ https://github.com/helix-editor/helix/discussions/4048
 
 https://www.hiroakit.com/archives/1966
   
-# inlay hint 빨간색 (어두운 색)<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
+# inlay hint 빨간색 (어두운 색)<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 
 - solarized_dark.toml
 
@@ -712,8 +712,7 @@ display-inlay-hints = true
 
 <hr>
 
-# Hexli Macro 사용법<a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-a-post-modern-text-editor">[🔝]</a>
-
+# Hexli Macro 사용법<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
 ```
 ~~~~~~~~~~~~Helix~~~~~~~~~~~~~
 ~~~ Q 녹화시작
