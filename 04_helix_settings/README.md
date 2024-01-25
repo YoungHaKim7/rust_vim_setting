@@ -13,7 +13,7 @@
 - Rust
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-debugger-configurations">Helix Debugging Setting디버깅 세팅하기(Rust Debugging) </a>
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#inlay-hint-%EB%B9%A8%EA%B0%84%EC%83%89-%EC%96%B4%EB%91%90%EC%9A%B4-%EC%83%89">Helix  inlay hint 세팅하기(Rust Debugging) </a>
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#inlay-hint-%EB%B9%A8%EA%B0%84%EC%83%89-%EC%96%B4%EB%91%90%EC%9A%B4-%EC%83%89"> Color색깔 세팅 내가 주로 쓰는 색깔 Helix  inlay hint 세팅하기(Rust Inlay Hint Color Setting) </a>
+  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#lvim-%EC%93%B8-%EB%95%8C-cargo-fmt--cargo-check-%ED%99%9C%EC%9A%A9%ED%95%98%EC%9E%90">240125기준/ Color색깔 세팅 내가 주로 쓰는 색깔 Helix  inlay hint 세팅하기(Rust Inlay Hint Color Setting) </a>
   
 - C/C++
   - 
