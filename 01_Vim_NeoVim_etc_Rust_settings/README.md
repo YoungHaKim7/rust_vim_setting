@@ -19,6 +19,9 @@
 
 <hr>
 
+# 내가 세팅한거 최소한으로 에러 안나게 세팅
+- https://github.com/YoungHaKim7/lvim_Rust_AI_Setting
+
 # friendly-snippets rust.json경로
 
 ```bash
