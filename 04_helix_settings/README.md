@@ -6,12 +6,12 @@
   - https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
 
 - Java
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-java-lsp-install--jdtls%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-%EA%B7%B8%EB%83%A5-github-%EB%95%A1%EA%B8%B0%EA%B3%A0-install%ED%95%98%EB%A9%B4-%EC%84%A4%EC%B9%98-%EB%90%9C%EB%8B%A4-%EC%B5%9C%EA%B3%A0">Helix Java LSP 설치 </a>
+  - [Helix Java LSP 설치](#helix-java-lsp-install--jdtls%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-%EA%B7%B8%EB%83%A5-github-%EB%95%A1%EA%B8%B0%EA%B3%A0-install%ED%95%98%EB%A9%B4-%EC%84%A4%EC%B9%98-%EB%90%9C%EB%8B%A4-%EC%B5%9C%EA%B3%A0)
 
 - TypeScript
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#typescript-%EC%84%B8%ED%8C%85">Helix TypeScript 세팅 LSP 설치 </a>
+  - [Helix TypeScript 세팅 LSP 설치](#typescript-%EC%84%B8%ED%8C%85)
 - Rust
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-debugger-configurations">Helix Debugging Setting디버깅 세팅하기(Rust Debugging) </a>
+  - [Helix Debugging Setting디버깅 세팅하기(Rust Debugging)](#helix-debugger-configurations) </a>
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#inlay-hint-%EB%B9%A8%EA%B0%84%EC%83%89-%EC%96%B4%EB%91%90%EC%9A%B4-%EC%83%89">Helix  inlay hint 세팅하기(Rust Debugging) </a>
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#lvim-%EC%93%B8-%EB%95%8C-cargo-fmt--cargo-check-%ED%99%9C%EC%9A%A9%ED%95%98%EC%9E%90">240125기준/ Color색깔 세팅 내가 주로 쓰는 색깔 Helix  inlay hint 세팅하기(Rust Inlay Hint Color Setting) </a>
   
