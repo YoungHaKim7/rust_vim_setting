@@ -1,6 +1,6 @@
 # Helix( A post-modern text editor.)<a href="https://helix-editor.com/"><img align="left" alt="helix" width="20px" src="https://user-images.githubusercontent.com/67513038/214281307-c7bd5adf-eba9-4f13-9247-7700fb1deff9.png" /></a><a href="https://www.rust-lang.org/"><img align="center" alt="rust1" width="26px" src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" /></a>
 
-# Link<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# Link[[🔝]](#helix-a-post-modern-text-editor)
 
 - 다른 언어들 LSP 설정How to install the default language servers(각 언어별 LSP세팅 방법)
   - https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
@@ -45,7 +45,7 @@
 
 ```
 
-# 다른 외국 개발자의 Helix세팅 <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# 다른 외국 개발자의 Helix세팅 [[🔝]](#helix-a-post-modern-text-editor)
 
 https://github.com/phaazon/config/blob/master/helix/config.toml
 
@@ -183,7 +183,7 @@ X = "extend_line_above"
 ```
 
 
-# iostream c++에러 날때 해결 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# iostream c++에러 날때 해결 방법[[🔝]](#helix-a-post-modern-text-editor)
 
 - c++ 위치 찾은 후에 
 ```
@@ -211,7 +211,7 @@ https://pastebin.com/bx592Ugk
 
 <hr>
 
-# Helix 테마 세팅<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# Helix 테마 세팅[[🔝]](#helix-a-post-modern-text-editor)
 
 - $HOME/.config/helix/폴더에 ln 링크 설정해 주고 
 ```
@@ -231,7 +231,7 @@ Runtime directories:
 
 <hr>
 
-# lvim 쓸 때 ```cargo fmt && cargo check``` 활용하자<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# lvim 쓸 때 ```cargo fmt && cargo check``` 활용하자[[🔝]](#helix-a-post-modern-text-editor)
 
 ```bash
 $ cargo fmt && cargo check
@@ -249,13 +249,13 @@ $ cargo fmt && cargo check
 
 <hr>
 
-# Helix Debugger-Configurations<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# Helix Debugger-Configurations[[🔝]](#helix-a-post-modern-text-editor)
 
 https://github.com/helix-editor/helix/wiki/Debugger-Configurations#configure-debuggers
 
 This page can provide additional debugger configurations beyond [the ones shipped by default in Helix](https://github.com/helix-editor/helix/blob/master/languages.toml).
 
-# lldb-vscode 설치 다른 방법 <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# lldb-vscode 설치 다른 방법 [[🔝]](#helix-a-post-modern-text-editor)
 ```
 sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)" # Instructions from https://apt.llvm.org/
 cd $(dirname $(which lldb-17))
@@ -457,7 +457,7 @@ Summary of steps needed to be done are one of:
 
 <hr>
 
-# Helix<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# Helix[[🔝]](#helix-a-post-modern-text-editor)
 
 - Multi 커서 만들기
 
@@ -502,7 +502,7 @@ https://github.com/helix-editor/helix/discussions/4048
 
 https://www.hiroakit.com/archives/1966
   
-# inlay hint 빨간색 (어두운 색)<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# inlay hint 빨간색 (어두운 색)[[🔝]](#helix-a-post-modern-text-editor)
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#lvim-%EC%93%B8-%EB%95%8C-cargo-fmt--cargo-check-%ED%99%9C%EC%9A%A9%ED%95%98%EC%9E%90">240125기준/ Color색깔 세팅 내가 주로 쓰는 색깔 Helix  inlay hint 세팅하기(Rust Inlay Hint Color Setting) </a>
 
@@ -738,7 +738,7 @@ display-inlay-hints = true
 
 <hr>
 
-# Hexli Macro 사용법<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# Hexli Macro 사용법[[🔝]](#helix-a-post-modern-text-editor)
 ```
 ~~~~~~~~~~~~Helix~~~~~~~~~~~~~
 ~~~ Q 녹화시작
@@ -854,7 +854,7 @@ https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung
 
 <br>
 
-# Helix 최신 뉴스로 내가 필요한 기능 체크하자
+# Helix 최신 뉴스로 내가 필요한 기능 체크하자[[🔝]](#helix-a-post-modern-text-editor)
 
 - Helix 최신 뉴스 체크하기
 
@@ -884,7 +884,7 @@ https://github.com/llvm/llvm-project/tree/main/lldb/tools/lldb-vscode#Installati
 
 <br>
 
-# Helix 주로 쓰는 command <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# Helix 주로 쓰는 command[[🔝]](#helix-a-post-modern-text-editor)
 
 ```
 :set cursorline true   " 한줄 내가 코드 쓰는거 줄 강조 됨
@@ -941,7 +941,7 @@ ds
 ```
 
 
-# helix 문서 밑으로 내리는 방법<a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-a-post-modern-text-editor">[🔝]</a>
+# helix 문서 밑으로 내리는 방법[[🔝]](#helix-a-post-modern-text-editor)
 
 - The popup of the documentation does not scroll correctly, it is not proportional when scrolling down and up, for example to scroll to the end ( Ctrl + d ) x 3, and to scroll back up ( Ctrl + u ) x 6.
 
