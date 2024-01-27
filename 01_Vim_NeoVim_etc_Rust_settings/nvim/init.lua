@@ -7,4 +7,7 @@ require "user.inlay-hints"
 require "user.lsp"
 
 
+require("nvim-surround").setup()
+require("mason").setup()
+
 -- require "user.icons"

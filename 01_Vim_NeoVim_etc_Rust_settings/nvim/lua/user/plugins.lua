@@ -375,9 +375,18 @@ return packer.startup(function(use)
   }
   -- Adds extra functionality over rust analyzer
   use{"simrat39/rust-tools.nvim"}
+  use{"simrat39/symbols-outline.nvim"}
   -- Install {} Your Plugin ~~~~~~~
   -- use { "wbthomason/packer.nvim" } -- sample code Have packer manage itself	
-
+  use{
+      "kylechui/nvim-surround",
+      tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+      config = function()
+          require("nvim-surround").setup({
+              -- Configuration here, or leave empty to use defaults
+          })
+      end
+  }
 
 
   
