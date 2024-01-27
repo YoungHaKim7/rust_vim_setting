@@ -451,6 +451,8 @@ return packer.startup(function(use)
           })
       end
   }
+ --- Tabby plugin
+  -- use { "TabbyML/vim-tabby" }
 
 
   
