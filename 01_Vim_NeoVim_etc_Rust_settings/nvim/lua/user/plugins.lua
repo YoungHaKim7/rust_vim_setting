@@ -41,7 +41,12 @@ packer.init({
 -- Install your plugins here
 return packer.startup(function(use)
 	use { "wbthomason/packer.nvim" } -- Have packer manage itself	
-	use { "folke/tokyonight.nvim" } 
+	use { "folke/tokyonight.nvim" }  -- colorscheme tokyonight
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+}
   use {
   "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
@@ -353,6 +358,23 @@ return packer.startup(function(use)
       vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
     end
 }
+  -- Autocompletion
+  
+  -- Autocompletion framework
+  use{"hrsh7th/nvim-cmp"}
+  use{
+    -- cmp LSP completion
+    "hrsh7th/cmp-nvim-lsp",
+    -- cmp Snippet completion
+    "hrsh7th/cmp-vsnip",
+    -- cmp Path completion
+    "hrsh7th/cmp-path",
+    "hrsh7th/cmp-buffer",
+    after = { "hrsh7th/nvim-cmp" },
+    requires = { "hrsh7th/nvim-cmp" },
+  }
+  -- Adds extra functionality over rust analyzer
+  use{"simrat39/rust-tools.nvim"}
   -- Install {} Your Plugin ~~~~~~~
   -- use { "wbthomason/packer.nvim" } -- sample code Have packer manage itself	
 
@@ -390,3 +412,5 @@ end)
 
 -- Loads opt plugin immediately
 -- :PackerLoad completion-nvim ale
+--
+
