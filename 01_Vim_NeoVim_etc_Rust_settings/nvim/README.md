@@ -2,6 +2,10 @@
 
 - https://linovox.com/install-and-use-packer-in-neovim/
 
+# mason 
+
+- https://github.com/williamboman/mason.nvim
+
 # Rust LSP setting
 https://sharksforarms.dev/posts/neovim-rust/
 
