@@ -19,6 +19,22 @@
 
 <hr>
 
+# nvim 초기화 에러 나면 초기화 해서 다시 세팅하자
+
+```
+$ rm -rf ~/.local/share
+$ rm -rf ~/.config/nvim/
+```
+- FUSE 관련 문제 발생시
+
+
+```
+$ sudo add-apt-repository universe
+$ sudo apt install libfuse2
+```
+
+https://velog.io/@mohadang/Rust-NVIM-%EC%84%A4%EC%A0%95
+
 # 내가 세팅한거 최소한으로 에러 안나게 세팅
 - https://github.com/YoungHaKim7/lvim_Rust_AI_Setting
 
