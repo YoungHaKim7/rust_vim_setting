@@ -9,6 +9,11 @@
 
 - https://github.com/Kraktoos/relativenumber-vs2022
 
+```
+set relativenumber
+set rnu nu!
+```
+
 # Visual Assist supports keyboard access to all of its features. (Visual Studio Plugin _ VAssistX | Help | Keyboard Shortcuts.)
 
 - VAssistX무조건 필요하다.(Visual Studio 필수Plugin)
