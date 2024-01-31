@@ -1,3 +1,10 @@
+# Rust 개발 
+
+- SourceGear
+  - https://marketplace.visualstudio.com/items?itemName=SourceGear.SourceGearRust
+
+<hr>
+
 # Visual Assist supports keyboard access to all of its features. (Visual Studio Plugin _ VAssistX | Help | Keyboard Shortcuts.)
 
 - VAssistX무조건 필요하다.(Visual Studio 필수Plugin)
