@@ -20,7 +20,7 @@
 
 <hr>
 
-# Vim 클립보드 설치해서 *y되게 만들기
+# Vim 클립보드 설치해서 *y되게 만들기[[🔝]](#link)
 - https://velog.io/@markyang92/xclip-linux-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C-vim-%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C
 
 ```
@@ -46,7 +46,7 @@ $ sudo apt update && sudp apt install vim-gtk -y
 # vim-gtk를 지원하지 않는다면, vim-gnome, gvim 설치
 ```
 
-# nvim 초기화 에러 나면 초기화 해서 다시 세팅하자
+# nvim 초기화 에러 나면 초기화 해서 다시 세팅하자[[🔝]](#link)
 
 ```
 $ rm -rf ~/.local/share
@@ -62,10 +62,10 @@ $ sudo apt install libfuse2
 
 https://velog.io/@mohadang/Rust-NVIM-%EC%84%A4%EC%A0%95
 
-# 내가 세팅한거 최소한으로 에러 안나게 세팅
+# 내가 세팅한거 최소한으로 에러 안나게 세팅[[🔝]](#link)
 - https://github.com/YoungHaKim7/lvim_Rust_AI_Setting
 
-# friendly-snippets rust.json경로
+# friendly-snippets rust.json경로[[🔝]](#link)
 
 ```bash
 local/share/lunarvim/site/pack/lazy/opt/friendly-snippets/snippets/rust/rust.json
@@ -73,7 +73,7 @@ local/share/lunarvim/site/pack/lazy/opt/friendly-snippets/snippets/rust/rust.jso
 
 <hr>
 
-# 주로 쓰는 PlugIn
+# 주로 쓰는 PlugIn[[🔝]](#link)
 
 - 요즘 많이 쓰는 LunarVim Setting https://github.com/YoungHaKim7/lvim-config_gyoung_tabby_AI_Setting
 
@@ -171,14 +171,14 @@ call plug#end()
 
 <hr>
 
-# LunarVim/Neovim - Debugging Demo | Java, Python, Rust, Go, Javascript | chris@machine
+# LunarVim/Neovim - Debugging Demo | Java, Python, Rust, Go, Javascript | chris@machine[[🔝]](#link)
 
 
 https://youtu.be/5KQK2id3JtI?si=fvye14gmjpZR0Ehk
 
 <hr>
 
-# Vim & NeoVim 용 AI 세팅
+# Vim & NeoVim 용 AI 세팅[[🔝]](#link)
 - Free, ultrafast Copilot alternative for Vim and Neovim
   - www.codeium.com/ 
     - Vim https://github.com/Exafunction/codeium.vim
@@ -186,12 +186,12 @@ https://youtu.be/5KQK2id3JtI?si=fvye14gmjpZR0Ehk
 
 <hr>
 
-# 자동 완성 소스로 주석과 문자열 추가 지정 & 한 글자만 입력해도 작동할 것 &  list completion 키를 &lt;C-n&gt;, &lt;C-p&gt;를 설정해 사용하고 있다
+# 자동 완성 소스로 주석과 문자열 추가 지정 & 한 글자만 입력해도 작동할 것 &  list completion 키를 &lt;C-n&gt;, &lt;C-p&gt;를 설정해 사용하고 있다[[🔝]](#link)
 
 https://johngrib.github.io/wiki/vim/auto-completion/#youcompleteme
 
 <br>
-	
+	[[🔝]](#link)
 # 🎓 All things Vim!
 
   - https://github.com/mhinz/vim-galore
@@ -199,20 +199,20 @@ https://johngrib.github.io/wiki/vim/auto-completion/#youcompleteme
 ![vim](https://user-images.githubusercontent.com/67513038/222637131-c15dad57-5463-4e7c-b087-67c591daf544.png)
 [VimGraphical_Cheat_Sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
 
-# Vim Graphical Cheat Sheet Tutorial
+# Vim Graphical Cheat Sheet Tutorial[[🔝]](#link)
 
   - http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 
-# 초보자를 위한 Vim설명서(Vim CheatSheet)
+# 초보자를 위한 Vim설명서(Vim CheatSheet)[[🔝]](#link)
 
 - https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/cheatsheet/
 
 
-# VIM Tips & Tricks
+# VIM Tips & Tricks[[🔝]](#link)
 
 https://youtube.com/playlist?list=PLpqQbpeQxfW0eJK-LSEzuEeC1u5vsQOUO
 
-# NeoVim docs
+# NeoVim docs[[🔝]](#link)
 
 https://neovim.io/doc/user/map.html
 
@@ -224,13 +224,13 @@ https://neovim.io/doc/user/index.html
 
 <hr>
 
-# Dotfiles
+# Dotfiles[[🔝]](#link)
 
 https://gitlab.com/dwt1/dotfiles
 
 <br>
 
-# CocConfig(vim)
+# CocConfig(vim)[[🔝]](#link)
 
 ```
 {
@@ -277,11 +277,11 @@ https://gitlab.com/dwt1/dotfiles
 ```
 
 
-# :CocCommand
+# :CocCommand[[🔝]](#link)
 
 
 
-# CocCommand 다음 FUZZY> rust-analyer.viewHir View Hir 입력
+# CocCommand 다음 FUZZY> rust-analyer.viewHir View Hir 입력[[🔝]](#link)
 
 - Rust code
 
@@ -315,13 +315,13 @@ static FOO = unsafe {
 
 ```
 
-# Rust Doc std(standard Library DOC)
+# Rust Doc std(standard Library DOC)[[🔝]](#link)
 
 https://doc.rust-lang.org/std/
 
 <br>
 
-##  DOCS.RS(rust 기타 crate문서들)
+##  DOCS.RS(rust 기타 crate문서들)[[🔝]](#link)
 
 https://docs.rs/
 
@@ -329,7 +329,7 @@ https://docs.rs/
 
 <hr>
 
-# Learn Rust With Entirely Too Many Linked Lists
+# Learn Rust With Entirely Too Many Linked Lists[[🔝]](#link)
 
 https://rust-unofficial.github.io/too-many-lists/index.html
 
@@ -339,7 +339,7 @@ https://rust-unofficial.github.io/too-many-lists/index.html
 
 <br>
 
-# Rust Design Patterns
+# Rust Design Patterns[[🔝]](#link)
 
 https://rust-unofficial.github.io/patterns/intro.html
 
@@ -347,7 +347,7 @@ https://rust-unofficial.github.io/patterns/intro.html
 
 <hr>
 
-# LunarVim InLayHint _____Comment Color
+# LunarVim InLayHint _____Comment Color[[🔝]](#link)
 
 ```
 // 어두운 빨간색
@@ -365,7 +365,7 @@ https://www.color-hex.com/color/ff439f
 
 <br>
 
-## LunarVim Hover 
+## LunarVim Hover [[🔝]](#link)
 
 Control + Space
 
@@ -391,7 +391,7 @@ https://youtu.be/c8FX89jf4To
 <hr>
 
 
-# Vim Setting (type 빨강색으로 강조하기 칙칙한 검은색 너무 싫다.)
+# Vim Setting (type 빨강색으로 강조하기 칙칙한 검은색 너무 싫다.)[[🔝]](#link)
 
 -vim 에서
 
@@ -418,7 +418,7 @@ https://youtu.be/gIUOkdMjo8o
 
 <hr>
 
-# vim documentation scroll(Vim key map)
+# vim documentation scroll(Vim key map)[[🔝]](#link)
 
 - CTRL-F (PageDown)
 
@@ -461,7 +461,7 @@ https://vimdoc.sourceforge.net/htmldoc/scroll.html#scroll-down
 
 <hr>
 
-# Vim Command
+# Vim Command[[🔝]](#link)
 
 ```
 :CocCommand
@@ -481,7 +481,7 @@ VSCode Setting.JSON 과 비슷
 
 <br>
 
-# Vim CocInstall (rust-analyzer)
+# Vim CocInstall (rust-analyzer)[[🔝]](#link)
 
 https://github.com/fannheyward/coc-rust-analyzer#highlight-group
 
@@ -503,7 +503,7 @@ https://rust-analyzer.github.io/manual.html#vimneovim
 
 <br>
 
-# Vim 창 나누기
+# Vim 창 나누기[[🔝]](#link)
 
 ```
 // 창 좌우로 나누기
@@ -543,7 +543,7 @@ https://rust-analyzer.github.io/manual.html#vimneovim
 
 <br>
 
-# Vim 자료 모음
+# Vim 자료 모음[[🔝]](#link)
 
 https://economiceco.tistory.com/12352
 
@@ -556,7 +556,7 @@ https://economiceco.tistory.com/12352
 
 <hr>
 
-# Vim 움직임 관련(hjkl)
+# Vim 움직임 관련(hjkl)[[🔝]](#link)
 
 ```
  k
@@ -576,7 +576,7 @@ X Visual Mode로 백스페이스랑 동일 (Visual mode 유지)
 
 <br>
 
-# Vim buffer & tabnew
+# Vim buffer & tabnew[[🔝]](#link)
 
 - buffer 관련
 
@@ -653,7 +653,7 @@ https://vimhelp.org/tabpage.txt.html
 
 <hr>
 
-# Vim command & key
+# Vim command & key[[🔝]](#link)
 
 ```
 라인 넘버 나오게 하기
@@ -713,7 +713,7 @@ Ctrl-t Insert모드에서 탭 적용됨. 개꿀 👍
 똑같음 (15줄로 이동)
 ```
 
-# sort 패턴
+# sort 패턴[[🔝]](#link)
 
 ```
 // 여러줄 이쁘게 알파벳으로 정렬됨 최고
@@ -729,7 +729,7 @@ Ctrl-t Insert모드에서 탭 적용됨. 개꿀 👍
 
 ```
 
-# Vim ex commands: m, t and co
+# Vim ex commands: m, t and co[[🔝]](#link)
 - ```:m``` is an abbreviation for ```:move```, ```:t``` and ```:co``` are abbreviations for ```:copy```. 
 ```
 // m15 패턴 (지금 라인을 15로 이동)
@@ -757,7 +757,7 @@ Ctrl-t Insert모드에서 탭 적용됨. 개꿀 👍
 https://renenyffenegger.ch/notes/development/vim/commands/m
 
 
-## Vim normal 활용법
+# Vim normal 활용법[[🔝]](#link)
 ```
 Visual mode로 내가 원하는 라인 선택해주고
 
@@ -775,14 +775,14 @@ Visual mode로 내가 원하는 라인 선택해주고
 
 ```
 
-## // normal 활용법
+# // normal 활용법
 57초
 
 https://youtu.be/ZeMcpSR6fXI
 
 
 
-## Marks활용법
+# Marks활용법
 
 ```
 // 마크 mark 설정하는 방법 
@@ -820,7 +820,7 @@ m 으로 마크 등록
 https://youtu.be/o4x4jUcHJwk
 
 
-# Macro 활용법
+# Macro 활용법[[🔝]](#link)
 ```
 내가 만든 매크로 @x 골맹이 x에 저장된 매크로 문서 전체에 실행하기
 :%norm @x
@@ -831,7 +831,7 @@ vim의 꽃은 역시 매크로macro❤️
 
 https://youtu.be/VRqpMXF32qk
 
-# for command Macro 활용법
+# for command Macro 활용법[[🔝]](#link)
 
 ```
 :for i in range(1, 100) | put = ', '.i | endfor
@@ -869,7 +869,7 @@ https://youtu.be/MPpb8azhsiM?si=ql-yzFQi-b-2ejda
 <br>
 
 
-## spell checker!!
+# spell checker!![[🔝]](#link)
 
 Example#
 To set the word list that vim will use for spell checking set the spelllang option. For example
@@ -892,7 +892,7 @@ If you want to set the spelllang and turn on spell checking in one command, you 
 http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html
 
 
-## Normal mode key
+# Normal mode key[[🔝]](#link)
 
 ```
 Normal
@@ -912,7 +912,7 @@ jumps to last line thereby selecting from first to last line
 
 ```
 
-# {} () 괄호 안에 것만 지우기
+# {} () 괄호 안에 것만 지우기[[🔝]](#link)
 
 
 ## ```dit``` ```ci{``` ```cit``` ```ci(```
@@ -946,7 +946,7 @@ ci{
 
 https://youtu.be/cY0JxzENBJg
 
-# surround vim
+# surround vim[[🔝]](#link)
 
 - 글자(단어)에 "" 씌우기 ```ysiw"```
 
@@ -1002,7 +1002,7 @@ https://youtu.be/hgeHORtxod0
 <br>
 
 
-# NeoVim surround
+# NeoVim surround[[🔝]](#link)
 
 ```
  Old text                    Command         New text
@@ -1022,7 +1022,7 @@ https://github.com/kylechui/nvim-surround
 
 <hr>
 
-# Vim 자주누르는거 등록해서 쓰자 Abbreviations 약어 ㅎㅎ 역시 Vim은 내가 생각하는건 다 있다. ㅎㅎ역시 1970년대부터 쓰는 이유가 있다.
+# Vim 자주누르는거 등록해서 쓰자 Abbreviations 약어 ㅎㅎ 역시 Vim은 내가 생각하는건 다 있다. ㅎㅎ역시 1970년대부터 쓰는 이유가 있다.[[🔝]](#link)
 
 
 https://vimhelp.org/map.txt.html#abbreviations
@@ -1034,25 +1034,25 @@ https://vimhelp.org/map.txt.html#abbreviations
 <hr>
 
 
-# 그외에 설명서 링크 모음
+# 그외에 설명서 링크 모음[[🔝]](#link)
 
 ## 💕Vim Full Course tutorial- FreeCodeCamp
 
 https://youtu.be/RZ4p-saaQkc
 
 
-## 급하게 단축키 체크할 때 최고 다 있다. ㅋㅋㅋㅋ❤️👍
+## 급하게 단축키 체크할 때 최고 다 있다. ㅋㅋㅋㅋ❤️👍[[🔝]](#link)
 
 https://paulgorman.org/technical/vim.html
 
 
 
-## 맥/Unix] 터미널 vi Editor 사용법- | Mac in June -
+## 맥/Unix] 터미널 vi Editor 사용법- | Mac in June -[[🔝]](#link)
 
 https://economiceco.tistory.com/m/11680
 
 
-## Vim Training Class 1 - Basic motions and commands
+## Vim Training Class 1 - Basic motions and commands[[🔝]](#link)
 https://youtu.be/Nim4_f5QUxA
 
 
@@ -1061,14 +1061,14 @@ https://youtu.be/Nim4_f5QUxA
 https://youtu.be/E-ZbrtoSuzw
 
 
-## 다른 설명서
+## 다른 설명서[[🔝]](#link)
 
 https://riptutorial.com/vim
 
 
 
 
-# 다른 사람의 NeoVim Setting
+# 다른 사람의 NeoVim Setting[[🔝]](#link)
 
 ❤️Personal Neovim Cheatsheet Cheat Sheet
 by dcschmid
@@ -1076,7 +1076,7 @@ by dcschmid
 https://cheatography.com/dcschmid/cheat-sheets/personal-neovim-cheatsheet/
 
 
-# Java Setting
+# Java Setting[[🔝]](#link)
 
 https://github.com/neoclide/coc-java
 
