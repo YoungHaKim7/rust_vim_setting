@@ -19,6 +19,9 @@
 
 <hr>
 
+# Vim 클립보드 설치해서 *y되게 만들기
+- https://velog.io/@markyang92/xclip-linux-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C-vim-%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C
+
 # nvim 초기화 에러 나면 초기화 해서 다시 세팅하자
 
 ```
