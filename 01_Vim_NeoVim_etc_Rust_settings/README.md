@@ -30,6 +30,20 @@
 # macOS & windows * 레지스터에 넣어주면 된다.
 "*y
 ```
+- xclip 설치
+
+```
+$ sudo apt update
+$ sudo apt install xclip -y
+```
+
+- vim 시스템 클립보드
+  - 시스템 클립보드를 사용하는 Vim을 쓰려면, vim-huge 버전인 gvim, vim-gtk, vim-gnome을 설치해야 시스템 클립보드를 사용할 수 있다.
+
+```
+$ sudo apt update && sudp apt install vim-gtk -y
+# vim-gtk를 지원하지 않는다면, vim-gnome, gvim 설치
+```
 
 # nvim 초기화 에러 나면 초기화 해서 다시 세팅하자
 
