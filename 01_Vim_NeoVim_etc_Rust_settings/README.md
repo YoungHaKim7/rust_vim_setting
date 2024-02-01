@@ -7,7 +7,7 @@
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-buffer--tabnew">vim buffer 활용법tabe많이 씀</a>
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-command--key">Vim : Command 글씨 바꾸기 같은거:set number rnu하이브리드 모드 젤 좋다. ㅋ</a>
 
-- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#sort-%ED%8C%A8%ED%84%B4">Sort 패턴</a>
+- [Sort 패턴](#sort-패턴)
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-ex-commands-m-t-and-co">move copy command :</a>
 
