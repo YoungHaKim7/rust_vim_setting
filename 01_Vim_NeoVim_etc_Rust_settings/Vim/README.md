@@ -14,6 +14,13 @@
 - 한글로 ultisnips정리
   - https://johngrib.github.io/wiki/vim/ultisnips/
 
+- Rust Snippets 정리중(내가 공부하려고 정리중)
+
+  - https://github.com/YoungHaKim7/UltiSnips
+  - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/snippets_Lunar_NeoVim
+  - https://github.com/YoungHaKim7/rust-snippets_gyoung
+
+
 # Coc-Settings.json
 
 - https://johngrib.github.io/wiki/rust/vim-setting/
