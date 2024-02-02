@@ -13,3 +13,7 @@
 
 - 한글로 ultisnips정리
   - https://johngrib.github.io/wiki/vim/ultisnips/
+
+# :CocInstall coc-rust-analyzer
+
+# :CocDiagnostics
