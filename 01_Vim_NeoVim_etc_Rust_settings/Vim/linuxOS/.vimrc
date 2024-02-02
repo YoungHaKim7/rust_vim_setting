@@ -50,6 +50,9 @@ Plug 'liuchengxu/vista.vim' " rust vista
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
+"명령어 자동완성 플러그인(inc + <C-a> : #includ<>)
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} "debug
 Plug 'idanarye/vim-vebugger' "debug_
@@ -339,6 +342,14 @@ augroup END
 " let g:OmniSharp_want_snippet=1
 "   End ~~~~~~ OmniSharp
 
+"" Snipet
+let g:UltiSnipsExpandTrigger="<C-a>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips']
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Theming
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -414,10 +425,9 @@ nnoremap <silent><nowait> <space>btt  :terminal<CR>
 nmap <silent> <Leader>o :Vista<CR>
 nmap <silent> <Leader>e :NERDTree<CR>
 
-
+"~~~~~~~MoveLine Up & Down~ VisualMode~
 vnoremap K :m '<-2<CR>gv==gv
-vnoremap J :m '>+1<CR>gv==gv"~~~~~~~~~
-
+vnoremap J :m '>+1<CR>gv==gv 
 " """""""""""""""""""
 
 " esc setting
@@ -444,9 +454,9 @@ set encoding=utf-8
 let $LANG = 'en'
 
 " backup folder setting
-set undodir=~/.vimdata/undo//
-set backupdir=~/.vimdata/backup//
-set directory=~/.vimdata/swap//
+set undodir=~/.vimdata/undo/
+set backupdir=~/.vimdata/backup/
+set directory=~/.vimdata/swap/
 
 
 " start
