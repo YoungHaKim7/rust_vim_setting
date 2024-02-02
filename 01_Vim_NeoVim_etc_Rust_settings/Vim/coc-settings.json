@@ -1,0 +1,25 @@
+{
+    "suggest.detailField": "abbr",
+    "suggest.enablePreview": true,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "markdown",
+        "rust"
+    ],
+    "suggest.noselect": true,
+    "rust-analyzer.inlayHints.typeHints.enable": true,
+    "rust-analyzer.inlayHints.chainingHints.enable": true,
+    "languageserver": {
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": [
+                "go.mod",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "filetypes": [
+                "go"
+            ]
+        }
+    }
+}
