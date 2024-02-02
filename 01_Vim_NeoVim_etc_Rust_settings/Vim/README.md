@@ -14,6 +14,39 @@
 - 한글로 ultisnips정리
   - https://johngrib.github.io/wiki/vim/ultisnips/
 
+# Coc-Settings.json
+
+https://stackoverflow.com/questions/77214955/coc-rust-analyzer-does-not-have-inlay-type-hint-anymore
+
+```json
+{
+    "suggest.detailField": "abbr",
+    "suggest.enablePreview": false,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "markdown",
+        "rust"
+    ],
+    "suggest.noselect": true,
+    "rust-analyzer.inlayHints.typeHints.enable": true,
+    "rust-analyzer.inlayHints.chainingHints.enable": true,
+    "languageserver": {
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": [
+                "go.mod",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "filetypes": [
+                "go"
+            ]
+        }
+    }
+}
+
+```
+
 # :CocInstall coc-rust-analyzer
 
 # :CocDiagnostics
