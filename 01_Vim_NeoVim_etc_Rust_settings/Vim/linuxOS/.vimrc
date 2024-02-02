@@ -421,7 +421,8 @@ vnoremap J :m '>+1<CR>gv==gv"~~~~~~~~~
 " """""""""""""""""""
 
 " esc setting
-inoremap <silent><nowait>jk <Esc>
+" inoremap <silent><nowait>jk <Esc>
+imap jk <esc>
 
 " color setting
 colorscheme jellybeans
