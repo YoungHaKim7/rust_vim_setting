@@ -17,3 +17,6 @@
 # :CocInstall coc-rust-analyzer
 
 # :CocDiagnostics
+
+# :CocConfig
+- https://github.com/neoclide/coc.nvim/blob/master/doc/coc-config.txt
