@@ -20,3 +20,5 @@
 
 # :CocConfig
 - https://github.com/neoclide/coc.nvim/blob/master/doc/coc-config.txt
+
+# :CocOutline(:Vista와 비슷)
