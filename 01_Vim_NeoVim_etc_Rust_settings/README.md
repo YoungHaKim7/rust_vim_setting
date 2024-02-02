@@ -20,6 +20,9 @@
 
 <hr>
 
+# vim9(다른 사람이 설정한거)
+- https://github.com/arp242/dotfiles/blob/master/vim/vimrc
+
 # Vim 클립보드 설치해서 *y되게 만들기[[🔝]](#link)
 - https://velog.io/@markyang92/xclip-linux-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C-vim-%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C
 
