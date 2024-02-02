@@ -16,7 +16,9 @@
 
 # Coc-Settings.json
 
-https://stackoverflow.com/questions/77214955/coc-rust-analyzer-does-not-have-inlay-type-hint-anymore
+- https://johngrib.github.io/wiki/rust/vim-setting/
+
+- https://stackoverflow.com/questions/77214955/coc-rust-analyzer-does-not-have-inlay-type-hint-anymore
 
 ```json
 {
