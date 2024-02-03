@@ -36,6 +36,9 @@
 
 <hr>
 
+# 다른 사람의 Vim Setting(Helix)
+- https://github.com/LGUG2Z/helix-vim
+
 # my inlay color세팅
 
 ```
