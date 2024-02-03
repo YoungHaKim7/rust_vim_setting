@@ -40,8 +40,9 @@
 
 - https://github.com/LGUG2Z/helix-vim
 
-- helix remapping공식 문서
+# helix remapping공식 문서
   - https://docs.helix-editor.com/remapping.html
+  - https://github.com/helix-editor/helix/blob/master/helix-term/src/commands.rs
 
 # my inlay color세팅
 
