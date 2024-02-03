@@ -37,7 +37,11 @@
 <hr>
 
 # 다른 사람의 Vim Setting(Helix)
+
 - https://github.com/LGUG2Z/helix-vim
+
+- helix remapping공식 문서
+  - https://docs.helix-editor.com/remapping.html
 
 # my inlay color세팅
 
