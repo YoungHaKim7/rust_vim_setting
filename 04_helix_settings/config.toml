@@ -56,6 +56,9 @@ space.w.k = "jump_view_up"
 space.w.o = "hsplit"
 space.w.v = "vsplit"
 
+o = ["open_below", "insert_mode"]
+O = ["open_above", "insert_mode"]
+
 
 # Muscle memory
 "{" = ["goto_prev_paragraph", "collapse_selection"]
@@ -70,6 +73,7 @@ C = ["collapse_selection", "extend_to_line_end", "change_selection"] # Requires 
 D = ["extend_to_line_end", "delete_selection"]
 S = ["goto_first_nonwhitespace", "collapse_selection", "extend_to_line_end", "change_selection"] # Would be nice to be able to do something after this but it isn't chainable
 s = ["delete_selection", "insert_mode"]
+X = ["move_char_left", "delete_selection"]
 
 # Extend and select commands that expect a manual input can't be chained
 # I've kept d[X] commands here because it's better to at least have the stuff you want to delete

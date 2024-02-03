@@ -3,6 +3,7 @@
 
 [language-server]
 
+als = { command = "als" }
 awk-language-server = { command = "awk-language-server" }
 bash-language-server = { command = "bash-language-server", args = ["start"] }
 bass = { command = "bass", args = ["--lsp"] }
@@ -90,6 +91,56 @@ yaml-language-server = { command = "yaml-language-server", args = ["--stdio"] }
 zls = { command = "zls" }
 blueprint-compiler = { command = "blueprint-compiler", args = ["lsp"] }
 typst-lsp = { command = "typst-lsp" }
+# tabby = {command = "tabby"}
+
+# [language-server.tabby]
+# command = "tabby"
+# args = ["127.0.0.1", "8080"]
+
+# [[language]]
+# name = "tabby"
+# language-server = ["tabby"]
+
+
+########### simple snippet
+# introduce new language server
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+max_completion_items = 20     # set max completion results len for each group: words, snippets, unicode-input
+snippets_first = true         # completions will return before snippets by default
+feature_words = true          # enable completion by word
+feature_snippets = true       # enable snippets
+feature_unicode_input = true  # enable "unicode input"
+
+
+# write logs to /tmp/completion.log
+[language-server.scls.environment]
+RUST_LOG = "info,simple-completion-langauge-server=info"
+LOG_FILE = "/tmp/completion.log"
+
+# append langage server to existed languages
+[[language]]
+name = "rust"
+language-servers = [ "scls", "rust-analyzer" ]
+
+[[language]]
+name = "git-commit"
+language-servers = [ "scls" ]
+
+# etc..
+
+# introduce a new language to enable completion on any doc by forcing set language with :set-language stub
+[[language]]
+name = "stub"
+scope = "text.stub"
+file-types = []
+shebangs = []
+roots = []
+auto-format = false
+language-servers = [ "scls" ]
+
 
 
 [language-server.ansible-language-server]
@@ -136,8 +187,6 @@ inlayHints.closureReturnTypeHints.enable = "with_block"
 inlayHints.discriminantHints.enable = "fieldless"
 inlayHints.lifetimeElisionHints.enable = "skip_trivial"
 inlayHints.typeHints.hideClosureInitialization = false
-cargo.features= "all"
-rust-analyzer.check.command = "clippy"
 
 
 [language-server.typescript-language-server]
@@ -191,8 +240,9 @@ file-types = ["rs"]
 roots = ["Cargo.toml", "Cargo.lock"]
 auto-format = true
 comment-token = "//"
-language-servers = [ "rust-analyzer" ]
+language-servers = [ "rust-analyzer", "scls" ]
 indent = { tab-width = 4, unit = "    " }
+persistent-diagnostic-sources = ["rustc", "clippy"]
 
 [language.auto-pairs]
 '(' = ')'
@@ -348,7 +398,9 @@ file-types = [
   "jsonld",
   ".vuerc",
   "composer.lock",
-  ".watchmanconfig"
+  ".watchmanconfig",
+  "avsc",
+  ".prettierrc"
 ]
 language-servers = [ "vscode-json-language-server" ]
 auto-format = true
@@ -496,7 +548,7 @@ file-types = ["go"]
 roots = ["go.work", "go.mod"]
 auto-format = true
 comment-token = "//"
-language-servers = [ "gopls", "golangci-lint-lsp" ]
+language-servers = [ "gopls", "golangci-lint-lsp", "snippets-ls" ]
 # TODO: gopls needs utf-8 offsets?
 indent = { tab-width = 4, unit = "\t" }
 
@@ -700,7 +752,7 @@ indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "python"
-source = { git = "https://github.com/tree-sitter/tree-sitter-python", rev = "de221eccf9a221f5b85474a553474a69b4b5784d" }
+source = { git = "https://github.com/tree-sitter/tree-sitter-python", rev = "4bfdd9033a2225cc95032ce77066b7aeca9e2efc" }
 
 [[language]]
 name = "nickel"
@@ -956,6 +1008,19 @@ indent = { tab-width = 2, unit = "  " }
 [[grammar]]
 name = "java"
 source = { git = "https://github.com/tree-sitter/tree-sitter-java", rev = "09d650def6cdf7f479f4b78f595e9ef5b58ce31e" }
+
+[[language]]
+name = "smali"
+scope = "source.smali"
+injection-regex = "smali"
+file-types = ["smali"]
+comment-token = "#"
+roots = []
+indent = { tab-width = 4, unit = "    " }
+
+[[grammar]]
+name = "smali"
+source = { git = "https://github.com/amaanq/tree-sitter-smali", rev = "5ae51e15c4d1ac93cba6127caf3d1f0a072c140c" }
 
 [[language]]
 name = "ledger"
@@ -1268,7 +1333,7 @@ injection-regex = "comment"
 
 [[grammar]]
 name = "comment"
-source = { git = "https://github.com/stsewd/tree-sitter-comment", rev = "a37ca370310ac6f89b6e0ebf2b86b2219780494e" }
+source = { git = "https://github.com/stsewd/tree-sitter-comment", rev = "aefcc2813392eb6ffe509aa0fc8b4e9b57413ee1" }
 
 [[language]]
 name = "wgsl"
@@ -1526,7 +1591,7 @@ indent = { tab-width = 2, unit = "  " }
 
 [[grammar]]
 name = "rescript"
-source = { git = "https://github.com/jaredramirez/tree-sitter-rescript", rev = "65609807c628477f3b94052e7ef895885ac51c3c" }
+source = { git = "https://github.com/jaredramirez/tree-sitter-rescript", rev = "467dcf99f68c47823d7b378779a6b282d7ef9782" }
 
 [[language]]
 name = "erlang"
@@ -1627,7 +1692,7 @@ auto-format = true
 
 [[grammar]]
 name = "gleam"
-source = { git = "https://github.com/gleam-lang/tree-sitter-gleam", rev = "a59aadf3d7c11702cad244e7cd6b67b34ca9c16a" }
+source = { git = "https://github.com/gleam-lang/tree-sitter-gleam", rev = "b2afa4fd6bb41a7bf912b034c653c90af7ae5122" }
 
 [[language]]
 name = "ron"
@@ -1671,6 +1736,7 @@ source = { git = "https://github.com/r-lib/tree-sitter-r", rev = "cc04302e1bff76
 [[language]]
 name = "rmarkdown"
 scope = "source.rmd"
+language-id = "rmd"
 injection-regex = "(r|R)md"
 file-types = ["rmd", "Rmd"]
 indent = { tab-width = 2, unit = "  " }
@@ -1898,6 +1964,12 @@ file-types = ["ss", "scm"]
 shebangs = ["scheme", "guile", "chicken"]
 comment-token = ";"
 indent = { tab-width = 2, unit = "  " }
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
 
 [[grammar]]
 name = "scheme"
@@ -2223,7 +2295,7 @@ formatter = { command = "dfmt" }
 
 [[grammar]]
 name = "d"
-source = { git = "https://github.com/gdamore/tree-sitter-d", rev="601c4a1e8310fb2f3c43fa8a923d0d27497f3c04" }
+source = { git = "https://github.com/gdamore/tree-sitter-d", rev = "5566f8ce8fc24186fad06170bbb3c8d97c935d74" }
 
 [[language]]
 name = "vhs"
@@ -2307,7 +2379,8 @@ file-types = [
   "xpdl",
   "xul",
   "xoml",
-  "musicxml"
+  "musicxml",
+  "glif"
 ]
 indent = { tab-width = 2, unit = "  " }
 
@@ -2365,7 +2438,7 @@ source = { git = "https://github.com/hh9527/tree-sitter-wit", rev = "c917790ab9a
 [[language]]
 name = "env"
 scope = "source.env"
-file-types = [".env", ".env.local", ".env.development", ".env.production", ".env.dist", ".envrc"]
+file-types = [".env", ".env.local", ".env.development", ".env.production", ".env.dist", ".envrc", ".envrc.local", ".envrc.private"]
 injection-regex = "env"
 comment-token = "#"
 indent = { tab-width = 4, unit = "\t" }
@@ -2699,6 +2772,7 @@ file-types = [ "cabal" ]
 roots = ["cabal.project", "Setup.hs"]
 indent = { tab-width = 2, unit = "  " }
 comment-token = "--"
+language-servers = [ "haskell-language-server" ]
 
 [[language]]
 name = "hurl"
@@ -2863,7 +2937,7 @@ source = { git = "https://github.com/varpeti/tree-sitter-jinja2", rev = "a533cd3
 
 [[grammar]]
 name = "wren"
-source = { git = "https://git.sr.ht/~jummit/tree-sitter-wren", rev = "793d58266924e6efcc40e411663393e9d72bec87"}
+source = { git = "https://git.sr.ht/~jummit/tree-sitter-wren", rev = "6748694be32f11e7ec6b5faeb1b48ca6156d4e06" }
 
 [[language]]
 name = "wren"
@@ -2923,6 +2997,32 @@ name = "gemini"
 source = { git = "https://git.sr.ht/~nbsp/tree-sitter-gemini", rev = "3cc5e4bdf572d5df4277fc2e54d6299bd59a54b3" }
 
 [[language]]
+name = "agda"
+scope = "source.agda"
+injection-regex = "agda"
+file-types = ["agda"]
+roots = []
+comment-token = "--"
+# language-servers = [ "als" ]
+# the agda language server is of questionable functionality.
+auto-format = false
+indent = { tab-width = 2, unit = "  " }
+
+[language.auto-pairs]
+'"' = '"'
+"'" = "'"
+'{' = '}'
+'(' = ')'
+'[' = ']'
+
+# [language.debugger]
+# ?? can this be used for proof assistant support? explore
+
+[[grammar]]
+name = "agda"
+source = { git = "https://github.com/tree-sitter/tree-sitter-agda", rev = "c21c3a0f996363ed17b8ac99d827fe5a4821f217" }
+
+[[language]]
 name = "templ"
 scope = "source.templ"
 file-types = ["templ"]
@@ -2955,3 +3055,24 @@ file-types = ["log"]
 [[grammar]]
 name = "log"
 source = { git = "https://github.com/Tudyx/tree-sitter-log", rev = "62cfe307e942af3417171243b599cc7deac5eab9" }
+
+[[language]]
+name = "janet"
+scope = "source.janet"
+injection-regex = "janet"
+file-types = ["janet"]
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+grammar = "clojure"
+
+[[language]]
+name = "hocon"
+scope = "source.conf"
+file-types = ["conf"]
+comment-token = "#"
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "hocon"
+source = { git = "https://github.com/antosha417/tree-sitter-hocon", rev = "c390f10519ae69fdb03b3e5764f5592fb6924bcc" }
