@@ -20,6 +20,9 @@
 
 <hr>
 
+# NeoVim(Rust최종세팅)
+- https://github.com/YoungHaKim7/rust_dev_neovide_nvimsetting
+
 # vim9(다른 사람이 설정한거)
 - https://github.com/arp242/dotfiles/blob/master/vim/vimrc
 
