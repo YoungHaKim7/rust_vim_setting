@@ -20,6 +20,8 @@
 
 - [windows-neovim-초간단-세팅](#windows-neovim-초간단-세팅)
 
+- [네오빔 최종 세팅Taaby+Snippets완료](#neovimrust최종세팅)
+
 <hr>
 
 # NeoVim(Rust최종세팅)
@@ -1095,7 +1097,7 @@ https://github.com/neoclide/coc-java
 ```
 
 
-# Windows NeoVim 초간단 세팅
+# Windows NeoVim 초간단 세팅[[🔝]](#link)
 
 - init.vim(C:\Users\User\AppData\Local\nvim)
 ```vim
