@@ -1097,7 +1097,7 @@ https://github.com/neoclide/coc-java
 
 # Windows NeoVim 초간단 세팅
 
-- init.vim(C:/User/user/Appdata/local/nvim)
+- init.vim(C:\Users\User\AppData\Local\nvim)
 ```vim
 " Move visually selected lines up or down in various modes.
 " nnoremap K :m .-2<CR>==
