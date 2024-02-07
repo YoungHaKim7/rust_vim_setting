@@ -1,3 +1,9 @@
+# Rust NeoVim Settings (Final Version)내가 세팅 조정함.
+
+- https://github.com/YoungHaKim7/rust_dev_neovide_nvimsetting
+
+<hr>
+
 # 우리 러스트 방 맴버의 nvim세팅 배울게 많다.
 
 https://github.com/SkuldNorniern/Skulds-Documentation
