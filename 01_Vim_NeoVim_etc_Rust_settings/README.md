@@ -1120,7 +1120,14 @@ noremap <silent> <C-Right> :vertical resize +3<CR>
 noremap <silent> <C-Left> :vertical resize -3<CR>
 noremap <silent> <C-Down> :resize +3<CR>
 noremap <silent> <C-Up> :resize -3<CR>
-" Set End
+
+" Esc and Clear Hightligh
+nnoremap <Esc> :noh<return><Esc>
+
+" rename
+"
+nnoremap <leader>rnn :%s//gc<Left><Left><Left>
+""~ Set End
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -1137,6 +1144,11 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set showmode
+set so=5
+set ignorecase  " Make searches case-insensitive
+set incsearch
+set mousehide
 
 " font&size setting
 set guifont=MesloLGS_NF:h16
@@ -1150,4 +1162,5 @@ let $LANG = 'en'
 set undodir=c:\\Users\\user\\vimdata\\undo\\
 set backupdir=c:\\Users\\user\\vimdata\\backup\\
 set directory=c:\\Users\\user\\vimdata\\swap\\
+
 ```
