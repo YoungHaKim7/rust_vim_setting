@@ -1,4 +1,6 @@
 # Shift Vim에 세팅하는 방법 S이게 쉬프트구나 ㅎ
+- 한국사람의 ideavimrc
+  - https://velog.io/@minkyu__k/.ideavimrc
 
 - 외국 사람들이 만든 세팅 참고 할께 많다.
   - https://github.com/JetBrains/ideavim/discussions/303
