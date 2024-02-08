@@ -1166,3 +1166,18 @@ set backupdir=c:\\Users\\user\\vimdata\\backup\\
 set directory=c:\\Users\\user\\vimdata\\swap\\
 
 ```
+
+# NERDTree 키세팅 바꾸기
+- https://vi.stackexchange.com/questions/27771/how-to-map-nerdtree-commands
+
+- if you look at the NERDTree manual, there is a section called NERDTreeMappings search for "Default Key: o", doing that will take you that particular mapping's description and the variable to remap that binding, the variable is named after the "Map setting:" part of the corresponding binding, which for "o" is:
+
+```
+Default key: o
+Map setting: NERDTreeMapActivateNode
+```
+
+- so to remap it you would put this in your .vimrc or init.vim
+```
+let NERDTreeMapActivateNode = 'i'
+```
