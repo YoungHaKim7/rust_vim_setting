@@ -1170,6 +1170,7 @@ set directory=c:\\Users\\user\\vimdata\\swap\\
 ```
 
 # NERDTree 키세팅 바꾸기
+- 유력 https://github.com/alex-courtis/arch/blob/875d6b9fb552059cbb01195f48a5718056bb7480/config/nvim/lua/amc/plugins/nvt.lua#L85
 - https://github.com/nvim-tree/nvim-tree.lua/discussions/2281
 - https://vi.stackexchange.com/questions/27771/how-to-map-nerdtree-commands
 
