@@ -18,6 +18,8 @@
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#--%EA%B4%84%ED%98%B8-%EC%95%88%EC%97%90-%EA%B2%83%EB%A7%8C-%EC%A7%80%EC%9A%B0%EA%B8%B0">c활용법 괄호 안에 글씨만 지우기 테그 안에 지우기 등등 cit ci( ci{</a>
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#surround-vim">Surround Vim이걸 모르면 빔을 쓸줄 모르는 사람</a>
 
+- [NERDTree키 세팅 바꾸기](#nerdtree-키세팅-바꾸기)
+
 - [windows-neovim-초간단-세팅](#windows-neovim-초간단-세팅)
 
 - [네오빔 최종 세팅Taaby+Snippets완료](#neovimrust최종세팅)
