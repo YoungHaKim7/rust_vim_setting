@@ -1,4 +1,4 @@
-# 여기에 앞으로 정리할 예정
+# 여기에 앞으로 정리할 예정(240209~~Updating~~)
 - https://github.com/YoungHaKim7/snippets_Lunar_NeoVim
 
 <hr>
