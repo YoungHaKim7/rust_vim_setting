@@ -545,6 +545,7 @@ CTRL-W o
 
 ```
 - [출처] Vi 고급 사용법|작성자 heartwork99
+  - https://blog.naver.com/PostView.naver?blogId=heartwork99&logNo=30155775700
 
 - Plug in 설치 없이 사용 가능
 
