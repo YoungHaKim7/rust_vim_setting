@@ -537,7 +537,14 @@ https://rust-analyzer.github.io/manual.html#vimneovim
 
 // 가운데 선 왼쪽(Left)으로 이동(:vs에서 주로 사용)
 :ObviousResizeLeft
+
+
+// 현재 커서의 창만 남기고 모든 창 삭제(:on) 완전 좋다.
+CTRL-W o
+:on[ly]
+
 ```
+- [출처] Vi 고급 사용법|작성자 heartwork99
 
 - Plug in 설치 없이 사용 가능
 
