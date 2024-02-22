@@ -79,6 +79,8 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
+  // Tabbly AI <C-tab> Full Completion
+  "tabby.keybindings": "tabby-style",
   // AI code Whisperer
   "tabnine.experimentalAutoImports": true,
   // AWS AI code Whsperer
