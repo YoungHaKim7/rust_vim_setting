@@ -1,22 +1,20 @@
 {
   // "clangd.arguments": [
-    // "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
+  // "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
   // ],
   // "clangd.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin",
   // "zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
   "zig.zigPath": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install",
-  "zig.zls.path": "/Users/globalyoung/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  "zig.zls.path": "/Users/gy-gyoung/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
   // mojo
   "mojo.modularHomePath": "/Users/globalyoung/.modular",
-
-//  "workbench.colorTheme": "spacedark",
+  //  "workbench.colorTheme": "spacedark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "editorError.foreground": "#3f1010", // squiggly line
     "editorError.border": "#ffffff", // additional border under squiggly line
     "editorInlayHint.background": "#e85a5a98",
     "editorInlayHint.typeBackground": "#442b7a",
-
     // Overrides for specific kinds of inlay hints
     "editorInlayHint.typeForeground": "#fdb6fdf0",
     "editorInlayHint.parameterForeground": "#fdb6fdf0",
@@ -65,7 +63,7 @@
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs":"active",
+  "editor.guides.bracketPairs": "active",
   "editor.detectIndentation": true,
   "emmet.triggerExpansionOnTab": true,
   "editor.suggestSelection": "first",
@@ -83,43 +81,43 @@
   },
   // AI code Whisperer
   "tabnine.experimentalAutoImports": true,
-
   // AWS AI code Whsperer
   "aws.codeWhisperer.importRecommendation": true,
   "aws.codeWhisperer.javaCompilationOutput": "",
   "aws.codeWhisperer.shareCodeWhispererContentWithAWS": true,
   "aws.telemetry": true,
-
   // rust-analyzer setting~
   "rust-analyzer.inlayHints.enable": true,
   "rust-analyzer.cargo.loadOutDirsFromCheck": true,
   "rust-analyzer.procMacro.enable": true,
   "rust-analyzer.checkOnSave.command": "clippy",
   "rust-analyzer.procMacro.attributes.enable": true,
-
   // rust-yew 
   // "emmet.includeLanguages": {
   //   "rust": "html",
   // },
-
   // zig languages setting~
   "zls.warn_style": true,
   "zls.enable_semantic_tokens": false,
   "zls.operator_completions": true,
   "zls.include_at_in_builtins": false,
   "zls.enable_inlay_hints": true,
-
   // https://github.com/VSCodeVim/Vim
   // vim setting ~~~~
-  "vim.leader":"<space>",
+  "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "editor.lineNumbers": "relative",
   "vim.easymotion": true,
   "vim.surround": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j","k"],
-      "after":["<Esc>"]
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindings": [
@@ -156,7 +154,7 @@
         ":"
       ],
       "commands": [
-          "workbench.action.showCommands"
+        "workbench.action.showCommands"
       ]
     },
     {
@@ -250,6 +248,40 @@
       ]
     }
   ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    }
+  ],
   "vim.handleKeys": {
     "<C-a>": true,
     "<C-b>": true,
@@ -263,92 +295,94 @@
     "<C-v>": true,
     "<C-x>": true
   },
-
   // Unicode Setting
   "insert-unicode.favorites": {
-        "directories": {},
-        "items": [
-            [
-                8594
-            ],
-            [
-                8469
-            ],
-            [
-                8477
-            ],
-            [
-                928
-            ],
-            [
-                120121
-            ],
-            [
-                8901
-            ],
-            [
-                920
-            ],
-            [
-                936
-            ],
-            [
-                923
-            ],
-            [
-                172
-            ],
-            [
-                215
-            ],
-            [
-                177
-            ],
-            [
-                120793
-            ]
-        ]
-    },
-    // "[python]": {
-    //   "editor.formatOnType": true
-    // },
-    // "[javascript]": {
-    //   "editor.formatOnSave": true
-    // },
-    "yaml.customTags": [
-      "!And",
-      "!And sequence",
-      "!If",
-      "!If sequence",
-      "!Not",
-      "!Not sequence",
-      "!Equals",
-      "!Equals sequence",
-      "!Or",
-      "!Or sequence",
-      "!FindInMap",
-      "!FindInMap sequence",
-      "!Base64",
-      "!Join",
-      "!Join sequence",
-      "!Cidr",
-      "!Ref",
-      "!Sub",
-      "!Sub sequence",
-      "!GetAtt",
-      "!GetAZs",
-      "!ImportValue",
-      "!ImportValue sequence",
-      "!Select",
-      "!Select sequence",
-      "!Split",
-      "!Split sequence"
-    ],
-    "window.zoomLevel": 1,
-    "vim.digraphs": {},
-    "haskell.manageHLS": "GHCup",
-    "workbench.editor.empty.hint": "hidden"
-    // "yaml.schemas": {
-    //   "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    // }
+    "directories": {},
+    "items": [
+      [
+        8594
+      ],
+      [
+        8469
+      ],
+      [
+        8477
+      ],
+      [
+        928
+      ],
+      [
+        120121
+      ],
+      [
+        8901
+      ],
+      [
+        920
+      ],
+      [
+        936
+      ],
+      [
+        923
+      ],
+      [
+        172
+      ],
+      [
+        215
+      ],
+      [
+        177
+      ],
+      [
+        120793
+      ]
+    ]
+  },
+  // "[python]": {
+  //   "editor.formatOnType": true
+  // },
+  // "[javascript]": {
+  //   "editor.formatOnSave": true
+  // },
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "window.zoomLevel": 1,
+  "vim.digraphs": {},
+  "haskell.manageHLS": "GHCup",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.sideBar.location": "right",
+  "zig.path": "/Users/gy-gyoung/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+  "zig.initialSetupDone": true
+  // "yaml.schemas": {
+  //   "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  // }
 }
