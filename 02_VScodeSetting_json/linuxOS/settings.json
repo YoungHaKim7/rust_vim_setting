@@ -3,7 +3,7 @@
     "clangd.arguments": [
         "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
     ],
-    "clangd.path": "/home/gy/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
+    "clangd.path": "/home/gy/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
     // Zig Lang
     "zls.path": "/home/y/.config/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
     "zig.zigPath": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
@@ -22,7 +22,7 @@
     // "mojo.modularHomePath": "/home/y/.modular",
     //  "workbench.colorTheme": "spacedark",
     "workbench.colorTheme": "Default Dark+",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "workbench.iconTheme": "material-icon-theme",
     // Inlay Settings
     "workbench.colorCustomizations": {
@@ -82,6 +82,9 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
+    // Tabbly AI <C-tab> Full Completion
+    "tabby.keybindings": "tabby-style",
+    // Tabnine AI <C-space> Auto Completion
     "tabnine.experimentalAutoImports": true,
     // rust-analyzer setting~
     "rust-analyzer.inlayHints.enable": true,
@@ -395,5 +398,9 @@
                 120793
             ]
         ]
-    }
+    },
+    "workbench.sideBar.location": "right",
+    "zig.path": "",
+    "zig.initialSetupDone": true,
+    "hediet.vscode-drawio.resizeImages": null
 }
