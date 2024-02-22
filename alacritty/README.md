@@ -32,6 +32,23 @@ option + arrow Right Left
 
 ```
 
+# LinuxOS 주로 쓰는 단축키(alacritty)
+
+```
+#  첫줄로 이동
+Ctrl + a
+
+
+# 마지막 줄로 이동
+Ctrl + e
+
+# 한줄 모두 삭제
+Ctrl + u
+
+
+```
+
+
 <hr>
 
 #  Ctrl+{arrow key} does not jump word #1408 
