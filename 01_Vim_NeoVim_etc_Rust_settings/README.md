@@ -33,12 +33,11 @@
 
 # My LunarVim Setting[[🔝]](#link)
 
-- linuxOS간단 세팅
-  - https://github.com/YoungHaKim7/lvim_Rust_AI_Setting
-
 - macOS
   - https://github.com/YoungHaKim7/lvim-config_gyoung_macOSsetting_TabbyAI
 
+- linuxOS간단 세팅
+  - https://github.com/YoungHaKim7/lvim_Rust_AI_Setting
 
 # vim9(다른 사람이 설정한거)
 - https://github.com/arp242/dotfiles/blob/master/vim/vimrc
