@@ -26,8 +26,19 @@
 
 <hr>
 
-# NeoVim(Rust최종세팅)
-- https://github.com/YoungHaKim7/rust_dev_neovide_nvimsetting
+# NeoVim(Rust최종세팅)[[🔝]](#link)
+- final version(완성)(Tabby + Snippets + Rust,C/C++, Zig )
+  - https://github.com/YoungHaKim7/rust_dev_neovide_nvimsetting
+- https://github.com/YoungHaKim7/nvim_gysetting
+
+# My LunarVim Setting[[🔝]](#link)
+
+- linuxOS간단 세팅
+  - https://github.com/YoungHaKim7/lvim_Rust_AI_Setting
+
+- macOS
+  - https://github.com/YoungHaKim7/lvim-config_gyoung_macOSsetting_TabbyAI
+
 
 # vim9(다른 사람이 설정한거)
 - https://github.com/arp242/dotfiles/blob/master/vim/vimrc
