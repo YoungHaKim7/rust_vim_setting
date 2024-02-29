@@ -17,7 +17,7 @@
         "surface.background": "#16161e",
         "background": "#1a1b26",
         "element.background": "#1a1b26",
-        "element.hover": "#565f89",
+        "element.hover": "#393f5c",
         "element.active": "#9aa5ce",
         "element.selected": "#565f89",
         "element.disabled": "#414868",
@@ -42,7 +42,7 @@
         "toolbar.background": "#16161e",
         "tab_bar.background": "#16161e",
         "tab.inactive_background": "#16161e",
-        "tab.active_background": "#414868",
+        "tab.active_background": "#3e4257",
         "search.match_background": "#414868",
         "panel.background": "#16161e",
         "panel.focused_border": null,
@@ -138,9 +138,9 @@
         "warning.border": "#414868",
         "players": [
           {
-            "cursor": "#7c7f93",
-            "background": "#7c7f93",
-            "selection": "#7c7f93"
+            "cursor": "#4d4e59",
+            "background": "#4d4e59",
+            "selection": "#4d4e59"
           }
         ],
         "syntax": {
