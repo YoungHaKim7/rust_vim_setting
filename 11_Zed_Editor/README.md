@@ -1,3 +1,53 @@
+# 많이 쓰는 키key정리
+
+```
+gs   많이 씀 Find symbol in curren file
+
+```
+
+- vim 기본 내장된건(zed vim mode)
+```
+# Normal mode
+g d   Go to definition
+g D   Go to type definition
+c d   Rename (change definition)
+g A   Go to All references to the current word
+
+g <space>  Open the current search excerpt in its own tab
+
+g s   Find symbol in current file
+g S   Find symbol in entire project
+
+g n   Add a visual selection for the next copy of the current word
+g N   The same, but backwards
+g >   Skip latest word selection, and add next.
+g <   The same, but backwards
+g a   Add a visual selection for every copy of the current word
+
+g h   Show inline error (hover)
+
+# Insert mode
+ctrl-x ctrl-o  Open the completion menu
+ctrl-x ctrl-c  Request GitHub Copilot suggestion (if configured)
+ctrl-x ctrl-a  Open the inline AI assistant (if configured)
+ctrl-x ctrl-l  Open the LSP code actions
+ctrl-x ctrl-z  Hides all suggestions
+
+# Ex commands (as of zed 0.124.0)
+:E[xplore]    Open the project panel
+:C[ollab]     Open the collaboration panel
+:Ch[at]       Open the chat panel
+:A[I]         Open the AI panel
+:No[tif]      Open the notifications panel
+:fe[edback]   Open the feedback window
+:cl[ist]      Open the diagnostics window
+:te[rm]       Open the terminal
+:Ext[ensions] Open the extensions window
+```
+- https://zed.dev/docs/vim
+
+<hr>
+
 # vim.json
 
 - https://zed.dev/ref/vim.json
