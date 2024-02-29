@@ -45,6 +45,10 @@ gs   많이 씀 Find symbol in curren file
       // ~~~~~~ Visual Mode
       "K": "editor::MoveLineUp",
       "J": "editor::MoveLineDown"
+
+      // Comment
+      "space g c": "editor::ToggleComments"
+
     }
   },
   {
