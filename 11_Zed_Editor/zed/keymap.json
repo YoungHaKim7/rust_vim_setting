@@ -48,7 +48,7 @@
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
       // ~~~~~~ Insert Mode
-      "j k": "vim::NormalBefore"
+      "j k": ["vim::SwitchMode", "Normal"]
     }
   }
 ]
