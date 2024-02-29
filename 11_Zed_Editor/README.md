@@ -3,6 +3,8 @@
 ```
 gs   많이 씀 Find symbol in curren file
 
+"space g c": "editor::ToggleComments"
+
 ```
 
 - 내가 세팅한거
