@@ -5,6 +5,56 @@ gs   많이 씀 Find symbol in curren file
 
 ```
 
+- 내가 세팅한거
+
+```json
+{
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work only in normal mode
+      // ~~~~~~~ Normal Mode
+      // Doc hover
+      "K": "editor::Hover",
+      // buffer :bn :bp
+      "L": "pane::ActivateNextItem",
+      "H": "pane::ActivatePrevItem",
+      // quick fix
+      "space g a": "editor::ToggleCodeActions",
+      "] d": "editor::GoToDiagnostic",
+      "[ d": "editor::GoToPrevDiagnostic",
+
+      // LSP rename    "ga" multi cursor
+      "space r": "editor::Rename",
+
+      // symbol search
+      "space o": "project_symbols::Toggle",
+      // NERDTree
+      "space e": "project_panel::ToggleFocus",
+      "space x": "workspace::CloseAllDocks",
+
+      // Terminal Pannel(shell)
+      "space s h": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      // visual, visual line & visual block modes
+      // ~~~~~~ Visual Mode
+      "K": "editor::MoveLineUp",
+      "J": "editor::MoveLineDown"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // ~~~~~~ Insert Mode
+      "j k": "vim::NormalBefore"
+    }
+  }
+```
+
 - vim 기본 내장된건(zed vim mode)
 ```
 # Normal mode
