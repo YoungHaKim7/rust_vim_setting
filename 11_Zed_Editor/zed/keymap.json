@@ -19,6 +19,8 @@
       "g a": "editor::ToggleCodeActions",
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPrevDiagnostic",
+      // symbol search
+      "space o": "project_symbols::Toggle",
       // NERDTree
       "space e": "project_panel::ToggleFocus",
       "space x": "workspace::CloseAllDocks",
