@@ -16,17 +16,21 @@
       "L": "pane::ActivateNextItem",
       "H": "pane::ActivatePrevItem",
       // quick fix
-      "g a": "editor::ToggleCodeActions",
+      "space g a": "editor::ToggleCodeActions",
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPrevDiagnostic",
+
+      // LSP rename    "ga" multi cursor
+      "space r": "editor::Rename",
+
       // symbol search
       "space o": "project_symbols::Toggle",
       // NERDTree
       "space e": "project_panel::ToggleFocus",
       "space x": "workspace::CloseAllDocks",
 
-      // Terminal Pannel
-      "space s": "terminal_panel::ToggleFocus"
+      // Terminal Pannel(shell)
+      "space s h": "terminal_panel::ToggleFocus"
     }
   },
   {
