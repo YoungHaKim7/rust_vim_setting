@@ -9,8 +9,13 @@
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
       // put key-bindings here if you want them to work only in normal mode
-      // "K": "editor::Hover"
-      // "L": "pane::ActivateNextItem"
+      // ~~~~~~~ Normal Mode
+      // Doc hover
+      "K": "editor::Hover",
+      // buffer :bn :bp
+      "L": "pane::ActivateNextItem",
+      "H": "pane::ActivatePrevItem",
+      // quick fix
       "g a": "editor::ToggleCodeActions",
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPrevDiagnostic"
@@ -20,15 +25,16 @@
     "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
     "bindings": {
       // visual, visual line & visual block modes
-      // "K": "editor::MoveLineUp",
-      // "J": "editor::MoveLineDown"
+      // ~~~~~~ Visual Mode
+      "K": "editor::MoveLineUp",
+      "J": "editor::MoveLineDown"
     }
   },
   {
     "context": "Editor && vim_mode == insert && !menu",
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
-      // "ctrl-y": "editor::ConfirmCompletion",
+      // ~~~~~~ Insert Mode
       "j k": "vim::NormalBefore"
     }
   }

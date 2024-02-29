@@ -7,13 +7,24 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Summercamp",
+  "theme": "Ayu Dark",
+  "ui_font_family": "Hack Nerd Font Mono",
   "vim_mode": true,
-  "ui_font_size": 20,
-  "buffer_font_size": 20,
+  "ui_font_size": 22,
+  "buffer_font_size": 22,
+  // Set the buffer's line height.
+  // May take 3 values:
+  //  1. Use a line height that's comfortable for reading (1.618)
+  //"line_height": "comfortable",
+  //  2. Use a standard line height, (1.3)
+  //"line_height": "standard",
+  //  3. Use a custom line height
+  "line_height": {
+    "custom": 1.0
+  },
   "relative_line_numbers": true,
   // disable cursor blink
-  "cursor_blink": false,
+  // "cursor_blink": false,
   "inlay_hints": {
     // Global switch to toggle hints on and off, switched off by default.
     "enabled": true,
@@ -61,3 +72,4 @@
       // }
     }
   }
+}
