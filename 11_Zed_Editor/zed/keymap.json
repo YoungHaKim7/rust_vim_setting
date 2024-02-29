@@ -18,7 +18,13 @@
       // quick fix
       "g a": "editor::ToggleCodeActions",
       "] d": "editor::GoToDiagnostic",
-      "[ d": "editor::GoToPrevDiagnostic"
+      "[ d": "editor::GoToPrevDiagnostic",
+      // NERDTree
+      "space e": "project_panel::ToggleFocus",
+      "space x": "workspace::CloseAllDocks",
+
+      // Terminal Pannel
+      "space s": "terminal_panel::ToggleFocus"
     }
   },
   {

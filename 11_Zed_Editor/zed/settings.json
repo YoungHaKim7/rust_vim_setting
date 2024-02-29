@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Ayu Dark",
+  "theme": "Tokyo Night gy InlayHint red",
   "ui_font_family": "Hack Nerd Font Mono",
   "vim_mode": true,
   "ui_font_size": 22,
