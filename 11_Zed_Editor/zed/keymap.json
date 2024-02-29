@@ -23,7 +23,7 @@
       // LSP rename    "ga" multi cursor
       "space r": "editor::Rename",
 
-      // symbol search
+      // symbol search   "gs"
       "space o": "project_symbols::Toggle",
       // NERDTree
       "space e": "project_panel::ToggleFocus",
@@ -39,7 +39,8 @@
       // visual, visual line & visual block modes
       // ~~~~~~ Visual Mode
       "K": "editor::MoveLineUp",
-      "J": "editor::MoveLineDown"
+      "J": "editor::MoveLineDown",
+      "space g c": "editor::ToggleComments"
     }
   },
   {
