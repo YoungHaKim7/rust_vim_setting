@@ -102,6 +102,21 @@ ctrl-x ctrl-z  Hides all suggestions
 ```
 - https://zed.dev/docs/vim
 
+# Fix
+
+
+```json
+ {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      "j k": ["vim::SwitchMode", "Normal"]
+    }
+  }
+```
+
+
+- https://github.com/zed-industries/zed/discussions/6661
+
 <hr>
 
 # vim.json
