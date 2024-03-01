@@ -3,7 +3,21 @@
 ```
 gs   많이 씀 Find symbol in curren file
 
+
+// Comment
 "space g c": "editor::ToggleComments"
+
+// cargo expand
+"g m": "editor::ExpandMacroRecursively"
+
+// 창 좌우로 나누기
+:vs
+
+// 창 상하단으로 나누기
+:sp
+
+// 창이동(normal mode)
+<C-w>h    or  l
 
 ```
 
