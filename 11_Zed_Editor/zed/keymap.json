@@ -19,6 +19,7 @@
       "space g a": "editor::ToggleCodeActions",
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPrevDiagnostic",
+      "g m": "editor::ExpandMacroRecursively",
 
       // LSP rename    "ga" multi cursor
       "space r": "editor::Rename",
@@ -30,7 +31,10 @@
       "space x": "workspace::CloseAllDocks",
 
       // Terminal Pannel(shell)
-      "space s h": "terminal_panel::ToggleFocus"
+      "space s h": "terminal_panel::ToggleFocus",
+
+      // trouble toggle
+      "space t": "diagnostics::Deploy"
     }
   },
   {
