@@ -163,14 +163,15 @@ ctrl-x ctrl-z  Hides all suggestions
 
 - ctlr+y 자동완성 찾는중 ㅠㅠ(Bug인가...모르겠다.)
 
-```
+```json
+{
 // CofirmComletion
 "ctrl-y": "editor::ConfirmCompletion"
 
 "ctrl+y": ["menu::SecondaryConfirm", "editor::ContextMenuNext"],
 "shift+a": "menu::Confirm",
 "shift+b": "menu::SecondaryConfirm"
-
+}
 ```
 
 <hr>
