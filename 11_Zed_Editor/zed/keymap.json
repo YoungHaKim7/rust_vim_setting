@@ -20,19 +20,15 @@
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPrevDiagnostic",
       "g m": "editor::ExpandMacroRecursively",
-
       // LSP rename    "ga" multi cursor
       "space r": "editor::Rename",
-
       // symbol search   "gs"
       "space o": "project_symbols::Toggle",
       // NERDTree
       "space e": "project_panel::ToggleFocus",
       "space x": "workspace::CloseAllDocks",
-
       // Terminal Pannel(shell)
       "space s h": "terminal_panel::ToggleFocus",
-
       // trouble toggle
       "space t": "diagnostics::Deploy"
     }
@@ -53,6 +49,28 @@
       // put key-bindings here if you want them to work in insert mode
       // ~~~~~~ Insert Mode
       "j k": ["vim::SwitchMode", "Normal"]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "h": "project_panel::CollapseSelectedEntry",
+      "l": "project_panel::ExpandSelectedEntry",
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrev",
+      "o": "menu::Confirm",
+      "r": "project_panel::Rename",
+      "z c": "project_panel::CollapseSelectedEntry",
+      "z o": "project_panel::ExpandSelectedEntry",
+      "shift-o": "project_panel::RevealInFinder",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "d": "project_panel::Delete",
+      "a": "project_panel::NewFile",
+      "shift-a": "project_panel::NewDirectory",
+      "shift-y": "project_panel::CopyRelativePath",
+      "g y": "project_panel::CopyPath"
     }
   }
 ]
