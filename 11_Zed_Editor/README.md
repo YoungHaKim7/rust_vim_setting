@@ -4,6 +4,7 @@
 
 # link
 - [fix고친거 고쳐야 할것](#fix)
+- [Zed에 기본 세팅된 vim keymap](#vimjson)
 
 <hr>
 
