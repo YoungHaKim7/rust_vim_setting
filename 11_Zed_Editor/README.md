@@ -181,9 +181,9 @@ ctrl-x ctrl-z  Hides all suggestions
 
 "ctrl-y": "editor::ConfirmCompletion"
 
-"ctrl+y": ["menu::SecondaryConfirm", "editor::ContextMenuNext"],
-"shift+a": "menu::Confirm",
-"shift+b": "menu::SecondaryConfirm"
+"ctrl-y": ["menu::SecondaryConfirm", "editor::ContextMenuNext"],
+"shift-a": "menu::Confirm",
+"shift-b": "menu::SecondaryConfirm"
 }
 ```
 
