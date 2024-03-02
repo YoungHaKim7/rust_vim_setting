@@ -158,8 +158,10 @@ ctrl-x ctrl-z  Hides all suggestions
   }
 ```
 
+- 해결한 코드(jk딜레이 없이 바로 적용)
+  - https://github.com/zed-industries/zed/discussions/6661
 
-- https://github.com/zed-industries/zed/discussions/6661
+<hr>
 
 - ctlr+y 자동완성 찾는중 ㅠㅠ(Bug인가...모르겠다.)
   - 결국 물어봄 ㅠㅠ
