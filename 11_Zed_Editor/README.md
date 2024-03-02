@@ -6,7 +6,7 @@
 </p>
 
 # link
-- [fix고친거 고쳐야 할것](#fix)
+- [fix고친거 || 고쳐야 할것](#fix)
 - [Zed에 기본 세팅된 vim keymap](#vimjson)
 - [많이-쓰는-키key정리](#많이-쓰는-키key정리)
 - [zed releases최신버젼체크](#zed-releases버젼업최신-버젼체크)
