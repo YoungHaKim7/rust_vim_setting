@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/2f7edcb7-3372-4ea7-b4e8-cea1c451c943" />
+    <img width=90px src="https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/2f7edcb7-3372-4ea7-b4e8-cea1c451c943" />
 </p>
 
 # link
@@ -85,7 +85,7 @@ gs   많이 씀 Find symbol in curren file
   }
 ```
 
-- vim 기본 내장된건(zed vim mode)
+- vim 기본 내장된건(zed vim mode)[[🔝]](#link)
 ```
 # Normal mode
 g d   Go to definition
@@ -156,7 +156,7 @@ ctrl-x ctrl-z  Hides all suggestions
 
 ```
 
-# Fix
+# Fix[[🔝]](#link)
 
 
 ```json
@@ -199,17 +199,17 @@ ctrl-x ctrl-z  Hides all suggestions
 
 <hr>
 
-# vim.json
+# vim.json[[🔝]](#link)
 
 - https://zed.dev/ref/vim.json
 
 <hr>
 
-# Zed Vim
+# Zed Vim[[🔝]](#link)
 
 - https://docs.zed.dev/general/vim
 
-# Zed(install) __ Brew Install
+# Zed(install) __ Brew Install[[🔝]](#link)
 
 - https://zed.dev/
 - https://formulae.brew.sh/cask/zed
