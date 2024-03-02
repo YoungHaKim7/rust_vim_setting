@@ -205,6 +205,10 @@ ctrl-x ctrl-z  Hides all suggestions
 
 <hr>
 
+# zed releases버젼업(최신 버젼체크)[[🔝]](#link)
+
+- https://zed.dev/releases/stable
+
 # Zed Vim[[🔝]](#link)
 
 - https://docs.zed.dev/general/vim
