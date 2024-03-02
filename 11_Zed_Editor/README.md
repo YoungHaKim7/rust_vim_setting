@@ -165,7 +165,16 @@ ctrl-x ctrl-z  Hides all suggestions
 
 ```json
 {
+
 // CofirmComletion
+{
+    "context": "Editor && VimWaiting",
+    "bindings": {
+      "ctrl-y": "vim::Tab"
+    }
+},
+
+
 "ctrl-y": "editor::ConfirmCompletion"
 
 "ctrl+y": ["menu::SecondaryConfirm", "editor::ContextMenuNext"],
