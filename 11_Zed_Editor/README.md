@@ -162,6 +162,8 @@ ctrl-x ctrl-z  Hides all suggestions
 - https://github.com/zed-industries/zed/discussions/6661
 
 - ctlr+y 자동완성 찾는중 ㅠㅠ(Bug인가...모르겠다.)
+  - 결국 물어봄 ㅠㅠ
+    - https://github.com/zed-industries/zed/issues/8707
 
 ```json
 {
