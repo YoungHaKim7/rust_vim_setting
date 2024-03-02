@@ -8,6 +8,7 @@
 - [많이-쓰는-키key정리](#많이-쓰는-키key정리)
 - [zed releases최신버젼체크](#zed-releases버젼업최신-버젼체크)
 - [zed Install설치하기 지금은 macOS만 가능240302](#zedinstall-__-brew-install)
+- [zed-doc_tutorial문서](#zed-doctutorial문서)
 
 <hr>
 
