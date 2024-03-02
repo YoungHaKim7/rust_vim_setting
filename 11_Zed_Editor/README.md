@@ -212,6 +212,9 @@ ctrl-x ctrl-z  Hides all suggestions
 
 - https://zed.dev/releases/stable
 
+# Zed Doc(tutorial문서)[[🔝]](#link)
+- https://zed.dev/docs/getting-started
+
 # Zed Vim[[🔝]](#link)
 
 - https://docs.zed.dev/general/vim
