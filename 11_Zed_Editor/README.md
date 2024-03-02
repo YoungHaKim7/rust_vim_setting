@@ -1,9 +1,13 @@
+<p align="center">
+    <img src="https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/2f7edcb7-3372-4ea7-b4e8-cea1c451c943" />
+</p>
+
 # link
 - [fix고친거 고쳐야 할것](#fix)
 
 <hr>
 
-# 많이 쓰는 키key정리
+# 많이 쓰는 키key정리[[🔝]](#link)
 
 ```
 gs   많이 씀 Find symbol in curren file
