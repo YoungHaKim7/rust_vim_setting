@@ -1,5 +1,8 @@
 <p align="center">
     <img width=90px src="https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/2f7edcb7-3372-4ea7-b4e8-cea1c451c943" />
+    <br>Code at the speed of thought
+
+<br>Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. It's also open source.
 </p>
 
 # link
