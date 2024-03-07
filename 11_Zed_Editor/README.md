@@ -42,6 +42,8 @@ gs   많이 씀 Find symbol in curren file
  editor: sort lines case sensitive
 ```
 
+- sort https://github.com/zed-industries/zed/issues/8683
+
 - 내가 세팅한거
 
 ```json
@@ -220,7 +222,7 @@ ctrl-x ctrl-z  Hides all suggestions
   - https://github.com/zed-industries/zed/discussions/6661
 
 - 자동 완성중에 jk입력 안되는거 해결함
-  - https://github.com/zed-industries/zed/issues/8683
+  - https://github.com/zed-industries/zed/issues/8729
 
 ```json
   {
