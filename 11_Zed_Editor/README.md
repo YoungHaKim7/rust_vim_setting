@@ -36,6 +36,10 @@ gs   많이 씀 Find symbol in curren file
 // 창이동(normal mode)
 <C-w>h    or  l
 
+
+// toml같은거 a~z순으로 정렬 시키기 굿
+:sort
+ editor: sort lines case sensitive
 ```
 
 - 내가 세팅한거
