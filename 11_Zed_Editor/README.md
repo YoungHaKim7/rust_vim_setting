@@ -45,7 +45,15 @@ gs   많이 씀 Find symbol in curren file
 - 내가 세팅한거
 
 ```json
-{
+
+[
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
+    }
+  },
+  {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
       // put key-bindings here if you want them to work only in normal mode
@@ -59,18 +67,18 @@ gs   많이 씀 Find symbol in curren file
       "space g a": "editor::ToggleCodeActions",
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPrevDiagnostic",
-
+      "g m": "editor::ExpandMacroRecursively",
       // LSP rename    "ga" multi cursor
       "space r": "editor::Rename",
-
-      // symbol search
+      // symbol search   "gs"
       "space o": "project_symbols::Toggle",
       // NERDTree
       "space e": "project_panel::ToggleFocus",
       "space x": "workspace::CloseAllDocks",
-
       // Terminal Pannel(shell)
-      "space s h": "terminal_panel::ToggleFocus"
+      "space s h": "terminal_panel::ToggleFocus",
+      // trouble toggle
+      "space t": "diagnostics::Deploy"
     }
   },
   {
@@ -79,11 +87,8 @@ gs   많이 씀 Find symbol in curren file
       // visual, visual line & visual block modes
       // ~~~~~~ Visual Mode
       "K": "editor::MoveLineUp",
-      "J": "editor::MoveLineDown"
-
-      // Comment
+      "J": "editor::MoveLineDown",
       "space g c": "editor::ToggleComments"
-
     }
   },
   {
@@ -91,9 +96,41 @@ gs   많이 씀 Find symbol in curren file
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
       // ~~~~~~ Insert Mode
-      "j k": "vim::NormalBefore"
+      "j k": ["vim::SwitchMode", "Normal"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // ~~~~~~ Insert Mode
+      "j k": ["vim::SwitchMode", "Normal"]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "h": "project_panel::CollapseSelectedEntry",
+      "l": "project_panel::ExpandSelectedEntry",
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrev",
+      "o": "menu::Confirm",
+      "r": "project_panel::Rename",
+      "z c": "project_panel::CollapseSelectedEntry",
+      "z o": "project_panel::ExpandSelectedEntry",
+      "shift-o": "project_panel::RevealInFinder",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "d": "project_panel::Delete",
+      "a": "project_panel::NewFile",
+      "shift-a": "project_panel::NewDirectory",
+      "shift-y": "project_panel::CopyRelativePath",
+      "g y": "project_panel::CopyPath"
     }
   }
+]
+
 ```
 
 - vim 기본 내장된건(zed vim mode)[[🔝]](#link)
@@ -181,6 +218,28 @@ ctrl-x ctrl-z  Hides all suggestions
 
 - 해결한 코드(jk딜레이 없이 바로 적용)
   - https://github.com/zed-industries/zed/discussions/6661
+
+- 자동 완성중에 jk입력 안되는거 해결함
+  - https://github.com/zed-industries/zed/issues/8683
+
+```json
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // ~~~~~~ Insert Mode
+      "j k": ["vim::SwitchMode", "Normal"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // ~~~~~~ Insert Mode
+      "j k": ["vim::SwitchMode", "Normal"]
+    }
+  },
+```
 
 <hr>
 
