@@ -52,6 +52,14 @@
     }
   },
   {
+    "context": "Editor && vim_mode == insert && menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // ~~~~~~ Insert Mode
+      "j k": ["vim::SwitchMode", "Normal"]
+    }
+  },
+  {
     "context": "ProjectPanel",
     "bindings": {
       "h": "project_panel::CollapseSelectedEntry",
