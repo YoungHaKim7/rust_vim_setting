@@ -11,6 +11,13 @@
 - https://stackoverflow.com/questions/453236/how-can-i-set-my-default-shell-on-a-mac-e-g-to-fish
 
 # Fish Shell 에 PATH추가 하기 
+
+```
+set -U fish_user_paths $HOME/utilities/nvim-macos/bin/ $fish_user_paths
+
+
+set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
+```
 - https://velog.io/@agiletalk/Fish-Shell%EC%97%90-PATH-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0
 - 명령어 쓰고 뒤에 쓰면 끝 편하네 
   - https://fishshell.com/docs/current/cmds/fish_add_path.html
