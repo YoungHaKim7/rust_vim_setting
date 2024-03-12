@@ -46,3 +46,8 @@ fish install --path=~/.local/share/omf --config=~/.config/omf
 
 # 한국사람이 정리해줌
 https://blog.youngbin.xyz/2015-07-30-install-fish-then-customize-it-with-oh-my-fish/
+
+# z 설치하기
+
+- https://github.com/jorgebucaran/fisher
+- https://github.com/jethrokuan/z
