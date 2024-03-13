@@ -5,6 +5,7 @@ fish_add_path "$HOME/utilities/zig0_12"
 fish_add_path "$HOME/utilities/zls/zig-out/bin"
 fish_add_path "$HOME/utilities/llvm17/bin"
 fish_add_path "$HOME/utilities/alacritty/target/release"
+fish_add_path "$HOME/.local/bin"
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
