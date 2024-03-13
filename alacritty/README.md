@@ -15,6 +15,18 @@ bindings = [
 ]
 ```
 
+- mouse 관련
+
+```toml
+# 타이핑하면 마우스 커서 숨기기
+[mouse]
+hide_when_typing = true
+
+# 마우스로 링크 클릭하면 브라우져 열리기 "unuesed 라고 경고 뜨는데 기능은 잘됨
+[mouse.url.launcher]
+program = []
+```
+
 
 <hr>
 
