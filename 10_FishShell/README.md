@@ -32,6 +32,10 @@ set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
 - https://github.com/jethrokuan/z
 
+# starship이 가장 깔끔
+
+https://starship.rs/ko-kr/
+
 
 # Plugin
 
