@@ -24,6 +24,47 @@ set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
 - 잘못 쓴 PATH 지우기
   - https://superuser.com/questions/776008/how-to-remove-a-path-from-path-variable-in-fish
+  ```
+  set --erase --universal fish_user_paths[5]
+  ```
+
+- function만들어 주기
+```
+function addpaths
+    contains -- $argv $fish_user_paths
+       or set -U fish_user_paths $fish_user_paths $argv
+    echo "Updated PATH: $PATH"
+end
+```
+
+- path remove지우는 function만들기
+```
+function removepath
+    if set -l index (contains -i $argv[1] $PATH)
+        set --erase --universal fish_user_paths[$index]
+        echo "Updated PATH: $PATH"
+    else
+        echo "$argv[1] not found in PATH: $PATH"
+    end
+end
+```
+
+- 테스트
+```
+Example Usage:
+
+$ addpaths /etc /usr/libexec
+Modifying PATH: /usr/local/bin /usr/bin /bin /usr/sbin /sbin
+Updated PATH: /etc /usr/libexec /usr/local/bin /usr/bin /bin /usr/sbin /sbin
+
+$ removepath /usr/libexec
+Modifying PATH: /etc /usr/libexec /usr/local/bin /usr/bin /bin /usr/sbin /sbin
+Updated PATH: /etc /usr/local/bin /usr/bin /bin /usr/sbin /sbin
+
+```
+
+- https://superuser.com/questions/776008/how-to-remove-a-path-from-path-variable-in-fish
+
 
 # Fish에 Plugin 설치 하기
 
