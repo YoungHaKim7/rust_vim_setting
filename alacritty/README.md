@@ -1,3 +1,9 @@
+# alacritty 개인 세팅
+- fish 셀 세팅바꿔주기
+  - https://github.com/alacritty/alacritty/issues/6843
+
+<hr>
+
 # macOS 주로 쓰는 단축키(alacritty)
 
 ```bash
