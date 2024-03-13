@@ -5,15 +5,33 @@ import = [
 [window]
 opacity = 0.95
 
+[window.position]
+# x = 70
+# y = 15
+
+# record mode
+x = 190
+y = 1
+
 [window.dimensions]
-columns = 135
-lines = 32
+# columns = 131
+# lines = 32
+
+# record mode
+columns = 123
+lines = 31
+
 
 [font]
 size = 24.0
 
 [font.normal]
 family = "MesloLGS NF"
+
+[mouse]
+hide_when_typing = true
+[mouse.url.launcher]
+program = []
 
 [[keyboard.bindings]]
 action = "Paste"
