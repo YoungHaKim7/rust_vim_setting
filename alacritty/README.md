@@ -4,6 +4,15 @@
 - fish 셀 세팅바꿔주기
   - https://github.com/alacritty/alacritty/issues/6843
 
+- mouse스크롤로 글씨 크기 조절
+  - https://github.com/alacritty/alacritty/issues/7786
+```toml
+[mouse]
+bindings = [
+  { mouse = 275, action = "IncreaseFontSize"},
+  { mouse = 276, action = "DecreaseFontSize"},
+]
+```
 
 
 <hr>
