@@ -12,6 +12,11 @@
 
 # Fish Shell 에 PATH추가 하기 
 
+- `echo $PATH`로 잘 들어갔나 확인하기
+```bash
+echo $PATH
+```
+
 ```
 set -U fish_user_paths $HOME/utilities/nvim-macos/bin/ $fish_user_paths
 
