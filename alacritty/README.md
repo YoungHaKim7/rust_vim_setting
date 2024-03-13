@@ -1,6 +1,10 @@
 # alacritty 개인 세팅
+- 이거 보고 대충 끼어 맞춰 보자
+  - https://sunnnychan.github.io/cheatsheet/linux/config/alacritty.yml.html
 - fish 셀 세팅바꿔주기
   - https://github.com/alacritty/alacritty/issues/6843
+
+
 
 <hr>
 
