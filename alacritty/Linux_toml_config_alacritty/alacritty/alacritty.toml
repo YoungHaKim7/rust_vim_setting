@@ -2,11 +2,29 @@ import = [
     "~/.config/alacritty/themes/themes/tokyo-night.toml"
 ]
 
+[shell]
+program = "/bin/fish"
+
+
 [font]
-size = 16.0
+size = 19.0
 
 [font.normal]
 family = "MesloLGS NF"
+
+[window]
+opacity = 0.97
+
+[window.dimensions]
+columns = 122
+lines = 29
+
+[window.position]
+x = 60
+y = 30
+
+[mouse]
+hide_when_typing = true
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -513,15 +531,3 @@ chars = """
 
 """
 key = "NumpadEnter"
-
-[window]
-opacity = 0.93
-
-[window.dimensions]
-columns = 132
-lines = 30
-
-[window.position]
-x = 80
-y = 60
-
