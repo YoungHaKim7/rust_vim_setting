@@ -32,7 +32,7 @@ set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
 - https://github.com/jethrokuan/z
 
-# starship이 가장 깔끔
+# starship이 가장 깔끔(테마는 이게 낫다. 그냥 이걸로 바로 세팅하자)
 
 https://starship.rs/ko-kr/
 
