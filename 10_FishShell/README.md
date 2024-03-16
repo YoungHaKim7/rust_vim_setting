@@ -111,3 +111,12 @@ https://blog.youngbin.xyz/2015-07-30-install-fish-then-customize-it-with-oh-my-f
 
 - https://github.com/jorgebucaran/fisher
 - https://github.com/jethrokuan/z
+
+# FishShell Hitory 폴더 
+
+- typically 
+```
+~/.local/share/fish/fish_history
+```
+
+- https://fishshell.com/docs/current/cmds/history.html
