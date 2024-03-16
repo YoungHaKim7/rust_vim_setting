@@ -4,7 +4,7 @@
 
 <hr>
 
-# (Rust&Python_etc..)☆☆__VSCode Vs Pycharm(파이참)Vs Visual Studio(비주얼스튜디오)자주 쓰는 단축키 비교☆☆(MacOS,Win)
+# (Rust&Python_etc..)☆☆__VSCode Vs Pycharm(파이참)Vs Visual Studio(비주얼스튜디오)자주 쓰는 단축키 비교☆☆(MacOS,Win)[[🔝]](#link)
 
 https://economiceco.tistory.com/3638
 
@@ -163,5 +163,5 @@ setting.JSON
 
 https://youtu.be/Gpe-zGS5W0I
 
-# 다른 외국인 설정 모음
+# 다른 외국인 설정 모음[[🔝]](#link)
 - https://gist.github.com/LukeMathWalker
