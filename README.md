@@ -156,3 +156,6 @@ setting.JSON
 - 한글러스트Rust강의*038_lapce*⭐️Rust_traits기초 #rustlang
 
 https://youtu.be/Gpe-zGS5W0I
+
+# 다른 외국인 설정 모음
+- https://gist.github.com/LukeMathWalker
