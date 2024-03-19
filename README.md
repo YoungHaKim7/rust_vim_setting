@@ -165,3 +165,4 @@ https://youtu.be/Gpe-zGS5W0I
 
 # 다른 외국인 설정 모음[[🔝]](#link)
 - https://gist.github.com/LukeMathWalker
+- https://github.com/BurntSushi/dotfiles
