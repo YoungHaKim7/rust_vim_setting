@@ -1,5 +1,5 @@
 # VSCode (Command Palette창에 유용하게 쓸만하거 모음)
-코드 창에 터미널 창 옆에 아주 크게 열기
+코드 창을 분할해서 오른쪽or 왼쪽 창에 터미널 창 열어서 코드 옆에 아주 크게 열기
 
 - Command Palette창에
 
