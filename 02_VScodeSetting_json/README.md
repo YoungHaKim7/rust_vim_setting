@@ -1,3 +1,14 @@
+# VSCode (Command Palette창에 유용하게 쓸만하거 모음)
+코드 창에 터미널 창 옆에 아주 크게 열기
+
+- Command Palette창에
+
+```
+Terminal : Create New terminal in Editor Area to the Side
+```
+
+<hr>
+
 # Vim (VSCode) 세팅 가이드 
 https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 
