@@ -6,6 +6,9 @@ fish_add_path "$HOME/utilities/zls/zig-out/bin"
 fish_add_path "$HOME/utilities/llvm17/bin"
 fish_add_path "$HOME/utilities/alacritty/target/release"
 fish_add_path "$HOME/.local/bin"
+fish_add_path "$HOME/.modular"
+fish_add_path "$HOME/.modular/bin"
+fish_add_path "$HOME/.modular/pkg/packages.modular.com_mojo/bin"
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -27,6 +30,8 @@ function removepath
 end
 
 ##
+set -gx MAX_PATH $HOME/.modular/bin
+set -gx MODULAR_HOME $HOME/.modular
 
 
 end
