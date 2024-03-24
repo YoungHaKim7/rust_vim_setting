@@ -4,6 +4,9 @@
 
 <hr>
 
+# FishShell Tutorial
+- https://github.com/jorgebucaran/cookbook.fish
+
 # FishShell[[🔝]](#link)
 
 - https://fishshell.com/
