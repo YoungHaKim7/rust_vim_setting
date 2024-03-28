@@ -5,6 +5,8 @@ fish_add_path "$HOME/.local/bin"
 fish_add_path "$HOME/utilities/nvim-macos"
 fish_add_path "$HOME/utilities/zig_0_12"
 fish_add_path "$HOME/utilities/zls/zig-out/bin"
+fish_add_path "$HOME/.cargo/bin"
+fish_add_path "$HOME/.wasmer/bin"
 
 
 if status is-interactive
@@ -28,7 +30,15 @@ function removepath
 
 end
 
+
+
+set -gx WASMER_DIR $HOME/.wasmer
+
 end
 
 # Enable Starship prompt
 starship init fish | source
+
+# Wasmer
+export WASMER_DIR="/Users/gy-gyoung/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
