@@ -32,7 +32,12 @@
 
 - Python
 
+- Mojo
+  - https://github.com/YoungHaKim7/Modular_Mojo_AI_Dev
+
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#how-to-install-the-default-language-servers">Helix LSP 다른 언어들mojo같은거 세팅 잡는 법 </a>
+
+
 
 
 <hr>
