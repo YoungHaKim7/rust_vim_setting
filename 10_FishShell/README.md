@@ -1,6 +1,7 @@
 # link
 
 - [fishshell-hitory-폴더](#fishshell-hitory-폴더)
+- [디폴트셸로 쓰기fishshell을-default-shell-세팅하기](#fishshell을-default-shell-세팅하기)
 
 <hr>
 
