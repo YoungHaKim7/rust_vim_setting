@@ -9,7 +9,7 @@
 
 1. Fishshell
 2. oh-my https://github.com/oh-my-fish/oh-my-fish
-3. fisher install
+3. [fisher install](#fish에-plugin-설치-하기)
 
 # fishshell을 Default shell 세팅하기
 
