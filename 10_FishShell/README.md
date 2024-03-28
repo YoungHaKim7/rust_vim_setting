@@ -37,7 +37,11 @@ vi /etc/shells
 ```bash
 which fish
 ```
-해서 fish경로 에 맞춰서 `chsh`해주면 된다.
+해서 fish경로(which로 경로 확인) 에 맞춰서 `chsh`해주면 된다.
+
+```bash
+chsh -s /usr/local/bin/fish
+```
 
 - https://askubuntu.com/questions/26439/how-do-i-set-fish-as-the-default-shell
 
