@@ -1,3 +1,12 @@
+# 현재 폴더에서 alacritty 열기
+
+```bash
+alacritty --working-directory (pwd)
+```
+https://github.com/alacritty/alacritty/issues/808
+
+<hr>
+
 # alacritty 개인 세팅
 - 이거 보고 대충 끼어 맞춰 보자
   - https://alacritty.org/config-alacritty.html
