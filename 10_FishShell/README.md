@@ -177,7 +177,9 @@ https://blog.youngbin.xyz/2015-07-30-install-fish-then-customize-it-with-oh-my-f
 ```fish
 # Add HomeBrew's bin directory to path so you can use HomeBrew's binaries like `starship`
 # Fish uses `fish_add_path` instead of `export PATH` modify $PATH.
+# macOS PATH(homebrew)
 fish_add_path "/opt/homebrew/bin/"
+
 fish_add_path "$HOME/.local/bin"
 fish_add_path "$HOME/utilities/nvim-macos"
 fish_add_path "$HOME/utilities/zig_0_12"
@@ -207,8 +209,11 @@ function removepath
 
 end
 
+## Mojo PATH
+set -gx MAX_PATH $HOME/.modular/bin
+set -gx MODULAR_HOME $HOME/.modular
 
-
+# WASM (wasmer run)
 set -gx WASMER_DIR $HOME/.wasmer
 
 end
