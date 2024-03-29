@@ -2,6 +2,7 @@
 
 - [fishshell-hitory-폴더](#fishshell-hitory-폴더)
 - [디폴트셸로 쓰기fishshell을-default-shell-세팅하기](#fishshell을-default-shell-세팅하기)
+  - [기본세팅 예시fishshell-configfish기본-셋]-(#fishshell-configfish기본-셋) 
 
 <hr>
 
@@ -154,10 +155,10 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 fish install --path=~/.local/share/omf --config=~/.config/omf
 ```
 
-# 한국사람이 정리해줌
+# 한국사람이 정리해줌[[🔝]](#link)
 https://blog.youngbin.xyz/2015-07-30-install-fish-then-customize-it-with-oh-my-fish/
 
-# z 설치하기
+# z 설치하기[[🔝]](#link)
 
 - https://github.com/jorgebucaran/fisher
 - https://github.com/jethrokuan/z
@@ -171,7 +172,7 @@ https://blog.youngbin.xyz/2015-07-30-install-fish-then-customize-it-with-oh-my-f
 
 - https://fishshell.com/docs/current/cmds/history.html
 
-# FishShell (config.fish기본 셋)
+# FishShell (config.fish기본 셋)[[🔝]](#link)
 
 ```fish
 # Add HomeBrew's bin directory to path so you can use HomeBrew's binaries like `starship`
