@@ -12,7 +12,7 @@
 1. Fishshell
 2. oh-my https://github.com/oh-my-fish/oh-my-fish
 3. [fisher install](#fish에-plugin-설치-하기)
-4. 다 설정하고 마지막으로 디폴트셸로 fishshell로 세팅하기
+4. 다 설정하고 마지막으로 디폴트셸(How do I set fish as the default shell)로 fishshell로 세팅하기
   - Then `chsh -s /usr/local/bin/fish`
 
 # fishshell을 Default shell 세팅하기
