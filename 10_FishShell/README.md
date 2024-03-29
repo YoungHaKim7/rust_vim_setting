@@ -1,5 +1,6 @@
 # link
 
+- [fishshell-tutorial튜토리얼](#fishshell-tutorial)
 - [fishshell-hitory-폴더](#fishshell-hitory-폴더)
 - [디폴트셸로 쓰기fishshell을-default-shell-세팅하기](#fishshell을-default-shell-세팅하기)
   - [기본세팅 예시fishshell-configfish기본-셋](#fishshell-configfish기본-셋) 
