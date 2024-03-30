@@ -177,7 +177,7 @@ https://blog.youngbin.xyz/2015-07-30-install-fish-then-customize-it-with-oh-my-f
 
 # FishShell (config.fish기본 셋)[[🔝]](#link)
 
-- `echo $MOJO_PATH` 하면 PATH 잡힘
+- `echo $MOJO_PATH` 하면 PATH 잡힘(1회성 -gx 넣어서 안에 넣어주자)
 ```sh
 set MOJO_PATH $(modular config mojo.path)
 ```
@@ -218,6 +218,7 @@ function removepath
 end
 
 ## Mojo PATH
+set -gx MOJO_PATH $(modular config mojo.path)
 set -gx MAX_PATH $HOME/.modular/bin
 set -gx MODULAR_HOME $HOME/.modular
 
