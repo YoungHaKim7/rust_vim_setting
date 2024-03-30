@@ -177,6 +177,11 @@ https://blog.youngbin.xyz/2015-07-30-install-fish-then-customize-it-with-oh-my-f
 
 # FishShell (config.fish기본 셋)[[🔝]](#link)
 
+- `echo $MOJO_PATH` 하면 PATH 잡힘
+```sh
+set MOJO_PATH $(modular config mojo.path)
+```
+
 ```fish
 # Add HomeBrew's bin directory to path so you can use HomeBrew's binaries like `starship`
 # Fish uses `fish_add_path` instead of `export PATH` modify $PATH.
