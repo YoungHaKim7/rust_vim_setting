@@ -219,10 +219,10 @@ end
 
 ## Mojo PATH
 set -gx MOJO_PATH $(modular config mojo.path)
-set -gx MAX_PATH $HOME/.modular/bin
 set -gx MODULAR_HOME $HOME/.modular
 ## Mojo MAX
 set -gx MAX_PATH $(modular config max.path)
+set -gx MAX_PATH $HOME/.modular/bin
 
 
 # WASM (wasmer run)
