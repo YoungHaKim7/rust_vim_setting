@@ -25,6 +25,7 @@ bindings = [
 ```
 
 - mouse 관련
+  - alacritty/src/config/mouse.rs
 
 ```toml
 # 타이핑하면 마우스 커서 숨기기
