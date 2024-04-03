@@ -248,6 +248,15 @@
         {
             "before": [
                 "<leader>",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.gotoSymbol"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "b"
             ],
             "commands": [
