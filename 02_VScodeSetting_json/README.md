@@ -7,6 +7,20 @@
 Terminal : Create New terminal in Editor Area to the Side
 ```
 
+- GoToSymbol(space + s)로 세팅
+
+```json
+{
+    "before": [
+        "<leader>",
+        "s"
+    ],
+    "commands": [
+        "workbench.action.gotoSymbol"
+    ]
+},
+```
+
 <hr>
 
 # Vim (VSCode) 세팅 가이드 
