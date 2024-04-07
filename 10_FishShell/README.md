@@ -5,6 +5,9 @@
 - [디폴트셸로 쓰기fishshell을-default-shell-세팅하기](#fishshell을-default-shell-세팅하기)
   - [기본세팅 예시fishshell-configfish기본-셋](#fishshell-configfish기본-셋) 
 
+- [FishShell Plugins플러그인 설치]
+  - [zsh-path-다수의-폴더를-설정해-주기](#zsh-path-다수의-폴더를-설정해-주기)
+
 <hr>
 
 # FishShell Install
