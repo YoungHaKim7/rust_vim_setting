@@ -4,11 +4,13 @@ fish_add_path "$HOME/utilities/nvim-linux64/bin"
 fish_add_path "$HOME/utilities/zig0_12"
 fish_add_path "$HOME/utilities/zls/zig-out/bin"
 fish_add_path "$HOME/utilities/llvm17/bin"
-fish_add_path "$HOME/utilities/alacritty/target/release"
 fish_add_path "$HOME/.local/bin"
 fish_add_path "$HOME/.modular"
 fish_add_path "$HOME/.modular/bin"
-fish_add_path "$HOME/.modular/pkg/packages.modular.com_mojo/bin"
+fish_add_path "$HOME/.modular/pkg/packages.modular.com_max/bin"
+fish_add_path "$HOME/utilities/python3_12_2"
+fish_add_path "$HOME/anaconda3/bin"
+
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -29,9 +31,16 @@ function removepath
     end
 end
 
-##
-set -gx MAX_PATH $HOME/.modular/bin
+## C++ PATH
+set -gx CPLUS_INCLUDE_PATH /usr/include/c++/11 /usr/include/x86_64-linux-gnu/c++/11 /usr/lib/gcc/x86_64-linux-gnu/11 /usr/lib/gcc/x86_64-linux-gnu/12 $CPLUS_INCLUDE_PATH
+
+## Mojo PATH
+set -gx MOJO_PATH $(modular config mojo.path)
 set -gx MODULAR_HOME $HOME/.modular
+## Mojo MAX
+set -gx MAX_PATH $(modular config max.path)
+set -gx MAX_PATH $HOME/.modular/bin
+
 
 
 end
@@ -39,3 +48,17 @@ end
 # ~/.config/fish/config.fish
 
 starship init fish | source
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/gy/anaconda3/bin/conda
+    eval /home/gy/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/home/gy/anaconda3/etc/fish/conf.d/conda.fish"
+        . "/home/gy/anaconda3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/home/gy/anaconda3/bin" $PATH
+    end
+end
+# <<< conda initialize <<<
