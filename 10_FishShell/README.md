@@ -125,6 +125,7 @@ Updated PATH: /etc /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 - https://superuser.com/questions/776008/how-to-remove-a-path-from-path-variable-in-fish
 
 
+
 # Fish에 Plugin 설치 하기
 
 - 플러그인 매니져
@@ -236,4 +237,11 @@ starship init fish | source
 # Wasmer
 export WASMER_DIR="/Users/g/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+```
+
+# zsh PATH 다수의 폴더를 설정해 주기
+- https://github.com/fish-shell/fish-shell/issues/527
+  - 한칸 띄우고 연속으로 입력해 주면 된다. zsh는 세미콜론(:)으로 구분 하지만 FishShell은 띄어 쓰기로 구분한다.
+```
+set -gx PATH /opt/qt/Tools/QtCreator/bin /opt/qt/5.0.0/gcc_64/bin $PATH
 ```
