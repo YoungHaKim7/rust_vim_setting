@@ -5,8 +5,11 @@
 - [디폴트셸로 쓰기fishshell을-default-shell-세팅하기](#fishshell을-default-shell-세팅하기)
   - [기본세팅 예시fishshell-configfish기본-셋](#fishshell-configfish기본-셋) 
 
-- [FishShell Plugins플러그인 설치]
+- [FishShell Plugins플러그인 설치](#fish에-plugin-설치-하기)
+  - [starship이-가장-깔끔테마는-이게-낫다-그냥-이걸로-바로-세팅하자](#starship이-가장-깔끔테마는-이게-낫다-그냥-이걸로-바로-세팅하자)
+  - [#oh-my-fish-쉘-꾸미기](#oh-my-fish-쉘-꾸미기)
   - [zsh-path-다수의-폴더를-설정해-주기](#zsh-path-다수의-폴더를-설정해-주기)
+  - [`cd...`--zsh처럼-하게-기능-만들기](#cd--zsh처럼-하게-기능-만들기)
 
 <hr>
 
