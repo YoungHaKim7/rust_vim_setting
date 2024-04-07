@@ -254,6 +254,9 @@ https://github.com/fish-shell/fish-shell/issues/2671
 - 쉬운거 그냥 플러그인 설치하자 ㅋㅋ
 
 ```
+fisher install nickeb96/expanddots
+
+
 fisher add nickeb96/expanddots
 ```
 
