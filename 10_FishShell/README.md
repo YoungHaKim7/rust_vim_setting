@@ -225,6 +225,9 @@ set -gx MODULAR_HOME $HOME/.modular
 set -gx MAX_PATH $(modular config max.path)
 set -gx MAX_PATH $HOME/.modular/bin
 
+## C++ PATH
+set -gx CPLUS_INCLUDE_PATH /usr/include/c++/11 /usr/include/x86_64-linux-gnu/c++/11 /usr/lib/gcc/x86_64-linux-gnu/11 /usr/lib/gcc/x86_64-linux-gnu/12 $CPLUS_INCLUDE_PATH
+
 
 # WASM (wasmer run)
 set -gx WASMER_DIR $HOME/.wasmer
