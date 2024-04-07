@@ -17,7 +17,7 @@
   
 - C/C++
   - 
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#iostream-c%EC%97%90%EB%9F%AC-%EB%82%A0%EB%95%8C-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95">Helix C++ iostream 불러오기 못해서 오류날때 해결하기 PATH잡아주면됨. </a>
+  - [Helix C++ iostream 불러오기 못해서 오류날때 해결하기 PATH잡아주면됨.](#iostream-c에러-날때-해결-방법)
 - Helix
 
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-%ED%85%8C%EB%A7%88-%EC%84%B8%ED%8C%85">Helix 테마 내 맘대로 Customize </a>
