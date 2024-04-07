@@ -245,3 +245,50 @@ export WASMER_DIR="/Users/g/.wasmer"
 ```
 set -gx PATH /opt/qt/Tools/QtCreator/bin /opt/qt/5.0.0/gcc_64/bin $PATH
 ```
+
+# cd ... zsh처럼 하게 기능 만들기
+https://github.com/fish-shell/fish-shell/issues/2671
+```bash
+function cd --description "Change directory"
+
+    # Skip history in subshells
+    if status --is-command-substitution
+        builtin cd $argv
+        return $status
+    end
+
+    # Avoid set completions
+    set -l previous $PWD
+
+    if test $argv[1] = - ^/dev/null
+        if test "$__fish_cd_direction" = next ^/dev/null
+            nextd
+        else
+            prevd
+        end
+        return $status
+    end
+
+    # Path replacement - in /home/alfa/Music, `cd alfa bravo` should go to /home/bravo/Music
+    if set -q argv[2]
+        set argv[1] (string replace -- $argv[1] $argv[2] $PWD)
+    end
+
+    # If argument consists solely of dots, go up number of dots - 1 directories - `cd ...` goes up to the grandparent
+    if string match -qr '^\.{3,}$' -- $argv[1]
+        # Only do this if there's no directory called "..." - which is theoretically allowed
+        test -d $argv[1]; or set argv[1] (string replace "." "" -- $argv[1] | string replace -a "." "../")
+    end
+
+    builtin cd $argv[1]
+    set -l cd_status $status
+
+    if test $cd_status = 0 -a "$PWD" != "$previous"
+        set -g dirprev $dirprev $previous
+        set -e dirnext
+        set -g __fish_cd_direction prev
+    end
+
+    return $cd_status
+end
+```
