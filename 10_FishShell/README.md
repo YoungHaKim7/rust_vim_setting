@@ -240,14 +240,23 @@ export WASMER_DIR="/Users/g/.wasmer"
 ```
 
 # zsh PATH 다수의 폴더를 설정해 주기
+
 - https://github.com/fish-shell/fish-shell/issues/527
   - 한칸 띄우고 연속으로 입력해 주면 된다. zsh는 세미콜론(:)으로 구분 하지만 FishShell은 띄어 쓰기로 구분한다.
+    
 ```
 set -gx PATH /opt/qt/Tools/QtCreator/bin /opt/qt/5.0.0/gcc_64/bin $PATH
 ```
 
 # cd ... zsh처럼 하게 기능 만들기
 https://github.com/fish-shell/fish-shell/issues/2671
+
+- 쉬운거 그냥 플러그인 설치하자 ㅋㅋ
+
+```
+fisher add nickeb96/expanddots
+```
+
 ```bash
 function cd --description "Change directory"
 
