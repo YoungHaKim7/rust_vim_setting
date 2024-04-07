@@ -55,7 +55,7 @@ chsh -s /usr/local/bin/fish
 
 - https://askubuntu.com/questions/26439/how-do-i-set-fish-as-the-default-shell
 
-# FishShell Tutorial
+# FishShell Tutorial[[🔝]](#link)
 - https://github.com/jorgebucaran/cookbook.fish
 
 # FishShell[[🔝]](#link)
@@ -67,10 +67,10 @@ chsh -s /usr/local/bin/fish
   
 ```
 
-# fishshell default 세팅하기
+# fishshell default 세팅하기[[🔝]](#link)
 - https://stackoverflow.com/questions/453236/how-can-i-set-my-default-shell-on-a-mac-e-g-to-fish
 
-# Fish Shell 에 PATH추가 하기 
+# Fish Shell 에 PATH추가 하기 [[🔝]](#link)
 
 - `echo $PATH`로 잘 들어갔나 확인하기
 ```bash
@@ -132,19 +132,19 @@ Updated PATH: /etc /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 
 
 
-# Fish에 Plugin 설치 하기
+# Fish에 Plugin 설치 하기[[🔝]](#link)
 
 - 플러그인 매니져
   - https://github.com/jorgebucaran/fisher
 
 - https://github.com/jethrokuan/z
 
-# starship이 가장 깔끔(테마는 이게 낫다. 그냥 이걸로 바로 세팅하자)
+# starship이 가장 깔끔(테마는 이게 낫다. 그냥 이걸로 바로 세팅하자)[[🔝]](#link)
 
 https://starship.rs/ko-kr/
 
 
-# Plugin
+# Plugin[[🔝]](#link)
 
 - https://www.reddit.com/r/fishshell/comments/t9yinj/what_are_your_favorite_fish_plugins/
 
@@ -155,7 +155,7 @@ fisher install patrickf3139/colored-man-pages
 fisher install axkirillov/tokyonight-fish
 ```
 
-# oh-my-fish (쉘 꾸미기)
+# oh-my-fish (쉘 꾸미기)[[🔝]](#link)
 - https://github.com/oh-my-fish/oh-my-fish
 - ohmyfish
   - https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
@@ -248,7 +248,7 @@ export WASMER_DIR="/Users/g/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 ```
 
-# zsh PATH 다수의 폴더를 설정해 주기
+# zsh PATH 다수의 폴더를 설정해 주기[[🔝]](#link)
 
 - https://github.com/fish-shell/fish-shell/issues/527
   - 한칸 띄우고 연속으로 입력해 주면 된다. zsh는 세미콜론(:)으로 구분 하지만 FishShell은 띄어 쓰기로 구분한다.
@@ -257,7 +257,7 @@ export WASMER_DIR="/Users/g/.wasmer"
 set -gx PATH /opt/qt/Tools/QtCreator/bin /opt/qt/5.0.0/gcc_64/bin $PATH
 ```
 
-# cd ... zsh처럼 하게 기능 만들기
+# cd ... zsh처럼 하게 기능 만들기[[🔝]](#link)
 https://github.com/fish-shell/fish-shell/issues/2671
 
 - 쉬운거 그냥 플러그인 설치하자 ㅋㅋ
