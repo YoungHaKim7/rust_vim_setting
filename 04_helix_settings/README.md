@@ -46,6 +46,14 @@
 
 - https://github.com/LGUG2Z/helix-vim
 
+# 내가 원하는 곳으로 바로 이동하기
+
+- 파일명 뒷에 : 세미콜론 후 라인 & Columns
+
+```bash
+hx src/main.rs:11:17
+```
+
 # helix remapping공식 문서
   - https://docs.helix-editor.com/remapping.html
   - https://github.com/helix-editor/helix/blob/master/helix-term/src/commands.rs
