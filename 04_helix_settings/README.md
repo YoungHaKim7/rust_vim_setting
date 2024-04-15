@@ -26,6 +26,8 @@
 ">Helix Surround사용법 </a>
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#hexli-macro-%EC%82%AC%EC%9A%A9%EB%B2%95">Helix Macro사용법 </a>
   - [Helix 키 바꾸는 공식 문서helix remapping](#helix-remapping공식-문서)
+  - Helix로 작업 능률 10배 이상 향상 시키기
+    - [#내가-원하는-곳으로-바로-이동하기](#내가-원하는-곳으로-바로-이동하기)
 
 - snippets 설정(반복적인 코드 자동으로 나오게 개꿀)
   - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/snippets_Lunar_NeoVim
@@ -42,11 +44,11 @@
 
 <hr>
 
-# 다른 사람의 Vim Setting(Helix)
+# 다른 사람의 Vim Setting(Helix)[[🔝]](#helix-a-post-modern-text-editor)
 
 - https://github.com/LGUG2Z/helix-vim
 
-# 내가 원하는 곳으로 바로 이동하기
+# 내가 원하는 곳으로 바로 이동하기[[🔝]](#helix-a-post-modern-text-editor)
 
 - 파일명 뒷에 : 세미콜론 후 라인 & Columns
 
@@ -54,11 +56,11 @@
 hx src/main.rs:11:17
 ```
 
-# helix remapping공식 문서
+# helix remapping공식 문서[[🔝]](#helix-a-post-modern-text-editor)
   - https://docs.helix-editor.com/remapping.html
   - https://github.com/helix-editor/helix/blob/master/helix-term/src/commands.rs
 
-# my inlay color세팅
+# my inlay color세팅[[🔝]](#helix-a-post-modern-text-editor)
 
 ```
 "ui.virtual" = "Gray 90" # .whitespace
