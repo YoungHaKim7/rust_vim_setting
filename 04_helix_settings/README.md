@@ -19,15 +19,15 @@
   - 
   - [Helix C++ iostream 불러오기 못해서 오류날때 해결하기 PATH잡아주면됨.](#iostream-c에러-날때-해결-방법)
 - Helix
-  - [Helix LSP 다른 언어들mojo같은거 세팅 잡는 법 ](#how-to-install-the-default-language-servers)
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-%ED%85%8C%EB%A7%88-%EC%84%B8%ED%8C%85">Helix 테마 내 맘대로 Customize </a>
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-%EC%A3%BC%EB%A1%9C-%EC%93%B0%EB%8A%94-command-">Helix 내가 주로 쓰는 단축키 정리(My keysetting) </a>
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-text-editor%EF%B8%8F-surround%EC%82%AC%EC%9A%A9%EB%B2%95ms-mr-md-%EA%B8%B0%EB%B3%B8-%EB%82%B4%EC%9E%A5%EB%90%A8
-">Helix Surround사용법 </a>
-  - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#hexli-macro-%EC%82%AC%EC%9A%A9%EB%B2%95">Helix Macro사용법 </a>
+  - LSP 세팅관련
+    - [Helix LSP 다른 언어들mojo같은거 세팅 잡는 법 ](#how-to-install-the-default-language-servers)
   - [Helix 키 바꾸는 공식 문서helix remapping](#helix-remapping공식-문서)
   - Helix로 작업 능률 10배 이상 향상 시키기
-    - [#내가-원하는-곳으로-바로-이동하기](#내가-원하는-곳으로-바로-이동하기)
+    - [#내가-원하는-곳으로-바로-이동하기_hx src/main.rs:11:17](#내가-원하는-곳으로-바로-이동하기)
+    - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-%ED%85%8C%EB%A7%88-%EC%84%B8%ED%8C%85">Helix 테마 내 맘대로 Customize </a>
+    - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-%EC%A3%BC%EB%A1%9C-%EC%93%B0%EB%8A%94-command-">Helix 내가 주로 쓰는 단축키 정리(My keysetting) </a>
+    - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-text-editor%EF%B8%8F-surround%EC%82%AC%EC%9A%A9%EB%B2%95ms-mr-md-%EA%B8%B0%EB%B3%B8-%EB%82%B4%EC%9E%A5%EB%90%A8">Helix Surround사용법 </a>
+    - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#hexli-macro-%EC%82%AC%EC%9A%A9%EB%B2%95">Helix Macro사용법 </a>
 
 - snippets 설정(반복적인 코드 자동으로 나오게 개꿀)
   - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/snippets_Lunar_NeoVim
