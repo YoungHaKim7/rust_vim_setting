@@ -19,7 +19,7 @@
   - 
   - [Helix C++ iostream 불러오기 못해서 오류날때 해결하기 PATH잡아주면됨.](#iostream-c에러-날때-해결-방법)
 - Helix
-
+  - [Helix LSP 다른 언어들mojo같은거 세팅 잡는 법 ](#how-to-install-the-default-language-servers)
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-%ED%85%8C%EB%A7%88-%EC%84%B8%ED%8C%85">Helix 테마 내 맘대로 Customize </a>
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#helix-%EC%A3%BC%EB%A1%9C-%EC%93%B0%EB%8A%94-command-">Helix 내가 주로 쓰는 단축키 정리(My keysetting) </a>
   - <a href="https://github.com/YoungHaKim7/rust_vim_setting/blob/main/04_helix_settings/README.md#helix-text-editor%EF%B8%8F-surround%EC%82%AC%EC%9A%A9%EB%B2%95ms-mr-md-%EA%B8%B0%EB%B3%B8-%EB%82%B4%EC%9E%A5%EB%90%A8
@@ -36,8 +36,6 @@
 
 - Mojo
   - https://github.com/YoungHaKim7/Modular_Mojo_AI_Dev
-
-- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/04_helix_settings#how-to-install-the-default-language-servers">Helix LSP 다른 언어들mojo같은거 세팅 잡는 법 </a>
 
 
 
