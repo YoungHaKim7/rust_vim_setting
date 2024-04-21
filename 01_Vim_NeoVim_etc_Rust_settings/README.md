@@ -1135,7 +1135,8 @@ nnoremap H <C-w>gT
 
 " Line Move Up & Down
 vnoremap K :m '<-2<CR>gv==gv
-vnoremap J :m '>+1<CR>gv==gv"~~~~~~~~~
+vnoremap J :m '>+1<CR>gv==gv
+" ~~~~~~~~~
 
 " Make adjusing split sizes a bit more friendly
 noremap <silent> <C-Right> :vertical resize +3<CR>
