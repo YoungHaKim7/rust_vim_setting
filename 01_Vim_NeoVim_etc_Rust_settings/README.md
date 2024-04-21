@@ -1119,7 +1119,11 @@ https://github.com/neoclide/coc-java
 
 # Windows NeoVim 초간단 세팅[[🔝]](#link)
 
+- Hack Nerd Mono Font 설치
+  - https://github.com/ryanoasis/nerd-fonts
+
 - init.vim(C:\Users\User\AppData\Local\nvim)
+
 ```vim
 " esc setting
 inoremap jk <Esc>
