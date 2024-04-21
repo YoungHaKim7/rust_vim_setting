@@ -1125,29 +1125,6 @@ https://github.com/neoclide/coc-java
 - init.vim(C:\Users\User\AppData\Local\nvim)
 
 ```vim
-" esc setting
-inoremap jk <Esc>
-
-" color setting
-" colorscheme jellybeans
-
-" turn hybred line number on
-set number rnu
-
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-
-" font&size setting
-set guifont=MesloLGS_NF:h16
-
-set encoding=utf-8
-
-" Editor Language setting
-let $LANG = 'en'
-
-
 " Move visually selected lines up or down in various modes.
 " nnoremap K :m .-2<CR>==
 " nnoremap J :m .+1<CR>==
