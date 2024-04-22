@@ -46,5 +46,5 @@ end
 starship init fish | source
 
 # Wasmer
-export WASMER_DIR="/Users/gy-gyoung/.wasmer"
+export WASMER_DIR="/Users/gy/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
