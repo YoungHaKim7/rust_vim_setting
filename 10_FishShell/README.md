@@ -321,3 +321,9 @@ end
 ```
 fisher install reitzig/sdkman-for-fish@v2.1.0
 ```
+
+- path 잡아주기
+```
+set -g __sdkman_custom_dir /opt/homebrew/opt/sdkman-cli/libexec
+```
+https://www.thinkbinary.co.uk/2024/01/07/setting-up-sdkman-with-fish-and-homebrew
