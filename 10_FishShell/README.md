@@ -318,7 +318,7 @@ function cd --description "Change directory"
 end
 ```
 
-# sdkman 설치(Java, Kotlin)
+# sdkman 설치(Java, Kotlin)[[🔝]](#link)
 
 - https://github.com/reitzig/sdkman-for-fish
 
