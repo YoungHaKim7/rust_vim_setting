@@ -8,7 +8,9 @@ SETUVAR Z_EXCLUDE:\x5e/Users/gy\x2dgyoung\x24
 SETUVAR __fish_initialized:3400
 SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z
+SETUVAR _fisher_nickeb96_2F_expanddots_files:\x7e/\x2econfig/fish/functions/_puffer_fish_expand_bang\x2efish\x1e\x7e/\x2econfig/fish/functions/_puffer_fish_expand_dots\x2efish\x1e\x7e/\x2econfig/fish/functions/_puffer_fish_expand_lastarg\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/puffer_fish_key_bindings\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1enickeb96/expanddots\x1ereitzig/sdkman\x2dfor\x2dfish\x40v2\x2e1\x2e0
+SETUVAR _fisher_reitzig_2F_sdkman_2D_for_2D_fish_40_v2_2E_31_2E_30__files:\x7e/\x2econfig/fish/functions/sdk\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/sdk\x2efish\x1e\x7e/\x2econfig/fish/completions/sdk\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
@@ -38,4 +40,4 @@ SETUVAR fish_pager_color_description:yellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/Users/gy\x2dgyoung/\x2ewasmer/bin\x1e/Users/gy\x2dgyoung/\x2ecargo/bin\x1e/Users/gy\x2dgyoung/utilities/zls/zig\x2dout/bin\x1e/Users/gy\x2dgyoung/utilities/zig_0_12\x1e/Users/gy\x2dgyoung/utilities/nvim\x2dmacos\x1e/Users/gy\x2dgyoung/\x2elocal/bin\x1e/Users/gy\x2dgyoung/utilities/nvim\x2dmacos/bin/\x1e/Users/gy\x2dgyoung/utilities/nvim\x2dmacos/bin/nvim\x1e/opt/homebrew/bin
+SETUVAR fish_user_paths:/Users/gy\x2dgyoung/Library/Application\x20Support/Code/User/globalStorage/fwcd\x2ekotlin/langServerInstall/server/bin\x1e/Users/gy\x2dgyoung/\x2emodular/pkg/packages\x2emodular\x2ecom_mojo/bin\x1e/Users/gy\x2dgyoung/\x2emodular\x1e/Users/gy\x2dgyoung/\x2ewasmer/bin\x1e/Users/gy\x2dgyoung/\x2ecargo/bin\x1e/Users/gy\x2dgyoung/utilities/zls/zig\x2dout/bin\x1e/Users/gy\x2dgyoung/utilities/zig_0_12\x1e/Users/gy\x2dgyoung/utilities/nvim\x2dmacos\x1e/Users/gy\x2dgyoung/\x2elocal/bin\x1e/Users/gy\x2dgyoung/utilities/nvim\x2dmacos/bin/\x1e/Users/gy\x2dgyoung/utilities/nvim\x2dmacos/bin/nvim\x1e/opt/homebrew/bin

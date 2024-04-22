@@ -7,6 +7,10 @@ fish_add_path "$HOME/utilities/zig_0_12"
 fish_add_path "$HOME/utilities/zls/zig-out/bin"
 fish_add_path "$HOME/.cargo/bin"
 fish_add_path "$HOME/.wasmer/bin"
+fish_add_path "$HOME/.modular"
+fish_add_path "$HOME/.modular/bin"
+fish_add_path "$HOME/.modular/pkg/packages.modular.com_mojo/bin"
+fish_add_path "$HOME/Library/Application Support/Code/User/globalStorage/fwcd.kotlin/langServerInstall/server/bin"
 
 
 if status is-interactive
@@ -30,7 +34,9 @@ function removepath
 
 end
 
-
+set -gx MAX_PATH $HOME/.modular/bin
+set -gx MODULAR_HOME $HOME/.modular
+set -gx MOJO_PATH $(modular config mojo.path)
 
 set -gx WASMER_DIR $HOME/.wasmer
 
@@ -40,5 +46,5 @@ end
 starship init fish | source
 
 # Wasmer
-export WASMER_DIR="/Users/g/.wasmer"
+export WASMER_DIR="/Users/gy-gyoung/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
