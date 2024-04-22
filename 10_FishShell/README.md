@@ -313,3 +313,11 @@ function cd --description "Change directory"
     return $cd_status
 end
 ```
+
+# sdkman 설치(Java, Kotlin)
+
+- https://github.com/reitzig/sdkman-for-fish
+
+```
+fisher install reitzig/sdkman-for-fish@v2.1.0
+```
