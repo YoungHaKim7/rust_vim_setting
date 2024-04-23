@@ -48,7 +48,16 @@
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
       // ~~~~~~ Insert Mode
-      "j k": ["vim::SwitchMode", "Normal"]
+      "j k": [
+        "vim::SwitchMode",
+        "Normal"
+      ]
+    }
+  },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "ctrl-y": "editor::ConfirmCompletion"
     }
   },
   {
@@ -56,7 +65,10 @@
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
       // ~~~~~~ Insert Mode
-      "j k": ["vim::SwitchMode", "Normal"]
+      "j k": [
+        "vim::SwitchMode",
+        "Normal"
+      ]
     }
   },
   {
