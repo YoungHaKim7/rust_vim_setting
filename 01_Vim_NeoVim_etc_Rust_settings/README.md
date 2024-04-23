@@ -213,8 +213,8 @@ https://youtu.be/5KQK2id3JtI?si=fvye14gmjpZR0Ehk
 https://johngrib.github.io/wiki/vim/auto-completion/#youcompleteme
 
 <br>
-	[[🔝]](#link)
-# 🎓 All things Vim!
+
+# 🎓 All things Vim![[🔝]](#link)
 
   - https://github.com/mhinz/vim-galore
 
