@@ -483,6 +483,28 @@ https://vimdoc.sourceforge.net/htmldoc/scroll.html#scroll-down
 
 <hr>
 
+# File열기[[🔝]](#link)
+
+```bash
+# 일반적으로 그냥(폴더 안에 있는거 다 열기)
+vim .
+
+# 18행으로 열기
+vim +18 src/main.rs
+
+
+# "문자열 검색으로 열기"  n 이거 된다  좋네 ㅋㅋ
+vim +/"문자열" src/main.rs
+
+
+# 2개를 조합
+vim +18 +/"문자열" src/main.rs
+
+```
+
+
+<hr>
+
 # Vim Command[[🔝]](#link)
 
 ```
