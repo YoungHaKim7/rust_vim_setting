@@ -251,7 +251,7 @@
         {
             "before": [
                 "<leader>",
-                "v"
+                "s"
             ],
             "commands": [
                 "workbench.action.gotoSymbol"
