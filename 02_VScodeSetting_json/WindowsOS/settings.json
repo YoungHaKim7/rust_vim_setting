@@ -51,7 +51,7 @@
   "editor.fontLigatures": true,
   // Controls if file decorations should use badges.
   "explorer.decorations.badges": false,
-  "editor.fontSize": 17,
+  "editor.fontSize": 19,
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
   "editor.bracketPairColorization.enabled": true,
@@ -70,6 +70,9 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
+  // Tabbly AI <C-tab> Full Completion
+  "tabby.keybindings": "tabby-style",
+  // tabnine
   "tabnine.experimentalAutoImports": true,
   // rust-analyzer setting~
   "rust-analyzer.inlayHints.enable": true,
@@ -313,7 +316,7 @@
     ]
   },
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "workbench.sideBar.location": "right",
   "workbench.editor.empty.hint": "hidden"
 }
