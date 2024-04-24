@@ -8,7 +8,6 @@
   "clangd.path": "c:\\Users\\user\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\15.0.6\\clangd_15.0.6\\bin\\clangd.exe",
   // zig server Setting
   "zls.path": "c:\\Users\\user\\AppData\\Roaming\\Code\\User\\globalStorage\\augusterame.zls-vscode\\zls_install\\zls.exe",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
     "editorError.foreground": "#3f1010", // squiggly line
     "editorError.border": "#ffffff", // additional border under squiggly line
@@ -34,8 +33,8 @@
   "typescript.inlayHints.variableTypes.enabled": true,
   //// font
   "security.workspace.trust.untrustedFiles": "open",
-  "fontFace": "MesloLGS NF",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
   //"terminal.external.osxExec": "Terminal.app",
   // Ctrl + Shift + c
   "terminal.external.windowsExec": "C:\\Program Files\\Alacritty\\alacritty.exe",
@@ -52,7 +51,7 @@
   "editor.fontLigatures": true,
   // Controls if file decorations should use badges.
   "explorer.decorations.badges": false,
-  "editor.fontSize": 19,
+  "editor.fontSize": 17,
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
   "editor.bracketPairColorization.enabled": true,
@@ -158,6 +157,7 @@
     },
     {
       "before": [
+        "<leader>",
         "g",
         "a"
       ],
@@ -168,7 +168,7 @@
     {
       "before": [
         "<leader>",
-        "v"
+        "s"
       ],
       "commands": [
         "workbench.action.gotoSymbol"
@@ -218,23 +218,45 @@
       "commands": [
         "bookmarks.list"
       ]
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
     }
   ],
   "vim.handleKeys": {
     "<C-a>": true,
     "<C-b>": true,
-    "<C-c>": false,
-    "<C-d>": true,
-    "<C-f>": true,
-    "<C-h>": false,
-    "<C-k>": false,
-    "<C-r>": true,
-    "<C-u>": false,
-    "<C-v>": true,
-    "<C-x>": true
-  },
-  "vim.handleKeys": {
-    "<C-a>": true,
     "<C-c>": false,
     "<C-d>": true,
     "<C-f>": true,
@@ -291,5 +313,7 @@
     ]
   },
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "window.zoomLevel": 2
+  "window.zoomLevel": 2,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.empty.hint": "hidden"
 }
