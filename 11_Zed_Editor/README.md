@@ -245,28 +245,19 @@ ctrl-x ctrl-z  Hides all suggestions
 
 <hr>
 
-- ctlr+y 자동완성 찾는중 ㅠㅠ(Bug인가...모르겠다.)
-  - 결국 물어봄 ㅠㅠ
+- ctlr+y 자동완성 질문해서 해결함(추가로 세팅해서 해결)
+  - 결국 물어봄 ㅠㅠ(해결완료)
     - https://github.com/zed-industries/zed/issues/8707
 
 ```json
 {
-
 // CofirmComletion
-{
-    "context": "Editor && VimWaiting",
+  {
+    "context": "Editor && showing_completions",
     "bindings": {
-      "ctrl-y": "vim::Tab"
+      "ctrl-y": "editor::ConfirmCompletion"
     }
-},
-
-
-"ctrl-y": "editor::ConfirmCompletion"
-
-"ctrl-y": ["menu::SecondaryConfirm", "editor::ContextMenuNext"],
-"shift-a": "menu::Confirm",
-"shift-b": "menu::SecondaryConfirm"
-}
+  },
 ```
 
 <hr>
