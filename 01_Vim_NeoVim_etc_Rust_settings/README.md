@@ -2,10 +2,10 @@
 
 - [Vim 설명서 끝짱판 All Things Vim](#-all-things-vim)
 - [Vim 클립보드 설치해서 *y되게 만들기](#vim-클립보드-설치해서-y되게-만들기)
-- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-%EC%B0%BD-%EB%82%98%EB%88%84%EA%B8%B0">Vim 창 나누기</a>
-- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-%EC%9B%80%EC%A7%81%EC%9E%84-%EA%B4%80%EB%A0%A8hjkl">Vim 움직임 관련(hjkl)</a>
-- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-buffer--tabnew">vim buffer 활용법tabe많이 씀</a>
-- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-command--key">Vim : Command 글씨 바꾸기 같은거:set number rnu하이브리드 모드 젤 좋다. ㅋ</a>
+- [Vim 창 나누기](#vim-%EC%B0%BD-%EB%82%98%EB%88%84%EA%B8%B0)
+- [Vim 움직임 관련(hjkl)](#vim-%EC%9B%80%EC%A7%81%EC%9E%84-%EA%B4%80%EB%A0%A8hjkl)
+- [vim buffer 활용법tabe많이 씀](#vim-buffer--tabnew)
+- [Vim : Command 글씨 바꾸기 같은거:set number rnu하이브리드 모드 젤 좋다. ㅋ](#vim-command--key)
 
 - [Sort 패턴](#sort-패턴)
 
@@ -667,7 +667,8 @@ tab간 이동 tabn1     :tabn2 이렇게 쓰면 된다.
 :tabn[ext] {count
  
 
-tab 닫기(보통 bd를 많이 쓴따. 홈페이지에서 이걸 권장함:bd
+# tab 닫기(보통 bd를 많이 쓴따. 홈페이지에서 이걸 권장함:bd
+# bd (tab buffer closed라 이해하면됨)
 :bd 
 :tabc
 
