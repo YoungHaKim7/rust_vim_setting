@@ -1,3 +1,7 @@
+# InlayHint 컬러 세팅(Android_Studio)
+- (27분40초)003개고생하면서 배우는 Kotlin 집중 분석 _Divided&Conquer(helix, Android Studio Debugging)
+  - https://www.youtube.com/live/6AFS3GFTOH4
+
 # Shift Vim에 세팅하는 방법 S이게 쉬프트구나 ㅎ
 - 한국사람의 ideavimrc
   - https://velog.io/@minkyu__k/.ideavimrc
