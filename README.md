@@ -166,6 +166,8 @@ https://youtu.be/Gpe-zGS5W0I
 # 다른 외국인 설정 모음[[🔝]](#link)
 - https://gist.github.com/LukeMathWalker
 - https://github.com/BurntSushi/dotfiles
+- 옛날 코드지만 배울게 많다. 루비로 세팅
+  - https://github.com/carlhuda/janus
 
 <hr>
 
