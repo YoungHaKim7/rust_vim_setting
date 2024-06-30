@@ -1008,9 +1008,10 @@ cG
 
 ```
 
-관련 영상
-
-https://youtu.be/cY0JxzENBJg
+- 관련 영상
+  - https://youtu.be/cY0JxzENBJg
+  - VIM Essentials Course for Beginners | freeCodeCamp.org
+    - https://youtu.be/JYNA9j8SXs4?si=x0Px1-MFifoqhApB
 
 # surround vim[[🔝]](#link)
 
