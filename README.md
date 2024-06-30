@@ -166,3 +166,11 @@ https://youtu.be/Gpe-zGS5W0I
 # 다른 외국인 설정 모음[[🔝]](#link)
 - https://gist.github.com/LukeMathWalker
 - https://github.com/BurntSushi/dotfiles
+
+<hr>
+
+# Mastering VIM: Your Guide to Efficient Text Editing[[🔝]](#link)
+
+- https://www.freecodecamp.org/news/mastering-vim-your-guide-to-efficient-text-editing/
+  - VIM Essentials Course for Beginners | freeCodeCamp.org
+    - https://youtu.be/JYNA9j8SXs4?si=BFs84HXofXHg36Mt
