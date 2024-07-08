@@ -331,3 +331,8 @@ fisher install reitzig/sdkman-for-fish@v2.1.0
 set -g __sdkman_custom_dir /opt/homebrew/opt/sdkman-cli/libexec
 ```
 https://www.thinkbinary.co.uk/2024/01/07/setting-up-sdkman-with-fish-and-homebrew
+
+
+# 외국사람의 dotfiles(fish도 있다.)
+
+- https://github.com/antoniosarosi/dotfiles
