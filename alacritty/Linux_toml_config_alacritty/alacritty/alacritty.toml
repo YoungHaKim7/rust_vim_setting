@@ -7,21 +7,21 @@ program = "/bin/fish"
 
 
 [font]
-size = 19.0
+size = 25.0
 
 [font.normal]
-family = "MesloLGS NF"
+family = "Hack Nerd Font"
 
 [window]
 opacity = 0.97
 
 [window.dimensions]
-columns = 122
-lines = 29
+columns = 152
+lines = 31
 
 [window.position]
-x = 60
-y = 30
+x = 20
+y = 20
 
 [mouse]
 hide_when_typing = true
