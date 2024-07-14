@@ -36,8 +36,8 @@
     "typescript.inlayHints.variableTypes.enabled": true,
     // ~~~~~~~~~~~~~~
     "security.workspace.trust.untrustedFiles": "open",
-    "fontFace": "MesloLGS NF",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "fontFace": "Hack Nerd Font",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
     "terminal.external.osxExec": "Warp.app",
     // auto fmt & format
     "editor.formatOnSave": true,
@@ -60,7 +60,7 @@
     "editor.fontLigatures": true,
     // Controls if file decorations should use badges.
     "explorer.decorations.badges": false,
-    "editor.fontSize": 17,
+    "editor.fontSize": 25,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.bracketPairColorization.enabled": true,
@@ -70,6 +70,7 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.fontSize": 25,
     "files.associations": {
         "*.html": "html",
         "*.rmd": "markdown"
@@ -405,6 +406,8 @@
     "haskell.manageHLS": "GHCup",
     "workbench.editor.empty.hint": "hidden",
     "workbench.sideBar.location": "right",
+    // "tabby.experimental": {
+    // },
     // "yaml.schemas": {
     //   "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     // }
