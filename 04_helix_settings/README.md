@@ -2,6 +2,9 @@
 
 # Link[[🔝]](#helix-a-post-modern-text-editor)
 
+- Helix새로운 기능들
+   - [24.07버젼에 생긴 신기한 기능들](#새로운-기능)
+
 - 다른 언어들 LSP 설정How to install the default language servers(각 언어별 LSP세팅 방법)
   - https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
 
