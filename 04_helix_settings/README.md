@@ -42,6 +42,14 @@
 
 <hr>
 
+# 새로운 기능
+- 24.03 introduces jumping commands inspired by the Amp editor's jump mode. Press gw to add the jump labels and then enter one of the labels to jump to the word under that label. Using `gw` in select mode (v) extends the selection.
+- jumping
+```
+gw 누르면 내가 원하는 곳으로 한방에 이동 가능 ㅋㅋ
+```
+
+
 # 다른 사람의 Vim Setting(Helix)[[🔝]](#helix-a-post-modern-text-editor)
 
 - https://github.com/LGUG2Z/helix-vim
