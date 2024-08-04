@@ -53,7 +53,7 @@ gw 누르면 내가 원하는 곳으로 한방에 이동 가능 ㅋㅋ
 ```
 
 - (Helix Snippets연구중)Language server to enable word completion and snippets for Helix editor
-  - https://github.com/estin/simple-completion-language-server/tree/main
+  - https://github.com/estin/simple-completion-language-server
 
 <hr>
 
