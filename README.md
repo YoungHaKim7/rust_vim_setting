@@ -71,6 +71,9 @@ https://github.com/mhinz/vim-galore
 ![IMG_8452](https://github.com/user-attachments/assets/2b5d90c4-db98-4f96-a678-c6b28f7432b9)
 
 - http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+![vi-vim-cheat-sheet](https://github.com/user-attachments/assets/57e8118e-d120-4d98-8539-2d327b612e01)
+![vim-movement-commands-cheatsheet](https://github.com/user-attachments/assets/512f1edc-b6df-43d7-928a-fd561f950dc6)
+![vim_cheat_sheet_for_programmers_screen](https://github.com/user-attachments/assets/ff7925a4-da96-4afd-a59c-2dde2a18cff9)
 
 
 # Hyperpolyglot(Text Mode Editors: Vim, Emacs, Nano)
