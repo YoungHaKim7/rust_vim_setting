@@ -70,6 +70,8 @@ https://github.com/mhinz/vim-galore
 - https://www.facebook.com/share/p/Dh9nVyKqm1ySG3Ha/?mibextid=WC7FNe
 ![IMG_8452](https://github.com/user-attachments/assets/2b5d90c4-db98-4f96-a678-c6b28f7432b9)
 
+- http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+
 
 # Hyperpolyglot(Text Mode Editors: Vim, Emacs, Nano)
 
