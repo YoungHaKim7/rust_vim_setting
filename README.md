@@ -8,17 +8,17 @@
 
 https://economiceco.tistory.com/3638
 
-# VSCode Extensions 잘 정리됨
+# VSCode Extensions 잘 정리됨[[🔝]](#link)
 
 https://viatsko.github.io/awesome-vscode/
 
-# rust_vim_setting
+# rust_vim_setting[[🔝]](#link)
 
 <br>
 
 <hr>
 
-# neovim-for-beginner
+# neovim-for-beginner[[🔝]](#link)
 
 Companion code for the [Medium Neovim for Beginners series.](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#545a)
 
@@ -35,7 +35,7 @@ Companion code for the [Medium Neovim for Beginners series.](https://alpha2phi.m
 
 <br>
 
-# LunarVim InLayHint **\_**Comment Color
+# LunarVim InLayHint **\_**Comment Color[[🔝]](#link)
 
 ```
 // 어두운 빨간색
@@ -62,9 +62,12 @@ https://www.color-hex.com/color/ff439f
 
 <hr>
 
-# Vim정리 종결자
+# Vim정리 종결자[[🔝]](#link)
 
 https://github.com/mhinz/vim-galore
+
+# Vim Cheat Sheet[[🔝]](#link)
+- https://www.facebook.com/share/p/Dh9nVyKqm1ySG3Ha/?mibextid=WC7FNe
 
 # Hyperpolyglot(Text Mode Editors: Vim, Emacs, Nano)
 
@@ -74,7 +77,7 @@ https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors
 
 <hr>
 
-# rust_neoVim_Setting
+# rust_neoVim_Setting[[🔝]](#link)
 
 [neoVim_Setting Youtube](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 
@@ -87,7 +90,7 @@ https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors
 
 <hr>
 
-# 다른 사람의 정리된 Vim 정리 끝판왕(역시 이 세상에는 괴물들이 참 많다.ㅋ)
+# 다른 사람의 정리된 Vim 정리 끝판왕(역시 이 세상에는 괴물들이 참 많다.ㅋ)[[🔝]](#link)
 
 - Vim정리 종결자 https://github.com/mhinz/vim-galore
 
@@ -101,7 +104,7 @@ https://profkuperman.com/help/vim/home.html
 
 <hr>
 
-# 내가 나름 정리한 Vim tutorials
+# 내가 나름 정리한 Vim tutorials[[🔝]](#link)
 
 - https://economiceco.tistory.com/12352
 
@@ -116,13 +119,13 @@ https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors
 
 <br>
 
-# Emacs Setting
+# Emacs Setting[[🔝]](#link)
 
 -[Lisp language*Emac_DoomEmacs_tutorial_LSP_Install*설치및자동완성활용법\_기초한글강의 #lisplang #emacs #doomemacs #lsp](https://youtu.be/xngl_-994Yg)
 
 <br>
 
-# Helix Editor Tutorial
+# Helix Editor Tutorial[[🔝]](#link)
 
 한글러스트Rust강의\_041⭐️Rust로 만든 에디터Helix기초\_helix tutorial #rustlang #helix
 
@@ -130,7 +133,7 @@ https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors
 
 <br>
 
-# VScode
+# VScode[[🔝]](#link)
 
 - External terminal
 
@@ -157,7 +160,7 @@ setting.JSON
 
 <br>
 
-# Lapce Editor
+# Lapce Editor[[🔝]](#link)
 
 - 한글러스트Rust강의*038_lapce*⭐️Rust_traits기초 #rustlang
 
