@@ -15,6 +15,9 @@
 
 <hr>
 
+# setting문서 설명서 잘 정리됨
+- https://zed.dev/docs/configuring-zed
+
 # 많이 쓰는 키key정리[[🔝]](#link)
 
 ```
