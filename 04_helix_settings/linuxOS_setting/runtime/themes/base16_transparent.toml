@@ -3,6 +3,8 @@
 
 "ui.background" = { fg = "white"}
 "ui.background.separator" = { fg = "gray" }
+"ui.text" = { fg = "light-gray" }
+"ui.text.focus" = { fg = "white" }
 "ui.menu" = { fg = "white" }
 "ui.menu.selected" = { modifiers = ["reversed"] }
 "ui.menu.scroll" = { fg = "light-gray" }
@@ -29,6 +31,7 @@
 "ui.virtual.inlay-hint.parameter" = { fg = "white", bg = "gray"}
 "ui.virtual.inlay-hint.type" = { fg = "white", bg = "gray"}
 "ui.virtual.wrap" = "gray"
+"ui.virtual.jump-label" = { fg = "blue", modifiers = ["bold", "underlined"] }
 
 "variable" = "light-red"
 "constant.numeric" = "yellow"

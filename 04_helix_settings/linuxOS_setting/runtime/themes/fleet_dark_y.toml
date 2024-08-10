@@ -93,8 +93,9 @@
 "ui.text.focus" = { fg = "White", bg = "Blue 40" }
 
 "ui.virtual" = "Gray 90" # .whitespace
-"ui.virtual.inlay-hint" = { fg = "Gray 70", bg = "#87312b" }
+"ui.virtual.inlay-hint" = { fg = "#35638f", bg="#420517" }
 "ui.virtual.ruler" = { bg = "Gray 20" }
+"ui.virtual.jump-label" = { fg = "#800507", bg = "#056580"}
 
 "hint" = "Gray 80"
 "info" = "#A366C4"
@@ -105,6 +106,8 @@
 "diagnostic.info" = { underline = { color = "#A366C4", style = "line" } }
 "diagnostic.warning" = { underline = { color = "#FACB66", style = "line" } }
 "diagnostic.error" = { underline = { color = "#FF5269", style = "line" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 
 [palette]
 "White" = "#ffffff"
