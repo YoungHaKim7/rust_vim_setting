@@ -152,6 +152,8 @@ Updated PATH: /etc /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 https://starship.rs/ko-kr/
 
 
+<hr>
+
 # Plugin[[🔝]](#link)
 
 - https://www.reddit.com/r/fishshell/comments/t9yinj/what_are_your_favorite_fish_plugins/
@@ -164,6 +166,13 @@ fisher install axkirillov/tokyonight-fish
 fisher install nickeb96/expanddots
 fisher install jorgebucaran/nvm.fish
 ```
+# fish플러그인 업데이트(`fisher update`)
+
+```bash
+fisher update
+```
+
+<hr>
 
 # oh-my-fish (쉘 꾸미기)[[🔝]](#link)
 - https://github.com/oh-my-fish/oh-my-fish
