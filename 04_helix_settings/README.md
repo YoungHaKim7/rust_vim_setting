@@ -55,6 +55,8 @@ gw 누르면 내가 원하는 곳으로 한방에 이동 가능 ㅋㅋ
 - `gw`내가 쓰는 테마 들어가서 색깔 내맘대로 지정해 줄수 있다. 굿
 ```toml
 "ui.virtual.jump-label" = { fg ="Red 10", bg = "White"}
+
+"ui.virtual.jump-label" = { fg = "#800507", bg = "#056580"}
 ```
 - `gw`좋다 자료 출처
   - https://github.com/helix-editor/helix/issues/10121
