@@ -161,6 +161,8 @@ fisher install jethrokuan/z
 fisher install oh-my-fish/plugin-ssh
 fisher install patrickf3139/colored-man-pages
 fisher install axkirillov/tokyonight-fish
+fisher install nickeb96/expanddots
+fisher install jorgebucaran/nvm.fish
 ```
 
 # oh-my-fish (쉘 꾸미기)[[🔝]](#link)
