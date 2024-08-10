@@ -138,7 +138,13 @@ Updated PATH: /etc /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 
 - https://superuser.com/questions/776008/how-to-remove-a-path-from-path-variable-in-fish
 
+<hr>
 
+# starship이 가장 깔끔(테마는 이게 낫다. 그냥 이걸로 바로 세팅하자)[[🔝]](#link)
+
+https://starship.rs/ko-kr/
+
+<hr>
 
 # Fish에 Plugin 설치 하기[[🔝]](#link)
 
@@ -146,10 +152,6 @@ Updated PATH: /etc /usr/local/bin /usr/bin /bin /usr/sbin /sbin
   - https://github.com/jorgebucaran/fisher
 
 - https://github.com/jethrokuan/z
-
-# starship이 가장 깔끔(테마는 이게 낫다. 그냥 이걸로 바로 세팅하자)[[🔝]](#link)
-
-https://starship.rs/ko-kr/
 
 
 <hr>
