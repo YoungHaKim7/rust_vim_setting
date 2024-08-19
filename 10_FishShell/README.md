@@ -18,6 +18,7 @@
 <hr>
 
 - [#sdkman-설치java-kotlin](#sdkman-설치java-kotlin)
+  - [java-kotlingradleandroid-maven-setting](#java-kotlingradleandroid-maven-setting) 
 
 <hr>
 
@@ -335,15 +336,15 @@ function cd --description "Change directory"
 end
 ```
 
-# 외국사람의 dotfiles(fish도 있다.)[|🔝]|(#link)
+# 외국사람의 dotfiles(fish도 있다.)[|🔝|](#link)
 
 - https://github.com/antoniosarosi/dotfiles
 
 <hr>
 
-# Java, Kotlin,gradle,android, maven Setting[|🔝]|(#link)
+# Java, Kotlin,gradle,android, maven Setting[|🔝|](#link)
 
-# sdkman 설치(Java, Kotlin)[|🔝]|(#link)
+# sdkman 설치(Java, Kotlin)[|🔝|](#link)
 
 - https://github.com/reitzig/sdkman-for-fish
 
