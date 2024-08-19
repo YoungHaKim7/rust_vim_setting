@@ -17,7 +17,7 @@
 
 <hr>
 
-- [#sdkman-설치java-kotlin](#sdkman-설치java-kotlin)
+- [sdkman-설치java-kotlin](#sdkman-설치java-kotlin)
   - [java-kotlingradleandroid-maven-setting](#java-kotlingradleandroid-maven-setting) 
 
 <hr>
