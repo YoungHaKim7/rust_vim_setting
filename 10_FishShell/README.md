@@ -335,7 +335,15 @@ function cd --description "Change directory"
 end
 ```
 
-# sdkman 설치(Java, Kotlin)[[🔝]](#link)
+# 외국사람의 dotfiles(fish도 있다.)[|🔝]|(#link)
+
+- https://github.com/antoniosarosi/dotfiles
+
+<hr>
+
+# Java, Kotlin,gradle,android, maven Setting[|🔝]|(#link)
+
+# sdkman 설치(Java, Kotlin)[|🔝]|(#link)
 
 - https://github.com/reitzig/sdkman-for-fish
 
@@ -349,14 +357,6 @@ set -g __sdkman_custom_dir /opt/homebrew/opt/sdkman-cli/libexec
 ```
 https://www.thinkbinary.co.uk/2024/01/07/setting-up-sdkman-with-fish-and-homebrew
 
-
-# 외국사람의 dotfiles(fish도 있다.)[[🔝]](#link)
-
-- https://github.com/antoniosarosi/dotfiles
-
-<hr>
-
-# Java, Kotlin,gradle,android, maven Setting[|🔝]|(#link)
 
 # justfile(Java)
 
