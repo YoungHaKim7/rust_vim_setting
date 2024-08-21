@@ -799,3 +799,13 @@ ctrl-x ctrl-z  Hides all suggestions
   }
 }
 ```
+
+- setting.json(Git 나오는거 안나오게)
+```toml
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+```
