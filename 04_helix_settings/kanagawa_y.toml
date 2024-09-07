@@ -9,7 +9,8 @@
 ## User interface
 "ui.selection" = { bg = "waveBlue2" }
 "ui.selection.primary" = { bg = "waveBlue2" }
-"ui.background" = { fg = "fujiWhite", bg = "#000000" }
+# "ui.background" = { fg = "fujiWhite", bg = "#000000" }
+"ui.background" = { fg = "fujiWhite", bg = "#050801" }
 
 "ui.linenr" = { fg = "sumiInk6" }
 "ui.linenr.selected" = { fg = "roninYellow", modifiers = ["bold"] }
