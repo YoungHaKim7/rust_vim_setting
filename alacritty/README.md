@@ -5,6 +5,27 @@ alacritty --working-directory (pwd)
 ```
 https://github.com/alacritty/alacritty/issues/808
 
+```
+# 명령어 잘 생각 안날때 대충치고 검색하기
+Ctrl + i
+
+# History에서 검색 많이씀
+Ctrl + r
+
+# clear 
+Ctrl + l
+
+# enter
+Ctrl + j
+
+# up 전에 친거
+Ctrl + p
+
+# 다음거
+Ctrl + n
+
+```
+
 <hr>
 
 # alacritty 개인 세팅
