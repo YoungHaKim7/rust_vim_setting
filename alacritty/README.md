@@ -15,7 +15,7 @@ Ctrl + r
 # clear 
 Ctrl + l
 
-# enter
+# enter(여러줄 &&할 필요없이 밑에 엔터 안되고 붙는다. 편하군)
 Ctrl + j
 
 # up 전에 친거
