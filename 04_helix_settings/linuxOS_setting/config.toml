@@ -1,7 +1,8 @@
 # theme = "fleet_dark"
-theme = "fleet_dark_y"
+# theme = "fleet_dark_y"
 # theme = "solarized_dark"
 # theme = "nightfox"
+theme = "kanagawa_y"
 
 [editor]
 line-number = "relative"
