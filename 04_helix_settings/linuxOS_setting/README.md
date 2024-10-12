@@ -2,7 +2,6 @@
 
 - config.fish
 ```fish
-
 fish_add_path "$HOME/utilities/nvim-linux64/bin"
 fish_add_path "$HOME/utilities/zls/zig-out/bin/"
 fish_add_path "$HOME/utilities/zig-linux"
@@ -43,6 +42,7 @@ end
 # ~/.config/fish/config.fish:
 
 starship init fish | source
-fish_add_path /home/g/.modular/bin
+fish_add_path /home/gy/.modular/bin
+
   
 ```
