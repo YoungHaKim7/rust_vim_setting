@@ -90,7 +90,7 @@ control + a
 control + e 
 
 
-# terminal 에서는 한 단어씩 이동 되는데 alacritty에서는 안된다. ㅠㅠ 
+# terminal (starship설치하면 됨.) https://starship.rs/
 ⌥ +  ← or →
 option + arrow Right Left 
 
