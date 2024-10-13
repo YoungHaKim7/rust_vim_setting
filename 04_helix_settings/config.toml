@@ -1,7 +1,8 @@
 # theme = "fleet_dark"
-theme = "fleet_dark_y"
+# theme = "fleet_dark_y"
 # theme = "solarized_dark"
 # theme = "nightfox"
+theme = "kanagawa_y"
 
 [editor]
 line-number = "relative"
@@ -46,7 +47,7 @@ a = ["append_mode", "collapse_selection"]
 g = { a = "code_action" } # Maps `ga` to show possible code actions
 C-a = "increment"
 C-x = "decrement"
-"backspace" = { c = ":sh cargo run", t =":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -pthread -lm -Wall -Wextra -ggdb -o main main.c", d =":sh rm -rf main main.dSYM", n = ":sh touch .gitignore", k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main", a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c", x = ":sh chmod +x build.sh"}  
+"backspace" = { c = ":sh cargo run", t =":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -pthread -lm -Wall -Wextra -ggdb -o main main.c", d =":sh rm -rf main main.dSYM", n = ":sh touch .gitignore", k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main", a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c", x = ":sh chmod +x build.sh"}
 
 space.c = "toggle_comments"
 space.w.h = "jump_view_left"
@@ -98,6 +99,8 @@ b = ["move_prev_word_start", "collapse_selection"]
 j = { k = "normal_mode", space = "extend_line" } # Maps `jk` to exit insert mode
 
 [keys.select]
+C-k = ["goto_line_end","extend_line_below",  "delete_selection", "move_line_up", "paste_before", "select_mode"]
+C-j = ["goto_line_end","extend_line_below",  "delete_selection", "paste_after", "select_mode" ]
 # Muscle memory
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
 "}" = ["extend_to_line_bounds", "goto_next_paragraph"]
@@ -133,4 +136,3 @@ P = "paste_clipboard_before"
 
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
-
