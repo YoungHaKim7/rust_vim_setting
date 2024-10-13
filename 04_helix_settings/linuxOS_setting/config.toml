@@ -99,6 +99,8 @@ b = ["move_prev_word_start", "collapse_selection"]
 j = { k = "normal_mode", space = "extend_line" } # Maps `jk` to exit insert mode
 
 [keys.select]
+C-k = ["goto_line_end","extend_line_below",  "delete_selection", "move_line_up", "paste_before", "select_mode"]
+C-j = ["goto_line_end","extend_line_below",  "delete_selection", "paste_after", "select_mode" ]
 # Muscle memory
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
 "}" = ["extend_to_line_bounds", "goto_next_paragraph"]
