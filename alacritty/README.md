@@ -6,6 +6,10 @@ alacritty --working-directory (pwd)
 https://github.com/alacritty/alacritty/issues/808
 
 ```
+
+# 버젼업되면서 세팅 안해줘도 되네 ㅋㅋ
+- https://raw.githubusercontent.com/alacritty/alacritty/master/CHANGELOG.md
+
 # 명령어 잘 생각 안날때 대충치고 검색하기
 Ctrl + i
 
