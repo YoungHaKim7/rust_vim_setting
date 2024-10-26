@@ -30,8 +30,9 @@ family = "MesloLGS NF"
 
 [mouse]
 hide_when_typing = true
+
 [mouse.url.launcher]
-program = []
+program = ["chrome"]
 
 [[keyboard.bindings]]
 action = "Paste"
