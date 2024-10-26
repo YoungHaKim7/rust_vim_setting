@@ -11,6 +11,8 @@
   - [zsh-path-다수의-폴더를-설정해-주기](#zsh-path-다수의-폴더를-설정해-주기)
   - [`cd...`--zsh처럼-하게-기능-만들기](#cd--zsh처럼-하게-기능-만들기)
 
+- [예전 zsh shell에 power10k설치방법정리(zsh설치정리)](https://github.com/YoungHaKim7/Shell_Script?tab=readme-ov-file#power10k-install))
+
 <hr>
 
 - [외국사람의-dotfilesfish도-있다](#외국사람의-dotfilesfish도-있다)
