@@ -1,5 +1,9 @@
 # link
 
+- [예전 zsh shell에 power10k설치방법정리(zsh설치정리)](https://github.com/YoungHaKim7/Shell_Script?tab=readme-ov-file#power10k-install))
+
+<hr />
+
 - [fishshell-tutorial튜토리얼](#fishshell-tutorial)
 - [fishshell-hitory-폴더](#fishshell-hitory-폴더)
 - [디폴트셸로 쓰기fishshell을-default-shell-세팅하기](#fishshell을-default-shell-세팅하기)
@@ -11,7 +15,6 @@
   - [zsh-path-다수의-폴더를-설정해-주기](#zsh-path-다수의-폴더를-설정해-주기)
   - [`cd...`--zsh처럼-하게-기능-만들기](#cd--zsh처럼-하게-기능-만들기)
 
-- [예전 zsh shell에 power10k설치방법정리(zsh설치정리)](https://github.com/YoungHaKim7/Shell_Script?tab=readme-ov-file#power10k-install))
 
 <hr>
 
