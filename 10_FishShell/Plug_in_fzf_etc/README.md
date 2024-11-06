@@ -1,3 +1,5 @@
+# Install 2개 해야함.
+
 - https://github.com/junegunn/fzf
 
 - https://github.com/PatrickF1/fzf.fish
