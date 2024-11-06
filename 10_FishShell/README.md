@@ -65,6 +65,9 @@ which fish
 
 ```bash
 chsh -s /usr/local/bin/fish
+
+# or
+chsh -s `which fish`
 ```
 
 - https://askubuntu.com/questions/26439/how-do-i-set-fish-as-the-default-shell
