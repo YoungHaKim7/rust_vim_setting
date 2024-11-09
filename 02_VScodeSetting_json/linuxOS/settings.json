@@ -5,11 +5,11 @@
     ],
     "clangd.path": "/home/gy/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
     // Zig Lang
-    "zls.path": "/home/y/.config/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
-    "zig.zigPath": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
-    "zig.zigVersion": "0.11.0",
-    "zig.zls.enabled": true,
-    "zig.zls.path": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    // "zls.path": "/home/y/.config/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
+    // "zig.zigPath": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+    // "zig.zigVersion": "0.11.0",
+    // "zig.zls.enabled": true,
+    // "zig.zls.path": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
     // gradle(Java & Kotlin)
     "redhat.telemetry.enabled": true,
     // "java.configuration.runtimes": [
