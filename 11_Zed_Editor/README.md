@@ -15,7 +15,7 @@
   - [터미널창 우측에 크게 띄우기 The Dock부분 확인하면됨(VSCode에서의 "Terminal : Create New terminal in Editor Area to the Side"](https://zed.dev/features)
 - snippets설정
   - [zed에 snippets설정하기](https://zed.dev/docs/languages/rust)
-- [git blame안하오게 세팅]()
+- [git blame안하오게 세팅](#git-blame안-나오게-세팅)
 - [zed extension만들어서 기여하기](https://zed.dev/docs/extensions/developing-extensions)
   - [여기에 repo올려야함.https://github.com/zed-industries/extensions](https://github.com/zed-industries/extensions)
 
@@ -30,6 +30,18 @@
     }
   },
 ```
+
+- setting.json(Git 나오는거 안나오게)
+```toml
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+```
+
+- 출처 : https://github.com/zed-industries/zed/discussions/11279
 
 # setting문서 설명서 잘 정리됨[|🔝|](#link)
 - https://zed.dev/docs/configuring-zed
@@ -225,7 +237,7 @@ ctrl-x ctrl-z  Hides all suggestions
 
 ```
 
-# Fix[[🔝]](#link)
+# Fix[|🔝|](#link)
 
 
 ```json
@@ -281,24 +293,24 @@ ctrl-x ctrl-z  Hides all suggestions
 
 <hr>
 
-# vim.json[[🔝]](#link)
+# vim.json[|🔝|](#link)
 
 - https://zed.dev/ref/vim.json
 
 <hr>
 
-# zed releases버젼업(최신 버젼체크)[[🔝]](#link)
+# zed releases버젼업(최신 버젼체크)[[|🔝|](#link)
 
 - https://zed.dev/releases/stable
 
-# Zed Doc(tutorial문서)[[🔝]](#link)
+# Zed Doc(tutorial문서)[|🔝|](#link)
 - https://zed.dev/docs/getting-started
 
-# Zed Vim[[🔝]](#link)
+# Zed Vim[|🔝|](#link)
 
 - https://docs.zed.dev/general/vim
 
-# Zed(install) __ Brew Install[[🔝]](#link)
+# Zed(install) __ Brew Install[|🔝|](#link)
 
 - https://zed.dev/
 - https://formulae.brew.sh/cask/zed
@@ -816,12 +828,4 @@ ctrl-x ctrl-z  Hides all suggestions
 }
 ```
 
-- setting.json(Git 나오는거 안나오게)
-```toml
-  "git": {
-    "git_gutter": "tracked_files",
-    "inline_blame": {
-      "enabled": false
-    }
-  },
-```
+
