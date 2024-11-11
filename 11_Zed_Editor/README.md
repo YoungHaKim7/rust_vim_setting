@@ -15,16 +15,26 @@
   - [터미널창 우측에 크게 띄우기 The Dock부분 확인하면됨(VSCode에서의 "Terminal : Create New terminal in Editor Area to the Side"](https://zed.dev/features)
 - snippets설정
   - [zed에 snippets설정하기](https://zed.dev/docs/languages/rust)
-
+- [git blame안하오게 세팅]()
 - [zed extension만들어서 기여하기](https://zed.dev/docs/extensions/developing-extensions)
   - [여기에 repo올려야함.https://github.com/zed-industries/extensions](https://github.com/zed-industries/extensions)
 
 <hr>
 
-# setting문서 설명서 잘 정리됨
+# git blame안 나오게 세팅[|🔝|](#link)
+
+```json
+ "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+```
+
+# setting문서 설명서 잘 정리됨[|🔝|](#link)
 - https://zed.dev/docs/configuring-zed
 
-# 많이 쓰는 키key정리[[🔝]](#link)
+# 많이 쓰는 키key정리[|🔝|](#link)
 
 ```
 gs   많이 씀 Find symbol in curren file
