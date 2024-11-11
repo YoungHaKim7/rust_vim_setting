@@ -34,6 +34,11 @@
     // Corresponds to null/None LSP hint type value.
     "show_other_hints": true
   },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
   "project_panel": {
     // Default width of the project panel.
     "default_width": 240,
