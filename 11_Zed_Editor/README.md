@@ -32,6 +32,7 @@
 ```
 
 - setting.json(Git 나오는거 안나오게)
+
 ```toml
   "git": {
     "git_gutter": "tracked_files",
