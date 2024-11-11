@@ -12,6 +12,7 @@
 - [zed releases최신버젼체크](#zed-releases버젼업최신-버젼체크)
 - [zed Install설치하기 지금은 macOS만 가능240302](#zedinstall-__-brew-install)
 - [zed-doc_tutorial문서](#zed-doctutorial문서)
+  - [터미널창 우측에 크게 띄우기 The Dock부분 확인하면됨](https://zed.dev/features)
 
 <hr>
 
