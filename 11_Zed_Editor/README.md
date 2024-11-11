@@ -10,7 +10,7 @@
 - [Zed에 기본 세팅된 vim keymap](#vimjson)
 - [많이-쓰는-키key정리](#많이-쓰는-키key정리)
 - [zed releases최신버젼체크](#zed-releases버젼업최신-버젼체크)
-- [zed Install설치하기 지금은 macOS만 가능240302](#zedinstall-__-brew-install)
+- [zed Install설치하기 linux & macOS 가능241111](#zedinstall-__-brew-install)
 - [zed-doc_tutorial문서](#zed-doctutorial문서)
   - [터미널창 우측에 크게 띄우기 The Dock부분 확인하면됨(VSCode에서의 "Terminal : Create New terminal in Editor Area to the Side"](https://zed.dev/features)
 
