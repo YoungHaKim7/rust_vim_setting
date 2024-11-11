@@ -17,6 +17,7 @@
   - [zed에 snippets설정하기](https://zed.dev/docs/languages/rust)
 
 - [zed extension만들어서 기여하기](https://zed.dev/docs/extensions/developing-extensions)
+  - [여기에 repo올려야함.https://github.com/zed-industries/extensions](https://github.com/zed-industries/extensions)
 
 <hr>
 
