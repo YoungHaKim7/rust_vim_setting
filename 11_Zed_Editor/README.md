@@ -275,6 +275,10 @@ ctrl-x ctrl-z  Hides all suggestions
   },
 ```
 
+- 터미널 root열리는거 해결하는 힌트
+  - zed터미널 루트에서 열리는거 해결하는 힌트1
+    - https://zed.dev/docs/configuring-zed#terminal
+
 <hr>
 
 - ctlr+y 자동완성 질문해서 해결함(추가로 세팅해서 해결)
