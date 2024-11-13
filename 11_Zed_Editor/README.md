@@ -306,6 +306,20 @@ ctrl-x ctrl-z  Hides all suggestions
   },
 ```
 
+<hr />
+
+- auto close되게 세팅하기(Bracket matching)
+  - https://zed.dev/docs/extensions/languages#bracket-matching
+
+- Bracket matching
+  - The `brackets.scm` file defines matching brackets.
+  - Here's an example from a brackets.scm file for JSON:
+
+```scm
+("[" @open "]" @close)
+("{" @open "}" @close)
+```
+
 
 <hr />
 
