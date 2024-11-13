@@ -19,6 +19,8 @@
 - [zed extension만들어서 기여하기](https://zed.dev/docs/extensions/developing-extensions)
   - [여기에 repo올려야함.https://github.com/zed-industries/extensions](https://github.com/zed-industries/extensions)
 
+- [scm파일로 관리하네..The_Scheme Programming알아보기](https://www.scheme.org/)
+
 <hr>
 
 # git blame안 나오게 세팅[|🔝|](#link)
