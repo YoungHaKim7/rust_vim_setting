@@ -4,8 +4,8 @@
 // documentation: https://zed.dev/docs/configuring-zed
 //
 // To see all of Zed's default settings without changing your
-// custom settings, run the `open default settings` command
-// from the command palette or from `Zed` application menu.
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
   "theme": "Tokyo Night gy InlayHint red",
   "ui_font_family": "Hack Nerd Font Mono",
@@ -38,6 +38,10 @@
     "inline_blame": {
       "enabled": false
     }
+  },
+  "terminal": {
+    "shell": "system",
+    "working_directory": "current_project_directory"
   },
   "project_panel": {
     // Default width of the project panel.
