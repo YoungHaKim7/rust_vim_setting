@@ -297,6 +297,15 @@ ctrl-x ctrl-z  Hides all suggestions
 - 터미널 root열리는거 해결하는 힌트
   - zed터미널 루트에서 열리는거 해결하는 힌트1
     - https://zed.dev/docs/configuring-zed#terminal
+- [x] 추가해 주니 해결됨 굿
+
+```json
+  "terminal": {
+    "shell": "system",
+    "working_directory": "current_project_directory"
+  },
+```
+
 
 <hr />
 
