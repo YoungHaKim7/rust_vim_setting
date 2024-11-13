@@ -10,8 +10,8 @@
   "theme": "Tokyo Night gy InlayHint red",
   "ui_font_family": "Hack Nerd Font Mono",
   "vim_mode": true,
-  "ui_font_size": 22,
-  "buffer_font_size": 22,
+  "ui_font_size": 26,
+  "buffer_font_size": 26,
   // Set the buffer's line height.
   // May take 3 values:
   //  1. Use a line height that's comfortable for reading (1.618)
