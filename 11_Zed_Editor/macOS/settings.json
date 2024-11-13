@@ -58,6 +58,10 @@
       "enabled": false
     }
   },
+  "terminal": {
+    "shell": "system",
+    "working_directory": "current_project_directory"
+  },
   "prettier": {
     // Use regular Prettier json configuration:
     // "trailingComma": "es5",
