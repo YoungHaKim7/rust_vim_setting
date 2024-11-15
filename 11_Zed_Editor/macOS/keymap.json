@@ -74,6 +74,17 @@
     }
   },
   {
+    "context": "Editor && vim_mode == replace",
+    "bindings": {
+      // put key-bindings here if you want them to work in Replace mode
+      // ~~~~~~ Replace Mode
+      "j k": [
+        "vim::SwitchMode",
+        "Normal"
+      ]
+    }
+  },
+  {
     "context": "ProjectPanel",
     "bindings": {
       "h": "project_panel::CollapseSelectedEntry",
