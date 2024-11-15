@@ -37,7 +37,7 @@
       // Terminal Pannel(shell)
       "space s h": "terminal_panel::ToggleFocus",
       // Terminal Pannel(크게 창 옆에)
-      "space s h v": "workspace::NewCenterTerminal",
+      "space b t": "workspace::NewCenterTerminal",
       // trouble toggle
       "space t": "diagnostics::Deploy"
     }
