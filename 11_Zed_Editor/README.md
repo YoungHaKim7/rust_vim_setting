@@ -286,7 +286,7 @@ ctrl-x ctrl-z  Hides all suggestions
  {
     "context": "Editor && vim_mode == replace",
     "bindings": {
-      // put key-bindings here if you want them to work in Replace mode(normal모드로 봐야하나?)
+      // put key-bindings here if you want them to work in Replace mode
       // ~~~~~~ Replace Mode
       "j k": [
         "vim::SwitchMode",
