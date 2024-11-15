@@ -277,6 +277,23 @@ ctrl-x ctrl-z  Hides all suggestions
   },
 ```
 
+- [ ] Replace 모드(R) 대문자R에서 jk 안 먹힘(추가해서 test예정
+
+```json
+
+ {
+    "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // ~~~~~~ Insert Mode
+      "j k": [
+        "vim::SwitchMode",
+        "Normal"
+      ]
+    }
+  },
+```
+
 <hr>
 
 - ctlr+y 자동완성 질문해서 해결함(추가로 세팅해서 해결)
