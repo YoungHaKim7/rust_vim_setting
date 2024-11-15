@@ -284,8 +284,8 @@ ctrl-x ctrl-z  Hides all suggestions
  {
     "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
     "bindings": {
-      // put key-bindings here if you want them to work in insert mode
-      // ~~~~~~ Insert Mode
+      // put key-bindings here if you want them to work in Replace mode(normal모드로 봐야하나?)
+      // ~~~~~~ Replace Mode
       "j k": [
         "vim::SwitchMode",
         "Normal"
