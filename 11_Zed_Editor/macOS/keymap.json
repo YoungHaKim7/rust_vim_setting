@@ -30,7 +30,7 @@
       // Terminal Pannel(shell)
       "space s h": "terminal_panel::ToggleFocus",
       // Terminal :vs
-      "space s h v": "workspace::NewCenterTerminal",
+      "space b t": "workspace::NewCenterTerminal",
       // trouble toggle
       "space t": "diagnostics::Deploy"
     }
