@@ -8,6 +8,7 @@
 # link
 - [fix고친거 || 고쳐야 할것](#fix)
 - [Zed에 기본 세팅된 vim keymap](#vimjson)
+  - [zed vimdefault key setting(vim.json)여기 참조](https://github.com/zed-industries/zed/blob/v0.144.3/assets/keymaps/vim.json)
 - [많이-쓰는-키key정리](#많이-쓰는-키key정리)
 - [zed releases최신버젼체크](#zed-releases버젼업최신-버젼체크)
 - [zed Install설치하기 linux & macOS 가능241111](#zedinstall-__-brew-install)
