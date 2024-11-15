@@ -252,10 +252,10 @@ ctrl-x ctrl-z  Hides all suggestions
   }
 ```
 
-- 해결한 코드(jk딜레이 없이 바로 적용)
+- [x] 해결한 코드(jk딜레이 없이 바로 적용)
   - https://github.com/zed-industries/zed/discussions/6661
 
-- 자동 완성중에 jk입력 안되는거 해결함
+- [x] 자동 완성중에 jk입력 안되는거 해결함
   - https://github.com/zed-industries/zed/issues/8729
 
 ```json
@@ -296,7 +296,7 @@ ctrl-x ctrl-z  Hides all suggestions
 
 <hr>
 
-- ctlr+y 자동완성 질문해서 해결함(추가로 세팅해서 해결)
+- [x] ctlr+y 자동완성 질문해서 해결함(추가로 세팅해서 해결)
   - 결국 물어봄 ㅠㅠ(해결완료)
     - https://github.com/zed-industries/zed/issues/8707
 
@@ -313,7 +313,7 @@ ctrl-x ctrl-z  Hides all suggestions
 
 <hr>
 
-- 터미널 root열리는거 해결하는 힌트
+- [x] 터미널 root열리는거 해결하는 힌트
   - zed터미널 루트에서 열리는거 해결하는 힌트1
     - https://zed.dev/docs/configuring-zed#terminal
 - [x] 추가해 주니 해결됨 굿
@@ -327,10 +327,10 @@ ctrl-x ctrl-z  Hides all suggestions
 
 <hr />
 
-- auto close되게 세팅하기(Bracket matching)
+- [x] auto close되게 세팅하기(Bracket matching)
   - https://zed.dev/docs/extensions/languages#bracket-matching
 
-- Bracket matching
+- [x] Bracket matching
   - The `brackets.scm` file defines matching brackets.
   - Here's an example from a brackets.scm file for JSON:
 
