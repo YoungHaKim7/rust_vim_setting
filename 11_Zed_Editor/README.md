@@ -24,6 +24,10 @@
 
 - [scm파일로 관리하네..The_Scheme Programming알아보기](https://www.scheme.org/)
 
+- AI 세팅
+  - [zed에 TabbyAI를 연결할 단서1](https://github.com/d1y/tabby-agent-zed)
+    - [zed에 TabbyAI를 연결할 단서2](https://github.com/zed-industries/zed/issues/4421)
+
 <hr>
 
 # git blame안 나오게 세팅[|🔝|](#link)
