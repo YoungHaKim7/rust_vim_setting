@@ -16,6 +16,7 @@
   - [터미널창 우측에 크게 띄우기 The Dock부분 확인하면됨(VSCode에서의 "Terminal : Create New terminal in Editor Area to the Side"](https://zed.dev/features)
 - snippets설정
   - [zed에 snippets설정하기](https://zed.dev/docs/languages/rust)
+  - [서버설정..https://github.com/zed-industries/simple-completion-language-server](https://github.com/zed-industries/simple-completion-language-server)
 - [git blame안하오게 세팅](#git-blame안-나오게-세팅)
 - [zed extension만들어서 기여하기](https://zed.dev/docs/extensions/developing-extensions)
   - [여기에 repo올려야함.https://github.com/zed-industries/extensions](https://github.com/zed-industries/extensions)
