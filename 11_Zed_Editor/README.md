@@ -48,13 +48,15 @@
 ```toml
 [
   {
-  "git": {
-    "git_gutter": "tracked_files",
-    "inline_blame": {
-      "enabled": false
+    "git": {
+      "git_gutter": "tracked_files",
+      "inline_blame": {
+        "enabled": false
+      }
     }
   }
-}
+
+]
 ```
 
 - 출처 : https://github.com/zed-industries/zed/discussions/11279
