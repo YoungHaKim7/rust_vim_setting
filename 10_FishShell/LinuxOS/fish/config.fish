@@ -1,19 +1,18 @@
 # Add HomeBrew's bin directory to path so you can use HomeBrew's binaries like `starship`
 # Fish uses `fish_add_path` instead of `export PATH` modify $PATH.
-fish_add_path "$HOME/utilities/nvim-linux64/bin"
-fish_add_path "$HOME/utilities/zig0_12"
-fish_add_path "$HOME/utilities/zls/zig-out/bin"
-fish_add_path "$HOME/utilities/llvm17/bin"
+# macOS PATH(homebrew)
+
 fish_add_path "$HOME/.local/bin"
-fish_add_path "$HOME/.modular"
-fish_add_path "$HOME/.modular/bin"
-fish_add_path "$HOME/.modular/pkg/packages.modular.com_max/bin"
-fish_add_path "$HOME/utilities/python3_12_2"
-fish_add_path "$HOME/anaconda3/bin"
+fish_add_path "$HOME/utilities/nvim-linux64/bin"
+fish_add_path "$HOME/utilities/zig-linux-x86_64"
+fish_add_path "$HOME/utilities/zls/zig-out/bin"
+fish_add_path "$HOME/.cargo/bin"
+# fish_add_path "$HOME/.wasmer/bin"
 
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
+
 # add Path
 function addpaths
     contains -- $argv $fish_user_paths
@@ -29,36 +28,38 @@ function removepath
     else
         echo "$argv[1] not found in PATH: $PATH"
     end
-end
 
-## C++ PATH
-set -gx CPLUS_INCLUDE_PATH /usr/include/c++/11 /usr/include/x86_64-linux-gnu/c++/11 /usr/lib/gcc/x86_64-linux-gnu/11 /usr/lib/gcc/x86_64-linux-gnu/12 $CPLUS_INCLUDE_PATH
+end
 
 ## Mojo PATH
-set -gx MOJO_PATH $(modular config mojo.path)
-set -gx MODULAR_HOME $HOME/.modular
+# set -gx MOJO_PATH $(modular config mojo.path)
+# set -gx MODULAR_HOME $HOME/.modular
 ## Mojo MAX
-set -gx MAX_PATH $(modular config max.path)
-set -gx MAX_PATH $HOME/.modular/bin
+# set -gx MAX_PATH $(modular config max.path)
+# set -gx MAX_PATH $HOME/.modular/bin
+
+# C++ PATH
+set -gx CPLUS_INCLUDE_PATH /usr/include/c++/13 /usr/include/x86_64-linux-gnu/c++/13 /usr/lib/gcc/x86_64-linux-gnu/11 /usr/lib/gcc/x86_64-linux-gnu/13 $CPLUS_INCLUDE_PATH
 
 
+# python Tensflow CUDA PATH
+export XLA_FLAGS=--xla_gpu_cuda_data_dir=/usr/lib/cuda/
+
+# SDL3 PATH
+set -gx LD_LIBRARY_PATH /usr/local/lib
+
+# WASM (wasmer run)
+# set -gx WASMER_DIR $HOME/.wasmer
 
 end
 
-# ~/.config/fish/config.fish
-
+# Enable Starship prompt
 starship init fish | source
 
+# Wasmer
+# export WASMER_DIR="/Users/g/.wasmer"
+# [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-if test -f /home/gy/anaconda3/bin/conda
-    eval /home/gy/anaconda3/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/home/gy/anaconda3/etc/fish/conf.d/conda.fish"
-        . "/home/gy/anaconda3/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/home/gy/anaconda3/bin" $PATH
-    end
-end
-# <<< conda initialize <<<
+# alias
+alias clang++="clang++-19"
+# alias clangd="clangd-19"
