@@ -27,7 +27,8 @@
 
 <hr />
 
-- [fishshell history clean하게 만들기](https://stackoverflow.com/questions/47890353/clear-fish-shell-history-permanently-across-sessions)
+- [`z -c` 하면 존재하지 않는 폴더 다 지워줌 굿.]()
+  - [스택오버플로우_fishshell history clean하게 만들기](https://stackoverflow.com/questions/47890353/clear-fish-shell-history-permanently-across-sessions)
 
 <hr>
 
@@ -404,18 +405,18 @@ init:
 	echo "}" >> src/Main.java	
 ```
 
-# sdkman(fishshell install)
+# sdkman(fishshell install)[|🔝|](#link)
 
 - https://github.com/reitzig/sdkman-for-fish
   - https://github.com/reitzig/sdkman-for-fish/issues/34
     - https://github.com/reitzig/sdkman-for-fish/blob/c9fd8d58f2972c8664db6645ea37a3e35f2f5afb/conf.d/sdk.fish#L10
 
-# gradle setting(FishShell)
+# gradle setting(FishShell)[|🔝|](#link)
 - gradle and react-native with fish shell
   - https://stackoverflow.com/questions/34575272/gradle-and-react-native-with-fish-shell
 
 
-# Java, Kotlin,gradle,android, maven Setting(FishShell)
+# Java, Kotlin,gradle,android, maven Setting(FishShell)[|🔝|](#link)
 - https://gist.github.com/guilherfp/068f15bb9aa195c844aa5cd6341ee7a4
 
 - `config.fish`
@@ -449,4 +450,14 @@ set -gx PATH $KOTLIN_HOME/bin $PATH
 
 ```
 
-<hr>
+<hr />
+
+# `z` 존재하지 않는 디렉토리 클린하게 만들기[|🔝|](#link)
+
+- https://github.com/jethrokuan/z
+  - https://github.com/jethrokuan/z/blob/master/man/man1/z.md
+
+```
+$ z -c
+/Users/g/.local/share/z/data cleaned!
+```
