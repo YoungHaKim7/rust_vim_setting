@@ -27,7 +27,7 @@
 
 <hr />
 
-- [`z -c` 하면 존재하지 않는 폴더 다 지워줌 굿.]()
+- [`z -c` 하면 존재하지 않는 폴더 다 지워줌 굿.](#z-존재하지-않는-디렉토리-클린하게-만들기)
   - [스택오버플로우_fishshell history clean하게 만들기](https://stackoverflow.com/questions/47890353/clear-fish-shell-history-permanently-across-sessions)
 
 <hr>
