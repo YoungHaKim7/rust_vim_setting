@@ -25,6 +25,10 @@
 - [sdkman-설치java-kotlin](#sdkman-설치java-kotlin)
   - [java-kotlingradleandroid-maven-setting](#java-kotlingradleandroid-maven-setting) 
 
+<hr />
+
+- [fishshell history clean하게 만들기](https://stackoverflow.com/questions/47890353/clear-fish-shell-history-permanently-across-sessions)
+
 <hr>
 
 # FishShell Install
