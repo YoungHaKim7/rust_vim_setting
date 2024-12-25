@@ -85,7 +85,7 @@ https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors
 
 <hr>
 
-# rust_neoVim_Setting[[🔝]](#link)
+# rust_neoVim_Setting[|🔝|](#link)
 
 [neoVim_Setting Youtube](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 
@@ -95,6 +95,22 @@ https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors
 > > [Github_LunarVim](https://github.com/LunarVim/Neovim-from-scratch)
 
 <br>
+
+<hr />
+
+# Undo & Redo[|🔝|](#link)
+- https://www.warp.dev/terminus/undo-redo-in-vim
+
+```
+# undo많이 씀
+u
+
+# Redo
+CTRL+R
+# macOS에선 이렇게 세팅함. command + y
+CMD + Y
+ 
+```
 
 <hr>
 
@@ -122,6 +138,7 @@ https://economiceco.tistory.com/14813
 - ❤️ Hyperpolyglot
 Text Mode Editors: Vim, Emacs, Nano
 https://docs.huihoo.com/programming-language/hyperpolyglot.org/text-mode-editors.html
+
 
 <hr>
 
