@@ -63,6 +63,13 @@
     }
   },
   {
+    "context": "Editor && inline_completion && !showing_completions",
+    "bindings": {
+      "tab": "editor::Tab",
+      "ctrl-b": "editor::AcceptInlineCompletion"
+    }
+  },
+  {
     "context": "Editor && vim_mode == insert && menu",
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
