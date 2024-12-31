@@ -25,7 +25,7 @@
 - [scm파일로 관리하네..The_Scheme Programming알아보기](https://www.scheme.org/)
 
 - AI 세팅
-  - [zed에 TabbyAI를 연결할 단서1](https://github.com/d1y/tabby-agent-zed)
+  - [zed에 TabbyAI를 연결할 단서1_https://github.com/d1y/tabby-agent-zed](https://github.com/d1y/tabby-agent-zed)
     - [zed에 TabbyAI를 연결할 단서2](https://github.com/zed-industries/zed/issues/4421)
 
 - [zed의 기가막힌 기능들_최신 업데이트 소식 등등](#zed의-기가막힌-기능들)
