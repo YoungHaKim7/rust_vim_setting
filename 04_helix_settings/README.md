@@ -47,6 +47,24 @@
 <hr>
 
 # 새로운 기능
+
+- 25.01(추가해 보자 겁나게 신기하다 ㅎ)
+  - [Helix Release 25.01 Highlights](https://helix-editor.com/news/release-25-01-highlights/)
+
+```toml
+# ~/.config/helix/config.toml
+[editor]
+# Minimum severity to show a diagnostic after the end of a line:
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+# Minimum severity to show a diagnostic on the primary cursor's line.
+# Note that `cursor-line` diagnostics are hidden in insert mode.
+cursor-line = "error"
+# Minimum severity to show a diagnostic on other lines:
+# other-lines = "error"
+```
+
 - 24.03 introduces jumping commands inspired by the Amp editor's jump mode. Press gw to add the jump labels and then enter one of the labels to jump to the word under that label. Using `gw` in select mode (v) extends the selection.
 - jumping
 ```
