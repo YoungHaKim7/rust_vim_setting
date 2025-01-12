@@ -65,8 +65,12 @@ cursor-line = "error"
 # other-lines = "error"
 ```
 
-- 24.03 introduces jumping commands inspired by the Amp editor's jump mode. Press gw to add the jump labels and then enter one of the labels to jump to the word under that label. Using `gw` in select mode (v) extends the selection.
+<hr />
+
+- 24.03
+  - 24.03 introduces jumping commands inspired by the Amp editor's jump mode. Press gw to add the jump labels and then enter one of the labels to jump to the word under that label. Using `gw` in select mode (v) extends the selection.
 - jumping
+
 ```
 gw 누르면 내가 원하는 곳으로 한방에 이동 가능 ㅋㅋ
 ```
