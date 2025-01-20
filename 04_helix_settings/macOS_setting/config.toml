@@ -1,7 +1,9 @@
 # theme = "fleet_dark"
-theme = "fleet_dark_y"
+# theme = "fleet_dark_y"
 # theme = "solarized_dark"
 # theme = "nightfox"
+# theme = "term16_dark_y"
+theme = "kanagawa_y"
 
 [editor]
 line-number = "relative"
@@ -13,6 +15,8 @@ true-color = true
 scroll-lines = 5
 idle-timeout = 50
 completion-trigger-len = 1
+# Minimum severity to show a diagnostic after the end of a line:
+end-of-line-diagnostics = "hint"
 
 [editor.indent-guides]
 render = true
@@ -37,6 +41,13 @@ right = ["selections", "primary-selection-length", "position", "position-percent
 [editor.file-picker]
 hidden = false
 
+[editor.inline-diagnostics]
+# Minimum severity to show a diagnostic on the primary cursor's line.
+# Note that `cursor-line` diagnostics are hidden in insert mode.
+cursor-line = "error"
+# Minimum severity to show a diagnostic on other lines:
+# other-lines = "error"
+# 
 # Key Setting
 
 # At most one section each of 'keys.normal', 'keys.insert' and 'keys.select'
@@ -98,6 +109,8 @@ b = ["move_prev_word_start", "collapse_selection"]
 j = { k = "normal_mode", space = "extend_line" } # Maps `jk` to exit insert mode
 
 [keys.select]
+C-k = ["goto_line_end","extend_line_below",  "delete_selection", "move_line_up", "paste_before", "select_mode"]
+C-j = ["goto_line_end","extend_line_below",  "delete_selection", "paste_after", "select_mode" ]
 # Muscle memory
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
 "}" = ["extend_to_line_bounds", "goto_next_paragraph"]

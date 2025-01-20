@@ -263,7 +263,7 @@ block-comment-tokens = [
   { start = "/**", end = "*/" },
   { start = "/*!", end = "*/" },
 ]
-language-servers = [ "scls","rust-analyzer" ]
+language-servers = [ "scls","rust-analyzer", "tabby" ]
 indent = { tab-width = 4, unit = "    " }
 persistent-diagnostic-sources = ["rustc", "clippy"]
 
@@ -3755,3 +3755,8 @@ grammar = "typescript"
 "{" = "}"
 "(" = ")"
 '"' = '"'
+
+[language-server.tabby]
+command = "tabby"
+args = ["tabby"]
+
