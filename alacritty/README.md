@@ -5,6 +5,10 @@ alacritty --working-directory (pwd)
 ```
 https://github.com/alacritty/alacritty/issues/808
 
+# alacritty Teminal
+
+- https://github.com/alacritty/alacritty/issues/7190
+
 
 
 # 버젼업되면서 세팅 안해줘도 되네 ㅋㅋ
