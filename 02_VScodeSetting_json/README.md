@@ -23,6 +23,9 @@ Terminal : Create New terminal in Editor Area to the Side
 
 <hr>
 
+# Keyboard Shortcut내맘대로 세팅하기
+- https://github.com/microsoft/vscode/issues/7876
+
 # Vim (VSCode) 세팅 가이드 
 https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 
