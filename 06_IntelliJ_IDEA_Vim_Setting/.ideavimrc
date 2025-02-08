@@ -14,6 +14,18 @@ set nu rnu
 
 """"""""""""""
 
+
+"""""" Normal Mode
+nmap L <Action>(NextTab)
+nmap H <Action>(PreviousTab)
+""""""""""""""
+
+""""" Visual Mode
+vmap K :m '<-2<CR>gv
+vmap J :m '>+1<CR>gv
+""""""""""""""
+
+
 """ Some popular actions
 " Map \r to the Reformat Code action
 :map <leader>r <Action>(ReformatCode)
