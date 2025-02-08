@@ -13,6 +13,11 @@ Open search everywhere > Actions
 ```
 setting -> Editor -> Color Scheme -> Language Defaults -> Inline hints
 
+setting
+└────Editor
+     └─────────Color Scheme
+               └────── Language Defaults
+                       └────── Inline hints
 Default
 
 parameters
@@ -21,6 +26,21 @@ parameters
 :hi LspInlayHint guifg=#35638f guibg=#420517
 :hi Comment guifg=#35638f guibg=#420517
 ```
+
+# Vim plugin 꿀팁
+- https://stackoverflow.com/questions/3368792/intellij-idea-shortcut-for-switching-to-tab-by-number/3369067#3369067
+
+```
+If you are using IntelliJ's IdeaVim plugin, the vim style shortcut works as well:
+
+    gt, go to next tab
+    gT, go to the previous tab
+    1gt, go to the first tab
+    2gt, go to the second tab
+    3gt, ....
+```
+
+
 
 <hr />
 
