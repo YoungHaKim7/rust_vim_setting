@@ -1,8 +1,7 @@
 # link
 - [빔 기초Vim tutorial_mastering-vim-your-guide-to-efficient-text-editing](#mastering-vim-your-guide-to-efficient-text-editing)
-  - [Vim Cheat Sheet(그림으로 간단한 명령어 위주)](#vim-cheat-sheet)
+  - [Vim Cheat Sheet(그림으로 간단한 명령어 위주 & 완전 자세히)](#vim-cheat-sheet)
 - [다른-외국인-설정-모음](#다른-외국인-설정-모음)
-- [Vim Cheat Sheet_완전자세히](#vim-cheat-sheet)
 
 <hr />
 
