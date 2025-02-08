@@ -1,3 +1,20 @@
+# Inlay Hint 컬러 경로
+
+
+```
+setting -> Editor -> Color Scheme -> Language Defaults -> Inline hints
+
+Default
+
+parameters
+
+// 요즘 쓰는 색 240106
+:hi LspInlayHint guifg=#35638f guibg=#420517
+:hi Comment guifg=#35638f guibg=#420517
+```
+
+<hr />
+
 # IdeaVim – A Vim engine for JetBrains IDEs
 
 https://github.com/JetBrains/ideavim
