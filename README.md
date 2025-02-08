@@ -3,6 +3,7 @@
   - [Vim Cheat Sheet](#vim-cheat-sheet)
 - [다른-외국인-설정-모음](#다른-외국인-설정-모음)
 - [Vim Cheat Sheet](#vim-cheat-sheet)
+- [(외부링크)Vim documentation(공식문서)](https://vimdoc.sourceforge.net/htmldoc/)
 
 <hr>
 
