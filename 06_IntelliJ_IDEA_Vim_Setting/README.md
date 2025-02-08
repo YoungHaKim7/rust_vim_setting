@@ -1,3 +1,12 @@
+# VimKey Setting(명령어 찾기)
+- https://stackoverflow.com/questions/69022964/how-can-you-map-ideavimrc-to-switch-between-tabs-in-intellij
+
+```
+Open search everywhere > Actions
+
+```
+
+
 # Inlay Hint 컬러 경로
 
 
