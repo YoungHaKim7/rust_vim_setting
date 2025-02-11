@@ -1,3 +1,13 @@
+# relative number 세팅
+
+- ~/.doom.d/config.el.
+
+```el
+(setq display-line-numbers-type 'relative)
+```
+
+<hr />
+
 ```bash
 Deploying commit-msg and pre-push git hooks
   ✓ Created ~/.emacs.d/.git/hooks/commit-msg
