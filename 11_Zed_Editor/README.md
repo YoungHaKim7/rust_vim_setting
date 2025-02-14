@@ -356,6 +356,7 @@ ctrl-x ctrl-z  Hides all suggestions
 # vim.json[|🔝|](#link)
 
 - https://zed.dev/ref/vim.json
+- https://github.com/zed-industries/zed/blob/main/assets/keymaps/vim.json
 
 <hr>
 
