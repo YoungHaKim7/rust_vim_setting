@@ -5,6 +5,8 @@
 - Helix새로운 기능들
    - [25.01 & 24.03버젼에 생긴 신기한 기능들](#새로운-기능)
 
+- [(외부링크)toml fmt(Helix_Autoformat toml?)](https://www.reddit.com/r/HelixEditor/comments/17gu2en/autoformat_toml/?rdt=39200)
+
 - 다른 언어들 LSP 설정How to install the default language servers(각 언어별 LSP세팅 방법)
   - https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
     - [문법적용이 안되서 회색으로 나오는 문제 해결하기_글씨색깔이 먹통 ㅠㅠ](https://github.com/helix-editor/helix/issues/3634)
