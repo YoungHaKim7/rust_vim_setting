@@ -9,6 +9,37 @@
 
 <hr>
 
+- [toml fmt](https://taplo.tamasfe.dev/cli/installation/binary.html)
+
+
+
+<hr />
+
+# toml Fmt
+
+```bash
+taplo format Cargo.toml
+```
+
+- `.taplo.toml`
+
+```toml
+# See https://taplo.tamasfe.dev/configuration/file.html
+# and https://taplo.tamasfe.dev/configuration/formatter-options.html
+
+[formatting]
+# Aligning comments with the largest line creates
+# diff noise when neighboring lines are changed.
+align_comments = false
+
+# Matches how rustfmt formats Rust code
+column_width = 100
+indent_string = "    "
+```
+
+<hr />
+
+
 # (Rust&Python_etc..)☆☆__VSCode Vs Pycharm(파이참)Vs Visual Studio(비주얼스튜디오)자주 쓰는 단축키 비교☆☆(MacOS,Win)[[🔝]](#link)
 
 https://economiceco.tistory.com/3638
