@@ -320,6 +320,15 @@
                 8594
             ],
             [
+                120509
+            ],
+            [
+                8314
+            ],
+            [
+                10217
+            ],
+            [
                 8469
             ],
             [
@@ -397,9 +406,21 @@
     "haskell.manageHLS": "GHCup",
     "workbench.editor.empty.hint": "hidden",
     "workbench.sideBar.location": "right",
+    "hediet.vscode-drawio.resizeImages": null,
     // "tabby.experimental": {
     // },
     // "yaml.schemas": {
     //   "file:///Users/globalyoung/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     // }
+    "glsl-canvas.extensions": [
+        "EXT_shader_texture_lod"
+    ],
+    "c3.lsp.path": "/Users/gy-gyoung/Library/Application Support/Code/User/globalStorage/c3.vscode-c3/c3lsp_install/server/bin/release/c3lsp",
+    "database-client.autoSync": true,
+    "java.imports.gradle.wrapper.checksums": [
+        {
+            "sha256": "2c23278a62dc9f96ab11bee897d9f53e6479d6419135e4560ce822a6431df5e5",
+            "allowed": true
+        }
+    ]
 }
