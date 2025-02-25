@@ -1,5 +1,10 @@
 # Link
 
+- 다른 외국인이 한vim설정
+  - https://github.com/nir9/welcome
+
+<hr />
+
 - [Vim 설명서 끝짱판 All Things Vim](#-all-things-vim)
 - [Vim 클립보드 설치해서 *y되게 만들기](#vim-클립보드-설치해서-y되게-만들기)
 - [Vim 창 나누기](#vim-%EC%B0%BD-%EB%82%98%EB%88%84%EA%B8%B0)
