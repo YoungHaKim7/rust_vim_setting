@@ -1,5 +1,5 @@
 # link
-- [250223완전 초보를 위한 좋은 동영상 Explaining Vim Until I Go Insane | Mults](https://youtu.be/LuhAzI3wvmI?si=5Sr_d-m1eHjeoXl4)
+- [(외부링크)250223완전 초보를 위한 좋은 동영상 Explaining Vim Until I Go Insane | Mults](https://youtu.be/LuhAzI3wvmI?si=5Sr_d-m1eHjeoXl4)
 - [빔 기초Vim tutorial_mastering-vim-your-guide-to-efficient-text-editing](#mastering-vim-your-guide-to-efficient-text-editing)
   - [Vim Cheat Sheet(그림으로 간단한 명령어 위주 & 완전 자세히)](#vim-cheat-sheet)
 - [다른-외국인-설정-모음](#다른-외국인-설정-모음)
