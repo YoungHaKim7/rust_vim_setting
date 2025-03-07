@@ -287,7 +287,7 @@ ctrl-x ctrl-z  Hides all suggestions
   },
 ```
 
-- [ ] Replace 모드(R) 대문자R에서 jk 안 먹힘(추가해서 test예정
+- [x] Replace 모드(R) 대문자R에서 jk 안 먹힘(추가해서 test예정
   - 단서2 https://github.com/zed-industries/zed/issues/14692
 
 ```json
