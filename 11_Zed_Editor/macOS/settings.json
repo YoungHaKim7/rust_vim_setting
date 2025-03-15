@@ -84,6 +84,11 @@
         }
       }
       // }
+    },
+    "c3-lsp": {
+      "initialization_options": {
+        "checkOnSave": true
+      }
     }
   }
 }

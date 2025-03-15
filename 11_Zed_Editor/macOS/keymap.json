@@ -32,7 +32,8 @@
       // Terminal :vs
       "space b t": "workspace::NewCenterTerminal",
       // trouble toggle
-      "space t": "diagnostics::Deploy"
+      "space t": "diagnostics::Deploy",
+      ".": "vim::Repeat"
     }
   },
   {
@@ -42,7 +43,9 @@
       // ~~~~~~ Visual Mode
       "K": "editor::MoveLineUp",
       "J": "editor::MoveLineDown",
-      "space g c": "editor::ToggleComments"
+      "space g c": "editor::ToggleComments",
+      ">": "vim::Indent",
+      "<": "vim::Outdent"
     }
   },
   {
@@ -102,7 +105,7 @@
       "r": "project_panel::Rename",
       "z c": "project_panel::CollapseSelectedEntry",
       "z o": "project_panel::ExpandSelectedEntry",
-      "shift-o": "project_panel::RevealInFinder",
+      // "shift-o": "project_panel::RevealInFinder",
       "x": "project_panel::Cut",
       "c": "project_panel::Copy",
       "p": "project_panel::Paste",
