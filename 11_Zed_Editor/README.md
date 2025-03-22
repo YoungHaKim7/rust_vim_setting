@@ -22,6 +22,11 @@
 - [zed extension만들어서 기여하기](https://zed.dev/docs/extensions/developing-extensions)
   - [여기에 repo올려야함.https://github.com/zed-industries/extensions](https://github.com/zed-industries/extensions)
 
+- zed extension쓸만한거 모음
+  - https://github.com/zed-extensions/postgres-context-server/
+  - https://github.com/jackTabsCode/zed-just
+  - https://github.com/zed-extensions/zig
+
 - [scm파일로 관리하네..The_Scheme Programming알아보기](https://www.scheme.org/)
 
 - AI 세팅
