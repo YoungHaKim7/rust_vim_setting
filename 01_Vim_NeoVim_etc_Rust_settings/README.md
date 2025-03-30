@@ -1250,3 +1250,1294 @@ Map setting: NERDTreeMapActivateNode
 ```
 let NERDTreeMapActivateNode = 'i'
 ```
+
+
+# neovim 0.13 Version Update에서 수정해야함.
+
+```lua
+vim.deprecated:                       require("vim.deprecated.health").check()
+
+ ~
+- WARNING client.is_stopped is deprecated. Feature will be removed in Nvim 0.13
+  - ADVICE:
+    - use client:is_stopped instead.
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/lua/cmp_nvim_lsp/source.lua:20
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/lua/cmp_nvim_lsp/init.lua:116
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/lua/cmp_nvim_lsp/source.lua:20
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/lua/cmp_nvim_lsp/init.lua:127
+
+ ~
+- WARNING client.request is deprecated. Feature will be removed in Nvim 0.13
+  - ADVICE:
+    - use client:request instead.
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/pack/github/start/copilot.vim/lua/_copilot.lua:63
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:155
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:31
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:39
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:68
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/server_status.lua:8
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/utils/utils.lua:115
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/lsp/client.lua:1109
+        vim/_editor.lua:0
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:155
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:80
+        lua:1
+        [C]:-1
+        vim/_editor.lua:0
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/health.lua:379
+        nvim>:1
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:155
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:80
+        lua:1
+
+ ~
+- WARNING vim.lsp.buf_get_clients() is deprecated. Feature will be removed in Nvim 0.12
+  - ADVICE:
+    - use vim.lsp.get_clients() instead.
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim/lua/symbols-outline/providers/nvim-lsp.lua:41
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim/lua/symbols-outline/providers/init.lua:15
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim/lua/symbols-outline.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim/lua/symbols-outline.lua:19
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/providers/lsp.lua:7
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:412
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:487
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:604
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/providers/lsp.lua:21
+        /Users/gy-gyoung/.config/nvim/lua/plugins/statusline.lua:318
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:298
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:444
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:487
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:604
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/providers/lsp.lua:7
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:412
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:487
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:604
+        [C]:-1
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/lsp/semantic_tokens.lua:307
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/lsp/client.lua:679
+        vim/_editor.lua:0
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/providers/lsp.lua:21
+        /Users/gy-gyoung/.config/nvim/lua/plugins/statusline.lua:318
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:298
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:444
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:487
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:604
+        [C]:-1
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/lsp/semantic_tokens.lua:307
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/lsp/client.lua:679
+        vim/_editor.lua:0
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/providers/lsp.lua:7
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:412
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:487
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:604
+        [C]:-1
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/health.lua:393
+        nvim>:1
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/providers/lsp.lua:7
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:412
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:487
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/generator.lua:604
+        [C]:-1
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/health.lua:444
+        nvim>:1
+
+ ~
+- WARNING vim.lsp.get_active_clients() is deprecated. Feature will be removed in Nvim 0.12
+  - ADVICE:
+    - use vim.lsp.get_clients() instead.
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:153
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:31
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:39
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:68
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/server_status.lua:8
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/utils/utils.lua:115
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/lsp/client.lua:1109
+        vim/_editor.lua:0
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:153
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:80
+        lua:1
+        [C]:-1
+        vim/_editor.lua:0
+        /Users/gy-gyoung/utilities/nvim-macos/share/nvim/runtime/lua/vim/health.lua:379
+        nvim>:1
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua:153
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:80
+        lua:1
+
+ ~
+- WARNING vim.lsp.start_client() is deprecated. Feature will be removed in Nvim 0.13
+  - ADVICE:
+    - use vim.lsp.start() instead.
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/pack/github/start/copilot.vim/lua/_copilot.lua:31
+
+ ~
+- WARNING vim.str_utfindex is deprecated. Feature will be removed in Nvim 1.0
+  - ADVICE:
+    - use vim.str_utfindex(s, encoding, index, strict_indexing) instead.
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:25
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:44
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:28
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:12
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/cmp.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:30
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:28
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:12
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/cmp.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:30
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:25
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:48
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:55
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-buffer/after/plugin/cmp_buffer.lua:1
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:25
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:48
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:55
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-cmdline/after/plugin/cmp_cmdline.lua:1
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:25
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:48
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:55
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-path/after/plugin/cmp_path.lua:1
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:25
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:48
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:55
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-vsnip/after/plugin/cmp_vsnip.lua:1
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:62
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:162
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:337
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/feedkeys.lua:47
+        lua:1
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:62
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:162
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:346
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:62
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:333
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:25
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:519
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:363
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:25
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:521
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:363
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:62
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:162
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:229
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:346
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:287
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:385
+        vim/_editor.lua:0
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:25
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:315
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:299
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:169
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:346
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:62
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:162
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:337
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/async.lua:165
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/context.lua:56
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:62
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:162
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:346
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/async.lua:165
+
+ ~
+- WARNING vim.tbl_flatten is deprecated. Feature will be removed in Nvim 0.13
+  - ADVICE:
+    - use vim.iter(…):flatten():totable() instead.
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/lua/colorizer/nvim.lua:96
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/lua/colorizer.lua:588
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-colorizer.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:25
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/lua/colorizer/nvim.lua:96
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/lua/colorizer.lua:589
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-colorizer.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:25
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/lua/colorizer/nvim.lua:96
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/lua/colorizer.lua:613
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-colorizer.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:25
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/lua/colorizer/nvim.lua:96
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/lua/colorizer.lua:617
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-colorizer.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:25
+
+ ~
+- WARNING vim.validate is deprecated. Feature will be removed in Nvim 1.0
+  - ADVICE:
+    - use vim.validate(name, value, validator, optional_or_msg) instead.
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:34
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig.lua:85
+        /Users/gy-gyoung/.config/nvim/init.lua:8
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:54
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig.lua:85
+        /Users/gy-gyoung/.config/nvim/init.lua:8
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:74
+        /Users/gy-gyoung/.config/nvim/init.lua:8
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:34
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig.lua:85
+        /Users/gy-gyoung/.config/nvim/init.lua:9
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:54
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig.lua:85
+        /Users/gy-gyoung/.config/nvim/init.lua:9
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:74
+        /Users/gy-gyoung/.config/nvim/init.lua:9
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:34
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig.lua:85
+        /Users/gy-gyoung/.config/nvim/init.lua:10
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:74
+        /Users/gy-gyoung/.config/nvim/init.lua:10
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:34
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig.lua:85
+        /Users/gy-gyoung/.config/nvim/init.lua:11
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:74
+        /Users/gy-gyoung/.config/nvim/init.lua:11
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:34
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig.lua:85
+        /Users/gy-gyoung/.config/nvim/init.lua:12
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:74
+        /Users/gy-gyoung/.config/nvim/init.lua:12
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-transparent/lua/transparent/config.lua:21
+        /Users/gy-gyoung/.config/nvim/lua/plugins/transparency.lua:3
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:18
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:9
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:10
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:13
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:14
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:15
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:18
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:21
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:24
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:38
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:41
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:44
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/utils.lua:352
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:62
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree/legacy.lua:91
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua/nvim-tree.lua:696
+        /Users/gy-gyoung/.config/nvim/lua/plugins/nvim-tree.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:26
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/lua/gitsigns/config.lua:906
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/lua/gitsigns/config.lua:952
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/lua/gitsigns.lua:210
+        /Users/gy-gyoung/.config/nvim/lua/plugins/gitsigns.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:28
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:34
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig.lua:85
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/lsp.lua:170
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/lsp.lua:236
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:121
+        /Users/gy-gyoung/.config/nvim/lua/plugins/rusty-tools.lua:75
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:32
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:54
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig.lua:85
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/lsp.lua:170
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/lsp.lua:236
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:121
+        /Users/gy-gyoung/.config/nvim/lua/plugins/rusty-tools.lua:75
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:32
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:74
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/lsp.lua:170
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/lsp.lua:236
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:121
+        /Users/gy-gyoung/.config/nvim/lua/plugins/rusty-tools.lua:75
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:32
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/configs.lua:88
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/lsp.lua:170
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/lsp.lua:236
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/init.lua:121
+        /Users/gy-gyoung/.config/nvim/lua/plugins/rusty-tools.lua:75
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:32
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:81
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:83
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:84
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:85
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:86
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:87
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:88
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:89
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:91
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:92
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:93
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:94
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:95
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:96
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:97
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:98
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:99
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:100
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:101
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:102
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:103
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:104
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:105
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:107
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:108
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:109
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:110
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:111
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:112
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:114
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:115
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:118
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:119
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:120
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:122
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:123
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:125
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:126
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:72
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/uv.lua:127
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:4
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/ui.lua:45
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:6
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/ui.lua:47
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:6
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/lsp.lua:17
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:8
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:165
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/init.lua:176
+        [C]:-1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:34
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/config/init.lua:153
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/config/init.lua:198
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/config/init.lua:230
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/windows/init.lua:5
+        [C]:-1
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:47
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/config/init.lua:153
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/config/init.lua:198
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:84
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/client/init.lua:113
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:86
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:60
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:19
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/breakpoints.lua:20
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:107
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:69
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:21
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/breakpoints.lua:20
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:60
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:19
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/scopes.lua:19
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:107
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:69
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:21
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/scopes.lua:19
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:60
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:19
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/stacks.lua:18
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:107
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:69
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:21
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/stacks.lua:18
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:60
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:19
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/watches.lua:23
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:107
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:69
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:21
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/watches.lua:23
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:60
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:19
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/hover.lua:11
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:183
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/control.lua:107
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-nio/lua/nio/tasks.lua:69
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/util.lua:21
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/elements/hover.lua:11
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua/dapui/init.lua:106
+        /Users/gy-gyoung/.config/nvim/lua/plugins/dap-ui.lua:1
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/init.lua:33
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-buffer/lua/cmp_buffer/source.lua:34
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-buffer/lua/cmp_buffer/source.lua:45
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:237
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:281
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:299
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:169
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:229
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:346
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-buffer/lua/cmp_buffer/source.lua:34
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-buffer/lua/cmp_buffer/source.lua:45
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:237
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:171
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:336
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:299
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:169
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:229
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:346
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-buffer/lua/cmp_buffer/source.lua:34
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-buffer/lua/cmp_buffer/source.lua:50
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:340
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:299
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:169
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:229
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:346
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-path/lua/cmp_path/init.lua:197
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-path/lua/cmp_path/init.lua:39
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:340
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:299
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:169
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:229
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:346
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-buffer/lua/cmp_buffer/source.lua:34
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/cmp-buffer/lua/cmp_buffer/source.lua:45
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:237
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:281
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:299
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:169
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:161
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/init.lua:346
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:49
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/utils/autocmd.lua:23
+    - stack traceback:
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/util.lua:194
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/util.lua:225
+        /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/lsp.lua:175
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/manager.lua:211
+        [C]:-1
+        /Users/gy-gyoung/.config/nvim/lua/lspconfig/async.lua:5
+
+==============================================================================
+
+```
