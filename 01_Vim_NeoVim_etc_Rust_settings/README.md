@@ -2,6 +2,8 @@
 
 - 다른 외국인이 한vim설정
   - https://github.com/nir9/welcome
+  - C# ㄱㅐ발자
+    - https://github.com/MoaidHathot/dotnet.nvim
 
 <hr />
 
