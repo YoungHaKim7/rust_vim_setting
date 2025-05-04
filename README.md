@@ -12,6 +12,9 @@
 
 - [toml fmt](https://taplo.tamasfe.dev/cli/installation/binary.html)
 
+<hr />
+
+- [git commit 메세지를 설정하는 에디터가 기본적vim으로 변경]()
 
 
 <hr />
@@ -212,7 +215,7 @@ Command + Shift + C
 
 setting.JSON
 
-```
+```json
 {
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.external.osxExec": "Warp.app"
@@ -240,3 +243,14 @@ https://youtu.be/Gpe-zGS5W0I
 - https://www.freecodecamp.org/news/mastering-vim-your-guide-to-efficient-text-editing/
   - VIM Essentials Course for Beginners | freeCodeCamp.org
     - https://youtu.be/JYNA9j8SXs4?si=BFs84HXofXHg36Mt
+
+# git commit 메세지를 설정하는 에디터가 기본적vim으로 변경[|🔝|](#link)
+
+- git commit 메세지를 설정하는 에디터가 기본적으로는 nano 에디터일 텐데, nano에디터에는 익숙하지 않아서 vim으로 바꿨었다. vim으로 바꾸는 커맨드는 다음과 같다.
+
+```bash
+$ git config --global core.editor vim
+```
+
+- git commit 메세지를 sublime text로 저장하는 방법 - https://thinkpro.tistory.com/m/142
+
