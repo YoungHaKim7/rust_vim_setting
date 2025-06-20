@@ -35,6 +35,7 @@
 
 - [zed의 기가막힌 기능들_최신 업데이트 소식 등등](#zed의-기가막힌-기능들)
   - [250619드디어 디버깅 된다 https://zed.dev/debugger](https://zed.dev/debugger)
+    - 블로그 글 https://zed.dev/blog/debugger
   - [zed Blog에 최신기능과 구현 방법 좋은 글 많음](https://zed.dev/blog)
 
 <hr>
