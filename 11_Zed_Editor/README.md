@@ -34,6 +34,7 @@
     - [zed에 TabbyAI를 연결할 단서2](https://github.com/zed-industries/zed/issues/4421)
 
 - [zed의 기가막힌 기능들_최신 업데이트 소식 등등](#zed의-기가막힌-기능들)
+  - [250619드디어 디버깅 된다 https://zed.dev/debugger](https://zed.dev/debugger)
   - [zed Blog에 최신기능과 구현 방법 좋은 글 많음](https://zed.dev/blog)
 
 <hr>
