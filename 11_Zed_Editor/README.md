@@ -39,6 +39,22 @@
 
 <hr>
 
+# Mini맵 나오게 세팅(최신기능)
+
+- https://zed.dev/docs/configuring-zed#minimap
+
+```json
+{
+  "minimap": {
+    "show": "never",
+    "thumb": "always",
+    "thumb_border": "left_open",
+    "current_line_highlight": null
+  }
+}
+```
+
+
 # git blame안 나오게 세팅[|🔝|](#link)
 
 ```json
