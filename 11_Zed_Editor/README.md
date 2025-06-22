@@ -13,7 +13,7 @@
 - [zed releases최신버젼체크](#zed-releases버젼업최신-버젼체크)
 - [zed Install설치하기 linux & macOS 가능241111](#zedinstall-__-brew-install)
 - [zed-doc_tutorial문서](#zed-doctutorial문서)
-  - [Zed Debugger디버깅하는 법]() 
+  - [Zed Debugger디버깅하는 법](#zed-debugger디버깅하는-법) 
   - [터미널창 우측에 크게 띄우기 The Dock부분 확인하면됨(VSCode에서의 "Terminal : Create New terminal in Editor Area to the Side"](https://zed.dev/features)
 - snippets설정
   - [zed에 snippets설정하기](https://zed.dev/docs/languages/rust)
