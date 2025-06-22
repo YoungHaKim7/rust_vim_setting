@@ -11,7 +11,7 @@
   "ui_font_family": "Hack Nerd Font Mono",
   "vim_mode": true,
   "ui_font_size": 24,
-  "buffer_font_size": 24,
+  "buffer_font_size": 25.0,
   // Set the buffer's line height.
   // May take 3 values:
   //  1. Use a line height that's comfortable for reading (1.618)
@@ -61,6 +61,9 @@
   "terminal": {
     "shell": "system",
     "working_directory": "current_project_directory"
+  },
+  "minimap": {
+    "show": "always"
   },
   // "features": {
   // // copilot disable = "none"
