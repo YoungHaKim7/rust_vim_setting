@@ -20,6 +20,7 @@
 <hr />
 
 # toml Fmt
+- https://github.com/tamasfe/taplo
 
 ```bash
 taplo format Cargo.toml
