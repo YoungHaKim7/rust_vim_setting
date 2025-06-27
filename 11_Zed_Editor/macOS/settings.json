@@ -79,19 +79,25 @@
   // LSP Specific settings.
   "lsp": {
     // Specify the LSP name as a key here.
+    // }
     "rust-analyzer": {
-      //     //These initialization options are merged into Zed's defaults
       "initialization_options": {
-        "checkOnSave": {
-          "command": "clippy"
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "enable": "skip_trivial",
+            "useParameterNames": true
+          },
+          "closureReturnTypeHints": {
+            "enable": "always"
+          }
         }
       }
-      // }
-    },
-    "c3-lsp": {
-      "initialization_options": {
-        "checkOnSave": true
-      }
+    }
+  },
+  "c3-lsp": {
+    "initialization_options": {
+      "checkOnSave": true
     }
   }
 }
