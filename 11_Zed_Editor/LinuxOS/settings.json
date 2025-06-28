@@ -4,14 +4,41 @@
 // documentation: https://zed.dev/docs/configuring-zed
 //
 // To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+//{
+//  "ui_font_size": 16,
+//  "buffer_font_size": 16,
+//  "theme": {
+//    "mode": "system",
+//    "light": "One Light",
+//    "dark": "One Dark"
+//  }
+//}
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "buffer_font_features": {
+    "calt": false
+  },
   "theme": "Tokyo Night gy InlayHint red",
-  "ui_font_family": "Hack Nerd Font Mono",
+  "ui_font_family": "Hack Nerd Font",
+  "buffer_font_fallbacks": [
+    "Hack Nerd Font"
+  ],
   "vim_mode": true,
-  "ui_font_size": 26,
-  "buffer_font_size": 26,
+  "ui_font_size": 30,
+  "buffer_font_size": 30,
+  "buffer_font_weight": 400,
+  "buffer_line_height": {
+    "custom": 1.5
+  },
   // Set the buffer's line height.
   // May take 3 values:
   //  1. Use a line height that's comfortable for reading (1.618)
@@ -19,9 +46,10 @@
   //  2. Use a standard line height, (1.3)
   //"line_height": "standard",
   //  3. Use a custom line height
-  "line_height": {
-    "custom": 1.0
-  },
+  //
+  // "line_height": {
+  //   "standard": 1.3
+  // },
   "relative_line_numbers": true,
   // disable cursor blink
   // "cursor_blink": false,
@@ -61,6 +89,9 @@
   "terminal": {
     "shell": "system",
     "working_directory": "current_project_directory"
+  },
+  "minimap": {
+    "show": "always"
   },
   "prettier": {
     // Use regular Prettier json configuration:

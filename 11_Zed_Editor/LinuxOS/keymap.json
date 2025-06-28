@@ -1,3 +1,10 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
 [
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
@@ -63,6 +70,13 @@
     }
   },
   {
+    "context": "Editor && inline_completion && !showing_completions",
+    "bindings": {
+      "tab": "editor::Tab",
+      "ctrl-b": "editor::AcceptInlineCompletion"
+    }
+  },
+  {
     "context": "Editor && vim_mode == insert && menu",
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
@@ -95,7 +109,7 @@
       "r": "project_panel::Rename",
       "z c": "project_panel::CollapseSelectedEntry",
       "z o": "project_panel::ExpandSelectedEntry",
-      "shift-o": "project_panel::RevealInFinder",
+      // "shift-o": "project_panel::RevealInFinder",
       "x": "project_panel::Cut",
       "c": "project_panel::Copy",
       "p": "project_panel::Paste",
