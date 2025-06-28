@@ -47,6 +47,9 @@
 
 <hr />
 
+# 줄간격 조절
+- https://github.com/zed-industries/zed/issues/5590
+
 # Mini맵 나오게 세팅(최신기능)[|🔝|](#link)
 
 - https://zed.dev/docs/configuring-zed#minimap
