@@ -31,7 +31,7 @@
 - [scm파일로 관리하네..The_Scheme Programming알아보기](https://www.scheme.org/)
 
 - AI 세팅
-  - [Copilot logout겁나게 느린 코파일럿 로그아웃으로 꺼지게 하자 ㅋㅋ]()
+  - [Copilot logout겁나게 느린 코파일럿 로그아웃으로 꺼지게 하자 ㅋㅋ](#copilot-logout겁나게-느린-코파일럿-로그아웃으로-꺼지게-하자-ㅋㅋ)
   - [zed에 TabbyAI를 연결할 단서1_https://github.com/d1y/tabby-agent-zed](https://github.com/d1y/tabby-agent-zed)
     - [zed에 TabbyAI를 연결할 단서2](https://github.com/zed-industries/zed/issues/4421)
 
