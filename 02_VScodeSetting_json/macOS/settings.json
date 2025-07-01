@@ -90,13 +90,11 @@
     "aws.codeWhisperer.javaCompilationOutput": "",
     "aws.codeWhisperer.shareCodeWhispererContentWithAWS": true,
     "aws.telemetry": true,
-    // rust-analyzer setting~
-    "rust-analyzer.inlayHints.enable": true,
-    "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+    // rust-analyzer setting~(rust1.88)
+    "rust-analyzer.checkOnSave": true,
     "rust-analyzer.procMacro.enable": true,
-    "rust-analyzer.checkOnSave.command": "clippy",
     "rust-analyzer.procMacro.attributes.enable": true,
-    // rust-yew 
+    // rust-yew
     // "emmet.includeLanguages": {
     //   "rust": "html",
     // },
