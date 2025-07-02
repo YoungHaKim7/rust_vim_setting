@@ -7,6 +7,7 @@
 <hr />
 
 - [(외부링크)Vim documentation(공식문서)](https://vimdoc.sourceforge.net/htmldoc/)
+  - [nvim lua가이드 한글판](https://github.com/krapjost/nvim-lua-guide-kr)
 
 <hr>
 
