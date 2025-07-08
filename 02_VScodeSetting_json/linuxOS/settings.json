@@ -3,7 +3,7 @@
     "clangd.arguments": [
         "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
     ],
-    "clangd.path": "/home/gy/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
+    "clangd.path": "/home/g/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/19.1.2/clangd_19.1.2/bin/clangd",
     // Zig Lang
     // "zls.path": "/home/y/.config/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
     // "zig.zigPath": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
@@ -48,8 +48,8 @@
     "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
     "typescript.inlayHints.variableTypes.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "fontFace": "MesloLGS NF",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "fontFace": "Hack Nerd Font",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
     // auto fmt & format
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
@@ -63,7 +63,7 @@
     "editor.fontLigatures": true,
     // Controls if file decorations should use badges.
     "explorer.decorations.badges": false,
-    "editor.fontSize": 17,
+    "editor.fontSize": 20,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.bracketPairColorization.enabled": true,
@@ -87,10 +87,10 @@
     // Tabnine AI <C-space> Auto Completion
     "tabnine.experimentalAutoImports": true,
     // rust-analyzer setting~
-    "rust-analyzer.inlayHints.enable": true,
-    "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+    // rust-analyzer setting~(rust1.88)
+    "rust-analyzer.checkOnSave": true,
     "rust-analyzer.procMacro.enable": true,
-    "rust-analyzer.checkOnSave.command": "clippy",
+    "rust-analyzer.procMacro.attributes.enable": true,
     "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
     "rust-analyzer.inlayHints.typeHints.hideNamedConstructor": true,
     // zig languages setting~
@@ -412,5 +412,6 @@
     "workbench.sideBar.location": "right",
     "zig.path": "",
     "zig.initialSetupDone": true,
-    "hediet.vscode-drawio.resizeImages": null
+    "hediet.vscode-drawio.resizeImages": null,
+    "database-client.autoSync": true
 }
