@@ -54,6 +54,14 @@
 
 <hr />
 
+- [(외부링)Release 25.07 Highlights 15 July 2025](https://helix-editor.com/news/release-25-07-highlights/)
+
+- test해보자 궁금하다.
+```
+:echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}
+```
+
+
 - 25.01(추가해 보자 겁나게 신기하다 ㅎ)
   - [Helix Release 25.01 Highlights](https://helix-editor.com/news/release-25-01-highlights/)
 
