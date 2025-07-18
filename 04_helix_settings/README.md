@@ -3,7 +3,7 @@
 # Link[[🔝]](#helix-a-post-modern-text-editor)
 
 - Helix새로운 기능들
-   - [25.01 & 24.03버젼에 생긴 신기한 기능들](#새로운-기능)
+   - [25.07 & 24.03버젼에 생긴 신기한 기능들](#새로운-기능)
 
 - [(외부링크)toml fmt(Helix_Autoformat toml?)](https://www.reddit.com/r/HelixEditor/comments/17gu2en/autoformat_toml/?rdt=39200)
 
@@ -55,6 +55,8 @@
 <hr />
 
 - [(외부링)Release 25.07 Highlights 15 July 2025](https://helix-editor.com/news/release-25-07-highlights/)
+  - Enter Tree-house
+    - With this release we've replaced the highlighter with a new crate: [`tree-house`](https://github.com/helix-editor/tree-house). We wrote Tree-house from scratch based on our experience with those early highlighters.
 
 - test해보자 궁금하다.
 ```
