@@ -67,3 +67,4 @@ starship init fish | source
 # alias
 #alias clang++="clang++-19"
 # alias clangd="clangd-19"
+alias clangd=clangd-20
