@@ -41,7 +41,7 @@
   - [zed Blog에 최신기능과 구현 방법 좋은 글 많음](https://zed.dev/blog)
 
 - C/C++ 설정관련
-  - [Zed C/C++ tabsize 설정 4칸으로 하는 방법](
+  - [Zed C/C++ tabsize 설정 4칸으로 하는 방법](#zed-cc-tabsize-설정-4칸으로-하는-방법)
 
 <hr>
 
