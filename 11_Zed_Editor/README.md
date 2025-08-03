@@ -40,6 +40,9 @@
     - 블로그 글 https://zed.dev/blog/debugger
   - [zed Blog에 최신기능과 구현 방법 좋은 글 많음](https://zed.dev/blog)
 
+- C/C++ 설정관련
+  - [Zed C/C++ tabsize 설정 4칸으로 하는 방법](
+
 <hr>
 
 # Copilot logout겁나게 느린 코파일럿 로그아웃으로 꺼지게 하자 ㅋㅋ[|🔝|](#link)
@@ -49,12 +52,16 @@
 ❯ copilot: sign out
 ```
 
-# Zed Cpp tabsize 설정 4칸으로 하는 방법[|🔝|](#link)
+# Zed C/C++ tabsize 설정 4칸으로 하는 방법[|🔝|](#link)
 - https://zed.dev/docs/languages/cpp
 
 ```json
   "languages": {
     "C++": {
+      "format_on_save": "on",
+      "tab_size": 4
+    },
+    "C": {
       "format_on_save": "on",
       "tab_size": 4
     }
