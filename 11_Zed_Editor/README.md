@@ -49,6 +49,20 @@
 ❯ copilot: sign out
 ```
 
+# Zed Cpp tabsize 설정 4칸으로 하는 방법[|🔝|](#link)
+- https://zed.dev/docs/languages/cpp
+
+```json
+  "languages": {
+    "C++": {
+      "format_on_save": "on",
+      "tab_size": 4
+    }
+  }
+
+```
+
+
 # Zed Debugger디버깅하는 법[|🔝|](#link)
 
 - https://zed.dev/docs/debugger
