@@ -37,7 +37,7 @@
   "buffer_font_size": 30,
   "buffer_font_weight": 400,
   "buffer_line_height": {
-    "custom": 1.5
+    "custom": 1.4
   },
   // Set the buffer's line height.
   // May take 3 values:
@@ -116,6 +116,16 @@
           }
         }
       }
+    }
+  },
+  "languages": {
+    "C++": {
+      "format_on_save": "on",
+      "tab_size": 4
+    },
+    "C": {
+      "format_on_save": "on",
+      "tab_size": 4
     }
   }
 }
