@@ -98,9 +98,14 @@
       }
     }
   },
-  "c3-lsp": {
-    "initialization_options": {
-      "checkOnSave": true
+  "languages": {
+    "C++": {
+      "format_on_save": "on",
+      "tab_size": 4
+    },
+    "C": {
+      "format_on_save": "on",
+      "tab_size": 4
     }
   }
 }
