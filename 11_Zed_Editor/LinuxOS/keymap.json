@@ -73,7 +73,7 @@
     "context": "Editor && inline_completion && !showing_completions",
     "bindings": {
       "tab": "editor::Tab",
-      "ctrl-b": "editor::AcceptInlineCompletion"
+      "ctrl-b": "editor::AcceptEditPrediction"
     }
   },
   {

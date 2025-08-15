@@ -52,6 +52,18 @@
 ❯ copilot: sign out
 ```
 
+- copilot  추천한거 승인하기( zed ver. Zed 0.199.6)
+
+```json
+{
+  "context": "Editor && inline_completion && !showing_completions",
+  "bindings": {
+    "tab": "editor::Tab",
+    "ctrl-b": "editor::AcceptEditPrediction"
+  }
+},
+```
+
 # Zed C/C++ tabsize 설정 4칸으로 하는 방법[|🔝|](#link)
 - https://zed.dev/docs/languages/cpp
 
