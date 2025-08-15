@@ -326,6 +326,21 @@ ctrl-x ctrl-z  Hides all suggestions
 
 # Fix[|🔝|](#link)
 
+- [ ] copilot 승인하고 normal "o" 먹통
+  - 이렇게 해도 안됨. 
+
+```json
+{
+    "context": "Editor && vim_mode == normal && !VimWaiting && !(edit_prodiction || showing_completions)",
+    "bindings": {
+      "o": [
+        "vim::InsertLineBelow",
+        "vim::Down"
+      ]
+    }
+  },
+```
+
 
 ```json
  {
