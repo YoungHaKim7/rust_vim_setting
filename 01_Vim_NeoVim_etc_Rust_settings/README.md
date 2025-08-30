@@ -16,7 +16,7 @@
 
 - [Sort 패턴](#sort-패턴)
 
-- <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-ex-commands-m-t-and-co">move copy command :</a>
+- [move copy command](#vim-ex-commands-m-t-and-co)
 
 - <a href="https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#vim-normal-%ED%99%9C%EC%9A%A9%EB%B2%95">normal활용법</a>
 
