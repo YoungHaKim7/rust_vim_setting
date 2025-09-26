@@ -1,3 +1,8 @@
+# DoomEmacs여기에 다시 정리중.
+- https://github.com/YoungHaKim7/emacs_DoomEmacs_training
+
+<hr />
+
 # emacs
 - Castellan: org-mode agenda, activity, and calendar tracking
   - https://github.com/creichen/castellan
