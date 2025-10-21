@@ -1,3 +1,9 @@
+# 다른 외국인 dotfiles sample
+- https://github.com/richardscollin/.dotfiles
+
+# ANSI Color Codes
+- https://talyian.github.io/ansicolors/
+
 # Reselt :  
 
 https://gist.github.com/schulace/528eb7b91d9f1bc361922bfc86081a53
