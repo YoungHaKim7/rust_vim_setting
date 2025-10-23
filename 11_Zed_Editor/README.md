@@ -64,6 +64,16 @@
 },
 ```
 
+# Codestral (MistralAI) can now be used as your provider for edit predictions.[|🔝|](#link)
+- zed. v.0209나옴
+  - Thanks dvcrn!
+​
+```json
+"features": {
+"edit_prediction_provider": "codestral"
+}
+```
+
 # Zed C/C++ tabsize 설정 4칸으로 하는 방법[|🔝|](#link)
 - https://zed.dev/docs/languages/cpp
 
