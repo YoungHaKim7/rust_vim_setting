@@ -1041,6 +1041,7 @@ ctrl-x ctrl-z  Hides all suggestions
 
 # zed의 기가막힌 기능들[|🔝|](#link)
 - [json붙어넣으면 자동으로 러스트 코드로 변환해줌 굿](https://x.com/zeddotdev/status/1781696053093212620)
+- [이제 된다 굿 v0.209_Markdown preview with an HTML `img` tag]
 - vim 관련
   - [유니코드 입력하기Added ctrl-v/ctrl-q to type any unicode code point. For example ctrl-v escape inserts an escape character(U+001B), or ctrl-v u 1 0 E 2 types ტ (U+10E2). As in vim ctrl-v ctrl-j inserts U+0000 not U+000A. Zed does not yet implement insertion of the vim-specific representation of the typed keystroke for other keystroke](https://zed.dev/releases/stable)
 
