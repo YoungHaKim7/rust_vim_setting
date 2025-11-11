@@ -1,17 +1,30 @@
-# 현재 폴더에서 alacritty 열기
+# link
+
+<hr />
+
+# 현재 폴더에서 alacritty 열기[|🔝|](#link)
 
 ```bash
 alacritty --working-directory (pwd)
 ```
 https://github.com/alacritty/alacritty/issues/808
 
-# alacritty Teminal
+# alacritty Teminal[|🔝|](#link)
 
 - https://github.com/alacritty/alacritty/issues/7190
 
+<hr />
 
+# (macOS)에러나는거 따로 alacritty[|🔝|](#link)
 
-# 버젼업되면서 세팅 안해줘도 되네 ㅋㅋ
+```
+brew install --cask alacritty --no-quarantine
+```
+- https://github.com/alacritty/alacritty/issues/4673#issuecomment-771291615
+
+<hr />
+
+# 버젼업되면서 세팅 안해줘도 되네 ㅋㅋ[|🔝|](#link)
 - https://raw.githubusercontent.com/alacritty/alacritty/master/CHANGELOG.md
   - https://github.com/alacritty/alacritty/releases
     - https://github.com/alacritty/alacritty/blob/master/CHANGELOG.md#0123
@@ -39,7 +52,7 @@ Ctrl + n
 
 <hr>
 
-# alacritty 개인 세팅
+# alacritty 개인 세팅[|🔝|](#link)
 - 이거 보고 대충 끼어 맞춰 보자
   - https://alacritty.org/config-alacritty.html
   - https://sunnnychan.github.io/cheatsheet/linux/config/alacritty.yml.html
@@ -73,7 +86,7 @@ program = []
 
 <hr>
 
-# macOS 주로 쓰는 단축키(alacritty)
+# macOS 주로 쓰는 단축키(alacritty)[|🔝|](#link)
 
 ```bash
 # 새 창 열기 (탭으로 열림)
@@ -107,7 +120,7 @@ option + arrow Right Left
 
 ```
 
-# LinuxOS 주로 쓰는 단축키(alacritty)
+# LinuxOS 주로 쓰는 단축키(alacritty)[|🔝|](#link)
 
 ```
 #  첫줄로 이동
@@ -126,14 +139,14 @@ Ctrl + u
 
 <hr>
 
-#  Ctrl+{arrow key} does not jump word #1408 
+#  Ctrl+{arrow key} does not jump word #1408[|🔝|](#link)
 
 - https://github.com/alacritty/alacritty/issues/1408
 
 - https://stackoverflow.com/questions/5029118/bash-ctrl-to-move-cursor-between-words-strings
 
 
-# yml toml migrate
+# yml toml migrate[|🔝|](#link)
 
 ```
 alacritty migrate
@@ -145,7 +158,7 @@ alacritty migrate
 cd /etc/xdg/alacritty
 ```
 
-# alacritty theme
+# alacritty theme[|🔝|](#link)
 - https://github.com/alacritty/alacritty-theme
 
 - macOS 에서는 carbonfox 이 테마 쓰는중 ㅋ
@@ -186,7 +199,7 @@ doom_one.toml              hyper.toml                          papercolor_light.
 
 <hr>
 
-# ```alacritty -vv``` alacritty log를 볼 수 있다. 좋네 ㅎ
+# ```alacritty -vv``` alacritty log를 볼 수 있다. 좋네 ㅎ[|🔝|](#link)
 
 ```bash
  alacritty -vv
@@ -215,13 +228,13 @@ PS D:\young_linux\rust_lang> Created log file at "C:\Users\user\AppData\Local\Te
 
 https://github.com/alacritty/alacritty/issues/6931
 
-# Alacritty - Terminal Emulator - Windows HowTo
+# Alacritty - Terminal Emulator - Windows HowTo[|🔝|](#link)
 
 https://youtu.be/1aw8IDH826Y
 
 <br>
 
-# WindowsOS_Rust개발자세팅Rust_054⭐️겁나게 빠른 터미널 소개해드립니다.Warp쓰고 싶은데 ...기다려야하니 일단 Alacritty쓰면서 기다리죠 #alacritty
+# WindowsOS_Rust개발자세팅Rust_054⭐️겁나게 빠른 터미널 소개해드립니다.Warp쓰고 싶은데 ...기다려야하니 일단 Alacritty쓰면서 기다리죠[|🔝|](#link)
 
 https://youtu.be/h-Vm-17qJ88
 
@@ -239,7 +252,7 @@ https://github.com/alacritty/alacritty
 
 <hr>
 
-# 내가 쓰고 싶은 Warp 지금은 (macOS만 가능ㅠㅠ230106기준) macOS_러스트로 만들어진 차세대 터미널warp데모영상
+# 내가 쓰고 싶은 Warp 지금은 (macOS만 가능ㅠㅠ230106기준) macOS_러스트로 만들어진 차세대 터미널warp데모영상[|🔝|](#link)
 
 https://youtu.be/3MmhhixaqqA
 
@@ -252,17 +265,17 @@ https://www.warp.dev/
 
 <br>
 
-# Windows OS Powershell 7.xx 버젼으로 세팅
+# Windows OS Powershell 7.xx 버젼으로 세팅[|🔝|](#link)
 
 https://github.com/alacritty/alacritty/issues/4817
 
 
-# UTF-8 settings
+# UTF-8 settings[|🔝|](#link)
 
 https://unpkg.com/browse/alacritty-themes@4.1.1/alacritty.yml
 
 
-# 외국인 alacritty 세팅
+# 외국인 alacritty 세팅[|🔝|](#link)
 
 
 ```
