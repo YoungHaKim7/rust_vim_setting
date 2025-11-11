@@ -1,0 +1,32 @@
+# The syntax is "key = value". The whitespace around the
+# equals doesn't matter.
+background = 0f0f0f
+foreground = ffffff
+
+# Empty values reset the configuration to the default value
+font-family = Hack Nerd Font
+font-size = 30
+theme = Github Dark
+shell-integration-features = no-cursor,sudo,no-title
+cursor-style = block
+adjust-cell-height = 35%
+background-opacity = 0.96
+
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+window-padding-balance = true 
+window-save-state = always
+macos-titlebar-style=transparent
+window-colorspace = "display-p3"
+# 
+# other
+copy-on-select = clipboard
+
+# Comments start with a `#` and are only valid on their own line.
+# Blank lines are ignored!
+
+keybind = ctrl+z=close_surface
+keybind = ctrl+d=new_split:right
+keybind = performable:ctrl+c=copy_to_clipboard
+
