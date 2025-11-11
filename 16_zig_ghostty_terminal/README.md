@@ -3,6 +3,9 @@
 
 # Ghostty doc
 - https://ghostty.org/docs
+
+# config(Ghostty)
+- https://ghostty.org/docs/config.
   - config 설명하는 영상[How I configure Ghostty Terminal Adib Hanna](https://youtu.be/jWuQxU4bDeU?si=JjIUOEogMM_1UYmf)
   - sample
     - https://gist.github.com/adibhanna/c552c452fb244b3b721e3c2432e85cde
