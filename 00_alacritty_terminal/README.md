@@ -15,7 +15,7 @@ https://github.com/alacritty/alacritty/issues/808
 
 <hr />
 
-# (macOS)에러나는거 따로 alacritty[|🔝|](#link)
+# (macOS) Install_에러나는거 따로 alacritty[|🔝|](#link)
 
 ```
 brew install --cask alacritty --no-quarantine
