@@ -12,6 +12,8 @@
 
 # theme테마 바꾸기
 
+- https://iterm2colorschemes.com/
+  - https://github.com/mbadolato/iTerm2-Color-Schemes
 - 폴더 확인해보자
   - https://github.com/ghostty-org/ghostty/discussions/8861
 
