@@ -55,19 +55,19 @@ foreground = ffffff
 
 # Empty values reset the configuration to the default value
 font-family = Hack Nerd Font
-font-size = 24
+font-size = 28
 # theme = Github Dark
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
-adjust-cell-width = -8%
+adjust-cell-width = -4%
 adjust-cell-height = -5%
-background-opacity = 0.94
+background-opacity = 0.96
 
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 
 window-width = 150
-window-height = 25
+window-height = 29
 window-position-x = 2
 window-position-y = 1
 
