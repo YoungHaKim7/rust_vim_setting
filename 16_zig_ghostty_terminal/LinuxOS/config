@@ -59,8 +59,9 @@ font-size = 24
 # theme = Github Dark
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
-adjust-cell-height = 35%
-background-opacity = 0.96
+adjust-cell-width = -8%
+adjust-cell-height = -5%
+background-opacity = 0.94
 
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
