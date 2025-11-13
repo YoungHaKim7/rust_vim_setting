@@ -28,3 +28,7 @@
 
 # Ubuntu Install
 - https://github.com/mkasberg/ghostty-ubuntu
+
+# Bug & Fix
+- Scroll은 아직 안됨(251113)
+  - https://github.com/ghostty-org/ghostty/issues/111
