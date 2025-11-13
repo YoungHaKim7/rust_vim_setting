@@ -32,3 +32,4 @@
 # Bug & Fix
 - Scroll은 아직 안됨(251113)
   - https://github.com/ghostty-org/ghostty/issues/111
+  - macOS에서만 지원중?(251113) https://github.com/ghostty-org/ghostty/pull/9232
