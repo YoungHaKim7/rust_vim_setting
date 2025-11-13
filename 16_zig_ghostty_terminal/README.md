@@ -11,8 +11,9 @@
 - Cursor Horizontal Tabulation (CHT)
   - https://ghostty.org/docs/vt/csi/cht
 
-|0x1B|     0x5B|    ____|    0x49|
-|ESC|      [|        n|        I|
+|0x1B|0x5B|____|0x49|
+|-|-|-|-|
+|ESC|[|n|I|
 
 - CHT V-1: Right Beyond Last Column
 
