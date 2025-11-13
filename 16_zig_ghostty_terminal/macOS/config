@@ -63,7 +63,7 @@ font-thicken-strength = 20
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 adjust-cell-width = -10%
-adjust-cell-height = -1%
+adjust-cell-height = -6%
 background-opacity = 0.94
 
 mouse-hide-while-typing = true
