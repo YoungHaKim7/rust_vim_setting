@@ -22,6 +22,7 @@
 
 # toml Fmt
 - https://github.com/tamasfe/taplo
+  - [sample code](https://github.com/tamasfe/taplo/blob/master/taplo.toml)
 
 ```bash
 taplo format Cargo.toml
