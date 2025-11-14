@@ -9,29 +9,6 @@
 # Ghostty doc[|🔝|](#link)
 - https://ghostty.org/docs
 
-- Teminal API
-  - https://ghostty.org/docs/vt/csi/su
-  - https://ghostty.org/docs/vt/reference
-
-- Cursor Horizontal Tabulation (CHT)
-  - https://ghostty.org/docs/vt/csi/cht
-
-|0x1B|0x5B|____|0x49|
-|-|-|-|-|
-|ESC|[|n|I|
-
-- CHT V-1: Right Beyond Last Column
-
-```c
-printf "\033[?5W" # reset tab stops
-printf "\033[100I" # assuming the test terminal has less than 800 columns
-printf "A"
-```
-
-```bash
-|_________A|
-```
-
 # config(Ghostty)[|🔝|](#link)
 - https://ghostty.org/docs/config.
   - config 설명하는 영상[How I configure Ghostty Terminal Adib Hanna](https://youtu.be/jWuQxU4bDeU?si=JjIUOEogMM_1UYmf)
@@ -69,4 +46,27 @@ printf "A"
 ```
 keybind = cmd+shift+left_bracket=csi:2;10[
 keybind = cmd+shift+right_bracket=csi:2;10]
+```
+
+- Teminal API
+  - https://ghostty.org/docs/vt/csi/su
+  - https://ghostty.org/docs/vt/reference
+
+- Cursor Horizontal Tabulation (CHT)
+  - https://ghostty.org/docs/vt/csi/cht
+
+|0x1B|0x5B|____|0x49|
+|-|-|-|-|
+|ESC|[|n|I|
+
+- CHT V-1: Right Beyond Last Column
+
+```c
+printf "\033[?5W" # reset tab stops
+printf "\033[100I" # assuming the test terminal has less than 800 columns
+printf "A"
+```
+
+```bash
+|_________A|
 ```
