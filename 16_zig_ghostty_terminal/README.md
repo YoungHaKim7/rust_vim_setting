@@ -42,6 +42,8 @@
 # keybinds[|🔝|](#link)
 
 - [창 전환 세팅해 보기](https://github.com/ghostty-org/ghostty/discussions/3187)
+  - [zig bind코드 ](https://github.com/ghostty-org/ghostty/blob/c8950d376ab3be13fbd9a19317163075f4feddbc/src/input/Binding.zig#L1427)
+
 
 ```
 keybind = cmd+shift+left_bracket=csi:2;10[
