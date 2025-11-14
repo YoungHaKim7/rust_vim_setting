@@ -46,9 +46,30 @@
 
 
 ```
-keybind = cmd+shift+left_bracket=csi:2;10[
-keybind = cmd+shift+right_bracket=csi:2;10]
+## TMUX
+# :vs
+keybind = alt+\=new_split:right
+# :sp
+keybind = alt+-=new_split:down
+
+
+# Navigation TMUX
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:bottom
+keybind = ctrl+shift+k=goto_split:top
+keybind = ctrl+shift+l=goto_split:right
+
+
+# Resize split
+keybind = alt+shift+h=resize_split:left,20
+keybind = alt+shift+j=resize_split:down,20
+keybind = alt+shift+k=resize_split:up,10
+keybind = alt+shift+l=resize_split:right,10
+keybind = alt+shift+plus=equalize_splits
+
 ```
+
+- [TMUX Style창 나누기](https://www.reddit.com/r/Ghostty/comments/1izc7vq/split_screen_configurations/)
 
 - Teminal API
   - https://ghostty.org/docs/vt/csi/su
