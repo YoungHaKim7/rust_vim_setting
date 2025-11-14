@@ -85,6 +85,4 @@ copy-on-select = clipboard
 
 keybind = ctrl+z=close_surface
 keybind = ctrl+d=new_split:right
-keybind = performable:ctrl+c=copy_to_clipboard
-
-
+keybind = performable:shift+ctrl+c=copy_to_clipboard
