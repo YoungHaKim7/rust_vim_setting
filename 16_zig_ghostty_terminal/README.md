@@ -61,7 +61,7 @@ keybind = cmd+shift+right_bracket=csi:2;10]
 
 - CHT V-1: Right Beyond Last Column
 
-```c
+```bash
 printf "\033[?5W" # reset tab stops
 printf "\033[100I" # assuming the test terminal has less than 800 columns
 printf "A"
