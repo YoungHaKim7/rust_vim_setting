@@ -71,7 +71,7 @@ mouse-scroll-multiplier = 2
 
 # windows
 window-width = 150
-window-height = 29
+window-height = 31
 window-position-x = 2
 window-position-y = 1
 
@@ -88,4 +88,19 @@ copy-on-select = clipboard
 
 keybind = ctrl+z=close_surface
 keybind = ctrl+d=new_split:right
-keybind = performable:ctrl+c=copy_to_clipboard
+keybind = performable:shift+ctrl+c=copy_to_clipboard
+
+## TMUX
+keybind = alt+\=new_split:right
+keybind = alt+-=new_split:down
+# Navigation TMUX
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:bottom
+keybind = ctrl+shift+k=goto_split:top
+keybind = ctrl+shift+l=goto_split:right
+# Resize split
+keybind = alt+shift+h=resize_split:left,20
+keybind = alt+shift+j=resize_split:down,20
+keybind = alt+shift+k=resize_split:up,10
+keybind = alt+shift+l=resize_split:right,10
+keybind = alt+shift+plus=equalize_splits
