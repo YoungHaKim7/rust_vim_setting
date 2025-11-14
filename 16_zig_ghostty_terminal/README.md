@@ -1,3 +1,8 @@
+# link
+- [키 변경 및 세팅 다시_키 추가++ keybinds]()
+
+<hr />
+
 # 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 - https://github.com/ghostty-org/ghostty
 
@@ -56,3 +61,12 @@ printf "A"
 - Scroll은 아직 안됨(251113)
   - https://github.com/ghostty-org/ghostty/issues/111
   - macOS에서만 지원중?(251113) https://github.com/ghostty-org/ghostty/pull/9232
+
+# keybinds
+
+- [창 전환 세팅해 보기](https://github.com/ghostty-org/ghostty/discussions/3187)
+
+```
+keybind = cmd+shift+left_bracket=csi:2;10[
+keybind = cmd+shift+right_bracket=csi:2;10]
+```
