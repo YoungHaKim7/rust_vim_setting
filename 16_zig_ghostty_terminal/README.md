@@ -46,6 +46,11 @@
 
 
 ```
+# vim키랑 겹쳐서 선호 하지는 않음 구린세팅이지만 혹시나
+keybind = ctrl+z=close_surface
+keybind = ctrl+d=new_split:right
+
+
 ## TMUX
 # :vs
 keybind = alt+\=new_split:right
