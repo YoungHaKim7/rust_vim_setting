@@ -48,11 +48,19 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
+# ####### My Setting ####
+# ####################
+# # 
+# Comments start with a `#` and are only valid on their own line.
+# Blank lines are ignored!
 # The syntax is "key = value". The whitespace around the
 # equals doesn't matter.
 background = 0f0f0f
 foreground = ffffff
+# ######
 
+# ####
+# font & background
 # Empty values reset the configuration to the default value
 font-family = Hack Nerd Font
 font-size = 28
@@ -62,10 +70,17 @@ cursor-style = block
 adjust-cell-width = -4%
 adjust-cell-height = -5%
 background-opacity = 0.96
+# #####
 
+# #####
+#### Mouse setting
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 
+######
+
+# #####
+# ## Windows setting
 window-width = 150
 window-height = 29
 window-position-x = 2
@@ -76,12 +91,17 @@ window-save-state = always
 macos-titlebar-style=transparent
 window-colorspace = "display-p3"
 
-# 
-# other
+# ## split setting
+window-inherit-working-directory = true
+# ####
+
+# #### 
+# ## other
 copy-on-select = clipboard
 
-# Comments start with a `#` and are only valid on their own line.
-# Blank lines are ignored!
+# ####
+# Key bind
+# ####
 
 keybind = ctrl+z=close_surface
 keybind = ctrl+d=new_split:right
@@ -102,3 +122,4 @@ keybind = alt+shift+k=resize_split:up,10
 keybind = alt+shift+l=resize_split:right,10
 keybind = alt+shift+plus=equalize_splits
 
+######
