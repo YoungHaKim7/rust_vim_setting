@@ -1,4 +1,5 @@
 # link
+- [(외부링크)alacritty-bindings공식 문서](https://alacritty.org/config-alacritty-bindings.html)
 
 <hr />
 
