@@ -6,6 +6,16 @@
 # Fix & bug 해결
 - [창 나눴는데 내 프로젝트 폴더가 안 열리고 root폴더가 열릴때 (리눅스OS bug)](https://github.com/ghostty-org/ghostty/issues/1392)
 
+- test예정(LinuxOS적용되는지 확인)
+
+```
+window-inherit-working-directory = false
+tab-inherit-working-directory = true
+split-inherit-working-directory = true
+```
+
+- https://github.com/ghostty-org/ghostty/pull/9158
+
 # 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.[|🔝|](#link)
 - https://github.com/ghostty-org/ghostty
 
