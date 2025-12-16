@@ -49,6 +49,26 @@
 # vim9(다른 사람이 설정한거)
 - https://github.com/arp242/dotfiles/blob/master/vim/vimrc
 
+<hr />
+
+# `.vim/coc-settings.json` neovim셋팅
+- https://github.com/Charles-Johnson/zia_programming
+
+```json
+{
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "rust-analyzer.linkedProjects": ["/usr/src/Cargo.toml"],
+  "rust-analyzer.server.extraEnv": {
+    "CARGO_TARGET_DIR": "target",
+    "CARGO_BUILD_RUSTC_WRAPPER": "",
+    "CARGO_BUILD_INCREMENTAL": "true"
+  },
+  "rust-analyzer.check.overrideCommand": ["cargo", "clippy", "--fix", "--allow-dirty", "--message-format=json", "--all-features", "--", "--deny", "warnings", "--deny", "clippy::pedantic", "--deny", "clippy::nursery", "--allow", "clippy::manual_filter_map"]
+}
+```
+
+<hr />
+
 # Vim 클립보드 설치해서 *y되게 만들기[[🔝]](#link)
 - https://velog.io/@markyang92/xclip-linux-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C-vim-%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C
 
