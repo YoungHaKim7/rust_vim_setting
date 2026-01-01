@@ -43,6 +43,9 @@
 - C/C++ 설정관련
   - [Zed C/C++ tabsize 설정 4칸으로 하는 방법](#zed-cc-tabsize-설정-4칸으로-하는-방법)
 
+- 다른 외국인 zed setting
+  - https://github.com/jeremychone/jc-zed-config
+
 <hr>
 
 # Copilot logout겁나게 느린 코파일럿 로그아웃으로 꺼지게 하자 ㅋㅋ[|🔝|](#link)
