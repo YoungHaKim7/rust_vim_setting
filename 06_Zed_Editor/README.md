@@ -11,6 +11,10 @@
   - [zed vimdefault key setting(vim.json)여기 참조](https://github.com/zed-industries/zed/blob/v0.144.3/assets/keymaps/vim.json)
 - [많이-쓰는-키key정리](#많이-쓰는-키key정리)
 - [zed releases최신버젼체크](#zed-releases버젼업최신-버젼체크)
+  - [zed의 기가막힌 기능들_최신 업데이트 소식 등등](#zed의-기가막힌-기능들)
+    - [250619드디어 디버깅 된다 https://zed.dev/debugger](https://zed.dev/debugger)
+      - 블로그 글 https://zed.dev/blog/debugger
+    - [zed Blog에 최신기능과 구현 방법 좋은 글 많음](https://zed.dev/blog)
 - [zed Install설치하기 linux & macOS 가능241111](#zedinstall-__-brew-install)
 - [zed-doc_tutorial문서](#zed-doctutorial문서)
   - [Zed Debugger디버깅하는 법](#zed-debugger디버깅하는-법) 
@@ -34,11 +38,6 @@
   - [Copilot logout겁나게 느린 코파일럿 로그아웃으로 꺼지게 하자 ㅋㅋ](#copilot-logout겁나게-느린-코파일럿-로그아웃으로-꺼지게-하자-ㅋㅋ)
   - [zed에 TabbyAI를 연결할 단서1_https://github.com/d1y/tabby-agent-zed](https://github.com/d1y/tabby-agent-zed)
     - [zed에 TabbyAI를 연결할 단서2](https://github.com/zed-industries/zed/issues/4421)
-
-- [zed의 기가막힌 기능들_최신 업데이트 소식 등등](#zed의-기가막힌-기능들)
-  - [250619드디어 디버깅 된다 https://zed.dev/debugger](https://zed.dev/debugger)
-    - 블로그 글 https://zed.dev/blog/debugger
-  - [zed Blog에 최신기능과 구현 방법 좋은 글 많음](https://zed.dev/blog)
 
 - C/C++ 설정관련
   - [Zed C/C++ tabsize 설정 4칸으로 하는 방법](#zed-cc-tabsize-설정-4칸으로-하는-방법)
