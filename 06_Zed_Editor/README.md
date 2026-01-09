@@ -11,6 +11,7 @@
   - [zed vimdefault key setting(vim.json)여기 참조](https://github.com/zed-industries/zed/blob/v0.144.3/assets/keymaps/vim.json)
 - [많이-쓰는-키key정리](#많이-쓰는-키key정리)
 - [zed releases최신버젼체크](#zed-releases버젼업최신-버젼체크)
+  - https://zed.dev/blog
   - [zed의 기가막힌 기능들_최신 업데이트 소식 등등](#zed의-기가막힌-기능들)
     - [250619드디어 디버깅 된다 https://zed.dev/debugger](https://zed.dev/debugger)
       - 블로그 글 https://zed.dev/blog/debugger
