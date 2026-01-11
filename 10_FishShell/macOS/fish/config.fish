@@ -11,7 +11,8 @@ fish_add_path "$HOME/.modular/bin"
 fish_add_path "$HOME/.modular/pkg/packages.modular.com_mojo/bin"
 fish_add_path "$HOME/Library/Application Support/Code/User/globalStorage/fwcd.kotlin/langServerInstall/server/bin"
 fish_add_path "$HOME/.surrealdb"
-fish_add_path "$HOME/utilities/c3-lsp/server/bin/release"
+fish_add_path "$HOME/utilities/c3-lsp/server/bin"
+fish_add_path "$HOME/utilities/c3c/build"
 
 fish_add_path /opt/homebrew/bin/
 fish_add_path /opt/homebrew/opt/llvm/bin
@@ -24,7 +25,8 @@ fish_add_path /opt/homebrew/opt/libpq/bin
 fish_add_path /System/Volumes/Data/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers
 fish_add_path -U /Users/gy-gyoung/utilities/glfw/include
 fish_add_path /opt/homebrew/lib
-
+fish_add_path -U $HOME/go/bin
+fish_add_path -U /opt/homebrew/opt/binutils/bin
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -57,6 +59,8 @@ if status is-interactive
     set -gx DYLD_FRAMEWORK_PATH /Library/Frameworks
 
     set -gx LIBRARY_PATH /opt/homebrew/lib /opt/homebrew/include
+    set -gx LDFLAGS -L/opt/homebrew/opt/llvm/lib/unwind -lunwind
+    set -gx LDFLAGS -L/opt/homebrew/opt/llvm/lib/c++ -L/opt/homebrew/opt/llvm/lib/unwind -lunwind
 
     # OpenCV
     set -gx PKG_CONFIG_PATH /opt/homebrew/bin
@@ -88,3 +92,5 @@ starship init fish | source
 # Wasmer
 export WASMER_DIR="/Users/gy-gyoung/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+# claude(z.ai GLM4.6 251006)
