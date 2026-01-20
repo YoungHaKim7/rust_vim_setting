@@ -3,6 +3,14 @@
 
 <hr />
 
+# default shell setting
+
+```
+~/.config/ghostty/config:
+command = /usr/local/bin/fish --login --interactive
+
+```
+
 # Fix & bug 해결
 - [창 나눴는데 내 프로젝트 폴더가 안 열리고 root폴더가 열릴때 (리눅스OS bug)](https://github.com/ghostty-org/ghostty/issues/1392)
 
