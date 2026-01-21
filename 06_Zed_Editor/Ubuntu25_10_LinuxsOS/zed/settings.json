@@ -1,0 +1,133 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+//{
+//  "ui_font_size": 16,
+//  "buffer_font_size": 16,
+//  "theme": {
+//    "mode": "system",
+//    "light": "One Light",
+//    "dark": "One Dark"
+//  }
+//}
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "colorize_brackets": true,
+  "buffer_font_features": {
+    "calt": false,
+  },
+  "theme": "Tokyo Night gy InlayHint red",
+  "ui_font_family": "Hack Nerd Font",
+  "buffer_font_fallbacks": ["Hack Nerd Font"],
+  "vim_mode": true,
+  "ui_font_size": 30,
+  "buffer_font_size": 30,
+  "buffer_font_weight": 400,
+  "buffer_line_height": {
+    "custom": 1.4,
+  },
+  // Set the buffer's line height.
+  // May take 3 values:
+  //  1. Use a line height that's comfortable for reading (1.618)
+  //"line_height": "comfortable",
+  //  2. Use a standard line height, (1.3)
+  //"line_height": "standard",
+  //  3. Use a custom line height
+  //
+  // "line_height": {
+  //   "standard": 1.3
+  // },
+  "relative_line_numbers": true,
+  // disable cursor blink
+  // "cursor_blink": false,
+  "inlay_hints": {
+    // Global switch to toggle hints on and off, switched off by default.
+    "enabled": true,
+    // Toggle certain types of hints on and off, all switched on by default.
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    // Corresponds to null/None LSP hint type value.
+    "show_other_hints": true,
+  },
+  "project_panel": {
+    // Default width of the project panel.
+    "default_width": 240,
+    // Where to dock project panel. Can be 'left' or 'right'.
+    "dock": "right",
+    // Whether to show file icons in the project panel.
+    "file_icons": true,
+    // Whether to show folder icons or chevrons for directories in the project panel.
+    "folder_icons": true,
+    // Whether to show the git status in the project panel.
+    "git_status": true,
+    // Amount of indentation for nested items.
+    "indent_size": 20,
+    // Whether to reveal it in the project panel automatically,
+    // when a corresponding project entry becomes active.
+    // Gitignored entries are never auto revealed.
+    "auto_reveal_entries": true,
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+  "terminal": {
+    "shell": "system",
+    "working_directory": "current_project_directory",
+  },
+  "minimap": {
+    "show": "always",
+  },
+  "prettier": {
+    // Use regular Prettier json configuration:
+    // "trailingComma": "es5",
+    // "tabWidth": 4,
+    // "semi": false,
+    // "singleQuote": true
+  },
+  // LSP Specific settings.
+  "lsp": {
+    // Specify the LSP name as a key here.
+    "rust-analyzer": {
+      "initialization_options": {
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "enable": "skip_trivial",
+            "useParameterNames": true,
+          },
+          "closureReturnTypeHints": {
+            "enable": "always",
+          },
+        },
+      },
+    },
+  },
+  "languages": {
+    "C++": {
+      "format_on_save": "on",
+      "tab_size": 4,
+    },
+    "C": {
+      "format_on_save": "on",
+      "tab_size": 4,
+    },
+  },
+}
