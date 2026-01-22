@@ -23,7 +23,6 @@ keybinds clear-defaults=true {
         bind "s" { NewPane "stacked"; SwitchToMode "normal"; }
         bind "w" { ToggleFloatingPanes; SwitchToMode "normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "normal"; }
-        bind "Alt Ctrl -" { NewPane "down"; SwitchToMode "normal"; }
         bind "Ctrl \\" { NewPane "right"; SwitchToMode "normal"; }
     }
     tab {
@@ -179,7 +178,6 @@ keybinds clear-defaults=true {
     shared_except "locked" "resize" {
         bind "Ctrl n" { SwitchToMode "resize"; }
         bind "Ctrl \\" { NewPane "right"; }
-        bind "Ctrl -" { NewPane "down"; }
     }
     shared_except "normal" "locked" "entersearch" {
         bind "enter" { SwitchToMode "normal"; }
