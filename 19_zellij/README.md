@@ -1,0 +1,1 @@
+- https://zellij.dev/documentation/keybindings.html
