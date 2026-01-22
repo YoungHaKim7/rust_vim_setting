@@ -257,3 +257,10 @@ $ git config --global core.editor vim
 
 - git commit 메세지를 sublime text로 저장하는 방법 - https://thinkpro.tistory.com/m/142
 
+
+# git default Vim설정
+
+```bash
+git config --global core.editor "vim"
+
+```
