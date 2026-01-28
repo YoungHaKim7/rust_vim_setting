@@ -15,6 +15,8 @@
   - [zsh-path-다수의-폴더를-설정해-주기](#zsh-path-다수의-폴더를-설정해-주기)
   - [`cd...`--zsh처럼-하게-기능-만들기](#cd--zsh처럼-하게-기능-만들기)
 
+- 키 내맘대로 설정하기(key bindings)
+  - [key binding]()
 
 <hr>
 
@@ -31,6 +33,15 @@
   - [스택오버플로우_fishshell history clean하게 만들기](https://stackoverflow.com/questions/47890353/clear-fish-shell-history-permanently-across-sessions)
 
 <hr>
+
+# key binding
+
+- https://fishshell.com/docs/current/cmds/bind.html
+
+```fish
+# Insert "intellshell search" with Ctrl+ Alt+Space
+bind \e\x00 'commandline -i "intelli-shell search -i"'
+```
 
 # FishShell Install
 
@@ -77,10 +88,10 @@ chsh -s `which fish`
 
 - https://askubuntu.com/questions/26439/how-do-i-set-fish-as-the-default-shell
 
-# FishShell Tutorial[[🔝]](#link)
+# FishShell Tutorial[|🔝|](#link)
 - https://github.com/jorgebucaran/cookbook.fish
 
-# FishShell[[🔝]](#link)
+# FishShell[|🔝|](#link)
 
 - https://fishshell.com/
 
@@ -89,10 +100,10 @@ chsh -s `which fish`
   
 ```
 
-# fishshell default 세팅하기[[🔝]](#link)
+# fishshell default 세팅하기[|🔝|](#link)
 - https://stackoverflow.com/questions/453236/how-can-i-set-my-default-shell-on-a-mac-e-g-to-fish
 
-# Fish Shell 에 PATH추가 하기 [[🔝]](#link)
+# Fish Shell 에 PATH추가 하기[|🔝|](#link)
 
 - `echo $PATH`로 잘 들어갔나 확인하기
 ```bash
@@ -154,7 +165,7 @@ Updated PATH: /etc /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 
 <hr>
 
-# starship이 가장 깔끔(테마는 이게 낫다. 그냥 이걸로 바로 세팅하자)[[🔝]](#link)
+# starship이 가장 깔끔(테마는 이게 낫다. 그냥 이걸로 바로 세팅하자)[|🔝|](#link)
 
 https://starship.rs/ko-kr/
 
@@ -170,7 +181,7 @@ https://starship.rs/ko-kr/
 
 <hr>
 
-# Plugin[[🔝]](#link)
+# Plugin[|🔝|](#link)
 
 - https://www.reddit.com/r/fishshell/comments/t9yinj/what_are_your_favorite_fish_plugins/
 
@@ -190,7 +201,7 @@ fisher update
 
 <hr>
 
-# oh-my-fish (쉘 꾸미기)[[🔝]](#link)
+# oh-my-fish (쉘 꾸미기)[|🔝|](#link)
 - https://github.com/oh-my-fish/oh-my-fish
 - ohmyfish
   - https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
@@ -200,15 +211,15 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 fish install --path=~/.local/share/omf --config=~/.config/omf
 ```
 
-# 한국사람이 정리해줌[[🔝]](#link)
+# 한국사람이 정리해줌[|🔝|](#link)
 https://blog.youngbin.xyz/2015-07-30-install-fish-then-customize-it-with-oh-my-fish/
 
-# z 설치하기[[🔝]](#link)
+# z 설치하기[|🔝|](#link)
 
 - https://github.com/jorgebucaran/fisher
 - https://github.com/jethrokuan/z
 
-# FishShell Hitory 폴더 [[🔝]](#link)
+# FishShell Hitory 폴더[|🔝|](#link)
 
 - typically 
 ```
@@ -217,7 +228,7 @@ https://blog.youngbin.xyz/2015-07-30-install-fish-then-customize-it-with-oh-my-f
 
 - https://fishshell.com/docs/current/cmds/history.html
 
-# FishShell (config.fish기본 셋)[[🔝]](#link)
+# FishShell (config.fish기본 셋)[|🔝|](#link)
 
 - `echo $MOJO_PATH` 하면 PATH 잡힘(1회성 -gx 넣어서 안에 넣어주자)
 ```sh
@@ -283,7 +294,7 @@ export WASMER_DIR="/Users/g/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 ```
 
-# zsh PATH 다수의 폴더를 설정해 주기[[🔝]](#link)
+# zsh PATH 다수의 폴더를 설정해 주기[|🔝|](#link)
 
 - https://github.com/fish-shell/fish-shell/issues/527
   - 한칸 띄우고 연속으로 입력해 주면 된다. zsh는 세미콜론(:)으로 구분 하지만 FishShell은 띄어 쓰기로 구분한다.
@@ -292,7 +303,7 @@ export WASMER_DIR="/Users/g/.wasmer"
 set -gx PATH /opt/qt/Tools/QtCreator/bin /opt/qt/5.0.0/gcc_64/bin $PATH
 ```
 
-# cd ... zsh처럼 하게 기능 만들기[[🔝]](#link)
+# cd ... zsh처럼 하게 기능 만들기[|🔝|](#link)
 https://github.com/fish-shell/fish-shell/issues/2671
 
 - 쉬운거 그냥 플러그인 설치하자 ㅋㅋ
