@@ -16,7 +16,7 @@
   - [`cd...`--zsh처럼-하게-기능-만들기](#cd--zsh처럼-하게-기능-만들기)
 
 - 키 내맘대로 설정하기(key bindings)
-  - [key binding]()
+  - [key binding](#key-binding)
 
 <hr>
 
@@ -34,7 +34,7 @@
 
 <hr>
 
-# key binding
+# key binding[|🔝|](#link)
 
 - https://fishshell.com/docs/current/cmds/bind.html
 
@@ -43,7 +43,7 @@
 bind \e\x00 'commandline -i "intelli-shell search -i"'
 ```
 
-# FishShell Install
+# FishShell Install[|🔝|](#link)
 
 1. Fishshell
 2. oh-my https://github.com/oh-my-fish/oh-my-fish
@@ -51,7 +51,7 @@ bind \e\x00 'commandline -i "intelli-shell search -i"'
 4. 다 설정하고 마지막으로 디폴트셸(How do I set fish as the default shell)로 fishshell로 세팅하기
   - Then `chsh -s /usr/local/bin/fish`
 
-# fishshell을 Default shell 세팅하기
+# fishshell을 Default shell 세팅하기[|🔝|](#link)
 
 - In `/etc/shells`, add `/usr/local/bin/fish`:
 
@@ -59,7 +59,7 @@ bind \e\x00 'commandline -i "intelli-shell search -i"'
 vi /etc/shells
 ```
 
-# List of acceptable shells for chpass(1).
+# List of acceptable shells for chpass(1).[|🔝|](#link)
 - Ftpd will not allow users to connect who are not using
 - one of these shells.
 
