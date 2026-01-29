@@ -21,6 +21,8 @@
   - [Zed Debugger디버깅하는 법](#zed-debugger디버깅하는-법) 
   - [터미널창 우측에 크게 띄우기 The Dock부분 확인하면됨(VSCode에서의 "Terminal : Create New terminal in Editor Area to the Side"](https://zed.dev/features)
 - snippets설정
+  - 여기에 러스트 json정리함
+    - https://github.com/YoungHaKim7/snippets_Lunar_NeoVim
   - [zed에 snippets설정하기](https://zed.dev/docs/languages/rust)
   - [https://zed.dev/docs/snippets](https://zed.dev/docs/snippets)
     - [서버설정..https://github.com/zed-industries/simple-completion-language-server](https://github.com/zed-industries/simple-completion-language-server)
