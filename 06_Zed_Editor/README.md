@@ -6,6 +6,7 @@
 </p>
 
 # link
+- [vim필요한 기능 추가할때 볼 API네임 잘 정리됨(all-actions)](https://zed.dev/docs/all-actions?highlight=find%20files#all-actions)
 - [fix고친거 || 고쳐야 할것](#fix)
 - [Zed에 기본 세팅된 vim keymap](#vimjson)
   - [zed vimdefault key setting(vim.json)여기 참조](https://github.com/zed-industries/zed/blob/v0.144.3/assets/keymaps/vim.json)
