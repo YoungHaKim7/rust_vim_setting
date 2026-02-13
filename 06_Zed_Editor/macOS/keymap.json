@@ -24,6 +24,8 @@
       "space r": "editor::Rename",
       // symbol search   "gs"
       "space o": "project_symbols::Toggle",
+      // file files
+      "space F": "file_finder::Toggle",
       // NERDTree
       "space e": "project_panel::ToggleFocus",
       "space x": "workspace::CloseAllDocks",
