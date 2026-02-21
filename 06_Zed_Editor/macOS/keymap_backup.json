@@ -14,13 +14,13 @@
       "K": "editor::Hover",
       // buffer :bn :bp
       "L": "pane::ActivateNextItem",
-      "H": "pane::ActivatePreviousItem",
+      "H": "pane::ActivatePrevItem",
       // quick fix
       "space g a": "editor::ToggleCodeActions",
       "] d": "editor::GoToDiagnostic",
-      "[ d": "editor::GoToPreviousDiagnostic",
+      "[ d": "editor::GoToPrevDiagnostic",
       "g m": "editor::ExpandMacroRecursively",
-      "space F": "file_finder::Toggle",
+      "space F": "editor::file_finder",
       // LSP rename    "ga" multi cursor
       "space r": "editor::Rename",
       // symbol search   "gs"
@@ -47,7 +47,6 @@
       "space g c": "editor::ToggleComments",
       ">": "vim::Indent",
       "<": "vim::Outdent",
-      "y s i w": ["vim::PushOperator", { "AddSurrounds": {} }],
     },
   },
   {
@@ -55,7 +54,7 @@
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
       // ~~~~~~ Insert Mode
-      "j k": "vim::SwitchToNormalMode",
+      "j k": ["vim::SwitchMode", "Normal"],
     },
   },
   {
@@ -65,7 +64,7 @@
     },
   },
   {
-    "context": "Editor && edit_prediction && !showing_completions",
+    "context": "Editor && inline_completion && !showing_completions",
     "bindings": {
       "tab": "editor::Tab",
       "ctrl-b": "editor::AcceptEditPrediction",
@@ -76,7 +75,7 @@
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
       // ~~~~~~ Insert Mode
-      "j k": "vim::SwitchToNormalMode",
+      "j k": ["vim::SwitchMode", "Normal"],
     },
   },
   {
@@ -84,7 +83,7 @@
     "bindings": {
       // put key-bindings here if you want them to work in Replace mode
       // ~~~~~~ Replace Mode
-      "j k": "vim::SwitchToNormalMode",
+      "j k": ["vim::SwitchMode", "Normal"],
     },
   },
   {
@@ -93,7 +92,7 @@
       "h": "project_panel::CollapseSelectedEntry",
       "l": "project_panel::ExpandSelectedEntry",
       "j": "menu::SelectNext",
-      "k": "menu::SelectPrevious",
+      "k": "menu::SelectPrev",
       "o": "menu::Confirm",
       "r": "project_panel::Rename",
       "z c": "project_panel::CollapseSelectedEntry",
