@@ -14,9 +14,10 @@
 - [zed releases최신버젼체크](#zed-releases버젼업최신-버젼체크)
   - https://zed.dev/blog
   - [zed의 기가막힌 기능들_최신 업데이트 소식 등등](#zed의-기가막힌-기능들)
-    - [250619드디어 디버깅 된다 https://zed.dev/debugger](https://zed.dev/debugger)
+    - [(외부링크)250619드디어 디버깅 된다 https://zed.dev/debugger](https://zed.dev/debugger)
       - 블로그 글 https://zed.dev/blog/debugger
-    - [zed Blog에 최신기능과 구현 방법 좋은 글 많음](https://zed.dev/blog)
+    - [(외부링크)zed Blog에 최신기능과 구현 방법 좋은 글 많음](https://zed.dev/blog)
+    - [(외부링크) June 13th, 2024) Why not just embed Neovim?__Surround Vim & 멀티로 같이 블럭 씌우기 `gl` `gL`](https://zed.dev/blog/zed-decoded-vim)
 - [zed Install설치하기 linux & macOS 가능241111](#zedinstall-__-brew-install)
 - [zed-doc_tutorial문서](#zed-doctutorial문서)
   - [Zed Debugger디버깅하는 법](#zed-debugger디버깅하는-법) 
@@ -1053,6 +1054,7 @@ ctrl-x ctrl-z  Hides all suggestions
 
 - vim 관련
   - [유니코드 입력하기Added ctrl-v/ctrl-q to type any unicode code point. For example ctrl-v escape inserts an escape character(U+001B), or ctrl-v u 1 0 E 2 types ტ (U+10E2). As in vim ctrl-v ctrl-j inserts U+0000 not U+000A. Zed does not yet implement insertion of the vim-specific representation of the typed keystroke for other keystroke](https://zed.dev/releases/stable)
+  - [June 13th, 2024) Why not just embed Neovim?__Surround Vim & 멀티로 같이 블럭 씌우기 `gl` `gL`](https://zed.dev/blog/zed-decoded-vim)
 
 - AI 관련
   - [Added the ability to copy surrounding code blocks in the assistant panel into the clipboard, or inserting them directly into the editor, without manually selecting. Place cursor anywhere in a code block (marked by triple backticks) and use the assistant::CopyCode action (cmd-k c / ctrl-k c) to copy to the clipboard, or the assistant::InsertIntoEditor action (cmd-< / ctrl-<) to insert into editor (#17853; thanks thataboy)](https://zed.dev/releases/stable)
