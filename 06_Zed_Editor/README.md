@@ -52,6 +52,14 @@
 
 <hr>
 
+# (260212)Release note v0.223) Launch Zed's Agent Panel with a prompt via URL:
+
+```
+zed://agent?prompt=your+prompt+here
+```
+
+- Now, you can add an "Ask in Zed Agent" button to your software today.
+
 # Copilot logout겁나게 느린 코파일럿 로그아웃으로 꺼지게 하자 ㅋㅋ[|🔝|](#link)
 - https://github.com/zed-industries/zed/issues/19545
 
