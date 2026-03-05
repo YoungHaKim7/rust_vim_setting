@@ -9,6 +9,41 @@ sudo ZED_ALLOW_ROOT=true nix run github:zed-industries/zed --extra-experimental-
 
 The issue is that you're not configured as a trusted user in Nix, so the Zed flake's substituter configuration is being ignored. Here are your options:
 
+You have a few options to add `ZED_ALLOW_ROOT=true`:
+
+## Option 1: Inline with command (no file modification needed)
+```bash
+sudo ZED_ALLOW_ROOT=true nix run github:zed-industries/zed --extra-experimental-features nix-command --extra-experimental-features flakes
+```
+
+## Option 2: Add to fish config (~/.config/fish/config.fish)
+Add this line anywhere in the file (e.g., after line 55, near other environment variables):
+
+```fish
+set -gx ZED_ALLOW_ROOT true
+```
+
+## Option 3: Add to shell.nix (project-specific)
+Modify your `shell.nix` to include the environment variable:
+
+```nix
+{ pkgs ? import <nixpkgs> {} }:
+
+pkgs.mkShell {
+  nativeBuildInputs = with pkgs; [
+    rustc
+    cargo
+    rust-analyzer
+    llvmPackages.clang
+  ];
+  shellHook = ''
+    export ZED_ALLOW_ROOT=true
+  '';
+}
+```
+
+**Recommendation:** Use **Option 1** (inline) if you only need this occasionally, or **Option 2** (fish config) if you want it set permanently for all sessions.
+
 ## Option 1: Add yourself as a trusted user (recommended)
 
 Edit `/etc/nix/nix.conf` (as root) and add:
