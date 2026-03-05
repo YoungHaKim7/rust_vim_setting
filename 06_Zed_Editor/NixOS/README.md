@@ -1,3 +1,9 @@
+# zed (nix run으로 실행)
+
+```bash
+sudo nix run github:zed-industries/zed --extra-experimental-features nix-command --extra-experimental-features flakes
+```
+
 The issue is that you're not configured as a trusted user in Nix, so the Zed flake's substituter configuration is being ignored. Here are your options:
 
 ## Option 1: Add yourself as a trusted user (recommended)
