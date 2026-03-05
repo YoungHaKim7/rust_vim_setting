@@ -5,6 +5,7 @@
 # theme = "term16_dark_y"
 theme = "kanagawa_y"
 
+# Editor settings
 [editor]
 line-number = "relative"
 mouse = false
@@ -56,18 +57,28 @@ hidden = false
 cursor-line = "error"
 # Minimum severity to show a diagnostic on other lines:
 # other-lines = "error"
-# 
-# Key Setting
+
+# =============================================================================
+# Keybindings
+# =============================================================================
 
 # At most one section each of 'keys.normal', 'keys.insert' and 'keys.select'
 [keys.normal]
+# Basic motions
 a = ["append_mode", "collapse_selection"]
 # w = "move_line_up" # Maps the 'w' key move_line_up
+
+# Code actions
 g = { a = "code_action" } # Maps `ga` to show possible code actions
+
+# Increment/decrement
 C-a = "increment"
 C-x = "decrement"
+
+# Shell commands via backspace
 "backspace" = { c = ":sh cargo run", t = ":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -pthread -lm -Wall -Wextra -ggdb -o main main.c", d = ":sh rm -rf main main.dSYM", n = ":sh touch .gitignore", k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main", a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c", x = ":sh chmod +x build.sh" }
 
+# Space keybindings
 space.c = "toggle_comments"
 space.w.h = "jump_view_left"
 space.w.l = "jump_view_right"
@@ -79,8 +90,7 @@ space.w.v = "vsplit"
 o = ["open_below", "insert_mode"]
 O = ["open_above", "insert_mode"]
 
-
-# Muscle memory
+# Muscle memory - Vim-style navigation
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
 0 = "goto_line_start"
@@ -88,7 +98,11 @@ O = ["open_above", "insert_mode"]
 "^" = "goto_first_nonwhitespace"
 G = "goto_file_end"
 "%" = "match_brackets"
+
+# Visual selection
 V = ["select_mode", "extend_to_line_bounds"]
+
+# Change operations
 C = [
     "collapse_selection",
     "extend_to_line_end",
@@ -104,9 +118,10 @@ S = [
 s = ["delete_selection", "insert_mode"]
 X = ["move_char_left", "delete_selection"]
 
-# Extend and select commands that expect a manual input can't be chained
 # I've kept d[X] commands here because it's better to at least have the stuff you want to delete
 # selected so that it's just a keystroke away to delete
+# Delete with textobjects
+# Extend and select commands that expect a manual input can't be chained
 d = { x = [
     "delete_selection",
 ], d = [
@@ -144,14 +159,16 @@ Y = [
 ]
 
 # Uncanny valley stuff, this makes w and b behave as they do Vim
+# Word movements (Vim-style)
 w = ["move_next_word_start", "move_char_right", "collapse_selection"]
 e = ["move_next_word_end", "collapse_selection"]
 b = ["move_prev_word_start", "collapse_selection"]
 
-
+# Exit insert mode
 [keys.insert]
 j = { k = "normal_mode", space = "extend_line" } # Maps `jk` to exit insert mode
 
+# Line manipulation
 [keys.select]
 C-k = [
     "goto_line_end",
@@ -162,28 +179,34 @@ C-k = [
     "select_mode",
 ]
 C-j = ["goto_line_end", "extend_line_below", "delete_selection", "paste_after", "select_mode"]
-# Muscle memory
+
+# Muscle memory - Vim-style navigation
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
 "}" = ["extend_to_line_bounds", "goto_next_paragraph"]
 0 = "goto_line_start"
 "$" = "goto_line_end"
 "^" = "goto_first_nonwhitespace"
 G = "goto_file_end"
+
+# Change/delete operations
 D = ["extend_to_line_bounds", "delete_selection", "normal_mode"]
 C = ["goto_line_start", "extend_to_line_bounds", "change_selection"]
 "%" = "match_brackets"
 # S = "surround_add" # Basically 99% of what I use vim-surround for
 
 # Visual-mode specific muscle memory
+# Textobject selection
 i = "select_textobject_inner"
 a = "select_textobject_around"
 # x = "delete_selection"
 
 # Some extra binds to allow us to insert/append in select mode because it's nice with multiple cursors
+# Insert/append in select mode (nice with multiple cursors)
 tab = ["insert_mode", "collapse_selection"] # tab is read by most terminal editors as "C-i"
 # C-a = ["append_mode", "collapse_selection"]
 
 # Make selecting lines in visual mode behave sensibly
+# Line selection in visual mode
 k = ["extend_line_up", "extend_to_line_bounds"]
 j = ["extend_line_down", "extend_to_line_bounds"]
 
