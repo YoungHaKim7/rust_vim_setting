@@ -1,6 +1,11 @@
 # nixos (helix)
 - https://docs.helix-editor.com/package-managers.html#nixos
 - https://docs.cachix.org/installation
+
+```bash
+cachix use helix
+```
+- Install
 ```bash
 $ nix profile install --accept-flake-config nixpkgs#cachix --extra-experimental-features flakes --extra-experimental-features nix-command
 warning: 'install' is a deprecated alias for 'add'
