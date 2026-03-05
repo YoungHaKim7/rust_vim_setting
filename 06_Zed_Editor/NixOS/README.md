@@ -1,4 +1,5 @@
 # zed (nix run으로 실행)
+- https://wiki.nixos.org/wiki/Zed
 
 ```bash
 sudo nix run github:zed-industries/zed --extra-experimental-features nix-command --extra-experimental-features flakes
