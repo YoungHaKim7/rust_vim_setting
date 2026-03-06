@@ -47,7 +47,6 @@ right = [
     "version-control",
 ]
 
-
 [editor.file-picker]
 hidden = false
 
@@ -76,7 +75,31 @@ C-a = "increment"
 C-x = "decrement"
 
 # Shell commands via backspace
-"backspace" = { c = ":sh cargo run", t = ":sh cargo nextest run", r = ":reload", f = ":format", s = ":w", l = ":log-open", g = ":sh gcc -pthread -lm -Wall -Wextra -ggdb -o main main.c", d = ":sh rm -rf main main.dSYM", n = ":sh touch .gitignore", k = ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main", a = ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c", x = ":sh chmod +x build.sh" }
+"backspace" = { c = [
+    ":sh cargo run 2>&1",
+], t = [
+    ":sh cargo nextest run 2>&1",
+], r = [
+    ":reload",
+], f = [
+    ":format",
+], s = [
+    ":w",
+], l = [
+    ":log-open",
+], g = [
+    ":sh gcc -pthread -lm -Wall -Wextra -ggdb -o main main.c",
+], d = [
+    ":sh rm -rf main main.dSYM",
+], n = [
+    ":sh touch .gitignore",
+], k = [
+    ":sh clang++ -Wall -Wetra -std=c++17 main.cpp -o main",
+], a = [
+    ":sh clang -pthread -lm -Wall -Wextra -ggdb -o main main.c",
+], x = [
+    ":sh chmod +x build.sh" 
+] }
 
 # Space keybindings
 space.c = "toggle_comments"
