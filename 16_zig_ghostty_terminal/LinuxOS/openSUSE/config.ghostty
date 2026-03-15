@@ -45,7 +45,7 @@ window-inherit-working-directory = true
 # Key bind
 # ####
 
-keybind = alt+q=close_surface
+keybind = ctrl+alt+shift+q=close_surface
 keybind = performable:shift+ctrl+c=copy_to_clipboard
 
 ## TMUX
