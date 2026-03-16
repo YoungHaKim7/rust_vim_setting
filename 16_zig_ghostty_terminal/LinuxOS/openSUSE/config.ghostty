@@ -48,9 +48,11 @@ window-inherit-working-directory = true
 keybind = ctrl+alt+shift+q=close_surface
 keybind = performable:shift+ctrl+c=copy_to_clipboard
 
-## TMUX
+# openSUSE style
 keybind = ctrl+)=new_split:right
 keybind = ctrl+(=new_split:down
+
+## TMUX style
 # Navigation TMUX
 keybind = ctrl+shift+h=goto_split:left
 keybind = ctrl+shift+j=goto_split:bottom
