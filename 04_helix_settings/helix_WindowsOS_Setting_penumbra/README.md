@@ -1,3 +1,10 @@
+# setting위치
+
+```bash
+$ echo $Env:AppData
+C:\Users\ytok1\AppData\Roaming
+```
+
 # choco 로  Helix 23.03버젼 안 나와서 scoop패키지로 받기
 
 - helix (A post-modern modal text editor)
