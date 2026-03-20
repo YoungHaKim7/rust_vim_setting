@@ -43,12 +43,12 @@ info = "sky"
 warning = "yellow"
 error = "red"
 
-"diagnostic.hint".underline = { color = "sky-", style = "curl" } 
-"diagnostic.info".underline = { color = "sky", style = "curl" } 
-"diagnostic.warning".underline = { color = "yellow", style = "curl" } 
-"diagnostic.error".underline = { color = "red", style = "curl" } 
+"diagnostic.hint".underline = { color = "sky-", style = "curl" }
+"diagnostic.info".underline = { color = "sky", style = "curl" }
+"diagnostic.warning".underline = { color = "yellow", style = "curl" }
+"diagnostic.error".underline = { color = "red", style = "curl" }
 
-"ui.background" = { bg = "shade" }
+"ui.background" = { bg = "#121412" }
 "ui.background.separator" = "sky"
 
 "ui.cursor" = { modifiers = ["reversed"] }
@@ -101,7 +101,9 @@ error = "red"
 "markup.quote" = "green"
 "markup.raw" = "orange"
 
-"ui.virtual.inlay-hint" = { fg = "cyan", bg = "#70110a", modifiers = ["italic"] }
+"ui.virtual.inlay-hint" = { fg = "#35638f", bg = "#420517", modifiers = [
+    "italic",
+] }
 
 [palette]
 
