@@ -1,3 +1,17 @@
+[terminal.shell]
+program = 'C:\\Program Files\\PowerShell\\7\\pwsh.exe'
+
+[window]
+opacity = 0.95
+
+[window.dimensions]
+columns = 150
+lines = 34
+
+[window.position]
+x = 100
+y = 45
+
 [bell]
 animation = "EaseOutExpo"
 color = "#ffffff"
@@ -668,18 +682,3 @@ mouse = "Middle"
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 
-[terminal.shell]
-program = 'C:\\Program Files\\PowerShell\\7\\pwsh.exe'
-
-[window]
-opacity = 0.95
-
-[window.dimensions]
-columns = 150
-lines = 34
-
-[window.position]
-x = 100
-y = 45
-
-[terminal]
