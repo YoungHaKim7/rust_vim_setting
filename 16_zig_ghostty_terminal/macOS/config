@@ -86,13 +86,16 @@ copy-on-select = clipboard
 # Comments start with a `#` and are only valid on their own line.
 # Blank lines are ignored!
 
-keybind = ctrl+z=close_surface
+# keybind = ctrl+z=close_surface
 keybind = ctrl+d=new_split:right
 keybind = performable:shift+ctrl+c=copy_to_clipboard
 
+# openSUSE style
+keybind = ctrl+)=new_split:right
+keybind = ctrl+(=new_split:down
 ## TMUX
-keybind = alt+\=new_split:right
-keybind = alt+-=new_split:down
+#keybind = alt+\=new_split:right
+#keybind = alt+-=new_split:down
 # Navigation TMUX
 keybind = ctrl+shift+h=goto_split:left
 keybind = ctrl+shift+j=goto_split:bottom
