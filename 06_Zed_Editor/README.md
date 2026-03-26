@@ -69,6 +69,20 @@ zed://agent?prompt=your+prompt+here
 
 - copilot  추천한거 승인하기( zed ver. Zed 0.199.6)
 
+It's now easier to unbind default key bindings in your keymap.json.
+
+- copilot  추천한거 승인하기(Release note v0.229)
+
+```json
+{
+  "context": "Editor && edit_prediction",
+  "unbind": {
+    "tab": "editor::AcceptEditPrediction",
+    "ctrl-b": "editor::AcceptEditPrediction"
+  }
+}
+```
+
 ```json
 {
   "context": "Editor && inline_completion && !showing_completions",
