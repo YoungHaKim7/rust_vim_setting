@@ -67,11 +67,7 @@ zed://agent?prompt=your+prompt+here
 ❯ copilot: sign out
 ```
 
-- copilot  추천한거 승인하기( zed ver. Zed 0.199.6)
-
-It's now easier to unbind default key bindings in your keymap.json.
-
-- copilot  추천한거 승인하기(Release note v0.229)
+- copilot  추천한거 승인하기(Release note v0.229)260326
 
 ```json
 {
@@ -82,6 +78,10 @@ It's now easier to unbind default key bindings in your keymap.json.
   }
 }
 ```
+
+- copilot  추천한거 승인하기( zed ver. Zed 0.199.6)
+
+It's now easier to unbind default key bindings in your keymap.json.
 
 ```json
 {
