@@ -1,3 +1,17 @@
+# link
+
+<hr>
+
+# Debugging관련
+
+# VScode ```lanuch.json``` & ```tasks.json``` 규칙
+
+https://code.visualstudio.com/docs/editor/variables-reference
+
+<hr>
+
+# Vim세팅관련
+
 # VSCode (Command Palette창에 유용하게 쓸만하거 모음)
 코드 창을 분할해서 오른쪽or 왼쪽 창에 터미널 창 열어서 코드 옆에 아주 크게 열기
 
