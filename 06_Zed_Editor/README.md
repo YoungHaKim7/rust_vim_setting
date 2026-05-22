@@ -1081,8 +1081,20 @@ ctrl-x ctrl-z  Hides all suggestions
 - AI 관련
   - [Added the ability to copy surrounding code blocks in the assistant panel into the clipboard, or inserting them directly into the editor, without manually selecting. Place cursor anywhere in a code block (marked by triple backticks) and use the assistant::CopyCode action (cmd-k c / ctrl-k c) to copy to the clipboard, or the assistant::InsertIntoEditor action (cmd-< / ctrl-<) to insert into editor (#17853; thanks thataboy)](https://zed.dev/releases/stable)
 
-- Release Note v1.3
-  - Terminal Threads have landed.
-  - Open a terminal right in the Threads Sidebar and run claude, codex, or any other CLI agent alongside your built-in agent threads.
-    - Completion menu items can now show a single-letter kind badge next to each entry.
-    - Enable it with `"completion_menu_item_kind": "symbol"`.
+## Release Note v1.3
+- Terminal Threads have landed.
+- Open a terminal right in the Threads Sidebar and run claude, codex, or any other CLI agent alongside your built-in agent threads.
+  - Completion menu items can now show a single-letter kind badge next to each entry.
+  - Enable it with `"completion_menu_item_kind": "symbol"`.
+  - You can now configure a separate model for subagents with the new agent.subagent_model setting.
+
+- Tip: Use a frontier model for the main agent, and something faster and cheaper for subagents.
+
+```json
+"agent": {
+  "subagent_model": {
+    "model": "gpt-5-mini",
+    "provider": "zed.dev"
+  }
+}
+```
