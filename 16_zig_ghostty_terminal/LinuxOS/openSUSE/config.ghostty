@@ -66,3 +66,6 @@ keybind = alt+shift+l=resize_split:right,10
 keybind = alt+shift+plus=equalize_splits
 
 ######
+
+## ignore key
+keybind = ctrl+d=ignore
