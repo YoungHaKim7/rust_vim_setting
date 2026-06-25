@@ -43,6 +43,7 @@
   "buffer_line_height": {
     "custom": 1.2,
   },
+  "completion_menu_item_kind": "symbol",
   // Set the buffer's line height.
   // May take 3 values:
   //  1. Use a line height that's comfortable for reading (1.618)
