@@ -17,6 +17,7 @@
     "bindings": {
       // put key-bindings here if you want them to work only in normal mode
       // ~~~~~~~ Normal Mode
+      "space F": "file_finder::Toggle",
       // Doc hover
       "K": "editor::Hover",
       // buffer :bn :bp
