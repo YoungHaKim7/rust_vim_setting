@@ -4,7 +4,8 @@
 
 # Release Note v1.8
  
-The new `agent.terminal_init_command` setting runs a command automatically whenever you open a new terminal thread in the agent panel.
+- The new `agent.terminal_init_command` setting runs a command automatically whenever you open a new terminal thread in the agent panel.
+- Added `editor: select inside delimiters` and `editor: select around delimiters` actions for selecting content within the nearest enclosing brackets, braces, parentheses, or quotes. Repeating the action expands the selection to the next enclosing pair. (#53789; thanks subeax)
 
 
 # Zed v1.5.4 (2026-06-06)
