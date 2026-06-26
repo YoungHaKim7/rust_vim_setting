@@ -2,6 +2,11 @@
 
 - https://zed.dev/releases/stable
 
+# Release Note v1.8
+ 
+The new `agent.terminal_init_command` setting runs a command automatically whenever you open a new terminal thread in the agent panel.
+
+
 # Zed v1.5.4 (2026-06-06)
 Fix crash that could occur when unsplitting a side by side diff view (#58695)
 acp: Fix for certain ACP Registry agent downloads not starting (#58633)
