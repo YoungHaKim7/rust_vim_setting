@@ -2,6 +2,15 @@
 
 - https://zed.dev/releases/stable
 
+# Release Note v1.9(260702)
+
+- Zed's pickers are resizable, with a live preview option. | Very Telescope! 🔭
+
+- A new (very Telescope) way to search has landed as well.
+Open it with the `text finder: toggle` action in the command palette.
+ 
+Thanks ozacod!
+
 # Release Note v1.8
  
 - The new `agent.terminal_init_command` setting runs a command automatically whenever you open a new terminal thread in the agent panel.
