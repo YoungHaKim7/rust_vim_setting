@@ -24,6 +24,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "cli_default_open_behavior": "existing_window",
   "agent": {
     "default_model": {
       "provider": "z.ai",
