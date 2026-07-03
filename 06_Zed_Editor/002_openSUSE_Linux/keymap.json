@@ -17,6 +17,9 @@
     "bindings": {
       // put key-bindings here if you want them to work only in normal mode
       // ~~~~~~~ Normal Mode
+      // Global search in workspace folder
+      "space /": "text_finder::Toggle",
+      // Open file picker at current working directory
       "space F": "file_finder::Toggle",
       // Doc hover
       "K": "editor::Hover",
