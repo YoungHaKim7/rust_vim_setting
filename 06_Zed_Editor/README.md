@@ -52,6 +52,9 @@
 
 <hr>
 
+# zed ) vim mode surrounds 단서
+- https://github.com/zed-industries/zed/issues/4965
+
 # (260212)Release note v0.223) Launch Zed's Agent Panel with a prompt via URL:
 
 ```
