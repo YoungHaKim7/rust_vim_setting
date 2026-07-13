@@ -44,6 +44,12 @@
       "space b t": "workspace::NewCenterTerminal",
       // trouble toggle
       "space t": "diagnostics::Deploy",
+      // SurroundAdd(helix style)
+      "m s": "vim::PushHelixSurroundAdd",
+      // SurroundReplace
+      "m r": "vim::PushHelixSurroundReplace",
+      // SurroundDelete
+      "m d": "vim::PushHelixSurroundDelete"
     },
   },
   {
@@ -54,6 +60,7 @@
       "K": "editor::MoveLineUp",
       "J": "editor::MoveLineDown",
       "space g c": "editor::ToggleComments",
+      "m s": "vim::PushHelixSurroundAdd"
     },
   },
   {

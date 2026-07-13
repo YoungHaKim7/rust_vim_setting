@@ -56,11 +56,11 @@
   },
   "buffer_font_family": "Hack Nerd Font",
   "session": {
-    "trust_all_worktrees": true
+    "trust_all_worktrees": true,
   },
   "colorize_brackets": true,
   "buffer_font_features": {
-    "calt": false
+    "calt": false,
   },
   "theme": "Tokyo Night gy InlayHint red",
 
@@ -71,7 +71,7 @@
   "buffer_font_size": 30,
   "buffer_font_weight": 400,
   "buffer_line_height": {
-    "custom": 1.2
+    "custom": 1.2,
   },
   "completion_menu_item_kind": "symbol",
   // Set the buffer's line height.
@@ -96,7 +96,7 @@
     "show_type_hints": true,
     "show_parameter_hints": true,
     // Corresponds to null/None LSP hint type value.
-    "show_other_hints": true
+    "show_other_hints": true,
   },
   "project_panel": {
     // Default width of the project panel.
@@ -114,20 +114,20 @@
     // Whether to reveal it in the project panel automatically,
     // when a corresponding project entry becomes active.
     // Gitignored entries are never auto revealed.
-    "auto_reveal_entries": true
+    "auto_reveal_entries": true,
   },
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "terminal": {
     "shell": "system",
-    "working_directory": "current_project_directory"
+    "working_directory": "current_project_directory",
   },
   "minimap": {
-    "show": "always"
+    "show": "always",
   },
   "prettier": {
     // Use regular Prettier json configuration:
@@ -145,23 +145,23 @@
           "maxLength": null,
           "lifetimeElisionHints": {
             "enable": "skip_trivial",
-            "useParameterNames": true
+            "useParameterNames": true,
           },
           "closureReturnTypeHints": {
-            "enable": "always"
-          }
-        }
-      }
-    }
+            "enable": "always",
+          },
+        },
+      },
+    },
   },
   "languages": {
     "C++": {
       "format_on_save": "on",
-      "tab_size": 4
+      "tab_size": 4,
     },
     "C": {
       "format_on_save": "on",
-      "tab_size": 4
-    }
-  }
+      "tab_size": 4,
+    },
+  },
 }
