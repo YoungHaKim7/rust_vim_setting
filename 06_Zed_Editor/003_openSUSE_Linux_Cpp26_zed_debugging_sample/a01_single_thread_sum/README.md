@@ -24,7 +24,7 @@ clang_which := if os == "Linux" { \
     clang \
   }
 clangpp_which := if os == "Linux" { \
-  "/usr/bin/clang++" \
+    clangpp \
   } else if os == "Darwin" { \
     "/opt/homebrew/opt/llvm/bin/clang++" \
   } else { \
@@ -152,9 +152,9 @@ cr:
 	just fm
 	rm -rf target
 	mkdir -p target
-	export CXX={{gpp_which}}
+	export CXX={{clangpp}}
 	cmake -D CMAKE_BUILD_TYPE=Debug \
-	      -D CMAKE_CXX_COMPILER={{gpp_which}} \
+	      -D CMAKE_CXX_COMPILER={{clangpp}} \
 	      -G Ninja .
 	ninja
 	mv build.ninja CMakeCache.txt CMakeFiles cmake_install.cmake .ninja_deps .ninja_log target
@@ -166,10 +166,10 @@ cr3:
 	just fm
 	rm -rf target
 	mkdir -p target
-	export CXX={{gpp_which}}
+	export CXX={{clangpp_which}}
 	cmake -D CMAKE_BUILD_TYPE=Release \
 	      -D CMAKE_CXX_FLAGS_RELEASE_INIT="-O3 -DNDEBUG" \
-	      -D CMAKE_CXX_COMPILER={{gpp_which}} \
+	      -D CMAKE_CXX_COMPILER={{clangpp_which}} \
 	      -G Ninja .
 	ninja
 	mv build.ninja CMakeCache.txt CMakeFiles cmake_install.cmake .ninja_deps .ninja_log target
@@ -181,7 +181,7 @@ cro:
 	rm -rf target
 	mkdir -p target
 	cmake -D CMAKE_BUILD_TYPE=RelWithDebInfo \
-	      -D CMAKE_CXX_COMPILER={{gpp_which}} \
+	      -D CMAKE_CXX_COMPILER={{clangpp_which}} \
 	      -D CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT="-O2 -g" \
 	      -G Ninja .
 	ninja
@@ -194,7 +194,7 @@ cro3:
 	rm -rf target
 	mkdir -p target
 	cmake -D CMAKE_BUILD_TYPE=Release \
-	      -D CMAKE_CXX_COMPILER={{gpp_which}} \
+	      -D CMAKE_CXX_COMPILER={{clangpp_which}} \
 	      -D CMAKE_CXX_FLAGS_RELEASE_INIT="-O3 -DNDEBUG" \
 	      -G Ninja .
 	ninja
