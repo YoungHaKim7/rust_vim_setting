@@ -8,6 +8,7 @@
 <hr />
 
 - [Vim 설명서 끝짱판 All Things Vim](#-all-things-vim)
+  - [한국 리눅스 커널 모임 정리된 Vim자료 굿_https://www.minzkn.com/linuxkernel/pages/vim.html](https://www.minzkn.com/linuxkernel/pages/vim.html)
 - [Vim 클립보드 설치해서 *y되게 만들기](#vim-클립보드-설치해서-y되게-만들기)
 - [Vim 창 나누기](#vim-%EC%B0%BD-%EB%82%98%EB%88%84%EA%B8%B0)
 - [Vim 움직임 관련(hjkl)](#vim-%EC%9B%80%EC%A7%81%EC%9E%84-%EA%B4%80%EB%A0%A8hjkl)
