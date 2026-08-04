@@ -18,6 +18,11 @@ doom-emacs .
 - Castellan: org-mode agenda, activity, and calendar tracking
   - https://github.com/creichen/castellan
 
+## openSUSE에서 Install 이거보고함.
+- https://github.com/doomemacs/core/blob/master/docs/getting_started.org#install-doom-alongside-other-configs-with-chemacs2
+- 여기에 정리
+  - https://github.com/YoungHaKim7/linux_command/tree/main/16_openSUSE_Tumbleweed/04_emacs
+
 <hr />
 
 # 외국 다른 사람 세팅
