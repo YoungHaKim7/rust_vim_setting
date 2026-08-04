@@ -3,6 +3,12 @@
 
 <hr />
 
+# openSUSE260805`doom-emacs` 이걸로 실행함
+
+```
+doom-emacs .
+```
+
 # emacs
 - Castellan: org-mode agenda, activity, and calendar tracking
   - https://github.com/creichen/castellan
