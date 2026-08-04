@@ -19,7 +19,8 @@
 ;;   presentations or streaming.
 ;; - `doom-symbol-font' -- for symbols
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
-(setq doom-big-font (font-spec :family "Hack Nerd Font" :size 30))
+(setq doom-font (font-spec :family "Hack Nerd Font" :size 28 :weight 'semi-light)
+      doom-big-font (font-spec :family "Hack Nerd Font" :size 32))
 ;;
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
