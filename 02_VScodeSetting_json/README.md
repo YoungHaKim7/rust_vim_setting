@@ -3,6 +3,7 @@
 <hr>
 
 # Debugging관련
+- [230220_내가 보기 위한 VSCODE C설정_윈도우지만 볼만함](https://velog.io/@leesungjoon-net/%EB%82%B4%EA%B0%80-%EB%B3%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-VSCODE-C%EC%84%A4%EC%A0%95)
 
 # VScode ```lanuch.json``` & ```tasks.json``` 규칙
 
