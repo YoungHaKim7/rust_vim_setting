@@ -3,7 +3,7 @@
     "clangd.arguments": [
         "--compile-commands-dir=<path_to_directory_containing_compile_commands.json>"
     ],
-    "clangd.path": "/home/g/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/19.1.2/clangd_19.1.2/bin/clangd",
+    "clangd.path": "/home/gy/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/22.1.6/clangd_22.1.6/bin/clangd",
     // Zig Lang
     // "zls.path": "/home/y/.config/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
     // "zig.zigPath": "/home/gy/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
