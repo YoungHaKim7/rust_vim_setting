@@ -142,6 +142,7 @@ cr:
 
 # cmake compile(LinuxOS)
 cro:
+	just fm
 	rm -rf {{target_dir}}
 	mkdir -p {{target_dir}}
 	cmake -D CMAKE_BUILD_TYPE=RelWithDebInfo \
@@ -154,6 +155,7 @@ cro:
 
 # cmake compile(LinuxOS)
 cro3:
+	just fm
 	rm -rf {{target_dir}}
 	mkdir -p {{target_dir}}
 	cmake -D CMAKE_BUILD_TYPE=Release \
@@ -461,6 +463,7 @@ init2:
 
 # Debugging(VSCode codelldb ver)
 codelldb:
+	just cr
 	rm -rf .vscode
 	mkdir -p .vscode
 	echo '{' > .vscode/launch.json
@@ -470,7 +473,7 @@ codelldb:
 	echo '            "type": "lldb",' >> .vscode/launch.json
 	echo '            "request": "launch",' >> .vscode/launch.json
 	echo '            "name": "Launch",' >> .vscode/launch.json
-	echo '            "program": "${workspaceFolder}/build/target/${workspaceFolderBasename}",' >> .vscode/launch.json
+	echo '            "program": "${workspaceFolder}/target/debug/${fileWorkspaceFolderBasename}",' >> .vscode/launch.json
 	echo '            "args": [],' >> .vscode/launch.json
 	echo '            "cwd": "${workspaceFolder}"' >> .vscode/launch.json
 	echo '            // "preLaunchTask": "C/C++: clang build active file"' >> .vscode/launch.json
@@ -479,7 +482,7 @@ codelldb:
 	echo '            "name": "gcc - Build and debug active file",' >> .vscode/launch.json
 	echo '            "type": "lldb",' >> .vscode/launch.json
 	echo '            "request": "launch",' >> .vscode/launch.json
-	echo '            "program": "${fileDirname}/build/target/${workspaceFolderBasename}",' >> .vscode/launch.json
+	echo '            "program": "${fileDirname}/target/debug/${fileWorkspaceFolderBasename}",' >> .vscode/launch.json
 	echo '            "args": [],' >> .vscode/launch.json
 	echo '            "stopAtEntry": false,' >> .vscode/launch.json
 	echo '            "cwd": "${fileDirname}",' >> .vscode/launch.json
@@ -503,7 +506,7 @@ codelldb:
 	echo '                "-g",' >> .vscode/tasks.json
 	echo '                "${file}",' >> .vscode/tasks.json
 	echo '                "-o",' >> .vscode/tasks.json
-	echo '                "${fileDirname}/build/target/${workspaceFolderBasename}"' >> .vscode/tasks.json
+	echo '                "${fileDirname}/target/debug/${fileWorkspaceFolderBasename}"' >> .vscode/tasks.json
 	echo '            ],' >> .vscode/tasks.json
 	echo '            "options": {' >> .vscode/tasks.json
 	echo '                "cwd": "${fileDirname}"' >> .vscode/tasks.json
@@ -523,6 +526,7 @@ codelldb:
 
 # Debugging(VSCode)
 vscode:
+	just cr
 	rm -rf .vscode
 	mkdir -p .vscode
 	echo '{' > .vscode/launch.json
@@ -532,7 +536,7 @@ vscode:
 	echo '            "type": "lldb",' >> .vscode/launch.json
 	echo '            "request": "launch",' >> .vscode/launch.json
 	echo '            "name": "Launch",' >> .vscode/launch.json
-	echo '            "program": "${workspaceFolder}/target/${fileBasenameNoExtension}",' >> .vscode/launch.json
+	echo '            "program": "${workspaceFolder}/target/debug/${fileWorkspaceFolderBasename}",' >> .vscode/launch.json
 	echo '            "args": [],' >> .vscode/launch.json
 	echo '            "cwd": "${workspaceFolder}"' >> .vscode/launch.json
 	echo '            // "preLaunchTask": "C/C++: clang build active file"' >> .vscode/launch.json
@@ -541,7 +545,7 @@ vscode:
 	echo '            "name": "gcc - Build and debug active file",' >> .vscode/launch.json
 	echo '            "type": "cppdbg",' >> .vscode/launch.json
 	echo '            "request": "launch",' >> .vscode/launch.json
-	echo '            "program": "${fileDirname}/target/${fileBasenameNoExtension}",' >> .vscode/launch.json
+	echo '            "program": "${fileDirname}/target/debug/${fileWorkspaceFolderBasename}",' >> .vscode/launch.json
 	echo '            "args": [],' >> .vscode/launch.json
 	echo '            "stopAtEntry": false,' >> .vscode/launch.json
 	echo '            "cwd": "${fileDirname}",' >> .vscode/launch.json
@@ -565,7 +569,7 @@ vscode:
 	echo '                "-g",' >> .vscode/tasks.json
 	echo '                "${file}",' >> .vscode/tasks.json
 	echo '                "-o",' >> .vscode/tasks.json
-	echo '                "${fileDirname}/target/${fileBasenameNoExtension}"' >> .vscode/tasks.json
+	echo '                "${fileDirname}/target/debug/${fileBasenameNoExtension}"' >> .vscode/tasks.json
 	echo '            ],' >> .vscode/tasks.json
 	echo '            "options": {' >> .vscode/tasks.json
 	echo '                "cwd": "${fileDirname}"' >> .vscode/tasks.json
