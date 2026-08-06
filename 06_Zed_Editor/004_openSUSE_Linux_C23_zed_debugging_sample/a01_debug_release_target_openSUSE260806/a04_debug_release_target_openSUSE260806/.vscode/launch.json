@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch",
+            "program": "${workspaceFolder}/target/debug/${fileWorkspaceFolderBasename}",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+            // "preLaunchTask": "C/C++: clang build active file"
+        },
+        {
+            "name": "gcc - Build and debug active file",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/target/debug/${fileWorkspaceFolderBasename}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+            // "tasks": "C/C++: clang build active file"
+        }
+    ]
+}
