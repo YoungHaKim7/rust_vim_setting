@@ -1,0 +1,6 @@
+fontsize = 30
+font = ["Hack Nerd Font", "Noto Sans Mono CJK JP"]
+geometry = "120x36"
+saveLines = 10000
+boldColors = false
+color4 = "#3465a4"
