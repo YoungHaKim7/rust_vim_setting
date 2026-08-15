@@ -8,7 +8,12 @@
 ```
 ~/.config/ghostty/config:
 command = /usr/local/bin/fish --login --interactive
+```
 
+# working-directory
+
+```
+ghostty --working-directory=/path/to/folder
 ```
 
 # Fix & bug 해결
