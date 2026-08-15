@@ -1,3 +1,5 @@
+
+
 # link
 - [(외부링크)250223완전 초보를 위한 좋은 동영상 Explaining Vim Until I Go Insane | Mults](https://youtu.be/LuhAzI3wvmI?si=5Sr_d-m1eHjeoXl4)
 - [빔 기초Vim tutorial_mastering-vim-your-guide-to-efficient-text-editing](#mastering-vim-your-guide-to-efficient-text-editing)
@@ -95,6 +97,8 @@ Companion code for the [Medium Neovim for Beginners series.](https://alpha2phi.m
 
 
 
+
+
 ```
 
 - color-hex
@@ -115,7 +119,7 @@ https://github.com/mhinz/vim-galore
 
 - http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 ![vi-vim-cheat-sheet](https://github.com/user-attachments/assets/57e8118e-d120-4d98-8539-2d327b612e01)
-![vim-movement-commands-cheatsheet](https://github.com/user-attachments/assets/512f1edc-b6df-43d7-928a-fd561f950dc6)
+![vim-movement-commands-cheatsheet](https://github.com/user-attachments/assets/51e8118e-d120-4d98-8539-2d327b612e01)
 ![vim_cheat_sheet_for_programmers_screen](https://github.com/user-attachments/assets/ff7925a4-da96-4afd-a59c-2dde2a18cff9)
 
 
@@ -216,7 +220,7 @@ macos
 Command + Shift + C
 ```
 
-setting.JSON
+settings.json
 
 ```json
 {
