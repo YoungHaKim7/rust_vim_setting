@@ -57,7 +57,7 @@ if status is-interactive
 
     # Claude
     export ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic
-    export ANTHROPIC_AUTH_TOKEN=1910ae88ef104ff6862520d271f4f8e5.G5WbVhX2uHoAxROW
+    export ANTHROPIC_AUTH_TOKEN=
 
 end
 
