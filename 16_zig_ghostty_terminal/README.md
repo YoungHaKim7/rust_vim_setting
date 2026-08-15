@@ -16,6 +16,9 @@ command = /usr/local/bin/fish --login --interactive
 ghostty --working-directory=/path/to/folder
 ```
 
+# ubuntu Install
+- https://github.com/mkasberg/ghostty-ubuntu
+
 # Fix & bug 해결
 - [창 나눴는데 내 프로젝트 폴더가 안 열리고 root폴더가 열릴때 (리눅스OS bug)](https://github.com/ghostty-org/ghostty/issues/1392)
 
