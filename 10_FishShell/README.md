@@ -37,6 +37,13 @@
 # fish PATH설정 모음
 
 ```fish
+fish_add_path "$HOME/.cargo/bin"
+# fish_add_path "$HOME/.wasmer/bin"
+#fish_add_path "$HOME/.emacs.d/bin"
+fish_add_path -U ~/.config/emacs/bin
+fish_add_path "$HOME/utilities/vulkansdk-linux-x86_64-1.4.357.1/1.4.357.1/x86_64/bin"
+
+
     # Vulkan SDK PATH
     set -gx VULKAN_SDK $HOME/utilities/vulkansdk-linux-x86_64-1.4.357.1/1.4.357.1/x86_64
     set -gx LD_LIBRARY_PATH "$VULKAN_SDK/lib:" $LD_LIBRARY_PATH
