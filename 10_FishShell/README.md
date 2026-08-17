@@ -34,6 +34,21 @@
 
 <hr>
 
+# fish PATH설정 모음
+
+```fish
+    # Vulkan SDK PATH
+    set -gx VULKAN_SDK $HOME/utilities/vulkansdk-linux-x86_64-1.4.357.1/1.4.357.1/x86_64
+    set -gx LD_LIBRARY_PATH "$VULKAN_SDK/lib:" $LD_LIBRARY_PATH
+
+    # SDL3 PATH
+    set -gx LD_LIBRARY_PATH /usr/local/lib
+
+    # C++ PATH
+    set -gx CPLUS_INCLUDE_PATH /usr/include/c++/13 /usr/include/x86_64-linux-gnu/c++/13 /usr/lib/gcc/x86_64-linux-gnu/13 /usr/lib/gcc/x86_64-linux-gnu/14 $CPLUS_INCLUDE_PATH
+
+```
+
 # key binding[|🔝|](#link)
 
 - https://fishshell.com/docs/current/cmds/bind.html
