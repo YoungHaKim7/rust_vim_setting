@@ -12,7 +12,6 @@ fish_add_path "$HOME/.cargo/bin"
 fish_add_path -U ~/.config/emacs/bin
 fish_add_path "$HOME/utilities/vulkansdk-linux-x86_64-1.4.357.1/1.4.357.1/x86_64/bin"
 
-
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
@@ -41,26 +40,27 @@ if status is-interactive
     # set -gx MAX_PATH $(modular config max.path)
     # set -gx MAX_PATH $HOME/.modular/bin
 
-    # C++ PATH
-    set -gx CPLUS_INCLUDE_PATH /usr/include/c++/13 /usr/include/x86_64-linux-gnu/c++/13 /usr/lib/gcc/x86_64-linux-gnu/13 /usr/lib/gcc/x86_64-linux-gnu/14 $CPLUS_INCLUDE_PATH
-    # set -gx CPLUS_INCLUDE_PATH /usr/include/c++/13 /usr/include/c++/14 /usr/include/c++/13 /usr/include/x86_64-linux-gnu/c++/13 /usr/lib/gcc/x86_64-linux-gnu/11 /usr/lib/gcc/x86_64-linux-gnu/13 /usr/include/c++/14 /usr/include/x86_64-linux-gnu/c++/14 $CPLUS_INCLUDE_PATH
-    #set -gx CPLUS_INCLUDE_PATH /usr/include/c++/14 /usr/include/x86_64-linux-gnu/c++/13 /usr/lib/gcc/x86_64-linux-gnu/11 /usr/lib/gcc/x86_64-linux-gnu/13 /usr/include/c++/14 /usr/include/x86_64-linux-gnu/c++/14 $CPLUS_INCLUDE_PATH
-
-    #set -x CPLUS_INCLUDE_PATH "$PREFIX/$HOST/include/c++/$GCCVERSION:$PREFIX/lib/gcc/$HOST/$GCCVERSION/include"
+    # C++ (GCC 16 in /opt/gcc-16 finds its own headers/libs itself — do NOT set
+    # CPLUS_INCLUDE_PATH/LIBRARY_PATH, that would mix GCC 13/14 headers into GCC 16 builds)
+    set -gx LD_LIBRARY_PATH /opt/gcc-16/lib64 $LD_LIBRARY_PATH
 
 
     # python Tensflow CUDA PATH
     #export XLA_FLAGS=--xla_gpu_cuda_data_dir=/usr/lib/cuda/
 
     # SDL3 PATH
-    set -gx LD_LIBRARY_PATH /usr/local/lib
+    set -gx LD_LIBRARY_PATH /usr/local/lib $LD_LIBRARY_PATH
 
     # WASM (wasmer run)
     # set -gx WASMER_DIR $HOME/.wasmer
 
     # Vulkan SDK PATH
     set -gx VULKAN_SDK $HOME/utilities/vulkansdk-linux-x86_64-1.4.357.1/1.4.357.1/x86_64
-    set -gx LD_LIBRARY_PATH "$VULKAN_SDK/lib:" $LD_LIBRARY_PATH
+    # set -gx LD_LIBRARY_PATH "$VULKAN_SDK/lib:" $LD_LIBRARY_PATH
+    set -gx LD_LIBRARY_PATH "$VULKAN_SDK/lib" $LD_LIBRARY_PATH
+    set -gx VK_ADD_LAYER_PATH "$VULKAN_SDK/share/vulkan/explicit_layer.d" $VK_ADD_LAYER_PATH
+    set -gx PKG_CONFIG_PATH "$VULKAN_SDK/lib/VulkanLoader/lib/pkgconfig" "$VULKAN_SDK/share/pkgconfig" "$VULKAN_SDK/lib/pkgconfig" $PKG_CONFIG_PATH
+    set -gx CMAKE_PREFIX_PATH "$VULKAN_SDK" "$VULKAN_SDK/lib/VulkanLoader"
 
 end
 
