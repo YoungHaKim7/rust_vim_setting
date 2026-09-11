@@ -4,8 +4,10 @@
 
 # Release Note v1.19(260911)
 
+- You can now explore a function’s callers and the functions it calls via call hierarchy: **show incoming calls** and `call hierarchy: show outgoing calls`.
+
 - Project search now updates results as you type by default.
-To restore the previous behavior, set `{ "search": { "search_on_type": false } }`.
+  - To restore the previous behavior, set `{ "search": { "search_on_type": false } }`.
 
 # Release Note v1.9(260702)
 
