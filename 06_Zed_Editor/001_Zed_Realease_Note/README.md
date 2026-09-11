@@ -2,6 +2,11 @@
 
 - https://zed.dev/releases/stable
 
+# Release Note v1.19(260911)
+
+- Project search now updates results as you type by default.
+To restore the previous behavior, set `{ "search": { "search_on_type": false } }`.
+
 # Release Note v1.9(260702)
 
 - Zed's pickers are resizable, with a live preview option. | Very Telescope! 🔭
