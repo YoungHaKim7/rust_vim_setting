@@ -57,8 +57,8 @@ foreground = ffffff
 # Empty values reset the configuration to the default value
 font-family = Hack Nerd Font
 font-size = 32
-font-thicken = true
-font-thicken-strength = 20
+font-thicken = false
+# font-thicken-strength = 1
 # theme = Github Dark
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
