@@ -21,7 +21,7 @@ fish_add_path /opt/homebrew/bin/
 #fish_add_path /opt/homebrew/include/
 #fish_add_path /usr/local/include/opencv4
 #fish_add_path /opt/homebrew/opt/libpq/bin
-fish_add_path VULKAN_SDK/bin
+fish_add_path "$HOME/VulkanSDK/1.4.357.1/macOS/bin"
 
 fish_add_path /Applications/Alacritty.app/Contents/MacOS/
 #fish_add_path /System/Volumes/Data/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers
@@ -87,8 +87,17 @@ if status is-interactive
     #set -gx PKG_CONFIG_PATH /opt/homebrew/opt/libpq/lib/pkgconfig
     # Vulkan PATH
     set -gx VULKAN_SDK ~/VulkanSDK/1.4.357.1/macOS
+    set -gx DYLD_LIBRARY_PATH "$VULKAN_SDK/lib"
+
     set -gx VK_ICD_FILENAMES VULKAN_SDK/share/vulkan/icd.d/MoltenVK_icd.json
     set -gx DYLD_FALLBACK_LIBRARY_PATH VULKAN_SDK/lib
+    # MoltenVK ICD
+    set -gx VK_ICD_FILENAMES \
+        "$VULKAN_SDK/share/vulkan/icd.d/MoltenVK_icd.json"
+
+    # Vulkan validation layers
+    set -gx VK_LAYER_PATH \
+        "$VULKAN_SDK/share/vulkan/explicit_layer.d"
 
 end
 
@@ -97,4 +106,6 @@ starship init fish | source
 
 # Wasmer
 #export WASMER_DIR="/Users/gy-gyoung/.wasmer"
-#
+#[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+# claude(z.ai GLM4.6 251006)
