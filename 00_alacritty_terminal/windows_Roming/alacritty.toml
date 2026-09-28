@@ -1,5 +1,5 @@
 [terminal.shell]
-program = 'C:\\Program Files\\PowerShell\\7\\pwsh.exe'
+program = 'C:\\Users\\ytok1\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe'
 
 [window]
 opacity = 0.95
@@ -113,19 +113,19 @@ TERM = "xterm-256color"
 size = 16.0
 
 [font.bold]
-family = "MesloLGS NF"
+family = "Hack Nerd Font Bold"
 style = "Bold"
 
 [font.bold_italic]
-family = "MesloLGS NF"
+family = "Hack Nerd Font Bold Italic"
 style = "Bold Italic"
 
 [font.italic]
-family = "MesloLGS NF"
+family = "Hack Nerd Font Italic"
 style = "Italic"
 
 [font.normal]
-family = "MesloLGS NF"
+family = "Hack Nerd Font"
 style = "Regular"
 
 [hints]
