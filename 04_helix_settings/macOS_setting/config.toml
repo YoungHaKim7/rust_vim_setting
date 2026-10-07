@@ -89,7 +89,7 @@ X = ["move_char_left", "delete_selection"]
 # Extend and select commands that expect a manual input can't be chained
 # I've kept d[X] commands here because it's better to at least have the stuff you want to delete
 # selected so that it's just a keystroke away to delete
-d = { x = ["delete_selection"], d = ["extend_to_line_bounds", "delete_selection"], t = ["extend_till_char"], S = ["surround_add"], s = ["surround_delete"], i = ["select_textobject_inner"], a = ["select_textobject_around"] }
+d = { x = ["delete_selection"], d = ["extend_to_line_bounds", "delete_selection"], t = ["extend_till_char"], S = ["surround_add"], s = ["surround_delete"], i = ["select_textobject_inner"], a = ["select_textobject_around"], l = ["delete_selection"] }
 
 # Clipboards over registers ye ye
 x = ["yank_main_selection_to_clipboard", "normal_mode", "flip_selections", "collapse_selection", "delete_selection"]
