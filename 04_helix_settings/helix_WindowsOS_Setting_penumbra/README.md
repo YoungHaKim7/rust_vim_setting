@@ -1,3 +1,16 @@
+# 버그있어서 k, n으로 수정함(윈도우 그지같은거)Your new shortcuts will be:
+
+
+|Shortcut	|Action|
+|-|-|
+|Ctrl + K	|Move selected line up|
+|Ctrl + N	|Move selected line down|
+
+
+This is a workaround, not a correction to your original command sequence.
+
+<hr />
+
 # setting위치
 
 ```bash
