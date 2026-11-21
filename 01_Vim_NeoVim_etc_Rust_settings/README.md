@@ -511,7 +511,7 @@ https://vimdoc.sourceforge.net/htmldoc/scroll.html#scroll-down
 
 <hr>
 
-# File열기[[🔝]](#link)
+# File열기 & 현재파일 다른이름으로 저장하기[[🔝]](#link)
 
 ```bash
 # 일반적으로 그냥(폴더 안에 있는거 다 열기)
@@ -527,6 +527,9 @@ vim +/"문자열" src/main.rs
 
 # 2개를 조합
 vim +18 +/"문자열" src/main.rs
+
+# 현재파일 다른이름으로 저장하기
+:w!저장하고싶은파일명
 
 ```
 
