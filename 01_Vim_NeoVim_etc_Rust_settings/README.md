@@ -10,14 +10,15 @@
 - [Vim 설명서 끝짱판 All Things Vim](#-all-things-vim)
   - [한국 리눅스 커널 모임 정리된 Vim자료 굿_https://www.minzkn.com/linuxkernel/pages/vim.html](https://www.minzkn.com/linuxkernel/pages/vim.html)
 - [Vim 클립보드 설치해서 *y되게 만들기](#vim-클립보드-설치해서-y되게-만들기)
-- [Vim 창 나누기](#vim-%EC%B0%BD-%EB%82%98%EB%88%84%EA%B8%B0)
-- [Vim 움직임 관련(hjkl)](#vim-%EC%9B%80%EC%A7%81%EC%9E%84-%EA%B4%80%EB%A0%A8hjkl)
-- [vim buffer 활용법tabe많이 씀](#vim-buffer--tabnew)
-- [Vim : Command 글씨 바꾸기 같은거:set number rnu하이브리드 모드 젤 좋다. ㅋ](#vim-command--key)
 
-- [Sort 패턴](#sort-패턴)
-
-- [move copy command](#vim-ex-commands-m-t-and-co)
+- vim key관련
+  - [Vim 창 나누기](#vim-%EC%B0%BD-%EB%82%98%EB%88%84%EA%B8%B0)
+  - [Vim 움직임 관련(hjkl)](#vim-%EC%9B%80%EC%A7%81%EC%9E%84-%EA%B4%80%EB%A0%A8hjkl)
+  - [vim buffer 활용법tabe많이 씀](#vim-buffer--tabnew)
+  - [Vim : Command 글씨 바꾸기 같은거:set number rnu하이브리드 모드 젤 좋다. ㅋ](#vim-command--key)
+  - [Sort 패턴](#sort-패턴)
+  - [move copy command](#vim-ex-commands-m-t-and-co)
+  - [파일열기 & 현재 파일에서 다른 이름으로 저장하기 & vim안에서 shell로 실행하기](#file열기--현재파일-다른이름으로-저장하기)
 
 - [normal활용법](#vim-normal-%ED%99%9C%EC%9A%A9%EB%B2%95)
 
@@ -531,6 +532,8 @@ vim +18 +/"문자열" src/main.rs
 # 현재파일 다른이름으로 저장하기
 :w!저장하고싶은파일명
 
+# 쉘 명령어 vim안에서 실행하기(cargo r)
+:!cargo r
 ```
 
 
