@@ -18,15 +18,26 @@ y = 1
 # lines = 32
 
 # record mode
-columns = 123
-lines = 31
-
+columns = 130
+lines = 34
 
 [font]
-size = 24.0
+size = 28.0
 
 [font.normal]
-family = "MesloLGS NF"
+family = "Hack Nerd Font"
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
 
 [mouse]
 hide_when_typing = true
