@@ -2,6 +2,11 @@
 
 - https://zed.dev/releases/stable
 
+# Release Note v1.30(261126)
+- Vim / Helix
+  - Added the `g r t` keybinding for `editor: go to type definition`, matching Neovim's default. (#66759; thanks ask4fusora)
+  - Added the `] n` and `[ n` keybindings in visual mode for `vim: select next syntax nod`e and `vim: select previous syntax node`, matching Neovim's defaults. (#66759; thanks ask4fusora)
+
 # Release Note v1.19(260911)
 
 - You can now explore a function’s callers and the functions it calls via `call hierarchy: show incoming calls` and `call hierarchy: show outgoing calls`.
